@@ -1,0 +1,265 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a7b:cd0a:0:0:0:0:0 with SMTP id f10csp528231wmj;
+        Wed, 4 May 2022 08:10:05 -0700 (PDT)
+X-Received: by 2002:a17:90a:e2cb:b0:1da:35d6:3a08 with SMTP id fr11-20020a17090ae2cb00b001da35d63a08mr10864679pjb.223.1651677004930;
+        Wed, 04 May 2022 08:10:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1651677004; cv=none;
+        d=google.com; s=arc-20160816;
+        b=04+hF0bwu9oSmMGX7d1tRplzQaDJxuF0O36tUlATGOV88EIfVpeWKFn+LEbFEnyHEJ
+         JWhKF3u6yTHudiTg+jfPZ2vxFOuGUmr4LsCXECDqFT0dwgiEAFg2m+JzRtzQWp8jm99v
+         G/OySNFoxOl2qSIEez7HXevl6JzD7mpiPXcs1J+rPJA/0WYl9OkRRZXhPGedB9Fz//ap
+         FSFrh109sCQ3O8BKUwU3Mlx4ffY1zCi4lhaMr+6iGTC4fDWXVcYxCuIdZzwe4uR2b/Nq
+         nnueJEcK8oant9t8zjZQeWlPEkDxaj40DWNpVu5s1bO+DwGZST0z76BfoYKiMljJmaZk
+         1XBQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=9jfrRF5zJ3bNEnZT4ieIWPZDbxzbKdODK/uYVsU0InQ=;
+        b=xl/uIAoLc5EhM4Dat1rDbFK31bUMJSLjeJZWU/hUxKMhIO1Q72T6nV0wdyaxrY2FkD
+         OYQdH0GKmfGVqjc7REEul63wBn54+sGZ99t23xMdkLHZFdZNYAl8LQnhR6EPywAgVKEX
+         CZYnYiYay95An0t6EaL82bBYnYiuB3K55hs6XFOz/QUcWwwO/K8fMbfFmAA4+hKy3uXT
+         tzCIz8nrToSftrtyKPZvTcV1E+XEUDrQ/wxPRC6au/kR7v2JNc/KokeHg6crAROabQ/O
+         TPMgEgWwrbYk5fOmSiNPj9UKTmChRE/PQx0p0XXTb43yesvi60+XNy1cRNsNOVbONKlb
+         ng4Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=UpMaZuBI;
+       spf=pass (google.com: domain of bcurtice@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bcurtice@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <bcurtice@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id j20-20020a633c14000000b0039d72138941sor10160346pga.39.2022.05.04.08.10.04
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Wed, 04 May 2022 08:10:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bcurtice@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=UpMaZuBI;
+       spf=pass (google.com: domain of bcurtice@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bcurtice@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=9jfrRF5zJ3bNEnZT4ieIWPZDbxzbKdODK/uYVsU0InQ=;
+        b=UpMaZuBIGsKEYSUM+e5k3DYocXPwJYIhBoaLicouYQqZW7A/0Y2ET3S0z76fmn8diF
+         TlwdfSILmDIkqL+0zvU/wT2+zp7ap99q+Dww08ONVYOJ1Nno5IYoFxUzOO7xTTITvuH3
+         ufqlRhYG5YJH4viwKtp5vsSlJhnR//Ea2SCuTrs9yXHhbULD0MCEL+nW2x7uK+huJAM+
+         gAP4f3xY0J8++/RUZaItmm+lf3KVkiUU7hFMgkY1o1jP5qEsPB9qoB0H1P0oxrsapauh
+         eXcJ6Q+EFB21nQrVuEMGIvueVxDavRNYcOW/4SMl+DkBEfPAQuke+onIrMK7At7z5/4c
+         bKlw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=9jfrRF5zJ3bNEnZT4ieIWPZDbxzbKdODK/uYVsU0InQ=;
+        b=q5z5rjYhgGkmIU5c8cm0xEZ5fLamPkQpk3b+RjbfzIMlwi9iFCjM6MB+j9HP2ejt4+
+         /M2+5TZe+DgbeOBESGGUBzA++yNJGHqB2hNJ9+KwjKHSoIzLGFtAAVuDow99naMkpfQj
+         TMwlGIWAAZXZn5DSevsEk6mG689/c47nnhmlv1egHdAjS7zR0PtH6RuhkHAUKu6pH6m+
+         yxgnLM8K+aYFweyr0e2ptKSo3Kst1NcdRFUW1OvZulx9NQUDeo+Fv2bBhYBFf4verIPl
+         op5pKVXJTutfWNgrWzfh+fRnB6ZOk6gxlgE5knz94tMot8VJXQlzjnqjExW/Qkf/gmJJ
+         Vyvg==
+X-Gm-Message-State: AOAM531fnafn/4kSC/9aufvwFfX5cQq8imDW+21LCEAuZBZPszuVJ+lN
+	HoWirHozcoFm6+xCAWn8lIiASKoiSmJZ19K/HWe4UcW2K9s=
+X-Google-Smtp-Source: ABdhPJw1nGjTYpB97FrvispQZIFNxnCi+dK43oFcNS+Ujr6lJrppPe/QZuqr9fBOS1Q2g9baLq1FCsqHglnrLgVovcE=
+X-Received: by 2002:a65:6543:0:b0:39d:5e6e:24c3 with SMTP id
+ a3-20020a656543000000b0039d5e6e24c3mr18621368pgw.560.1651677003657; Wed, 04
+ May 2022 08:10:03 -0700 (PDT)
+MIME-Version: 1.0
+References: <CACnMvBbiWWCj0p6Ug2G9wwjxfBnBks0xXPX10ZOCTovuOvPhXQ@mail.gmail.com>
+ <CAG0zCrxCEzjceaYPrB4i1yHzmdXM=CwitGDLTKqBYcxhmZVWNQ@mail.gmail.com>
+ <CACnMvBYxjY_LRLQw5EcUYjC3jGxQxXzgddT06ykDNhakxi7LZA@mail.gmail.com>
+ <CAG0zCrw7ry_30PvkW5AwA52u5VzgrtH840tAF3c=Wk=3nDUZjQ@mail.gmail.com> <CACnMvBYx+JzpJtE7oAEfi1m9h-tc1jdObAi0HP_kfBLEkiPj3g@mail.gmail.com>
+In-Reply-To: <CACnMvBYx+JzpJtE7oAEfi1m9h-tc1jdObAi0HP_kfBLEkiPj3g@mail.gmail.com>
+From: Brian Curtice <bcurtice@gmail.com>
+Date: Wed, 4 May 2022 08:09:52 -0700
+Message-ID: <CAG0zCrwdsg=Lbd7uaPKYME-QFL0P3K7=Chqnf8-rqjqeS=YdfA@mail.gmail.com>
+Subject: Re: Codex of diplodocid caudal vertebrae
+To: Mike Taylor <sauropoda@gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Sure re pers comm.
+
+I like the trilemma term. And, if a quarry map exists showing they are one
+individual we do indeed have a tail doesn’t match the neck scenario.  I am
+positive the tail is not the same animal as YPM 429 or AMNH 6341 or the U
+of U one. It looks like the standard Diplo tail one finds all over the
+Morrison. Big, deep excavations, deeply bifurcate spines, different neural
+spine build.  Ray is coming over in June to look at the limb material and
+see where it falls on his limb ratio database.
+
+Unless someone added it to a matrix somewhere that I missed none of the new
+ones are in the literature. The Tucson specimen seems to be ending up in a
+musuem. Larson wants to sell his to a museum. The China specimen will be
+available however way easier to have studied it when they were on the
+ground. I am so mad at myself for missing them by hours :-/. I have some
+general shots of their left side but only got those because I talked Brock
+into coming down and opening his place up at 8 pm on a week night. BYU
+scanned the most proximal 3 but had technical difficulties. Ugh they were
+beautiful and not restored, DNM style pristine.
+
+BC
+
+
+
+
+On Wed, May 4, 2022 at 7:43 AM Mike Taylor <sauropoda@gmail.com> wrote:
+
+> On Tue, May 3, 2022 at 6:08 PM Brian Curtice <bcurtice@gmail.com> wrote:
+>
+>> ***Do you remember where you found this information?***
+>> That information would have come from Jack directly onsite and/or notes
+>> from my Carnegie library explorations.
+>>
+>
+> OK, thanks. Would it be OK to cite that as a pers. comm.?
+>
+> ***What specimen is this? They don't have one on exhibit, do they? Is it
+>> the one with the beautiful cervicals that Matt and I saw being prepared a
+>> few years ago? See photo at
+>> https://svpow.com/2016/10/11/is-it-time-to-rethink-the-privatepublic-distinctions-for-museums/
+>> ***
+>> It is the one y'all saw a few years back.  They continue preparation.
+>> Rick is confident the tail goes with the cervicals.  I'll see if he has a
+>> quarry map in June as that tail is 100% Diplo.
+>>
+>
+> Well, then, we have a trilemma! I insist that the cervicals are
+> Barosaurus, you insist that the caudals are Diplodocus, and they insist
+> that the neck and tail belong to the same individual — we can't all be
+> right!
+>
+> Baro cervicals I know of:
+>> Tucson, Arizona has a complete neck and dorsal series it appears (I'm
+>> going to touch them in a month or so) - Lindgren
+>> Eccles Dinosaur Park traded their cervicals to Fossilogic and Brock added
+>> them to his Goliath *Supersaurus* mount going to Grandview Museum of
+>> Natural History.  They have 17 cervicals in articulation (!) with no sign
+>> of the dorsal transition, they are crazy!
+>> Larson has an alleged Baro, I saw them via Zoom and they do look long
+>> Babiarz has some as well it appears
+>>
+>> We have ~6 dorsals and upwards of 6 cervicals, a pelvis, and various
+>> appendicular elements.
+>>
+>
+> Aw geez. So much great stuff. I assume that 17-cervical sequence is not
+> mentioned in any publication?
+>
+> -- Mike.
+>
+>>
+>> BC
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> [image: photo]
+>> *Brian Curtice, PhD*
+>> Founder and CEO, Fossil Crates
+>>
+>> 480-280-7132| BCurtice@gmail.com
+>>
+>> www.FossilCrates.com
+>> <http://facebook.com/fossilcratesdrbc>
+>> <http://instagram.com/fossilcrates>
+>> <https://www.youtube.com/channel/UCJ34j3FmGhrrUbaeJZzTdOQ/>
+>> <http://500px.com/bcurtice> <http://twitter.com/fossilcrates>
+>> [image: App Banner Image] <https://www.fossilcrates.com/>
+>>
+>> On Tue, May 3, 2022 at 9:55 AM Mike Taylor <sauropoda@gmail.com> wrote:
+>>
+>>> On Tue, May 3, 2022 at 4:49 PM Brian Curtice <bcurtice@gmail.com> wrote:
+>>>
+>>>> Hi Mike,
+>>>>
+>>>> I have attached the text, I never scanned the images into a PDF.  They
+>>>> were black and white and grainy (1996 low-cost printing tech).  I do have
+>>>> all of the master images in a Word Perfect box still.
+>>>>
+>>>
+>>> Excellent, many thanks! The images would be interesting, of course, but
+>>> I found what I was looking for on pp. 72-73, your account of the
+>>> composition of the Carnegie's mounted Diplodocus. Most of what you've
+>>> written there follows McIntosh (1981) pretty closely, as one would expect,
+>>> but you added some detail on the caudals: that Ca13–31 and 33–36 were from
+>>> CM 94, while Ca32 and Ca37–73 inclusive were from CM 307.
+>>>
+>>> Do you remember where you found this information?
+>>>
+>>> Also, after I saw Matt briefly a few weeks back I swung by the Utah
+>>>> museums.  Here is what I sent him:
+>>>>
+>>>> "I am at MOAL looking at the caudals for their Baro [...]
+>>>>
+>>>
+>>> What specimen is this? They don't have one on exhibit, do they? Is it
+>>> the one with the beautiful cervicals that Matt and I saw being prepared a
+>>> few years ago? See photo at
+>>> https://svpow.com/2016/10/11/is-it-time-to-rethink-the-privatepublic-distinctions-for-museums/
+>>>
+>>>
+>>>> [...] and those caudals have deep ventral sulcus, deeply bifurcated
+>>>> proximal caudal neural spines, and they are 27+ cm long.  They look all the
+>>>> world like a full adult Diplodocus and nothing like YPM 429 or AMNH 6341 or
+>>>> any other Baro tails.
+>>>> Not Baro?
+>>>> Tail doesn’t go with cervicals?
+>>>> New genus?
+>>>>
+>>> I am utterly perplexed. The most proximal one they have looks like Diplo
+>>>> and not like Baro, the neural spine is built different with Baro being very
+>>>> rectangular.
+>>>>
+>>>
+>>> Those cervicals are Baro for sure, so if the tail is from the same
+>>> specimen, I think we can rule out your first suggestion. That makes the
+>>> second ("Tail doesn’t go with cervicals?") the front-runner for me, so
+>>> it would be interesting to see a quarry-map.
+>>>
+>>> If your proposed new genus is diagnosed by having a Baro neck and Diplo
+>>> tail, then OK, I guess :-)
+>>>
+>>>
+>>>> Sadly the Goliath Supes Eccles cervicals were already packed. Now the
+>>>> next chance to see them will be when China inboxes them someday :-/."
+>>>>
+>>>
+>>> Wait, wait, what are these?
+>>>
+>>> (There are so many amazing specimens floating around out there that I
+>>> know nothing about!)
+>>>
+>>> Ray is coming to BYU in June and I am driving up to meet him. We are
+>>>> working on Cactus Park (sorting the Diplo and Cam elements from Apato),
+>>>> beginning our Brach paper on the DMDQ stuff as my Supes stuff should be
+>>>> done by then, at least to a point for one last thorough check against the
+>>>> material (the last trip had more new elements plus some new Jensen
+>>>> documents from the earliest days I found in his library BYU received upon
+>>>> his death).  After Brach then 12155 (that thing is so cute!).  I have some
+>>>> WDC and Tate work to do, I believe they each have a new Morrison Fm
+>>>> sauropod in their collections (diff from each other though).
+>>>>
+>>>
+>>> Gtreat that you are progressing so many projects! I didn't realise there
+>>> was enough brachiosar material in Dry Mesa to support a paper, glad that
+>>> there is! What do you have?
+>>>
+>>> -- Mike.
+>>>
+>>
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
