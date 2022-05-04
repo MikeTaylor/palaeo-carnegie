@@ -1,0 +1,164 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a7b:cd0a:0:0:0:0:0 with SMTP id f10csp556250wmj;
+        Wed, 4 May 2022 08:44:39 -0700 (PDT)
+X-Received: by 2002:a02:5d47:0:b0:32b:4387:51c8 with SMTP id w68-20020a025d47000000b0032b438751c8mr9246718jaa.103.1651679079676;
+        Wed, 04 May 2022 08:44:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1651679079; cv=none;
+        d=google.com; s=arc-20160816;
+        b=oH03qIm4r3EhZWwT9HtB5WSLNzmabU67e2WAwdqzy+YzKGGTCzJS7slm2h+7WkkQws
+         C2yHE/R1CBeJDBJDgYijb1BKPHi1dlTZ+RIQG08vY8rvTwBm+RDGU/xDUEyvyZgNjhw7
+         dd/hNTRJNRS32sH/S2fYweFOx6YSLpFHzHiaZ9+OS8SfdKcGW/8LTOaTEMqJbD1VC/7q
+         zZv0khI8uSxZV2wubuS/647omm/Y1e+qzMUEh/0uiOz1lrUdsusLMq2wQBRQbdsUUkOj
+         +hQMC0JmAxLSGkWI+fNLnKD+1oT4ix6uZg9GEXBZ4J085a0PNpLXZOafrdoSZCo4QrMg
+         U+aw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=MztgzBMP7YGUrMCklU5vMCc6tzwvS0hM93NIiUGZrn0=;
+        b=hxEJC5qPvHfgCwh6yglTRAZ9Al/4bxuSmpERUhwnfyVwi/ByEFAdjJ9KUzZX6l14oQ
+         r1wkEwRO9d8LgmKdVUuZ4usgZ9GbgPe4+IDpPFFj9lCnfeb2spcIfMf/YnvaDe6KIMsG
+         SGvvMTuL809kyeSxoQa2BGohAjflGQIcKyLVxb31VaOzZt54mPvSfaaADvfUNGQj8NDR
+         dSyJhNAy4Qu8sCP1YtQGmn6gkt/WM3rpDQDqdRuSx9UHQhTxnmu0FhbSeJVZCatzdJbC
+         x/6vYkOk+5bner+yYVQyrPpRJESGcBg/Rt1nopTydzkcgRL2bnVRRlFSwRPU0FK3/yPV
+         8N0w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=L1yPN2Uk;
+       spf=pass (google.com: domain of skeletaldrawing@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=skeletaldrawing@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <skeletaldrawing@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d198-20020a6bb4cf000000b00657ba97b226sor5973670iof.66.2022.05.04.08.44.39
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Wed, 04 May 2022 08:44:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of skeletaldrawing@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=L1yPN2Uk;
+       spf=pass (google.com: domain of skeletaldrawing@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=skeletaldrawing@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=MztgzBMP7YGUrMCklU5vMCc6tzwvS0hM93NIiUGZrn0=;
+        b=L1yPN2Uk9d0b9uyrB4pt3TdRYaIXq8EkobyIKXm85xcsDqb1EIN/TwweML66mOznqj
+         Oy7YJ5WaE5BR17sg5L9T4aAV8goPiqIY1rSZw5/FOAO59xEAlrzqcPZ4BG5oX/4BUYQ9
+         ZLfel2tihTzVAFUsQtv/sfZHk1V6/wD+bXgGk+6SZI/QpvHWLqO5L7ntcrI2THrt8lMD
+         uUG3VWqo13PgeZ3rVcN1qrJVICbbfhdUXGizINKJtwHwnV9m/JP8orPfsZsC8MQjlezC
+         p2EMmGtsgAFikRyq+V1p0gUg3CpWewN4th16guhOjT4yqli7ex3geVZYlM9qNCoJY+Zt
+         SEHA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=MztgzBMP7YGUrMCklU5vMCc6tzwvS0hM93NIiUGZrn0=;
+        b=xb84qpiiFuZQQtZdRrzZFNQY4xDlmrLvL36eRDBFMkD62WbeT1sz76gCa/3qKk4air
+         yklj85n5CnQychC6VgiKurKpfmtvRGf6j71/SXvSQg+6bGTqw2ByNNphAgtssHqOopB7
+         VHc0SA3NkJ318NFp/fDqLdhey5+iBMxLlj3RHB2qm/SpmKpH+eKOOJxZdAtFbrf7TwrF
+         Od5SWbcMHq1hiexc/8VSy7uL6pJij/tbV90WnRc4XbXEMG7dbRXXgmOlMJQF2Tx6GL0x
+         QI6IbuuRpJP3bC9jKjiGCu0Qfkwk2aAou4IVN7MgvH0xJSi/yArTT3lO8H5ys0plqrVL
+         KNJw==
+X-Gm-Message-State: AOAM533PEi3KkykfUtZbSrfKG7xJ3Y8hoW3qI5xmTtWKSWSOiaS5vwKF
+	JOSISjptb0YSXlgOfSzMn265qW8OBTBJNJv/8FsgQu30
+X-Google-Smtp-Source: ABdhPJwrlF55p2bHdAYrgxXr2JU6sniOZiqTvQzlAOw9Y/A+2exIYsrN3bRdhoa6EkcK75tdWMCEyQm/HDJW860dCCc=
+X-Received: by 2002:a5d:83d2:0:b0:64c:fbd3:e792 with SMTP id
+ u18-20020a5d83d2000000b0064cfbd3e792mr8311959ior.59.1651679078829; Wed, 04
+ May 2022 08:44:38 -0700 (PDT)
+MIME-Version: 1.0
+References: <CACnMvBaNx30fPCAwzgZr2LT8NYTTdLXjjhBP3=-WZf+cTcQdGQ@mail.gmail.com>
+ <CAN5CYQ1E-LuxSp_N_EjEGG3eervufYO_BGo-Vt2E=YKwzYNzxA@mail.gmail.com> <CACnMvBa1Ru2rsVHi3+59EYiO6r_hipu_LTc9vpGjTUPP_UQC8g@mail.gmail.com>
+In-Reply-To: <CACnMvBa1Ru2rsVHi3+59EYiO6r_hipu_LTc9vpGjTUPP_UQC8g@mail.gmail.com>
+From: Scott Hartman <skeletaldrawing@gmail.com>
+Date: Wed, 4 May 2022 10:44:28 -0500
+Message-ID: <CAN5CYQ21OT3kUrOFLoAad2gWC_cUoF+9eiDbKJ7HE5wUnvNX1w@mail.gmail.com>
+Subject: Re: Barosaurus vs Diplodocus
+To: Mike Taylor <sauropoda@gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Mike,
+
+Good to hear from you. As long as I survive this last week of lecturing and
+all of the grading next week I will be doing well. I have at least managed
+to avoid the plague so far (knock on wood!). You are welcome to colorize my
+Diplodocus skeletals for your paper - best wishes on it.
+
+Cheers!
+
+-Scott
+
+On Wed, May 4, 2022 at 10:32 AM Mike Taylor <sauropoda@gmail.com> wrote:
+
+> Hi, Scott, hope life is treating you as well as can be expected during
+> the plague.
+>
+> Another email, another request ...
+>
+> My Barosaurus manuscript has spawned another one, this on the
+> composition of the Carnegie mount, which it turns out is not
+> documented anywhere! (The closest is on page 20 of McIntosh's 1981
+> Carnegie catalogue, but that is both outdated and incomplete.)
+>
+> I would like to include in that paper a copy of your Diplodocus
+> carnegii skeletal (which I already have), in which I color the various
+> bones to indicate which specimen they are from.
+>
+> May I please have permission to use your skeletal for this?
+>
+> Thanks once more!
+>
+> -- Mike.
+>
+>
+> On Sat, Feb 26, 2022 at 2:02 AM Scott Hartman <skeletaldrawing@gmail.com>
+> wrote:
+> >
+> > Hi Mike,
+> >
+> > Oh sure, you just want to use my drawings to besmirch my beloved
+> Supersaurus! I'm just kidding, that's fine. I've recently updated all my
+> sauropod skeletals in the eponymous skeletal gallery on my website - did
+> you want the current versions or would you prefer the versions you used in
+> the slides?
+> >
+> > -Scott
+> >
+> > On Fri, Feb 25, 2022, 6:57 PM Mike Taylor <sauropoda@gmail.com> wrote:
+> >>
+> >> Hi, Scott, I hope all is well.
+> >>
+> >> I'm working with Matt Wedel on a paper where we will briefly compare
+> >> the size and proportions of Barosaurus lentus AMNH 6341 and Diplodocus
+> >> carnegii CM 84. If we may, we'd love to your skeletal reconstructions
+> >> to illustrate this comparison, as I sneakily did in slide 8 of this
+> >> deck that I used for my SVPCA 2016 talk:
+> >>
+> http://www.miketaylor.org.uk/dino/pubs/svpca2016/TaylorWedel2016-how-big-did-barosaurus-get.pdf
+> >>
+> >> As always this would be destined for a CC By journal, which I realise
+> >> is asking a lot of someone who draws for a living. But heck, you've
+> >> been kind to us before (Figure 1 at
+> >> https://app.pan.pl/archive/published/app56/app20100073.pdf ) so I
+> >> figured I might as well be cheeky and ask :-)
+> >>
+> >> Thanks,
+> >>
+> >> -- Mike.
+>
+
+
+-- 
+Scott Hartman, PhD
+Associate Lecturer
+Department of Integrative Biology
+UW-Madison
+(608) 620-4030
+www.skeletaldrawing.com
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
