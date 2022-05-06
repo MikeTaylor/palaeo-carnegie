@@ -1,10 +1,14 @@
 # palaeo-carnegie
 
-This respository contains an in-progress paper that will document the composition of the Carnegie _Diplodocus_ mounted skeleton and 
+This respository contains an in-progress paper that will document the composition of the Carnegie _Diplodocus_ mounted skeleton and its various casts.
+
 **Michael P. Taylor**
 Department of Earth Sciences, University of Bristol, Bristol BS8 1RJ, UK.
 <dino@miketaylor.org.uk> (corresponding author)  
-_[Other authors to follow}_
+**Matthew C. Lamanna.** Section of Vertebrate Paleontology, Carnegie Museum of Natural History, Pittsburgh, Pennsylvania, USA.  
+**Amy Henrici.** Section of Vertebrate Paleontology, Carnegie Museum of Natural History, Pittsburgh, Pennsylvania, USA.  
+**Linsly Church.** Section of Vertebrate Paleontology, Carnegie Museum of Natural History, Pittsburgh, Pennsylvania, USA.  
+**Ilja Nieuwland.** Huygens Institute, Royal Netherlands Academy of Arts and Sciences, Netherlands.  
 
 Feel free to read [the in-progress manuscript](composition-of-the-Carnegie-Diplodocus.docx).
 
