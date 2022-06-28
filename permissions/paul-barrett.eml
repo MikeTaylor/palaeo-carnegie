@@ -1,0 +1,262 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:600c:3494:0:0:0:0 with SMTP id a20csp1948627wmq;
+        Tue, 28 Jun 2022 02:16:10 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1u1zxM3gchXJtNqxZ2EVsoW87T6NSfrg0F3zUIGpCF5+fZzRVMOu/1Q/JBAZp1NG6/hpLMM
+X-Received: by 2002:a17:906:7cc5:b0:726:38e0:4e80 with SMTP id h5-20020a1709067cc500b0072638e04e80mr17185011ejp.664.1656407770405;
+        Tue, 28 Jun 2022 02:16:10 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1656407770; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=csnYreL1QchCDzxXDoxNDxm197/OnS5y9o+TEwFqAkJuhIqtDViUBgOUxLX0f0m+C5
+         4qo5gA+uIzmNZrR8i4eG55ZxBkXpDno17N0agBbSE4JsfBKzAqGBSQK9WO4+grcCQMvz
+         v335zA9lTpTdRvw8FMgoDgZ/IkFS7t3vpt+gn7CAG3ZPAlb/zSWPMvhVp7PTYJx510hl
+         l7YUKMk9bmGUNH5kVT0JZ/Hzd8J1PW+QLxocyZe+PpArPxBlU9WxBYNFajQ0I+TVuc66
+         ammXqVRXYjpPo8RE6b/oipMzS+3j8V+MvCQC+vdvBHd93lNq5JcGj8Cg4NxVGFgUgZp4
+         DrvA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:suggested_attachment_session_id:content-language
+         :accept-language:in-reply-to:references:message-id:date:thread-index
+         :thread-topic:subject:to:from:dkim-signature;
+        bh=9Wz9JH1YWb3t0sm7gUuV1LjLUKFogMEMSfVgDOHPYLQ=;
+        b=eSb9TbL1Jj+J1ZauOLBE1giIHTgL4b+n0+9c1xCct0hG61ig6+HhJHzliN644pnIGw
+         9fsmkadczG6sLyw/1GqInZ2yU1ynt6DFbHFz7E1AMDZUwivSEmek0dwTTC3FcXNO/9/k
+         TVWuBGmhH5m6EDv9BXDXriV0pfVomAgCWX3Ow5oCOMPOqpbqK48DZjxbH1akF4jHAbZZ
+         wQS2GAU74UglMDi5F1dxg+rowzYW3F7MpX8Ujt22FRXLc/q6rK5Q4gilPXZ49wVscMld
+         +zV+i2PhNZfxXHxhpSkwlLJYFgC9IHuHkxb+17l9BuxdcVgPJKakzorndiET9eHmTIMy
+         RXqQ==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@nhm.ac.uk header.s=selector2 header.b=AZxLX4ep;
+       arc=pass (i=1 spf=pass spfdomain=nhm.ac.uk dkim=pass dkdomain=nhm.ac.uk dmarc=pass fromdomain=nhm.ac.uk);
+       spf=pass (google.com: domain of p.barrett@nhm.ac.uk designates 40.107.10.109 as permitted sender) smtp.mailfrom=p.barrett@nhm.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nhm.ac.uk
+Return-Path: <p.barrett@nhm.ac.uk>
+Received: from GBR01-LO2-obe.outbound.protection.outlook.com (mail-lo2gbr01on2109.outbound.protection.outlook.com. [40.107.10.109])
+        by mx.google.com with ESMTPS id hg6-20020a1709072cc600b0072699d7211dsi7959241ejc.616.2022.06.28.02.16.10
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 28 Jun 2022 02:16:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of p.barrett@nhm.ac.uk designates 40.107.10.109 as permitted sender) client-ip=40.107.10.109;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nhm.ac.uk header.s=selector2 header.b=AZxLX4ep;
+       arc=pass (i=1 spf=pass spfdomain=nhm.ac.uk dkim=pass dkdomain=nhm.ac.uk dmarc=pass fromdomain=nhm.ac.uk);
+       spf=pass (google.com: domain of p.barrett@nhm.ac.uk designates 40.107.10.109 as permitted sender) smtp.mailfrom=p.barrett@nhm.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=nhm.ac.uk
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Cjf1SpGN9IA3Bdn17hnsaehFp0u+Kyrx32YbAdwYoY7n/T3sjtmXwK2+W0u+mRMZnHtV5rNT9Ada5SX2edTPZo6xdMAZM1tCn9lqvr3pXSfsp2MZszLcMPrI1jcWpKwUrIq/8bcQg3sUzgv0vThFH80v9rNaa7DpCFiwIy0OV6Y3mNcY3Smt0rYa/SyWVN0kCd2Hc+cASD6bDsmD1jkTmVgo8AhAiCTzJJz70SQceZOE/JZHSBIuG5cJuplDvKYCug8ojGhB2F/wPRmMiCczDZYDVRHGqtjlQLv3fqz5I5wMjyAT2D02UvivaeHuTTNwn5OjY9x+jfVypWbp0hr1UA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=9Wz9JH1YWb3t0sm7gUuV1LjLUKFogMEMSfVgDOHPYLQ=;
+ b=R/y3/+XOoeIWyPUjy48yE5G+hSugJGECdOSzlJ8LzXgCVkTKHEr15UPddYAbMaaMkTP1k79GrUDiRygabgfscLncO7M0hXifkb4ej5CLXthPqVRjFwTPPjY+JD+tTA0j/14jlUG0C6in9/Rd0tOoUtg/bAm/PumnDKPjmjUpVQ/tLVcyR0taofRNrWZZ3l1As8tiAvXb7wG4nlKSFMr+CR3/FbDN+y3zAylMgQIYFIEAQjESpaTNR6forF6dMqMEDC/FwO6vs1Lzu6E9B+vr1wBRCaqWNerUiOuGkboTo576mxrcbil+AOEr1yZ/Efc6qlzofMsHOG+os/th3pGoMw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=nhm.ac.uk; dmarc=pass action=none header.from=nhm.ac.uk;
+ dkim=pass header.d=nhm.ac.uk; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nhm.ac.uk;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=9Wz9JH1YWb3t0sm7gUuV1LjLUKFogMEMSfVgDOHPYLQ=;
+ b=AZxLX4epd4eO3nKa9/u8QXG/ny3ApMGeS5VQgihBLaOnLsoaIjlcwiXuSrqZv3AM8/pDvOxQvM7/ZCk/V+T/TgMWhW3fKf54IfVAazQ1qk+fdhSRpuSALt0u4St6kFAiGj/JN9LLTbCVyispqYhrnh3ePw0e8KExsEHNYKzQLRWEBV+70ouzxbkCyaw6fjHNyDVKn2s7ltFxMqX1bFrXtQcYdDtNjlaHejhHVWeV8o+ONKHOMBvQ/YoY7rCzNUK3EE3KgOKTlV08jgZ49WzcHjnQjnOrLciRocZt6vQQayCPW0Axj+7K48eFS0DwCz1oVcl5UYnQ5JqcTe12vcWnmg==
+Received: from LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:154::13)
+ by LO2P265MB5014.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:22d::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5373.16; Tue, 28 Jun
+ 2022 09:16:09 +0000
+Received: from LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::9409:56cc:5f99:7640]) by LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::9409:56cc:5f99:7640%9]) with mapi id 15.20.5373.018; Tue, 28 Jun 2022
+ 09:16:09 +0000
+From: Paul Barrett <p.barrett@nhm.ac.uk>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: Re: NHM Diplodocus caudal theft
+Thread-Topic: NHM Diplodocus caudal theft
+Thread-Index:
+ AQHYdaVtnvRLG8+6QEm506ynTB5YKa06ZeMJgAADZACAF+W76IAAAYsAgAAAPaGAENVnAIABjUxG
+Date: Tue, 28 Jun 2022 09:16:09 +0000
+Message-ID:
+ <LO0P265MB3130418B4E15B3D43FE0A89BB5B89@LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM>
+References:
+ <CACnMvBYwXZXqRv0+79-=QwjgvWZa2nUMKzEaFVpeZj5jNXABWg@mail.gmail.com>
+ <LO0P265MB31308B8DE4D4FEF8E29CA5B4B5DF9@LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM>
+ <CACnMvBZ=OPnSV-Eu8ikQ6pc6ob0BNDE8BnzvF2cGAoiAsT5A1Q@mail.gmail.com>
+ <LO0P265MB313026347BDE240DA29FE31DB5AC9@LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM>
+ <CACnMvBYsdCxuq2WrGuqzpOZ7Bi4HC0Hje70e_tH2_ydxtkA6nw@mail.gmail.com>
+ <LO0P265MB313097516FFBA5612B97EDFDB5AC9@LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM>
+ <CACnMvBYvqVXqFoQun+BfdtKDZuKGRhvdPGnPv4PdoJ6H1rm7hw@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBYvqVXqFoQun+BfdtKDZuKGRhvdPGnPv4PdoJ6H1rm7hw@mail.gmail.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+suggested_attachment_session_id: b4566f8a-01cf-0ff8-e18b-75cfc073e360
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=nhm.ac.uk;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 67d9d249-cc2d-4af0-691b-08da58e6d6ae
+x-ms-traffictypediagnostic: LO2P265MB5014:EE_
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ hpLWI2C+NtAiJlR+IXiS8zS3/tuczH6ppHSgb7sTLpgkmaoWENkpZ5HQ0gMNf3hWogQ1NwK/25UMup2PcKXxdxHx4uKjG7UQuznjiTuIy+QcwzgidTkV6AhKzB5bfZXIZM5UgOWKPTNwGIGi4V/Q8fvQ/NKHftymR/QTI2gyEb0rMrSMJQ3ZKA8vjhG4L+WZVkNyorXwd0xBnpMWZKh1dDHSSc1kfrI5qTbOJmC3gG8HB4mZ/08lwKa8wq65lPUnOCoOv6FrPz3Gvy4dTlRFJhcogIAjSKKsEZhiO1PSVwON6E+bK4fdrgz/Kl8+GU0vxZVekfiv/Cbc3dBty8UVE+5RBR3GS5hHK15/ZLT1PtafcDiAJDxV0VWehR8fgDgDcab/kHsaWh+yw9Ng++e47mfuhzezS+kHaV3X4oSHEwGXT3S7WpQKZqY63LGzDaopuxY7uybWlZZRKMvFfdUctEi/iIBxP0DsAEOTEaFP54y9bwjPysUBgDBqECOSIOZJHEwovSVnzD1g6jhrGeB7S1g6TLBvLCgTbjN+/XXWp24Jlwo4k+CO+yIgKClccNf+LfI67rSHHY+ukoTu2A/3LfKeMBM1ahfblJW8u10Zwsb+YbMX3v/cuz0Yszt1cDqMjOlCAEjB1jD6njUyuKxQgRT0cgVZEj4oxxXNDcrNMcv6X7R59iWc7BTjnFm0hLTMBX3i+FvH4L16kzzZXhHIpaXM/UYO8mBrD5ZfXWCL7nx7An9Rncl0atzGB+HsbbKNEDDF5MDgRgOQy0nwUNIbm6ngouoOnNZe+M0cQ3qwg88=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230016)(4636009)(39860400002)(396003)(136003)(346002)(366004)(376002)(6916009)(66556008)(26005)(66446008)(41300700001)(83380400001)(64756008)(33656002)(53546011)(38070700005)(86362001)(9686003)(19627405001)(52536014)(8676002)(66946007)(7696005)(316002)(8936002)(66476007)(76116006)(6506007)(41320700001)(2906002)(55016003)(5660300002)(71200400001)(186003)(786003)(38100700002)(3480700007)(66574015)(122000001)(478600001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?arPsIycSqUiQTwCq3KEUWlanEtct3BtHA/A5zrierr+PPYUNGOAivUUM?=
+ =?Windows-1252?Q?cghqg1YMocPVYW1OfwV+hu6nqOFinvmKRk78p8v2aqLD3+EcCEJSHvRT?=
+ =?Windows-1252?Q?UuaaFWXQJIhx06Bo8fls6mazYttb0KNpIp9Kq2UfQkXX4eYDB2EsFd5T?=
+ =?Windows-1252?Q?YZ026SOjHMRDhq5MyrO17Jyrglw+PcR7TVpPiWYBU2WPdwcqGTBlLRHK?=
+ =?Windows-1252?Q?vJswCX3KM2tJ+vumwrCINcRsPgjXuR8HsgLbQYGoEUjA3foyPnhi//Hs?=
+ =?Windows-1252?Q?XQN7LIlWW2fUccHrYUEP6B+xPFVfoRGudtjRPVOWigPbm99gqsl+E6nR?=
+ =?Windows-1252?Q?3SlE4EizqH9uKr2XpReYYEi9hhJYE0BKWwQsG9Q2j0SE1BmGIELXXcGl?=
+ =?Windows-1252?Q?NhcnrSDatbG1I/vE3DQfWhRCFNaU/Fd0oQm877r2VnqTC77/luZRYElg?=
+ =?Windows-1252?Q?GTVaunNn0QHXUQuP5EyjjQ+iiWgjZ25krBpzTsbZRdZBzk+oyZ/tL5yz?=
+ =?Windows-1252?Q?OG68OkgMusy9KNKqtY6fJD45lrcqEg0v0yE47gVoarr8I9YnXlIQ5iQ3?=
+ =?Windows-1252?Q?Fgtddv6+iMNVKLHyyJneup3XFQIztWPkSgHH9LK13pLohupKjrSlmWOQ?=
+ =?Windows-1252?Q?OxV/nwp4OJoNLKh3OKVgr4VNV0RI0/Ucfc+SyOILG5A0yvdIFE6p8A5C?=
+ =?Windows-1252?Q?8cFVWzScESZhZAtyzlkXqS4cJPbP0zySfLpzwlZE4lhNRaPGI6WtqC0R?=
+ =?Windows-1252?Q?hUX2rtMi2z6k0wd+/BGKoKr3Q6Ooe8wdeOrrChmTUeF+LS0WDKAPlw6W?=
+ =?Windows-1252?Q?N+pmo4fp4+HKEddpo4PTzmDfnx3BwFVXJ2q1Xyk/phdBc4gOSAngtaWt?=
+ =?Windows-1252?Q?T4nQzjQq5p84ZKQrMbHGqmy//rlVWmLnSRkvIQCbjLLbSb/jMD4FQI/3?=
+ =?Windows-1252?Q?VNBaiuutOMRM1axiIOHlZ+pPmDktOCFEWH125FTWKbDG+xhOBf9H6JcE?=
+ =?Windows-1252?Q?d6e+g4tsDSabQjFf/WASBcJfwrGm/w8y7NxaLxSWOKKND6QuaudvmbM1?=
+ =?Windows-1252?Q?9XP6CjiYMUqgVpUyMuOKER5f10hJwLsGondACLGTGILM2hyF4XzpgZLk?=
+ =?Windows-1252?Q?bhNWlyJzp7vfFq/+VY9oam3+HP+2KWUyTwSP7B1ZrsrenINCvaID8N3h?=
+ =?Windows-1252?Q?HDlJu4SAKHu5KEI9v2T+c6URmZW382tPHvxmNlhikPLLK/YZaCAXA8PN?=
+ =?Windows-1252?Q?nRScR7Xhp+7qqwibqxBSzQ5EmN+LcAeY4ZPqDr96olBpyDtYUVzydSzj?=
+ =?Windows-1252?Q?xcy1AfaGBViAr5TZ8q+nldSOcyFtA9c7aZQl8IHEkj+y+ETsbXPE0sLj?=
+ =?Windows-1252?Q?VY5KG9CoL3S9pRNCpNL8ECLFReMAlUKamsaBttY30f3cMKrJGpCGuTvc?=
+ =?Windows-1252?Q?aWY3FTm6D5lQjdLzT0p8XS2IGb2OHnGvdT1WJhb+oxTiuYHcAoRmQKzw?=
+ =?Windows-1252?Q?D3bIIPU0fpLjCpJ82PkNv/q4IQEGvbfXhuUsMz6ufJn0BOp2nKy9Eb7W?=
+ =?Windows-1252?Q?bwocavuIMOsCSxClqDYAdo0EyJPyVIjnSMIrzXFnryqByV8+Q1f6Ol4/?=
+ =?Windows-1252?Q?MstFqxHnKaF0z50BLGGapU1+cM0R3WneGsZzbMyDpRrcCG4FW7dftYYt?=
+ =?Windows-1252?Q?jRpo5kufKS4qqn/wn9OwwvYu8q2LcEqS?=
+MIME-Version: 1.0
+X-OriginatorOrg: nhm.ac.uk
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: LO0P265MB3130.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 67d9d249-cc2d-4af0-691b-08da58e6d6ae
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Jun 2022 09:16:09.3198
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 73a29c01-4e78-437f-a0d4-c8553e1960c1
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: NiiVypGxzAFJEYvEEbzm0B2KiVugWfytcPQni0iE2setJ6EoMrxfDLifk8dMNyXuB9W2jYc1szH9+UhI5fdHfw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LO2P265MB5014
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="Windows-1252"
+
+Hi Mike,
+
+Happy to be cited as a pers. comm. with respect to the caudals. I've heard this story from Angela Milner, Sandra Chapman and Lorraine Cornish: I suspect it wasn't documented to avoid others trying to do the same, though we've now mentioned it in several public talks and other events. It's possible this might have made it into the Trustee's documentation (as all breakages and losses are recorded) but it would involve reading through an awful lot of paper records.
+
+As for the armour, yes, it's referencing the Czerkas paper.
+
+Cheers, Paul
+
+________________________________
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: 27 June 2022 10:31
+To: Paul Barrett <p.barrett@nhm.ac.uk>
+Subject: Re: NHM Diplodocus caudal theft
+
+Well, I read it! There were a few useful nuggets in there that I'd not seen published elsewhere, such as the date that the tail was raised off the floor, and it was really nice to see the reproduced Carnegie/Holland letters.
+
+Nothing about distal caudals being stolen, though. I wonder where I even picked up that idea, given that it doesn't seem to be in the literature. Could I cite that as a pers. comm. from you?
+
+One mystery arises on page 43: "A new skeleton discovered in Wyoming in 1990 also showed that Diplodocus possessed a row of armour along its back. The armour was made up of small cone-like pieces of bone and may have been for defence or display." I guess this is a garbled reference to the handful of dermal spines that Czerkas found above the tail-base of an indeterminate diplodocoid, as briefly described in his 1994 Gaia paper? I just wanted to check in case there another specimen that I somehow missed, with actual bony armour.
+
+Thanks,
+
+-- Mike.
+
+
+
+
+
+On Thu, Jun 16, 2022 at 5:28 PM Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>> wrote:
+Enjoy!
+
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 16 June 2022 17:27
+To: Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>>
+Subject: Re: NHM Diplodocus caudal theft
+
+Hi, Paul, thanks for getting back to me.
+
+Not a problem at all — I just ordered a second-hand one. Pretty excited to see what it can tell me :-)
+
+-- Mike.
+
+
+On Thu, Jun 16, 2022 at 5:22 PM Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>> wrote:
+Hi Mike,
+
+Sorry for the long silence - hectic few weeks. I've had a dig around but I'm sorry to say I've no more spares, just my own copy, so I can't offer you a freebie this time. Apologies, I thought I had a couple left over but no sign of them.
+
+Cheers, Paul
+
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 01 June 2022 12:25
+To: Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>>
+Subject: Re: NHM Diplodocus caudal theft
+
+Thanks, Paul, that would be perfect!
+
+Mike Taylor
+Oakleigh Farm House #F
+Crooked End
+Ruardean
+Gloucestershire  GL17 9XF
+
+Very much appreciated! I did check my existing PDF library, the Internet Archive and LibGen, but it seems there is no electronic copy out there, so a hardcopy would be great. (Also: just nice to have!)
+
+-- Mike.
+
+
+On Wed, Jun 1, 2022 at 12:17 PM Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>> wrote:
+Hi Mike,
+
+I'm not sure the info about the caudals being pinched has ever been formally been written down anywhere (I might have mentioned it my little Dippy book and I've mentioned it in some interviews), but this is something told to me by Angela Milner some years ago. We haven't suffered this problem while I've been at the museum. However, the main reason for the change was to reflect the changing science. Incidentally, it also offered additional space in the gallery to improve circulation and to provide additional space for events.
+
+I record some of the changes that have taken place in the little book I wrote to make the centenary of Dippy's arrival at the NHM back in 2005. This includes moves around the site as well as things like the tail raise. I don't have a .pdf of this I'm afraid, but I might have a spare hard copy that I could send you if interested.
+
+Cheers, Paul
+
+Prof. Paul M. Barrett
+UKRI Individual Merit Researcher
+
+The Natural History Museum
+Cromwell Road
+London SW7 5BD
+UK
+
+Follow on Twitter @NHMdinolab
+
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 01 June 2022 11:50
+To: Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>>
+Subject: NHM Diplodocus caudal theft
+
+Hi, Paul,
+
+It's one of those Well Known Facts that part of the reason the NHM's Diplodocus cast had its tail raised off the ground was because people kept stealing distal caudals and they had to be replaced. But do you know whether it's actually true, and whether it's been documented in published form?
+
+Also, is there a record anywhere of what other changes have been made to the NHM's copy since its initial installation in 1905?
+
+Thanks,
+
+-- Mike.
+
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
