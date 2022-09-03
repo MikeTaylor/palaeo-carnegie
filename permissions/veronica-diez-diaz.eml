@@ -1,0 +1,125 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:6124:2893:b0:310:3d2b:1ba with SMTP id bs19csp1132176vlb;
+        Sat, 3 Sep 2022 07:39:59 -0700 (PDT)
+X-Google-Smtp-Source: AA6agR62qw7nRo4W5RFZutMArxgFPH1rqcr6OwNwEGVjJJIBCWjuJY8arDilFo8Erkb03FxxYa7H
+X-Received: by 2002:adf:f94a:0:b0:225:7383:d755 with SMTP id q10-20020adff94a000000b002257383d755mr20076682wrr.348.1662215998858;
+        Sat, 03 Sep 2022 07:39:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1662215998; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fk+gZ01C2+GV8QfmBfkUSZvEsRafesPAM1t5ARkm2zpIPuw0dXDvJoLfPEVWuejTWa
+         1JZI4z1YehuZVX+4cFPPo0sXjZcLfZLKnmdDHIMYZf/N5QDGPnQdhJvP6e8oCwSMY8wn
+         TtdPv7aCkDghyjMl+P7YKdWwlfuNN+M67vpDNc89bmSDsEX4BWxNtN8mTPvay8zKvne/
+         Z58mTUSzLnPcoCiJ3tjOkZOibxdq7Ww1ObTGLtQeNJCtLcq7Ngts5yPy/yKDBVjv3/CC
+         Q887Md9Y9/9FrJVw6iQJZcYuWvxNGEGMLsjXpc9CABsfkkuTr8hLm/JUip8ok66oGVc6
+         WUlA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:to:message-id:date:from:mime-version:dkim-signature;
+        bh=wljevkU0uQyOd3XYM47NVw2hwUaWIo7EOhKv+RvVSAE=;
+        b=f7Gl038K06iUhPcRaQom7GyTHCOGcVb3RgksFV2KEOjq08u78WOAzNqhI1+LJP6xNu
+         UQp/u/p9QtD4o7/f2s7HaNqjZZWp7LL3DJ2PTp6AqiG/PRUINIz/+O/R9bOZTsccjffm
+         IaNvdexKOCn6Z7z496o/pcu9TKbWQcIwMwe4DIjexrjGuOEjURu5dMfLv+hQqTtPcZlu
+         xyMPSW+zH032iWaOowDd1rk9a+vyDR1L0CYlhOjCRU1iOq4RWr33xQEiQtNbMogb1KQP
+         FLKwK5qiQwMHVd7WAj/MhTsUJy0er5T6flKp70bmCsHYQC7fvVlT9M5IZoM2Z0KETj3t
+         noFQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=LYEFKnnd;
+       spf=softfail (google.com: domain of transitioning diezdiaz.veronica@gmail.com does not designate 144.76.181.249 as permitted sender) smtp.mailfrom=diezdiaz.veronica@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <diezdiaz.veronica@gmail.com>
+Received: from falaffel.indexdata.dk (falaffel.indexdata.com. [144.76.181.249])
+        by mx.google.com with ESMTPS id l24-20020a1ced18000000b003a6061f3fdbsi2687399wmh.71.2022.09.03.07.39.58
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Sat, 03 Sep 2022 07:39:58 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning diezdiaz.veronica@gmail.com does not designate 144.76.181.249 as permitted sender) client-ip=144.76.181.249;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=LYEFKnnd;
+       spf=softfail (google.com: domain of transitioning diezdiaz.veronica@gmail.com does not designate 144.76.181.249 as permitted sender) smtp.mailfrom=diezdiaz.veronica@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-il1-f179.google.com ([209.85.166.179])
+	by falaffel.indexdata.dk with esmtps (TLS1.2:ECDHE_RSA_AES_128_GCM_SHA256:128)
+	(Exim 4.89)
+	(envelope-from <diezdiaz.veronica@gmail.com>)
+	id 1oUUJQ-00086t-B2
+	for dino@miketaylor.org.uk; Sat, 03 Sep 2022 16:39:58 +0200
+Received: by mail-il1-f179.google.com with SMTP id s3so652641ilv.4
+        for <dino@miketaylor.org.uk>; Sat, 03 Sep 2022 07:39:56 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date;
+        bh=wljevkU0uQyOd3XYM47NVw2hwUaWIo7EOhKv+RvVSAE=;
+        b=LYEFKnndPIlgPq0FNzL0VNPtEY6HyQ1MgaBngvHG1h0DEB67yO3qIqAigBA/xKHIc7
+         PavGWov7gPjVEwRExKaB0qu/xGbXEB3oGgMDEyNqI+6o3MJ+gQs7s0FO8a/TY9HPszBa
+         akEbpe5K+5NHcMdupXrvFC3AgVXE2F2LhSf3bqF3BYVzBaAM4nz5yfoI5b1djCdcclqb
+         NCWZwLicODEHwiRirGId/uNh7/bemW4XoclUVnI0/N+hqJceDJ9m7sw/1CYhHpEz3MeY
+         ef+nEbzwbTo69cfP4wI4L5M9hZNV07EqLJrkl9b6uNaYWLiDHEa7fMTTrEiN0rJbofAo
+         /hWg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=wljevkU0uQyOd3XYM47NVw2hwUaWIo7EOhKv+RvVSAE=;
+        b=ZdAoIcNT59ctjO3swCN0YyiZobEqQu4Z7Li8KHvzUDtidZ+RWepGrC1EBmbvwGT2do
+         Htb1XxOnMQux+KII21qDhhjvQ8oPPYpzvbTY+1KofCVMkrOfPDm1PAWZRzs/1K75wDOO
+         HBJ40Nxo6hv0rybb7jnsbkJvstyZPQESwNvd6RTFr6UZV3YNZ/9M1KtOcTBXTV5c0BNF
+         k5FmhM/0OxTLsqjujm61LGKLag7XZJwg536ng/Y8oPJNUovr6pGMvVbbuok/bOcS1Nmg
+         DCpEqkZVQpY/a21GCGn41uVVpa7gA0F7PnDpyKkkqFXapfQqHZKKnGyYRPrAkTKwZ8BC
+         wB8g==
+X-Gm-Message-State: ACgBeo3HThDBCP5ZHFdAQR6AX5bjKKripxwbdJexxmTr1eXelQ5SR3CR
+	xGLH2mC0nwrc2TJDp1YSGhuO33jgjcjvaPT1HVQGbcTwEBg=
+X-Received: by 2002:a92:c26b:0:b0:2f0:d346:9a3a with SMTP id
+ h11-20020a92c26b000000b002f0d3469a3amr2197175ild.58.1662215994558; Sat, 03
+ Sep 2022 07:39:54 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?B?VmVyw7NuaWNhIETDrWV6?= <diezdiaz.veronica@gmail.com>
+Date: Sat, 3 Sep 2022 16:39:43 +0200
+Message-ID: <CAAhZXCoJs7OALFfmWiT_SkV0Ey+TXKjGLMeijRWeeysG6-hJMw@mail.gmail.com>
+To: dino@miketaylor.org.uk
+X-SA-Exim-Connect-IP: 209.85.166.179
+X-SA-Exim-Mail-From: diezdiaz.veronica@gmail.com
+X-Spam-Checker-Version: SpamAssassin 3.4.2 (2018-09-13) on
+	falaffel.indexdata.dk
+X-Spam-Level: *
+X-Spam-Status: No, score=1.1 required=3.5 tests=DKIM_SIGNED,DKIM_VALID,
+	DKIM_VALID_AU,DKIM_VALID_EF,FREEMAIL_FROM,HTML_IMAGE_ONLY_24,
+	HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,SPF_PASS,T_REMOTE_IMAGE,
+	T_SCC_BODY_TEXT_LINE,URIBL_BLOCKED autolearn=disabled version=3.4.2
+Subject: Permission to use sauropod photos
+X-SA-Exim-Version: 4.2.1 (built Tue, 02 Aug 2016 21:08:31 +0000)
+X-SA-Exim-Scanned: Yes (on falaffel.indexdata.dk)
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Mike,
+
+with this e-mail I formally give you permission to use the photos of the
+sauropods at the MfN I sent you on Twitter.
+My current affiliation is the Museum für Naturkunde Berlin (MfN).
+
+I am eager to see the publication! Kind regards,
+
+Verónica
+-- 
+Dr. Verónica Díez Díaz
+Museum für Naturkunde - Leibniz Institute for Evolution and Biodiversity
+Science
+Invalidenstrasse 43
+10115 Berlin
+Germany
+
+office: +49 30 889140-8383
+email: diezdiaz.veronica@gmail.com
+          Veronica.Diez-Diaz@mfn.berlin
+
+https://www.museumfuernaturkunde.berlin/de/taxonomy/term/234/veronica.diez-diaz
+https://www.researchgate.net/profile/Veronica_Diez_Diaz/
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
