@@ -1,0 +1,240 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:6124:2893:b0:310:3d2b:1ba with SMTP id bs19csp194622vlb;
+        Tue, 30 Aug 2022 23:42:19 -0700 (PDT)
+X-Received: by 2002:ab0:49eb:0:b0:38c:fc47:3c88 with SMTP id f40-20020ab049eb000000b0038cfc473c88mr6694584uad.122.1661928139051;
+        Tue, 30 Aug 2022 23:42:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1661928139; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tKyZJ4XjaREeRSVFpp9t45pzlt5+O+wOXIBU3LoEPo4D25b5rZZa0oY+p8z2MJV3gf
+         BMjAksCH92BS/kHdq9lAjzALE80/JVToZn21JdqexDv6ItxQW5uZnQo60Krrl9o4fJ28
+         E1vvQPYus+XAwO3cHwrO8rxaPrIbMziGkMpmmbm3Q3Kj8mrDRnSRwMD9V3gUWQbmMs3h
+         bQ+E3MZyqR9JHjwfR6s4Xle/VwehHs9BjpFMl8+4um30R86PoXl4kkrNAxbpADSU2KRA
+         5mhsn2jGlTKDgYxHT+0UdXJ3Bzp5hah12OIYhoeUgsPb/vOo7AVjw5FCcrfymPJ/jz0P
+         jeag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=x8VJ9KU8wakoal9mo561RCurygOkJMx4kDi5cgHXZBE=;
+        b=E3cZ/C8VdBWHTS0/hpWMNz3rjcgBYpdWC2UzoXzCbeLphTlKrc15Xwhhp5PiNjmvaU
+         +wTkPhG42lwocV33fnvUXlUbCLw6jeO19na9kprs4brhvhyqFQx1Fl2LShyhDSjsDbhT
+         1XtaEq9p3YQ4SISMj6SWWUQn/4HYXAHphwE9Enfwu2+scE0E8lSJW95jNScUnSnyDPLw
+         4dt0ePnF19Kq5Sm02NNnLYAmnnXtd9nMMqCDDGWrG2XlC5Ql3kks/hcIm+QJ1sApw/iv
+         3hXtqzAPz1d5tHsb9DI4zW828LjyJnmLspmH4O2OuGxNPnkuYAu+ODW8GJhmwGJrZX2r
+         KC5g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=TX35XsQF;
+       spf=pass (google.com: domain of vincent.reneleau@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vincent.reneleau@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <vincent.reneleau@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l1-20020ab05a01000000b0038c891525d4sor2367763uad.22.2022.08.30.23.42.18
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Tue, 30 Aug 2022 23:42:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of vincent.reneleau@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=TX35XsQF;
+       spf=pass (google.com: domain of vincent.reneleau@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vincent.reneleau@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc;
+        bh=x8VJ9KU8wakoal9mo561RCurygOkJMx4kDi5cgHXZBE=;
+        b=TX35XsQFdMhQun5gXwtqqF8/cje6jk1YPnx4YsaHiUjZDEXjOW/lvZ9TSwmHb3RAUX
+         HUvi7rHxIMBlMiDqLXRpZUwgnTXypiuYy5zGxnIG8Q27cje/jCs1fUa6GHsmNQvAMdi3
+         49hxz2lewXhvBF3teGH7l/DzprgcJzROTIKndQGR7UwOnb7/s7zNP2utzSoDvUcQ4lIz
+         GaP5ncZUetOVhXWP1ma6KcEQaH0/5xsORX3Rdu6QpvV5aP7cdXvDAgIZVebfh0z1KqOP
+         FTlQSLcQyQQ0oissNxsIkPnD4ByISBPbNuro2hZ0LvFf1GzHL0mgHISVenRUodbVt40u
+         wvgQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc;
+        bh=x8VJ9KU8wakoal9mo561RCurygOkJMx4kDi5cgHXZBE=;
+        b=g2pqPO6rGm93XBVKeIZqPbBHSUBlDM6DFBzJc4omfIyHnTG3zVkLEAjGI0LIJgkG4f
+         86hpg/AicD5DVCbDFzC46eT3ZZNHq00mOqdUijDsGJEQ1RwLg5dI8wXu7fvNnLVU2IGO
+         e82lZXtYhzwjcuCkhUCd3nUlIwKMJukLB4hMTxkVLi+YYdNxh6YufZsi/o4uddXsIDL/
+         LsVJVjKJXAGGoAtJDhR2FVzLAbDUzlYdLwTtp8xj4eCPtJiamRzjVNUJoG9mdX6qYWA6
+         1GZaebSOOala5BBXSzrLRjt9n5uHmZIqGlneqKjE0fNObNs0z+RIhOqKb/X0iaC2tcUk
+         3tCg==
+X-Gm-Message-State: ACgBeo3lCj4Z57Nzchx7knGuC8Tj2ywXbfmvAPNnG53e/TZ/aQX6DikZ
+	L36harMhrfdk27NCoiD3bBV9/pg2seymkXEMuOyxxjqa
+X-Google-Smtp-Source: AA6agR5bzDU4t71TsFiK2i8MZOPX+pbBo82WDX1GuIqBHtZ9bWstSICGnN0Zz/QbjogjkwXllUDBizF+FfDCYnzaE0g=
+X-Received: by 2002:a05:6130:c13:b0:39f:58bb:d51c with SMTP id
+ cg19-20020a0561300c1300b0039f58bbd51cmr6757248uab.104.1661928138427; Tue, 30
+ Aug 2022 23:42:18 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAER7EMzZBjX4CmS4bRL5g_SKJaU=f2zvpE64t0QegdPL1s3-LQ@mail.gmail.com>
+ <CACnMvBa4T9quVbp17hq-_Qsge8zadX00eiQ25N8JpXJdgC-mrA@mail.gmail.com>
+ <CAER7EMwMyG47TjN+Q_+mRMK=ht_7O5jSOEhArxsoSwaJyYdpdg@mail.gmail.com>
+ <CACnMvBbFsXSERN=pywLyYEGrCG7PXdR9R3jqY=oXosx6-gdFVw@mail.gmail.com>
+ <CACnMvBb9NEHg3YqeXiQ5MbOBcPKfoPc1Bpf4F0Sg0PNdy=u_Rw@mail.gmail.com>
+ <CAER7EMx7+La+A0kscYcy46b+Pvuhomn+=v5kCKOKR5CCQvhrSg@mail.gmail.com>
+ <CACnMvBY2gmreqQwHtCyNjbBD+==T9vz+9AZ+LtS46KZwkqXMHA@mail.gmail.com>
+ <CACnMvBY3U6yfjBnfJpFBLoe6f2K7DLE+6MJLu7Y3Szi-=Lmf3Q@mail.gmail.com>
+ <CAER7EMxEANkjQzCpgqJgdMSHEJWaVDqEReqeCrDh=POhDZHvbQ@mail.gmail.com>
+ <CACnMvBZKP3eEKvRuDiFs9+rn5jeTX6gTK=FUrH92VRBXeV=PLg@mail.gmail.com>
+ <CAER7EMymH_18MNKSL9E+w8=+VNgrkD78aY_Ay3nKUyQLaiVVcg@mail.gmail.com> <CACnMvBZQh2SC8WyeSgZbQt_ucTxQP0apiCsrDOTYEuFHZ08W8Q@mail.gmail.com>
+In-Reply-To: <CACnMvBZQh2SC8WyeSgZbQt_ucTxQP0apiCsrDOTYEuFHZ08W8Q@mail.gmail.com>
+From: Vincent Reneleau <vincent.reneleau@gmail.com>
+Date: Wed, 31 Aug 2022 08:42:07 +0200
+Message-ID: <CAER7EMy7bV4WcB5Qmfj36ELNzKd6dROOzpOZbQr2vhpas7ku6A@mail.gmail.com>
+Subject: Re: Dippy's humerus
+To: Mike Taylor <sauropoda@gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Mike,
+
+Yes and yes! :)
+
+Thanks
+
+Vincent
+
+Le mar. 30 août 2022 à 15:21, Mike Taylor <sauropoda@gmail.com> a écrit :
+
+> These are FANTASTIC, thank you so much!
+>
+> Just to be completely clean on the rubber-stamping: please may I have
+> permission to use these in a published paper? I will acknowledge your
+> photography: should I give your affiliation as MNHN?
+>
+> -- Mike.
+>
+>
+> -- Mike.
+>
+>
+> On Tue, Aug 30, 2022 at 3:06 PM Vincent Reneleau <
+> vincent.reneleau@gmail.com> wrote:
+>
+>> Hi Mike,
+>>
+>> As promised. Tell me if it s ok for you
+>>
+>> Best
+>> V
+>>
+>> Le lun. 29 août 2022, 15:52, Mike Taylor <sauropoda@gmail.com> a écrit :
+>>
+>>> Fantastic, thank you so much!
+>>>
+>>> -- Mike.
+>>>
+>>>
+>>> On Mon, Aug 29, 2022 at 3:50 PM Vincent Reneleau <
+>>> vincent.reneleau@gmail.com> wrote:
+>>>
+>>>> Hi Mike,
+>>>>
+>>>> Not yet! Tomorrow when the museum is closed. Easier to take pics.
+>>>>
+>>>> Best
+>>>> V
+>>>>
+>>>> Le lun. 29 août 2022, 15:48, Mike Taylor <sauropoda@gmail.com> a
+>>>> écrit :
+>>>>
+>>>>> Hi, Vincent. Did you get a chance to take a couple of photos?
+>>>>>
+>>>>> Many thanks once more,
+>>>>>
+>>>>> -- Mike.
+>>>>>
+>>>>>
+>>>>> On Fri, Aug 19, 2022 at 9:27 AM Mike Taylor <sauropoda@gmail.com>
+>>>>> wrote:
+>>>>>
+>>>>>> That would be great, many thanks!
+>>>>>>
+>>>>>> -- Mike.
+>>>>>>
+>>>>>>
+>>>>>> On Fri, Aug 19, 2022 at 6:10 AM Vincent Reneleau <
+>>>>>> vincent.reneleau@gmail.com> wrote:
+>>>>>>
+>>>>>>> Hi Mike,
+>>>>>>>
+>>>>>>> I m in the field right now, but back in the museum next week!
+>>>>>>>
+>>>>>>> Best
+>>>>>>> Vincent
+>>>>>>>
+>>>>>>> Le jeu. 18 août 2022, 10:01, Mike Taylor <sauropoda@gmail.com> a
+>>>>>>> écrit :
+>>>>>>>
+>>>>>>>> Hi again, Vincent,
+>>>>>>>>
+>>>>>>>> If it's convenient — I'm not sure how often you're in the museum —
+>>>>>>>> could you please get a few photos of the forefeet for me as well?
+>>>>>>>>
+>>>>>>>> Greatly appreciated!
+>>>>>>>>
+>>>>>>>> -- Mike.
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> On Thu, May 19, 2022 at 9:48 AM Mike Taylor <sauropoda@gmail.com>
+>>>>>>>> wrote:
+>>>>>>>>
+>>>>>>>>> Thank you!
+>>>>>>>>>
+>>>>>>>>> -- Mike.
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>> On Thu, May 19, 2022 at 8:45 AM Vincent Reneleau <
+>>>>>>>>> vincent.reneleau@gmail.com> wrote:
+>>>>>>>>>
+>>>>>>>>>> Hello Mike,
+>>>>>>>>>>
+>>>>>>>>>> You assume correctly! I ll tell you in a few weeks if you need to
+>>>>>>>>>> do something, but I don't think it will be necessary.
+>>>>>>>>>>
+>>>>>>>>>> You're welcome whenever you want to visit us! Always a pleasure!
+>>>>>>>>>>
+>>>>>>>>>> Best
+>>>>>>>>>> Vincent
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> Le mer. 18 mai 2022, 12:02, Mike Taylor <sauropoda@gmail.com> a
+>>>>>>>>>> écrit :
+>>>>>>>>>>
+>>>>>>>>>>> Thanks, Vincent, these are really nice.
+>>>>>>>>>>>
+>>>>>>>>>>> I will assume I don't need to do anything more regarding
+>>>>>>>>>>> permissions unless you tell me otherwise.
+>>>>>>>>>>>
+>>>>>>>>>>> BTW., these photos remind me how much I love the MNHN, with its
+>>>>>>>>>>> hall packed with awesome objects, and how much I'd love to get back over
+>>>>>>>>>>> there some time.
+>>>>>>>>>>>
+>>>>>>>>>>> -- Mike.
+>>>>>>>>>>>
+>>>>>>>>>>> On Tue, May 17, 2022 at 7:13 PM Vincent Reneleau <
+>>>>>>>>>>> vincent.reneleau@gmail.com> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Hello Mike,
+>>>>>>>>>>>>
+>>>>>>>>>>>> Here are the pics. Let me know if ok for you!
+>>>>>>>>>>>> Just one thing : Ronan Allain, in charge of the specimen is
+>>>>>>>>>>>> currently out on a field trip, so I couldn't make the official demand for
+>>>>>>>>>>>> you. It normally won t be necessary, but if yes, I ll ask you to make the
+>>>>>>>>>>>> demand through MNHN platform (quick and easy to make), if requested in the
+>>>>>>>>>>>> coming weeks. But again, given that Dippy is in the Gallery, it probably
+>>>>>>>>>>>> won't be necessary. But I m not the one who decide! 🙂
+>>>>>>>>>>>>
+>>>>>>>>>>>> Best regards
+>>>>>>>>>>>>
+>>>>>>>>>>>> Vincent
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
