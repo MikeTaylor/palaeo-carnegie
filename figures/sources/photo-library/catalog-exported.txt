@@ -1,0 +1,1257 @@
+NEGATIVE #	SUBJECT	LOCATION	COUNTY	STATE	COUNTRY	MONTH	DAY	YEAR	PHOTOGRAPHER	GLASS PLATE	CELLULOID	SAFETY FILM	SIZE	BLACK & WHITE	COLOR	4X5 COPY NEGATIVE	35MM SLIDE	PRINT ON FILE	COMMENTS1	COMMENTS2	PUBLISHED
+1	Agate Spring Quarries. Panoramic view. University Hill on right.	Agate Springs	Sioux	Nebraska	USA			1906	O A Peterson	Y			5x7	Y		Y		Y	Counterpart of the panoramic view of the Agate Spring fossil quarries, looking east and northeast. See also #2.		
+2	Agate Spring Quarries. Panoramic view. Carnegie Hill in center.	Agate Springs	Sioux	Nebraska	USA			1906	O A Peterson	Y			5x7	Y		Y		Y	Looking eastward and northeastward. See also #1.		
+3	Agate Springs Quarries. Hauling large slab from fossil quarries to Harrison, Nebraska.	Agate Springs	Sioux	Nebraska	USA			1908		Y			5x7	Y		Y		Y			
+4	Agate Spring Quarries. Fitting a frame over a block containing a Stenomylus skeleton.	Agate Springs	Sioux	Nebraska	USA			1907	O A Peterson	Y			5x7	Y		Y	Y	Y			
+5	Agate Spring quarries. Stenomylus quarry. Moving dirt from quarry; boxes in foreground are on the lower bone layer.	Agate Springs	Sioux	Nebraska	USA			1907	O A Peterson	Y			5x7	Y		Y		Y			
+6	Agate Spring quarries. Activity in Stenomylus quarry.	Agate Springs	Sioux	Nebraska	USA			1909	O A Peterson	Y			5x7	Y		Y		Y			
+7	Agate Spring quarries. Excavating in the Stenomylus quarry. Loading the first charge of Giant powder.	Agate Springs	Sioux	Nebraska	USA	7	1	1909	O A Peterson	Y			5x7	Y		Y		Y			
+8	Agate Spring quarries. Excavation in progress at Stenomylus quarry.	Agate Springs	Sioux	Nebraska	USA			1909	O A Peterson	Y			5x7	Y		Y		Y			
+9	Agate Spring quarries. 'Stenomylus  Sandstone', an exposure not far from the Stenomylus quarry and in the same horizon.	Agate Springs	Sioux	Nebraska	USA			1907	O A Peterson	Y			5x7	Y				Y			
+10	Agate Spring quarries. Near the Stenomylus quarry. A dike in the Lower Harrison beds ¼ mile below the Stenomylus quarry.	Agate Springs	Sioux	Nebraska	USA			1907	O A Peterson	Y			5x7	Y				Y			
+11	Agate Spring quarries. Lower Harrison beds near the Stenomylus quarry; 'plant structure'.	Agate Springs	Sioux	Nebraska	USA			1907?	O A Peterson	Y			5x7	Y				Y			
+12	Near Agate Spring. William H Utterback taking out daemonelix in lower Miocene; near Cook ranch house.	Agate Springs	Sioux	Nebraska	USA			1900	J B Hatcher	Y			5x7	Y		Y		Y			
+13	Near Agate Spring. Daemonelix in lower Miocene formation near Cook ranch house.	Agate Springs	Sioux	Nebraska	USA			1900	J B Hatcher	Y			5x7	Y				Y			
+14	Agate Springs quarries map.	Agate Springs	Sioux	Nebraska	USA					Y			8x10	Y				Y			
+15	Daemonelix spirals in Loup Fork deposits.	near Harrison	Sioux	Nebraska	USA			1900	J B Hatcher	Y			5x7	Y				Y			
+16a	William H Utterback digging out daemonelix. Headwaters of Monroe Creek.	Monroe Creek headwaters	Sioux	Nebraska	USA			1900	J B Hatcher	Y			5x7	Y		Y		Y			
+16b	Dakota sandstone on Sheep Creek, 1 mile below Camp Carnegie showing where Sheep Creek once cut through the Sand Rock.		Albany	Wyoming	USA			1901	O A Peterson	Y			5x7	Y		N	N		Negative missing; no print made.		
+17	Snow water Camp. William Reed, J L Wortman, and Reed Jr; Wortman feeding dog, Reed at tent opening, Reed Jr at right.	Snowwater Camp		Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+18	Camp Carnegie at Sheep Creek.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+19	Expedition 1899. Holland and Wortman at work in Quarry D, Sheep Creek.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+20	Crating Diplodocus in Quarry D with Reed Jr, Wortman, Miller, and Reed.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+21	Expedition 1899. Stripping off the surface at Quarry D; L-R: Reed, Wortman, Coggeshall.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+22	Stripping off the surface at Quarry D; L-R: Reed, Wortman, Coggeshall.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+23	Expedition 1899. Quarry D?	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+24	At dinner in Camp Carnegie, Sheep Creek.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y	See #36		
+25	Expedition 1899. Femur in place at Quarry D; Jacob L Wortman in background.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+26	Expedition 1899. Sheep Creek. Visit by AMNH from the Bone Cabin Quarry to Quarry D; includes William Reed, Albert Thompson (lepidopterist with AMNH), William J Holland, Henry F Osborn, William D Matthew, Walter Granger, Richard S Lull, & Jacob D Wortman.	Sheep Creek	Albany	Wyoming	USA	8	8	1899		Y			5x7	Y		Y		Y			
+27	Coggeshall, Reed & Wortman (L-R) at Quarry D.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+28	Coggeshall, Reed & Wortman (L-R) at Quarry D.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+29	Quarry D; bones in place, W H Reed seated.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+30	Quarry D; scapula.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+31	First scapula of Diplodocus uncovered by Carnegie Museum.	Sheep Creek	Albany	Wyoming	USA			1899	William Reed Jr	Y			5x7	Y		Y		Y			
+32	Boxing specimens in the field.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+33	Quarry D.	Sheep Creek	Albany	Wyoming	USA			1899	William Reed Jr	Y			5x7	Y		Y		Y			
+34	Quarry D; Wortman? kneeling at left.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+35	Bonediggers Camp; four men and a dog.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+36	At dinner at Camp Carnegie (about 8 men at table in tent; Holland at left).	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y	See #24		
+37	Bonediggers Camp; four men and a dog; Miller, Wortman, Reed, and Reed Jr.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+38	Rocks. One mile below Camp Carnegie & Sheep Creek.	Sheep Creek; near	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+39	Quarry D; beginning of work in quarry.	Sheep Creek	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+40	Expedition 1900. Camp at Picket Lake, Red Desert, Wyoming; Mr Bunn (teamster) & William Reed.	Red Desert		Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y	'At this camp sometime in April we were forced to stay in bed for 2 nights and a day through a terrific blizzard. There was no wood.'		
+41	Camp at Picket Lake, Red Desert, Wyo. after a severe blizzard in latter part of April; William Reed in tent entrance and Mr. Bunn (teamster).	Red Desert		Wyoming	USA	4		1900	O A Peterson	Y			5x7	Y		Y		Y			
+42	Expedition 1900. Peacefully at sleep on Sheep Creek early in the morning before the salutation of the guns on the morning of July 4, 1900. Those at sleep a party of bone diggers from the American Museum camp at Bone Cabin quarry.	Sheep Creek	Albany	Wyoming	USA	7	4	1900	O A Peterson	Y			5x7	Y		Y		Y	Visiting the boys at Camp Carnegie.		
+43	Peacefully at sleep on Sheep Creek early in the morning before the salutation of the guns on the morning of July 4, 1900; visitors from AMNH's camp at Bone Cabin Quarry in beds.	Sheep Creek	Albany	Wyoming	USA	7	4	1900	O A Peterson	Y			5x7	Y		Y		Y			
+44	Sheep Creek, after the gun salutation on the early morn of July 4, 1900. Museum party on the visit to Camp Carnegie on Sheep Creek.	Sheep Creek	Albany	Wyoming	USA	7	4	1900	O A Peterson	Y			5x7	Y		Y		Y	Doctored photograph.		
+45	Group of bonediggers, Camp Carnegie, Sheep Creek, Wyoming, July 4, 1900. Back row, R-L: Mr Patten, Mr Gilmore, Mr Loomis; front row: Pete Kaison of AMNH, Paul Miller.	Sheep Creek	Albany	Wyoming	USA	7	4	1900	O A Peterson	Y			5x7	Y		Y		Y			
+46	Group of bonediggers; back row, R-L: Mr Patten, Mr Gilmore, Mr Loomis; front row: Pete Kaison of AMNH, Paul Miller.	Sheep Creek	Albany	Wyoming	USA	7	4	1900	O A Peterson	Y			5x7	Y		Y		Y			
+47	Sheep Creek, Quarry D ready for taking out the bones; Gilmore & Patten.	Sheep Creek	Albany	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+48	Excavating in Quarry D; Patten & Gilmore.	Sheep Creek	Albany	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+49	Charles Gilmore at work in Quarry D; bones covered by tarpaulin back of him; Dakota sandstone in background.	Sheep Creek	Albany	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+50	The old Cope Quarry, Canon City, Colorado.	Cañon City	Fremont	Colorado	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+51	Hatcher's spring. Swallows nests, Lance Formation.		Converse	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+52	Stripping of the surface at Quarry D; Charles Gilmore & Mr Patten.	Sheep Creek	Albany	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+53	Boles Ranch, Little Medicine			Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+54	T. B. Ranch.	Freezeout Hills		Wyoming	USA			1900		Y			5x7	Y		Y		Y			
+55	Marsh Quarry, Canon City, Colorado. Operated by Mr. Utterback in 1901.	Cañon City	Fremont	Colorado	USA			1901	J B Hatcher	Y			5x7	Y		Y		Y			
+56	Knowels Ranch on Badland Creek; Oligocene in fore- and background.		Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y		Y		Y	See #122		
+57	Carnegie Creek; sandstone one mile below camp.	Sheep Creek, near	Albany	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+58	Troublesome Creek vicinity.	Troublesome Creek	Carbon	Wyoming	USA			1899		Y			5x7	Y		Y		Y	Country around Troublesome Creek		
+59	Hogbacks in vicinity of Troublesome Creek.	Troublesome Creek	Carbon	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+60	Jurassic exposures on Troublesome Creek.	Troublesome Creek	Carbon	Wyoming	USA			1899		Y			5x7	Y		Y		Y			
+61	Hatcher's spring.	Hatcher's Spring	Converse	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y	The spot where the first skull of Triceratops was discovered by cowboys from 999 Ranch on Cheyenne River. Horn of same specimen discovered by Hatcher in Dr Jeserun(?)'s office in 1888 in Douglas, Wyoming, and led to discovery of famous dinosaur and	Cretaceous mammal field of Converse County on Lance Creek.	
+62	Nipple at Marsh Quarry.	Cañon City	Fremont	Colorado	USA			1900?	J B Hatcher	Y			5x7	Y		Y		Y			
+63	Expedition 1900. Picket Lake on Red Desert.	Red Desert		Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y	Lower Eocene (Wasatch) formation in background		
+64	Expedition 1900. Lance Formation on Lance Creek; broken down Mesozoic strata.	Lance Creek	Converse	Wyoming	USA			1900	J B Hatcher	Y			5x7	Y		Y		Y			
+65	Expedtion 1900. Back of T. B. Ranch at Freezeout Hills, showing eroded fragments of a sandstone ledge.	Freezeout Hills		Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+66	Expedition 1900. Looking toward the Freezeout Hills.			Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+67	Expedition 1900. Jurassic sandstone on Beaver Creek, 3 miles above Hailey, Wyoming.	Wind River Basin		Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+68	Expedition 1900. Concretions in the Lance Creek on Lance Creek.	Lance Creek	Converse	Wyoming	USA			1900	J B Hatcher	Y			5x7	Y		Y		Y			
+69	Expedition 1900. Cretaceous formation. Remarkable exposure of eroded concretions.		Converse	Wyoming	USA			1900	J B Hatcher	Y			5x7	Y		Y		Y			
+70	Expedition 1900. Tertiary overlaying Mesozoic formation, east bluff of Beaver Creek.	Wind River Basin		Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+71	Expedition 1900. Benton shale.	Sheep Creek	Albany	Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+72	Expedition 1900. Sandstone erosion at Freezeout.			Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+73	Dakota sandstone on Sheep Creek, one mile below Camp Carnegie showing where Sheep Creek once cut through the sand rock.	Sheep Creek	Albany	Wyoming	USA			1901	O A Peterson	Y			5x7	Y		N			Plate missing.		
+74	Lower Miocene Pine bluffs, northwest of Harrison.	northwest of Harrison	Sioux	Nebraska	USA			1901	O A Peterson	Y			5x7	Y		Y		Y			
+75	Entrance to Jefferson Canyon, looking down canyon near Jefferson Island.	Jefferson Canyon	Jefferson	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+76	White River beds; Sallie & Henry Hoellim fishing.	Jefferson Valley	Jefferson	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+77a	Tertiary bluffs, Deep Creek, Townsend.	Townsend	Broadwater	Montana	USA	7	24	1902	Earl Douglass	Y			5x7	Y		Y		Y			
+77b	Tertiary bluffs, Deep Creek, Townsend.	Townsend	Broadwater	Montana	USA	7	24	1902	Earl Douglass	Y			5x7	Y				Y			
+78	White River beds, northeast of Winston.	Northeast of Winston	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+79	Deep River; White River beds and carboniferous opposite Cold Springs.	Opposite Cold Springs	Jefferson?	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+80	Tertiary formation. Rhoades Ferry, east of Winston.	Roades Ferry; east of Winston	Broadwater	Montana	USA	9	28	1902	Earl Douglass	Y			5x7	Y		Y		Y			
+81	White River Formation, near Winston.	near Winston	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+82	Deep River beds; concentric structure, containing vertebrate fossils. Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+83	Camp near Fossil Hill; Deep River beds southeast of Canyon Ferry. Tent, wagon, and two men standing.	Southeast of Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+84	Contact between White River and eruptive rocks. Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+85	White River beds, northeast of Helena.	Northeast of Helena	Lewis & Clark	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+86	Quaternary. Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+87	Tertiary on Deep Creek, near Townsend.	Deep Creek; near Townsend	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+88	White River beds north of Beaver Creek.	North of Beaver Creek		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+89	Ripple marks; White River beds, Lower Madison Valley. Saddle horse waiting.	Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+90	White River beds. Beaver Creek northeast of Winston.	Beaver Creek; northeast of Winston	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+91	White River beds. West view of river. Lower Madison Valley. Man fishing.	Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+92	Bank with Procamelus (Miocene). Jacoby's Ranch, Lower Madison Valley.	Jacoby's Ranch; Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+93	Looking south from Fossil Hill, near Canyon Ferry. Lake Sewell.	Near Canyon Ferry; Lake Sewell	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+94	Looking west from Fossil Hill. Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+95	Fossil Hill. Canyon Ferry. Fence in middle foreground.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+96	Loup Fork beds. Lower Madison Valley. Where Procamelus skull was found.	Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+97	Fluvial deposit. Loup Fork. Lower Madison Valley.	Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+98	White River bed and Loup Fork. Lower Madison Valley.	Lower Madison Valley		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+99	Mr. Flaherty's family, etc. North Boulder Valley. Cold Springs.	North Boulder Valley; Cold Springs		Montana	USA	6		1902	Earl Douglass	Y			5x7	Y		Y		Y			
+100	Smoothed limestone hills, south Boulder River.	South Boulder River		Montana	USA	6		1902	Earl Douglass	Y			5x7	Y		Y		Y			
+101	White River. McCarty's Mountain.	McCarty's Mountain		Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+102	Belt Formation. Below Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA	8		1902	Earl Douglass	Y			5x7	Y		Y		Y			
+103	Quaternary and White River. Canyon Ferry.	Canyon Ferry	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+104	Tertiary opposite Cold Spring. Deep River, White River and Carboniferous.		Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+105	Tertiary beds, Deep Creek near Townsend. Looking up creek.	Deep Creek near Townsend	Broadwater	Montana	USA			1902	Earl Douglass	Y			5x7	Y		Y		Y			
+106	Lance Creek, Converse County.		Converse	Wyoming	USA			1900?	J B Hatcher	Y			5x7	Y		Y		Y			
+107	Red Butte, Cameron Meadows.			Wyoming	USA			1900?		Y			5x7	Y		Y		Y			
+108	Expedition 1900. Wind River Mountains. Taken from the crossing of Sweetwater River at the old emigrant trail in Wyoming. Mountains are some 60 to 80 miles in the distance.			Wyoming	USA			1900	O A Peterson	Y			5x7	Y		Y		Y			
+108a	General view of Oreodon or upper Oligocene formation on Badland Creek. (Courthouse and Church buttes lower Miocene in background.)		Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y		Y		Y			
+109	Expedition 1902. Oligocene formation. Upper Titanotherium sandstone inn foreground; Oreodon beds in background. Extreme background to left possibly Miocene. `Toadstool Park'. Two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y		Y		Y			
+110	Nonconformity between the Titanotherium and Oreodon beds, two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y				Y			
+111	Oligocene exposure. General view of Oligocene exposure two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y				Y			
+112	Eroded Titanotherium sandstone ledge two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+113	Contact between Titanotherium beds and Oreodon beds two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y				Y			
+114	Expedition 1902. Oligocene formation showing banding in the Oreodon beds two miles west of Adelia.	Adelia	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+115	Showing nonconformity between Titanotherium beds and the overlaying Oreodon beds.	Adelia?	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+116	Erosion in the Titanotherium beds. Uras Sand Creek.		Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+117	Oligocene. Oreodon beds. Badland Creek [two people on bluff].	Badland Creek	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y		Y		Y			
+118	Small ranch. The little round butte in background possibly Gehring sand.		Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+119	Expedition 1902. Monroe Creek. Fossil hunters camp.	Monroe Creek	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y		Y		Y			
+120	Expedition 1902. Monroe Creek. Fossil hunters camp.	Monroe Creek	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y		Y		Y			
+121	Lower Miocene, Lower Harrison beds, Pine Ridge north of Harrison.		Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y		Y		Y			
+122	Oligocene formation on Prairie Dog Creek (Knowels Ranch).	Knowels Ranch	Sioux	Nebraska	USA			1902?	O A Peterson	Y			5x7	Y				Y	See also #56.		
+123	Expedition 1902. Oligocene. View of Hat Creek Basin from the head of Prairie Dog Creek. Note: Pine Ridge (Lower Miocene) in the distant background.	Prairie Dog Creek	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+124	Expedition 1902. Oligocene formation. Badlands. Hat Creek Basin.	Hat Creek Basin	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+125	Expedition 1902. Oligocene Badlands, west Nebraska. Southern border of Hat Creek Basin.	Hat Creek Basin	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+126	Expedition 1902. Upper Oligocene. Hat Creek Basin, vicinity of Sand Creek.	Hat Creek Basin	Sioux	Nebraska	USA			1902	O A Peterson	Y			5x7	Y				Y			
+127	Middle Miocene and Oligocene on top covered by vegetation. Looking northeastward from the divide between Platte River and Whistle Creek.	Platte River/Whistle Creek divide	Sioux	Nebraska	USA					Y			5x7	Y				Y			
+128	Middle Miocene and Pliocene on top exposure on the divide between Platte River and Whistle Creek.	Platte River/Whistle Creek divide	Sioux	Nebraska	USA					Y			5x7	Y				Y			
+129	Concretions at the top of the Lower Harrison beds, Whistle Creek.	Whistle Creek	Sioux	Nebraska	USA					Y			5x7	Y				Y			
+130	Head of Warbonnet Canyon. Lower Miocene.	Warbonnet Canyon	Sioux	Nebraska	USA				O A Peterson	Y			5x7	Y				Y			
+131	Loup Fork beds. Head of Warbonnet Creek.	Warbonnet Creek	Sioux	Nebraska	USA				O A Peterson	Y			5x7	Y				Y			
+132	Hailey, Wyoming. Wind River Basin, showing Benton Shales in background. Ranch outbuildings and wagon; camp on rise in background.	Hailey		Wyoming	USA			1900	O A Peterson	Y			5x7	Y				Y			
+133	Expedition 1903. Patiently waiting [riderless horse]. In the Badlands of northwest Nebraska (Oligocene).			Nebraska	USA			1903	O A Peterson	Y			5x7	Y				Y			
+134	Expedition 1904. Loup Fork (=Lower Harrison beds). Pine Ridge northwest of Harrison (head of Warbonnet Creek).		Sioux	Nebraska	USA			1904	O A Peterson	Y			5x7	Y				Y			
+135	On Running Water. Digging out a specimen in the Lower Miocene formation.		Sioux	Nebraska	USA			1905?	W J Holland & O A Peterson	Y			5x7	Y		Y		Y			
+136	Expedition 1906? Tertiary formation in Montana. Man climbing.			Montana	USA			1906?	Earl Douglass	Y			5x7	Y				Y			
+137	O.A. Peterson in Dinosaur Camp. Packing up the day's collecting.	Dinosaur National Monument		Utah	USA			1911	Earl Douglass?	Y			5x7	Y		Y		Y			
+138	Dinosaur Quarry. View looking northeastward from quarry (for panoramic group no. 1).	Dinosaur National Monument	Uintah	Utah	USA			1911	Earl Douglass?	Y			5x7	Y		Y		Y	But no print in book as yet.		
+139	In a park of the Uinta Mountains. Wagon with standing man and young boy in wagon.		Uintah	Utah	USA			1911	Earl Douglass?	Y			5x7	Y				Y			
+140	Crossbedding in the Triassic sandstone at Green River.		Uintah	Utah	USA			1911	Earl Douglass?	Y			5x7	Y				Y			
+141	View of Green River and Ashley valleys. Jura-Triassic, the Dinosaur Quarry and the Dakota sandstones in the foreground and the Cretaceous series in the distance (duplicate for panoramic group no. 2).	Dinosaur National Monument	Uintah	Utah	USA			1911	Earl Douglass?	Y			5x7	Y		Y		Y			
+142	Dinosaur Quarry. View looking eastward from quarry (for panoramic group no. 1).	Dinosaur National Monument	Uintah	Utah	USA			1911	Earl Douglass?	Y			5x7	Y		Y		Y			
+143	The Red Beds Trias and underlaying beds, Green River (near Dinosaur Quarry).		Uintah?	Utah	USA			1911	Earl Douglass?	Y			5x7	Y				Y			
+144	Flowers in the desert in early June, Uinta Basin.	Uinta Basin	Uintah	Utah	USA	6	12	1911	O A Peterson	Y			5x7	Y				Y			
+145	The start for Uinta Basin (Ainge home on Green River).	Green River		Utah	USA			1912	O A Peterson	Y			5x7	Y				Y			
+146	McCooks Crossing on White River. Looking upstream. Horizon A in the background (Uinta sediment).			Utah	USA			1912	O A Peterson	Y			5x7	Y				Y			
+147	Chipeta Wells. Horizon B of the Uinta sediments.	Chipeta Wells	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+148	Panoramic view of horizons A, B and C at eastern end of Uinta Basin. Taken at breaks of the White River, three miles west of Wagonhound.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y				Y			
+149	Panoramic view of White River Canyon, three miles west of Wagonhound Canyon. Foreground: north side of stream to right of negative looking southwest. Background: south of stream.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y				Y	Three negatives in group. This is Negative A.		
+150	White River station at Wagonhound. Horizon A and Green River shales.	Wagonhound	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+151	About to have breakfast at camp. Chipeta Wells.	Chipeta Wells	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y	Negative 1.		
+152	Camp at Chipeta Wells. Horizon B; Uinta Basin.	Chipeta Wells	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+153	Chipeta Wells. Station House and barn. Burton and family on steps.	Chipeta Wells	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+154	Fighting the mosquitoes with a sage brush. Evening in July on White River.		Uintah	Utah	USA	7		1912	O A Peterson	Y			5x7	Y		Y		Y			
+155	Mr Parker and Mr Burton and a small pack outfit ready for White River. Chipeta Wells.	Chipeta Wells	Uintah	Utah	USA	10		1912	O A Peterson	Y			5x7	Y		Y		Y			
+156	White River. Fossil hunters washing clothes Sunday morning.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+156a	White River. Fossil hunters washing clothes Sunday morning.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+157	The Big Bonanza gilsonite mine at top of Wagonhound Canyon. Horizon of the Uinta Basin.	Wagonhound Canyon	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y	No print in book as yet.		
+158	Looking south. Breaks of White River on south side of stream. Panoramic view.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y				Y	Negative C.		
+159	Uinta Railroad Company freight outfit starting from Chipeta Wells for Ouray.	Chipeta Wells	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+160	Ready to start for the Uinta Basin in 1912 at Alf Ainges place on Green River, Jensen.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+161	Breakfast in camp. Chipeta Wells.	Chipeta Wells	Uintah	Utah	USA	10		1912	O A Peterson?	Y			5x7	Y		Y		Y			
+162	Uinta Eocene. Eroded sandstone. Horizon B near White River crossing at Wagonhound Canyon on White River. `Castle Rock'.		Uintah	Utah	USA			1912	Earl Douglass & O A Peterson	Y			5x7	Y				Y			
+163	White River, Uinta Basin. Panoramic view. Foreground: White River with Castle Rock on the south, and the Breaks of White River to the north of White River, at McCooks Crossing.		Uintah	Utah	USA			1912		Y			5x7	Y				Y			
+163a	Panoramic view (foreground; White River with Castle Rock on the south and the Breaks of White River to the north of White River at McCooks Crossing).		Uintah	Utah	USA			1912		Y			5x7	Y				Y			
+164	An exposure of badlands northwest of Chipeta Wells. Characteristic features of badlands in Horizon C of Uinta Basin. Saddle horse in middle foreground.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+165	Breaking down of a soft sandstone ridge, in Horizon B near Chipeta Wells.		Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y				Y			
+166	Well No. 2 (Uinta Railroad & Gilsonite Company in Uinta Basin). Located in Horizon B in the main fossil locality where most material was found by different parties.	Well No. 2	Uintah	Utah	USA			1912	O A Peterson	Y			5x7	Y		Y		Y			
+167	Elephant Rock. Wagonhound Canyon on White River. Horizon A; Uinta sediment.	Wagonhound Canyon	Uintah	Utah	USA			1912		Y			5x7	Y				Y			
+168	Just before starting for Utah. Taken in front (south) of the building. Carnegie Institute, Pittsburgh [in front of Lecture Hall steps]. Arthur Coggeshall and O.A. Peterson.	Pittsburgh	Allegheny	Pennsylvania	USA			1922		Y			5x7	Y		Y		Y			
+169	Camp set up on Douglass Farm near Jensen dinosaur quarry; for the purpose of taking a moving picture. Earl Douglass and six other men (as yet unidentified) seated in front of tent.	Dinosaur National Monument	Uintah	Utah	USA			1922		Y			5x7	Y				Y	Out of focus.		
+170	Expedition 1922. Setting for moving picture near the Dinosaur Monument quarry. Prospecting along steep cliff. Douglass, Peterson and Kay.	Dinosaur National Monument	Uintah	Utah	USA			1922		Y			5x7	Y		Y		Y			
+171	Expedition 1922. Setting for moving picture near the Dinosaur Monument quarry. Arthur Coggeshall on cliff face.	Dinosaur National Monument	Uintah	Utah	USA			1922		Y			5x7	Y		Y		Y			
+172	Expedition 1922. Setting for moving picture near the Dinosaur Monument quarry; Roy Kay, Earl Douglass, O.A. Peterson, and Arthur Coggeshall.	Dinosaur National Monument	Uintah	Utah	USA			1922		Y			5x7	Y		Y		Y	See also #1013.		
+173	In Dinosaur quarry. A setting for moving picture. Arthur Coggeshall with tripod camera filming another man, probably Earl Douglass, on quarry face.	Dinosaur National Monument	Uintah	Utah	USA			1922		Y			5x7	Y		Y		Y	Lower right corner of negative broken off.		
+174	Expedition 1922. The mules. Pulling man in wagon.		Uintah?	Utah?	USA			1922?		Y			5x7	Y				Y			
+174a	Expedition 1922. The mules.		Uintah?	Utah?	USA			1922?		Y			5x7	Y				TO BE MADE	This is not exactly the same as #174: the mules have moved. But it is a reverse photo, with the emulsion on the reverse side of the glass.		
+175a	Road to Teleodus Quarry west of Vernal.		Uintah	Utah	USA					Y			5x7	Y		Y	Y	Y	Glass negative has 4 pictures on one plate.		
+175b	Muck car in quarry.	Dinosaur National Monument	Uintah	Utah	USA					Y			5x7	Y		Y	Y	Y	Glass negative has 4 pictures on one plate.		
+175c	Hauling dinosaur bones to the railroad.	Dinosaur National Monument	Uintah	Utah	USA				O.A. Peterson	Y			5x7	Y		Y	Y	Y	Glass negative has 4 pictures on one plate. Original cellulose negative of this is #81 in the OAP foto file.		
+175d	Titanothere Quarry (Diplacodon), Uinta C beds.		Uintah	Utah	USA					Y			5x7	Y				Y	Glass negative has 4 pictures on one plate.		
+176	Dinosaur Quarry (from `Life' magazine; January 1937).	Dinosaur National Monument	Uintah	Utah	USA					Y			4x5	Y							
+177	Airing out the bedding on Sunday morning after a rain. At Castle rock Ranch, Running Water.	Castle Rock Ranch	Sioux	Nebraska	USA			1905?		Y			5x7	Y		Y		Y			
+178	The S-E Ranch on Warbonnet Creek. Showing the foliage growing on the Oligocene formation.		Sioux	Nebraska	USA					Y			5x7	Y		Y		Y			
+179	Taking out a camel skull and neck on the Upper Harrison beds on White River.		Sioux	Nebraska	USA					Y			5x7	Y		Y		Y			
+180	Upper Lance Creek. Oligocene buttes in left foreground resting on the Lance Formation.			Wyoming	USA				J B Hatcher	Y			5x7	Y				Y			
+181a	Two men eating in tent; Jacob Wortman on left, Walter Granger at right.								AMNH photo	Y			5x7	Y		Y		Y	Camps (glass negative has 2 pictures on one plate; AMNH photos - Bone Cabin?)		
+181b	Camp: man with tent and wagon.												5x7			Y		Y	Camps (glass negative has 2 pictures on one plate; AMNH photos - Bone Cabin?)		
+182a	Apatosaurus vertebrae, Dinosaur Quarry.			Utah	USA					Y			5x7	Y		Y		Y	Glass negative has 3 pictures on plate.		
+182b	Apatosaurus humerus and scapula; Dinosaur Quarry.												5x7			Y		Y	Glass negative has 3 pictures on plate.		
+182c	Teleodus quarry, Duchesne River beds.												5x7			Y		Y	Glass negative has 3 pictures on plate.		
+183	Geologic time chart with pictures.									Y			5x7	Y				Y			
+184	Mrs Douglass and Gawin.	Dinosaur National Monument		Utah	USA					Y			4x5	Y				TO BE MADE	No print in book as yet.		
+185	Naginey Cave. Opened up by the National Limestone Quarry, Naginey, Mifflin County, PA, near Lewistown, PA. Men removing the stalagmite.	Naginey Cave, near Lewistown	Mifflin	Pennsylvania	USA			1911	Arthur S Coggeshall	Y			5x7	Y		Y		Y	See 15th Annual Report for year ending March 31; 1912: `The most notable addition to the Mineralogical Section during the year was a large number of beautiful calcite specimens taken from a cave at Naginey; Mifflin County; Pennsylvania.'		
+186	Naginey Cave opened by National Limestone Quarry, Naginey, Miffline County, PA, near Lewistown, PA.	Naginey Cave, near Lewistown	Mifflin	Pennsylvania	USA			1911	Arthur S Coggeshall	Y			5x7	Y		Y		Y			
+187	Naginey Cave. Stalagmites in Naginey Cave.	Naginey Cave	Mifflin	Pennsylvania	USA			1911	Arthur S Coggeshall	Y			5x7	Y		Y		Y			
+188	Quarry at Gettysburg where fossil dinosaur tracks were found.		Adams	Pennsylvania	USA					Y			5x7	Y				Y			
+189	Published print of sand waves carved by an ebb tide.									Y			4x5 (3¼ x 4)	Y				TO BE MADE			
+190	Green River shales; near Rifle (photo of a photo print).	Near Rifle	Garfield	Colorado	USA					Y			4x5 (3¼ x 4)	Y				TO BE MADE			
+191	Dinosaur map (part of Dinosaur quarry map; 2 copies).									Y			4x5 (3¼ x 4)	Y				TO BE MADE			
+192	Birthoud Pass (2 copies).			Utah?	USA					Y			4x5 (3¼ x 4)	Y				TO BE MADE			
+193	Published photo: Hauling the collection out of Sand Creek.									Y			4x5 (3¼ x 4)	Y				TO BE MADE			
+194	Loading boxes of dinosaur bones onto narrow-gauge railroad at Watson (Uinta R.R.) (photo of a photo print).	Watson		Utah	USA					Y			4x5 (3¼ x 4)	Y		Y		Y			
+195a	View of bones in Rhinoceros Quarry; Brown's Park Formation on Weller Ranch.	Weller Ranch	Moffat	Colorado	USA			1926										TO BE MADE			
+195b			Moffat	Colorado	USA			1926										TO BE MADE			
+195c	Crossbedding in the Brown's Park Formation at mouth of Sand Creek	Sand Creek	Moffat	Colorado	USA			1926										TO BE MADE			
+195d	View of bones in Rhinoceros Quarry.	Weller Ranch	Moffat	Colorado	USA			1926										TO BE MADE			
+195e	Weller Horizon; Brown's Park Formation.	Weller Ranch	Moffat	Colorado	USA			1926										TO BE MADE			
+195f	Looking east down Weller Draw on Weller Ranch; Brown's Park Formation on left; Cambrian quartzite on right.	Weller Ranch	Moffat	Colorado	USA			1926										TO BE MADE			
+195g	View showing dip of Brown's Park Formation at mouth of Sand Creek.	Sand Creek	Moffat	Colorado	USA			1926										TO BE MADE			
+195h			Moffat	Colorado	USA			1926										TO BE MADE			
+195i	(no negative)		Moffat	Colorado	USA			1926										TO BE MADE			
+195j	(no negative) Looking northwest from west rim of Adobe Town.		Moffat	Colorado	USA			1926										TO BE MADE			
+195k	(no negative) Looking southeast from west rim of Adobe Town.		Moffat	Colorado	USA			1926										TO BE MADE			
+196	Envelope labeled `negatives of field work; Sheep Creek; Wyoming?' etc (nine 3x5 negatives). (Agate Springs Quarry; borrowed by Bob Hunt; 11/13/1981).																	TO BE MADE			
+197	Envelope labeled `rock sculpture; Stone Cappi Tower; Devil's Play Ground; Utah' (thirty 3x5 negatives; one print).	Devil's Playground		Utah	USA													TO BE MADE			
+198	Princeton expedition to Patagonia; 1897-1898. View near Cape Fairweather showing the concentric manner in which the shingle formation has been deposited.	Patagonia			Argentina			1897-1898	J B Hatcher									TO BE MADE			
+199	Princeton expedition to Patagonia; 1897-1898. On the way from the Cordillera Mountains to the Atlantic coast.	Patagonia			Argentina			1897-1898	J B Hatcher				5x7					Y			
+200	CM 4369 Mene rhombea.	Monte Bolca			Italy					Y			11x12					TO BE MADE	Bayet Collection. Charles Eastman: Fossil Fishes of Monte Bolca, Italy. Memoirs of Carnegie Museum VI(5)		
+201	CM 5243 Ductor vestenae.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 6(5):270 (as Ductor leptosomus)
+202	CM 4304 Dasyatis muricata.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 6(5), pl. 43 (as Trygon muricata)
+203	CM 4331a Eolabroides szajnochae and ?Rhombus minimus?	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), part 2, pl. 46, fig. 3.
+204	CM 5303 Eolabroides szajnochae.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), part 2, pl. 46, fig. 2.
+205	CM 5303 Eolabroides szajnochae.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), part 2, pl. 46, fig. 2.
+206	CM 5303 Eolabroides szajnochae.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), part 2, pl. 46, fig. 2.
+207	CM 5306 Eozanclus brevirostris.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), part 2, pl. 47, fig. 3, as Zanclus brevirostris.
+208	CM 5310 Rhamphosus aculeatus (juvenile).	Monte Bolca			Italy					Y			5x7	Y				Y	Bayet Collection. Charles Eastman: Fossil Fishes of Monte Bolca; Italy. Memoirs of Carnegie Museum VI(5): Pl XLIV, fig 3 (as R. rastrum)		Eastman: MCM 6(5), part 2, pl. 44, fig. 3, as Rhamphosus rastrum.
+209	CM 5314 and 5314a Scophthalmus minimus.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 45, figs. 1-2, as Eobothus minimus Ag.
+210	CM 5319 Gobius microcephalus and CM 5320 Cyclopoma pygmaeum.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 45, fig. 6 (5319); pl. 47, fig. 2 (5320, as Cyclopoma micracanthum.
+211	CM 5328 Rhamphosus rastrum; CM 5308 Amphistium bozzianum; and CM 5309a Pterygocephalus paradoxus.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 44, fig. 2 (5328); pl. 45, fig. 4 (5308); fig. 5 (5309a).
+212	CM 5305 Archaephippus asper.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 46, fig. 1, as Ephippus rhombus.
+213	CM 5329 Cyclopoma micracanthum.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 45, fig. 3.
+214	CM 5331 fish and CM 5307 Odonteus sparoides.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 6(5), pl. 47, fig. 1 (5307).
+215	CM 4020 Mene oblonga.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 92, fig. 3.
+216	CM 4208 Odonteus sparoides.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 1.
+217	CM 4212 Cyclopoma pygmaeum.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 5.
+218	CM 4454 Naso nuchalis.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 95, fig. 1.
+219	CM 4457 Scophthalmus minimus.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 95, fig. 1.
+220	CM 4467 Exellia velifer.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 96, fig. 1, as Semiophorus.
+221	CM 4455 Holocentrus macrocephalum.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 92, fig. 1.
+222	CM 4532 Trachynotus tenuiceps.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 91, fig. 1.
+223	CM 4537 Carangopsis dorsalis.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 91, fig. 2.
+224	CM 4542 Sparnodus elongatus.	Monte Bolca			Italy					Y			5x7	Y				Y			Eastman: MCM 4(7), pl. 91, fig. 3.
+225	CM 4015 Urosphen dubia.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 90, fig. 2
+226	CM 4228 Cyclopoma micracanthum.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 4
+227	CM 4228 Cyclopoma micracanthum; CM 4212 Cyclopoma pygmaeum; CM 4230 Seriola prisca; and CM 4501 Lates gracilis.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 4 (4228), fig. 5 (4212), fig. 6 (4230); pl. 99, fig. 2 (4501)
+228	CM 4298 Seriola prisca and CM 4439 Eocottus veronensis.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 1 (both)
+229	CM 4312 Blochius longirostris.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 90, fig. 3
+230	CM 4350 Vomeropsis longispinus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 93, fig. 2
+231	CM 4404 Callipteryx speciosus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 101, fig. 1
+232	CM 4414 Trachynotus cf. tenuiceps.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 100
+233	CM 4416 Sparnodus elongatus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 98, fig. 2
+234	CM 4439 Acanthonemus subaureus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 94
+235	CM 4441a Naseus rectifrons and CM 4415 Zanclus brevirostris.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 97, fig. 2 (4441a), fig. 3 (4415)
+236	CM 4463 Ephippus rhombus and smaller unidentified fish.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 92, fig. 2 (4463)
+237	CM 4469a Seriola (Lichia) prisca.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 101, fig. 2
+238	CM 4480 Pycnodus gibbus and CM 5238 Ephippus oblongus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 95, fig. 2 (5238), fig. 3 (4480)
+239	CM 4489a Vomeropsis longispinus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 93, fig. 1
+240	CM 4499 Urosphen dubia and CM 4230 Seriola (Lichia) prisca.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 96, fig. 2 (4499), fig. 6 (4230)
+241	CM 4504 Gobius microcephalus; CM 4215 Pterygocephalus paradoxus and CM 4501 Lates gracilis.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 96, fig. 4 (4504), fig. 5 (4215); pl. 99, fig. 2 (4501)
+242	CM 4545 Seriola (Lichia) prisca.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 99, fig. 3
+243	CM 5233 Eomyrus formosissimus.	Monte Bolca			Italy					Y			8x10	Y				Y			Eastman: MCM 4(7), pl. 90, fig. 1
+244	CM 866 Caturus furcatus var. macrurus.	Solnhofen		Bavaria	Germany					Y			5x7	Y				Y			Eastman: MCM 6(7), pl.. 61, fig. 3.
+245	CM 866 Caturus furcatus, var. macrurus and CM 4690 Ophiopsis procera.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 61, fig. 3 (866); pl. 70, fig. 1 (4690)
+246	CM 866 Caturus furcatus, var. macrurus and CM 4764 (?) Macrosemius rostratus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y	CM 4764 (?) Macrosemius rostratus specimen is missing.		Eastman: MCM 6(7), pl. 61, fig. 4 (866); pl. 62, fig. 2 (4764)
+247	CM 871 Caturus furcatus and CM 872 Caturus furcatus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 60, fig. 2 (871); pl. 59, fig. 3 (872)
+248	CM 4029 Parathrissops furcatus HOLOTYPE.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 59, fig. 2
+249	CM 4030 Thrissops subovatus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 72, fig. 2, as T. formosus
+250	CM 4108 and CM 4109 Leptolepis sprattiformis.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 73, figs. 1-2
+251	CM 4407 Gyrodus circularis.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 69, fig. 2
+252	CM 4408 Belemnobatis sismondae.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 67, fig. 1
+253	CM 4456 and CM 4456a Mesodon macropterus; CM 4451 Caturus furcatus; CM 4856 Ophiopsis attenuata; and CM Histionotis reclinus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 61, figs. 1-2 (4456 & 4456a); pl. 68, fig. 1 (4451); pl. 62, fig. 1 (4856), fig. 4 (5002)
+254	CM 4690 Ophiopsis procera and CM 5017 Anaethalion knorri.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 70, fig. 1 (4690); pl. 73, fig. 4 (5017)
+255	CM 4717 Thrissops salmoneus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 72, fig. 1
+256	CM 4724 Caturus pachyurus and CM 4850 Belonostomus muensteri.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 59 (4724); pl. 60 (4850)
+257	CM 4729 Pholidophorus macrocephalus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 65, fig. 3
+258	CM 4730 Lepidotus ovatus HOLOTYPE.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 58, fig. 2
+259	CM 4732 Megalurus lepidotus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 70, fig. 3
+260	CM 4734 Gyrodus macrophthalmus.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 69, fig. 1
+261	CM 4737 Squatina minor.	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 57, fig. 3
+262	CM 4762 Homoeolepis suborbiculata HOLOTYPE	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 58, fig. 3
+263	CM 4766 Sauropsis depressus HOLOTYPE and smaller unidentified fish	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 60, fig. 3
+264	CM 4772 Sauropsis sp. nov	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 66, fig. 1
+265	CM 4774 Caturus furcatus	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 72, fig. 3
+266	CM 4793 Pholidophorus macrocephalus	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 58, fig. 1
+267	CM 4809 Caturus furcatus	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 61, fig. 5
+268	CM 4854 Megalurus elegantissimus and CM 5049 Caturus furcatus	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 70, fig. 2 (4854); pl. 73, fig. 3 (5049)
+269	CM 5397 Squatina alifera	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 67, fig. 2
+270	CM 5398 Hypsocormus insignis	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 71, fig. 3
+271	CM 5399 Hypsocormus macrodon	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 71, fig. 1
+272	CM 5400 Hypsocormus macrodon	Solnhofen		Bavaria	Germany					Y			8x10	Y				Y			Eastman: MCM 6(7), pl. 71, fig. 2
+273	Fossil fish	Solnhofen		Bavaria	Germany																
+274	CM 5396 Rhinobatus bugesiacus	Solnhofen		Bavaria	Germany														Bayet Collection. Charles Eastman: Fossil fishes from Solnhofen, Bavaria. Memoirs of Carnegie Museum.		
+275	CM 4381 Dapedius politus								Sydney Prentice		Y		8x10	Y				Y			
+276	CM 4388 Dapedius colei								Sydney Prentice		Y		8x10	Y				Y			
+277	CM 5135 Dapedius sp								Sydney Prentice		Y		8x10	Y				Y			
+278	CM 5136 Dapedius sp								Sydney Prentice		Y		8x10	Y				Y			
+279	CM 5137 Dapedius sp								Sydney Prentice		Y		8x10	Y				Y			
+280	CM 4671 Dapedius politus								Sydney Prentice		Y		8x10	Y				Y			
+281	CM 4739 Dapedium politus								Sydney Prentice		Y		8x10	Y				Y			
+282	CM 4740 Tetragnolis sp								Sydney Prentice		Y		8x10	Y				Y			
+283	CM 4399 Notagogus inimontis	Cerin			France					Y			5x7	Y				Y			Eastman: MCM 6(6), pl. 50, fig. 2.
+284	CM 4079 Oeonoscopus elongatus	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 56, fig. 2
+285	CM 4779a Oeonoscopus elongatus HOLOTYPE	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 56, fig. 3
+286	CM 4081 Pholidophorus sp	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 56, fig. 1
+287	CM 4084 Microdon bernardi	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 52, fig. 1
+288	CM 4090 Microdon wagneri	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 53, fig. 1
+289	CM 4301 Caturus furcatus	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 55, fig. 1
+290	CM 4320 Microdon wagneri	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 53, fig. 2
+291	CM 4343 Belonostomus muensteri	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 55, fig. 2
+292	CM 4396 Leptolepis dubia	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 51, fig. 1
+293	CM 4666 Microdon sauvanausi	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 54, fig. 2
+294	CM 5107 Microdon egertoni	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 54, fig. 1
+295	CM 5112 Belonostomus muensteri	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 55, fig. 3
+296	CM 5118 Microdon bernardi	Cerin			France					Y			8x10	Y				Y			Eastman: MCM 6(6), pl. 52, fig. 2
+297	CM 5401 Lepisosteus sp									Y			8x10	Y				Y			
+298	CM 4102 Portheus mollosus									Y			8x10	Y				Y			
+299	CM 4471 Stenopterygius sp.									Y			5x7	Y				Y	See also negative 655.		Founder's Day Report, 1903.
+300	Fossil fish									Y			8x10	Y				Y			
+301	Fossil fish									Y			8x10	Y				Y			
+302	Fossil fish									Y			8x10	Y				Y			
+303	Fossil fish									Y			8x10	Y				Y			
+304	Fossil fish									Y			8x10	Y				Y			
+305	Fossil fish									Y			8x10	Y				Y			
+306	Fossil fish																				
+307	Fossil fish																				
+308	Fossil fish									Y			5x7	Y				Y			
+309	Fossil fish									Y			5x7	Y				Y			
+310	Illustration of fossil fish published in Philos. Trans. Vol. XLIX, Tab.IX, p. 297.									Y			5x7	Y				Y			
+311	Fossil fish									Y			5x7	Y				Y			
+312	Fossil fish									Y			5x7	Y				Y			
+313	Fossil fish									Y			5x7	Y				Y			
+314	Seriola prisca.									Y			5x7	Y				Y			
+315	Diplomystus goodei?									Y			5x7	Y				Y			
+316	Hybodus hauffianus	Holzmaden			Germany					Y			5x7	Y				Y			
+317	Dercetis sp. on slab.									Y			5x7	Y				Y			Natural Science, vol. 12, pl. 10
+318	Diplomystus sp									Y			8x10	Y				Y	Property of Dr. W.J. Holland		
+319	Illustration of front part of Allosaurus								Sydney Prentice	Y			8x10	Y				Y			
+320	Allosaurus model								Sydney Prentice	Y			8x10	Y				Y			
+321	Allosaurus model								Sydney Prentice	Y			8x10	Y				Y			
+322	Allosaurus model																				
+323	Allosaurus model																				
+324	Allosaurus model																				
+325	Published illustration of restoration of Allosaurus									Y			8x10	Y				Y			
+326	Nothosauridae; Pachypleurosaurus; Pachypleurosaurus - not for publication																				
+327	Nothosauridae; Nothosauridae; Mystriosaurus bollensis - not for publication																				
+328	Nothosauridae; nov. gen. Unicum; Nothosauridae - not for publication																				
+329	CM 12020 Camarasaurus lentus skull; left side									Y			8x10	Y				Y			
+330	CM 12020 Camarasaurus lentus skull and jaws									Y			8x10	Y				Y			
+331	CM 12020 Camarasaurus lentus lower jaw									Y			8x10	Y				Y			
+332	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+333	CM 3018 Apatosaurus louisae HOLOTYPE anterior caudal vertebrae (right side view)									Y			8x10	Y				Y			
+334	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+335	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae 7-8 (end view)									Y			8x10	Y				Y			
+336	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (side view)									Y			8x10	Y				Y			
+337	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+338	CM 3018 Apatosaurus louisae HOLOTYPE anterior caudal vertebrae (end view)									Y			8x10	Y				Y			
+339	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (left side view)									Y			8x10	Y				Y			
+340	CM 3018 Apatosaurus louisae HOLOTYPE anterior caudal vertebrae (end view)									Y			8x10	Y				Y			
+341	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (side view)									Y			8x10	Y				Y			
+342	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+343	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+344	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+345	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (end view)									Y			8x10	Y				Y			
+346	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (right side view)									Y			8x10	Y				Y			
+347	CM 3018 Apatosaurus louisae HOLOTYPE anterior caudal vertebrae (end view)									Y			8x10	Y				Y			
+348	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (side view)									Y			8x10	Y				Y			
+349	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (side view)									Y			8x10	Y				Y			
+350	CM 3018 Apatosaurus louisae HOLOTYPE caudal vertebrae (left side view)									Y			8x10	Y				Y			
+351	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 8 (end view)									Y			8x10	Y				Y			
+352	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 5 (end view)									Y			8x10	Y				Y			
+353	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 5 (end view)									Y			8x10	Y				Y			
+354	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 8 (right side view)									Y			8x10	Y				Y			
+355	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 9 (end view)									Y			8x10	Y				Y			
+356	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 4 (end view)									Y			8x10	Y				Y			
+357	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 4 (end view)									Y			8x10	Y				Y			
+358	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 8 (side view)									Y			8x10	Y				Y			
+359	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 8 (end view)									Y			8x10	Y				Y			
+360	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 6 (end view)									Y			8x10	Y				Y			
+361	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 9 (side view)									Y			8x10	Y				Y			
+362	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 10 (side view)									Y			8x10	Y				Y			
+363	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebrae (end view)									Y			8x10 (6½ x 8½)	Y				Y			
+364	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebrae 5-6 (right side view)									Y			8x10	Y				Y			
+365	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 7 (end view)									Y			8x10	Y				Y			
+366	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 10 (side view)									Y			8x10	Y				Y			
+367	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 10 (end view)									Y			8x10	Y				Y			
+368	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 9 (end view)									Y			8x10	Y				Y			
+369	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 10 (end view)									Y			8x10	Y				Y			
+370	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebrae 1-2 (right side view)									Y			8x10	Y				Y			
+371	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 7 (right side view)									Y			8x10	Y				Y			
+372	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 7 (end view)									Y			8x10	Y				Y			
+373	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 9 (side view)									Y			8x10	Y				Y			
+374	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 6 (end view)									Y			8x10	Y				Y			
+375	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 7 (side view)									Y			8x10	Y				Y			
+376	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebrae 5-6 (left side view)									Y			8x10	Y				Y			
+377	CM 3018 Apatosaurus louisae HOLOTYPE dorsal vertebra 8 (end view - poor focus)									Y			8x10	Y				Y			
+378	CM 3018 Apatosaurus louisae HOLOTYPE thoracic vertebrae (side view)									Y			8x10	Y				Y			
+379	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebrae 3-4 (side view)									Y			8x10	Y				Y			
+380	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebrae 3-4 (side view)									Y			8x10	Y				Y			
+381	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 3 (end view)									Y			8x10	Y				Y			
+382	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 3 (end view)									Y			8x10	Y				Y			
+383	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 1 (end view)									Y			8x10	Y				Y			
+384	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 1 (end view)									Y			8x10	Y				Y			
+385	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 2 (end view)									Y			8x10	Y				Y			
+386	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebra 2 (end view)									Y			8x10	Y				Y			
+387	CM 3018 Apatosaurus louisae HOLOTYPE cervical vertebrae 2-3 (side view)									Y			8x10	Y				Y			
+388	CM 3018 Apatosaurus louisae HOLOTYPE pelvis (side view)									Y			8x10 (6½ x 8½)	Y				Y			
+389	CM 3018 Apatosaurus louisae HOLOTYPE left radius; ulna and foot (in matrix) (right and left views)									Y			8x10	Y				Y			
+390	CM 3018 Apatosaurus louisae HOLOTYPE left radius; ulna and foot (in matrix) (right and left views)									Y			8x10	Y				Y			
+391	CM 3018 Apatosaurus louisae HOLOTYPE left scapula (inner view). In Prep Lab, showing various equipment. Great historical photo!									Y			8x10	Y				Y			
+392	CM 3018 Apatosaurus louisae HOLOTYPE five posterior cervical vertebrae in block; partly cleared									Y			8x10	Y				Y			
+393	CM 3018 Apatosaurus louisae HOLOTYPE left radius and ulna									Y			8x10	Y				Y			
+394	CM 3018 Apatosaurus louisae HOLOTYPE left humerus (anterior view)									Y			8x10	Y							
+395	CM 3018 Apatosaurus louisae HOLOTYPE left humerus (side view)									Y			8x10	Y							
+396	CM 3018 Apatosaurus louisae HOLOTYPE right hind leg with left hind foot; Alfred Moorhouse standing									Y			8x10	Y		Y		Y			
+397	CM 3018 Apatosaurus louisae HOLOTYPE section of right femur near distal end									Y			8x10	Y							
+398	CM 3018 Apatosaurus louisae HOLOTYPE section of right femur near distal end									Y			8x10	Y							
+399	CM 3018 Apatosaurus louisae HOLOTYPE right femur									Y			8x10	Y							
+400	CM 3018 Apatosaurus louisae HOLOTYPE left humerus (posterior view)									Y			8x10	Y							
+401	CM 3018 Apatosaurus louisae HOLOTYPE section of right femur near middle of shaft									Y			8x10	Y							
+402	CM 3018 Apatosaurus louisae HOLOTYPE section of right femur near middle of shaft									Y			8x10	Y							
+403	CM 3018 Apatosaurus louisae HOLOTYPE left radius and ulna									Y			8x10	Y							
+404	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (preliminary mount of vertebral column)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+405	CM 3018 Apatosaurus louisae HOLOTYPE iron support under left hind foot									Y			8x10	Y		Y		Y			
+406	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (Serafino Agostini welding supports)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+407	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (preliminary supports for forelegs and scapula)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+408	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (preliminary support for foreleg)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+409	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (Serafino Agostini welding the steel supports)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+410	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (side supports for vertebrae)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+411	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (section of plaster support finished for carting)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+412	CM 3018 Apatosaurus louisae HOLOTYPE system of mounting (plaster cart under vertebral column)	Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+413	Sauropod; field no. 160 - caudal vertebrae found in serial order in Carnegie Quarry	Dinosaur National Monument		Utah	USA					Y			8x10	Y							
+414	CM 3018 Apatosaurus louisae HOLOTYPE posterior cervical vertebrae in block; partly cleaned									Y			8x10	Y							
+415	Apatosaurus restoration									Y			8x10	Y					Published picture, from 'Animals of the Past' by AMNH.		
+416	Apatosaurus drawing by Andrey Avinoff.									Y			8x10	Y				Y			
+417	CM 3018 Apatosaurus louisae HOLOTYPE 7 caudal vertebrae; the original discovery at Dinosaur Quarry; Utah. Mormon Elder Mr George Goodrich with shovel	Dinosaur National Monument	Uintah	Utah	USA			1909	Earl Douglass							Y		Y			
+418	CM 3018 Apatosaurus louisae HOLOTYPE pelvis (inferior view) taken in laboratory									Y			5x7	Y				Y			
+419	CM 3018 Apatosaurus louisae HOLOTYPE co-ossified vertebrae									Y			5x7	Y				Y			
+420	Apatosaurus? - Arthur Coggeshall and lab work on vertebrae.	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			5x7	Y				Y			
+421	Camarasaurus skull during preparation.	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			5x7	Y				Y			
+422	Published photo of Apatosaurus mounted skeleton in AMNH.									Y			5x7	Y				Y			
+423	Apatosaurus - Sunday Magazine article																				
+424	Fused caudal vertebrae of dinosaur.									Y			5x7	Y				Y			
+425	CM 563 Apatosaurus humerus (posterior view) and ulna (anterior view)									Y			5x7	Y				Y			
+426	CM 563 Apatosaurus radius and ulna (posterior view)									Y			5x7	Y							
+427	Apatosaurus forefoot; radius and ulna (taken before bones were finally taken off the original position in which they were found in the field)									Y			5x7	Y							
+428	Apatosaurus radius; ulna and forefoot in position in quarry (taken in lab)	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			5x7	Y				Y			
+429	CM 563 Apatosaurus metacarpals in position (proximal end)									Y			5x7	Y				Y			
+430	Apatosaurus radius, ulna and foot									Y			5x7	Y				Y			
+431	Apatosaurus foot									Y			5x7	Y				Y			
+432	Apatosaurus hind foot; tibia and fibula.									Y			5x7	Y				Y	Bicycle in background in lab.		
+433	Apatosaurus hind foot (1899).									Y			5x7	Y				Y			
+434	Apatosaurus foot, articulated.									Y			5x7	Y				Y			
+435	Apatosaurus pelvis									Y			5x7	Y				Y			
+436	Apatosaurus - cross? section of femur.									Y			5x7	Y				Y			
+437	CM 878 Ophthalmosaurus discus pectoral girdle (ventral view as found in matrix: clavicle, caracoid, humerus, interclavicle, scapula).									Y			5x7	Y				Y			Gilmore: MCM 2, fig. 21, p. 109, as Baptanodon discus.
+438	CM 878 Baptanodon discus									Y			8x10	Y				Y			
+439	CM 878 Baptanodon discus									Y			8x10	Y				Y			
+440	CM 11161 Diplodocus longus (Originally Barosaurus) skull (superior view)					3		1935	F W Kohler												
+441	CM 11161 Diplodocus longus (Originally Barosaurus) skull (left side)					3		1935	F W Kohler												
+442	CM 11161 Diplodocus longus (Originally Barosaurus) skull (posterior view)					3		1935	F W Kohler												
+443	Brachyosaurus - field no. 150B - Dinosaur Quarry - cervical vertebrae					3		1935	F W Kohler									Y			
+444	CM 11338 Camarasaurus skeleton during preparation									Y			8x10	Y							
+445	CM 11338 Camarasaurus skeleton; mounted for exhibit									Y			8x10	Y							
+446	CM 11338 Camarasaurus mounted for exhibit (plate is broken)									Y			8x10	Y				Y			
+447	CM 11337 Camptosaurus medius in original position (complete skeleton)									Y			8x10	Y				Y			
+448	CM 11337 Camptosaurus medius exhibited in the matrix									Y			8x10	Y				Y	Yellow negative.		
+449	CM 11337 Camptosaurus medius restoration									Y			8x10	Y				Y	Yellow negative.		
+450	Corythosaurus diorama									Y			8x10	Y				Y			
+451	Corythosaurus model used in diorama.									Y			5x7	Y				Y			
+452	Corythosaurus model used in diorama.									Y			5x7	Y				Y			
+453	Corythosaurus model used in diorama.									Y			5x7	Y				Y			
+454	CM 11375 Corythosaurus top of skull.										Y		5x7	Y				Y			
+455	CM 11375 Corythosaurus top of skull.										Y		5x7	Y				Y			
+456	CM 11376 Corythosaurus jaw.									Y			5x7	Y				Y			
+457	CM 11376 Corythosaurus jaw.									Y			5x7	Y				Y			
+458	CM 3452 Diplodocus carnegii skull in matrix.									Y			8x10	Y							
+459	CM 3452 Diplodocus carnegii skull in matrix									Y			8x10	Y							
+460	CM 11161 Diplodocus longus skull (superior view)									Y			8x10	Y				Y			
+461	CM 11161 Diplodocus longus skull									Y			8x10	Y				Y			
+462	CM 11161 Diplodocus longus skull (right side)									Y			8x10	Y				Y			
+463	CM 11161 Diplodocus longus skull									Y			8x10	Y							
+464	CM 11161 Diplodocus longus skull (anterior view)									Y			8x10	Y				Y			
+465	CM 11161 Diplodocus longus skull (anterior view)									Y			8x10	Y				Y			
+466	CM 11161 Diplodocus longus skull (posterior view)									Y			8x10	Y							
+467	CM 11161 Diplodocus longus skull (left oblique view from posterior)									Y			8x10	Y							
+468	CM 11161 Diplodocus longus skull (sclerotic plates in position).									Y			5x7	Y				Y			Founder's Day Report, 1914, p. 16.
+469	CM 662 Diplodocus carnegii skull (anterior view of posterior part of skull)									Y			8x10	Y					Holotype of Diplodocus hayi.		yes
+470	CM 662 Diplodocus carnegii skull (anterior view of posterior part of skull)									Y			8x10	Y					Holotype of Diplodocus hayi.		MCM 2, pl. 27, fig. 2
+471	CM 662 Diplodocus carnegii skull (top view of posterior part of skull									Y			8x10	Y					Holotype of Diplodocus hayi.		
+472	CM 662 Diplodocus carnegii skull (top view of posterior part of skull									Y			8x10	Y					Holotype of Diplodocus hayi.		
+473	CM 662 Diplodocus carnegii skull (posterior view of posterior part of skull)									Y			8x10	Y					Holotype of Diplodocus hayi.		MCM 2, pl. 27, fig. 1
+474	CM 662 Diplodocus carnegii skull (posterior view of posterior part of skull									Y			8x10	Y					Holotype of Diplodocus hayi.		MCM 2, pl. 27, fig. 1
+475	CM 11255 Diplodocus skull									Y			8x10	Y				Y			
+476	CM 11255 Diplodocus skull (anterior right side showing magazine of teeth)									Y			8x10	Y							
+477	Diplodocus skull									Y			8x10	Y							
+478	Diplodocus skull (portion)									Y			8x10	Y							
+479	Diplodocus carnegii skeleton (cast)								Johnston Studios	Y			8x10	Y							
+480	Diplodocus carnegii skull and cervical vertebrae (left side view)									Y			8x10 (6½ x 8½)	Y							
+481	Diplodocus carnegii head and neck (of cast)	Taken in old Exposition Building; downtown Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y							
+482	Diplodocus carnegii skull (front view)									Y			5x7	Y							
+483	Diplodocus carnegii skull (right side) (of replica?).									Y			5x7	Y							
+484	Diplodocus carnegii cervical vertebrae 2-3 (posterior view)																				
+485	Diplodocus carnegii cervical vertebrae 2-3 (side view)																				
+486	Diplodocus carnegii cervical vertebrae 2-3 (anterior view)																				
+487	Diplodocus carnegii cervical vertebrae 4-5 (anterior view)																				
+488	Diplodocus carnegii cervical vertebrae 4-5 (side view)																				
+489	Diplodocus carnegii cervical vertebrae 5-4 (posterior view)																				
+490	Diplodocus carnegii cervical vertebra 6 (anterior view)																				
+491	Diplodocus carnegii cervical vertebrae (posterior view)																				
+492	Diplodocus carnegii cervical vertebra 6 (side view)																				
+493	Diplodocus carnegii cervical vertebra 7 (anterior view)																				
+494	Diplodocus carnegii cervical vertebra 7 (posterior view)																				
+495	Diplodocus carnegii cervical vertebra 7 (side view)																				
+496	Diplodocus carnegii cervical vertebra 8 (posterior view)																				
+497	Diplodocus carnegii cervical vertebra 8 (anterior view)																				
+498	Diplodocus carnegii cervical vertebra 8 (side view)																				
+499	Diplodocus carnegii cervical vertebra 9 (anterior view)																				
+500	Diplodocus carnegii cervical vertebra 9 (side view)																				
+501	Diplodocus carnegii cervical vertebra 9 (posterior view)																				
+502	Diplodocus carnegii cervical vertebra 10 (anterior view)																				
+503	Diplodocus carnegii cervical vertebra 10 (posterior view)																				
+504	Diplodocus carnegii cervical vertebra 10 (side view)																				
+505	Diplodocus carnegii cervical vertebra 11 (anterior view)																				
+506	Diplodocus carnegii cervical vertebra 11 (side view)																				
+507	Diplodocus carnegii cervical vertebra 11 (posterior view)																				
+508	Diplodocus carnegii cervical vertebra 12 (side view)																				
+509	Diplodocus carnegii cervical vertebra 12 (anterior view)																				
+510	Diplodocus carnegii cervical vertebra 12 (posterior view)																				
+511	Diplodocus carnegii cervical vertebra 13 (side view)																				
+512	Diplodocus carnegii cervical vertebra 13 (anterior view)																				
+513	Diplodocus carnegii cervical vertebra 13 (posterior view)																				
+514	Diplodocus carnegii cervical vertebra 14 (posterior view)																				
+515	Diplodocus carnegii cervical vertebra 14 (side view)																				
+516	Diplodocus carnegii cervical vertebra 14 (anterior view)																				
+517	Diplodocus carnegii cervical vertebra 15 (anterior view)																				
+518	Diplodocus carnegii cervical vertebra 15 (side view)																				
+519	Diplodocus carnegii cervical vertebra 15 (posterior view)																				
+520	Diplodocus carnegii dorsal vertebra 16 (posterior view)																				
+521	Diplodocus carnegii dorsal vertebra 16 (side view)																				
+522	Diplodocus carnegii dorsal vertebra 16 (anterior view)																				
+523	Diplodocus carnegii dorsal vertebra 17 (side view)																				
+524	Diplodocus carnegii dorsal vertebra 17 (posterior view)																				
+525	Diplodocus carnegii dorsal vertebra 17 (anterior view)																				
+526	Diplodocus carnegii dorsal vertebra 18 (posterior view)																				
+527	Diplodocus carnegii dorsal vertebra 18 (side view)																				
+528	Diplodocus carnegii dorsal vertebra 18 (anterior view)																				
+529	Diplodocus carnegii dorsal vertebra 19 (anterior view)																				
+530	Diplodocus carnegii dorsal vertebra 19 (posterior view)																				
+531	Diplodocus carnegii dorsal vertebra 19 (side view)																				
+532	Diplodocus carnegii dorsal vertebra 20 (posterior view)																				
+533	Diplodocus carnegii dorsal vertebra 20 (anterior view)																				
+534	Diplodocus carnegii dorsal vertebra 20 (side view)																				
+535	Diplodocus carnegii dorsal vertebra 21 (anterior view)																				
+536	Diplodocus carnegii dorsal vertebra 21 (side view)																				
+537	Diplodocus carnegii dorsal vertebra 21 (posterior view)																				
+538	Diplodocus carnegii dorsal vertebra 22 (anterior view)																				
+539	Diplodocus carnegii dorsal vertebra 22 (side view)																				
+540	Diplodocus carnegii dorsal vertebra 22 (posterior view)																				
+541	Diplodocus carnegii dorsal vertebra 23 (side view)																				
+542	Diplodocus carnegii dorsal vertebra 23 (anterior view)																				
+543	Diplodocus carnegii dorsal vertebra 23 (posterior view)																				
+544	Diplodocus carnegii dorsal vertebra 24 (anterior view)																				
+545	Diplodocus carnegii dorsal vertebra 24 (posterior view)																				
+546	Diplodocus carnegii dorsal vertebra 24 (side view)																				
+547	Diplodocus carnegii dorsal vertebra 25 (side view)																				
+548	Diplodocus carnegii dorsal vertebra 25 (anterior view)																				
+549	Diplodocus carnegii dorsal vertebra 25 (posterior view)																				
+550	Diplodocus carnegii (cast of replica made for Russia) - side of posterior thorax. Mounted in sprawled position for illustration in Holland's 1910 paper. See Papyrus entry.									Y			8x10	Y							
+551	Diplodocus carnegii dorsal vertebrae									Y			5x7 (6½ x 4¼)	Y				Y			
+552	Diplodocus carnegii cervical vertebrae									Y			5x7 (6½ x 4¼)	Y				Y			
+553	Diplodocus carnegii cervical vertebrae									Y			5x7 (6½ x 4¼)	Y				Y			
+554	CM 84 Diplodocus carnegii vertebrae									Y			5x7 (6½ x 4¼)	Y				Y			
+555	CM 94 Diplodocus carnegii right scapula									Y			5x7 (6½ x 4¼)	Y				Y			
+556	Diplodocus carnegii sternal plates																				
+557	Diplodocus carnegii caudal vertebra 1 (anterior view)																				
+558	Diplodocus carnegii caudal vertebra 1 (posterior view)																				
+559	Diplodocus carnegii caudal vertebra 1 (side view)																				
+560	Diplodocus carnegii caudal vertebrae 2-3 (side view)																				
+561	Diplodocus carnegii caudal vertebrae 2-3 (posterior view)																				
+562	Diplodocus carnegii caudal vertebrae 2-3 (anterior view)																				
+563	Diplodocus carnegii caudal vertebra 4 (anterior view)																				
+564	Diplodocus carnegii caudal vertebra 4 (side view)																				
+565	Diplodocus carnegii caudal vertebra 4 (posterior view)																				
+566	Diplodocus carnegii caudal vertebra 5 (anterior view)																				
+567	Diplodocus carnegii caudal vertebra 5 (side view)																				
+568	Diplodocus carnegii caudal vertebra 5 (posterior view)																				
+569	Diplodocus carnegii caudal vertebra 6 (anterior view)																				
+570	Diplodocus carnegii caudal vertebra 6 (posterior view)																				
+571	Diplodocus carnegii caudal vertebra 6 (side view)																				
+572	Diplodocus carnegii caudal vertebra 7 (posterior view)																				
+573	Diplodocus carnegii caudal vertebra 7 (side view)																				
+574	Diplodocus carnegii caudal vertebra 7 (anterior view)																				
+575	Diplodocus carnegii caudal vertebra 8 (side view)																				
+576	Diplodocus carnegii caudal vertebra 8 (posterior view)																				
+577	Diplodocus carnegii caudal vertebra 8 (anterior view)																				
+578	Diplodocus carnegii caudal vertebra 9 (side view)																				
+579	Diplodocus carnegii caudal vertebrae 9-10 (anterior view)																				
+580	Diplodocus carnegii caudal vertebrae 9-10 (posterior view)																				
+581	Diplodocus carnegii caudal vertebra 10 (side view)																				
+582	Diplodocus carnegii caudal vertebrae 11-12 (anterior view)																				
+583	Diplodocus carnegii caudal vertebrae 11-12 (posterior view)																				
+584	Diplodocus carnegii caudal vertebrae 11-12 (side view)																				
+585	Diplodocus carnegii co-ossified caudal vertebrae																				
+586	Diplodocus carnegii caudal vertebra; probably 8 (side view)									Y			5x7	Y				Y			
+587	Diplodocus carnegii vertebrae.									Y			5x7	Y				Y			
+588	Diplodocus carnegii humerus; distal end of radius and ulna (part of 563?) (anterior view)								Arthur S Coggeshall	Y			5x7	Y				Y			
+589	Diplodocus carnegii femur (front view)									Y			5x7	Y				Y			
+590	Diplodocus carnegii femur (tibial face) (taken in lab)									Y			5x7	Y				Y			
+591	Diplodocus carnegii femur (side view)									Y			5x7	Y				Y			
+592	Diplodocus carnegii - two femora									Y			5x7	Y				Y			
+593	Diplodocus carnegii femur (section)									Y			5x7	Y				Y			Published by Hatcher.
+594	Diplodocus carnegii femur (cross-sections)									Y			5x7	Y				Y			
+595	Diplodocus carnegii femur (cross-section)									Y			5x7	Y				Y			
+596	Diplodocus carnegii femur (cross-section, near head)									Y			5x7	Y				Y			
+597	Diplodocus carnegii hind limb and foot, Arthur S. Coggeshall standing.								Arthur S Coggeshall	Y			5x7	Y				Y			
+598	CM 94 Diplodocus carnegii right tibia fibula and hind foot.									Y			5x7	Y				Y			
+599	Diplodocus carnegii tibia; fibula and foot.									Y			5x7	Y				Y			
+600	Diplodocus carnegii hind limb and foot.									Y			5x7	Y				Y			
+601	Diplodocus carnegii front limb.									Y			5x7	Y				Y			
+602	Diplodocus carnegii left foot.									Y			5x7	Y				Y			
+603	Diplodocus longus pelvis and caudal vertebrae																				
+604	CM 94 Diplodocus carnegii pubis and ischium of right side.									Y			5x7	Y				Y			
+605	CM 94 Diplodocus carnegii ilium.									Y			5x7	Y				Y			
+606	Diplodocus carnegii pelvis.									Y			5x7	Y				Y			
+607	Diplodocus carnegii (cast of replica made for Russia) - part of pelvis (side view). Mounted in sprawled position for illustration in Holland's 1910 paper. See Papyrus entry.									Y			5x7	Y				Y			
+608	Diplodocus carnegii (cast of replica made for Russia) pelvis, ribs and hind limbs. Mounted in sprawled position for illustration in Holland's 1910 paper. See Papyrus entry.									Y			8x10	Y							
+609	Diplodocus carnegii fore limb									Y			8x10	Y							
+610	Diplodocus carnegii - system of mounting: pectoral girdle (from in front)									Y			8x10 (6½ x 8½)	Y							
+611	Diplodocus carnegii - system of mounting: pectoral girdle (side view)									Y			8x10 (6½ x 8½)	Y							
+612	Diplodocus carnegii - group of men around Diplodocus									Y			8x10	Y		Y		Y			
+613	Diplodocus carnegii - display platform being built (posterior view)									Y			8x10	Y		Y		Y	Museum guard in picture.		
+614	Diplodocus carnegii - members of American Association of Museums assembled about the skeleton in the Carnegie Museum; June 5; 1907. (5 sections to complete photograph.) Section 1: head and neck	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y				Y			See Proc. Amer. Assoc. Mus., vol. 1, 1907, p. 25.
+615	Diplodocus carnegii - members of American Association of Museums assembled about the skeleton in the Carnegie Museum; June 5; 1907. (5 sections to complete photograph.) Section 2: midsection of body	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y				Y			See Proc. Amer. Assoc. Mus., vol. 1, 1907, p. 25.
+616	Diplodocus carnegii - members of American Association of Museums assembled about the skeleton in the Carnegie Museum; June 5; 1907. (5 sections to complete photograph.) Section 3: just behind pelvis to where tail reaches ground	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y				Y			See Proc. Amer. Assoc. Mus., vol. 1, 1907, p. 25.
+617	Diplodocus carnegii - members of American Association of Museums assembled about the skeleton in the Carnegie Museum; June 5; 1907. (5 sections to complete photograph.) Section 4: tail	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y				Y			See Proc. Amer. Assoc. Mus., vol. 1, 1907, p. 25.
+618	Diplodocus carnegii - (replica in plaster) tail vertebrae	Taken in old Exposition Building; downtown Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y							
+619	Diplodocus carnegii - (replica in plaster) anterior tail vertebrae	Taken in old Exposition Building; downtown Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y							
+620	Diplodocus carnegii - (replica in plaster) with Asher W. VanKirk, Arthur Coggeshall, and Louis Coggeshall.	Taken in old Exposition Building; downtown Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+621	Diplodocus carnegii - (replica in plaster) body skeleton. Arthur S. Coggeshall on left, Louis Coggeshall on right.	Taken in old Exposition Building; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+622	Diplodocus carnegii - (replica) caudal vertebrae. From replica in British Museum									Y			8x10 (6½ x 8½)	Y							
+623	Diplodocus - from painting by Charles Knight									Y			8x10 (6½ x 8½)	Y				Y			
+624	Diplodocus carnegii skeleton								Johnston Studios	Y			8x10	Y					Published picture from 'Animals of the Past' by AMNH.		
+625	Diplodocus carnegii skeleton; photo of a photo.									Y			5x7	Y				Y			
+626	Diplodocus carnegii - drawing of a skeleton																				
+627	Diplodocus carnegii model by T A Mills																	Y			
+628	Diplodocus carnegii model by T A Mills.									Y			5x7	Y				Y			
+629	Diplodocus carnegii model by T A Mills and drawing of skeleton																				
+630	Diplodocus carnegii relief by T A Mills (2 negatives).									Y			5x7	Y				Y			
+631	CM 9187 Edaphosaurus boanerges									Y			5x7	Y				Y			
+632	CM 9187 Edaphosaurus boanerges									Y			5x7	Y				Y			
+633	CM 9187 Edaphosaurus boanerges									Y			5x7	Y				Y			
+634	CM 566 Elosaurus femur									Y			5x7	Y							
+635	CM 566 Elosaurus tibia																				
+636	CM 566 Elosaurus forelimb																	Y			
+637																					
+638	Box of lantern slides of Mexico; with captions				Mexico																
+639	Box of lantern slides of Mexico; with captions				Mexico																
+640	Box of lantern slides of Mexico; with captions				Mexico																
+641	Box of lantern slides of Mexico; with captions				Mexico																
+642	Box of lantern slides - miscellaneous; no reference to vertebrate paleontology																				
+643	CM 1339 Goniopholis gilmorei									Y			8x10	Y							
+644	CM 9600 Hassiacosuchus kayi skull									Y			5x7	Y				Y			
+645	CM 9600 Hassiacosuchus kayi (underside view)										Y		8x10	Y					Negative slightly wrinkled at one side; may be nitrate.		
+646	CM 9600 Hassiacosuchus kayi (underside view)										Y		8x10	Y				Y	Background 'whited out'.		
+647	CM 9600 Hassiacosuchus kayi (top side)										Y		8x10	Y				Y	Two negatives, badly damaged and unusable.		
+648	CM 9600 Hassiacosuchus kayi (top view)										Y		8x10	Y				Y	There are two negatives for this: one yellow which has the background blanked out, and one that looks like a copy negative from the yellow one.		
+649	CM 2043 Haplocanthosaurus pelvis (anterior view).									Y			5x7	Y				Y			
+650	CM 2043 Haplocanthosaurus (posterior view).									Y			5x7	Y				Y			
+651	CM 2043 Haplocanthosaurus (side view).									Y			5x7	Y				Y			
+652	Fossil lizard drawing																				
+653	CM 11340 Dryosaurus altus - portion of skeleton worked out.									Y			5x7	Y				Y			
+654	CM 3392 Dryosaurus altus (Laosaurus) skeleton in block									Y			8x10	Y							
+655	CM 4471 Stenopterygius sp. (originally labeled No. 2471, Ichthyosaurus quadriscissus? & I. acutirostris.) CM 6003?									Y			8x10	Y					See also negative 299.		Founder's Day Report, 1903.
+656	CM 8941(?) Mosasaurus lemonnieri skeleton									Y			8x10	Y				Y			
+657	Stegosaurus model (2 negatives)								Sydney Prentice	Y			8x10	Y				Y	Yellow negative.		
+658	Stegosaurus on exhibit(?) (2 negatives)								Sydney Prentice	Y			8x10	Y				Y			
+659	Bones found by Dr Percy E Raymond at Pitcairn, PA.									Y			8x10	Y				Y			
+660	Pariasaurus baini skeleton (from British Museum Guide to Fossil Reptiles and Fishes; 8th ed (Woodward) plate 4).									Y			5x7	Y				Y			
+661	CM 12100 Trachodon (=Edmontosaurus) vertebrae in block										Y		8x10	Y				Y	There are two negatives for this picture, both 8x10, probably nitrate. One is badly damaged and un-usable, the other is wrinkled only at the edges.		
+662	CM 12100 Trachodon (=Edmontosaurus) vertebrae in block										Y		8x10	Y				Y	Negative is slightly wrinkled at edges; may be nitrate.		
+663	CM 12100 Trachodon (=Edmontosaurus) vertebrae in block									Y			8x10	Y				Y			
+664	CM 12100 Trachodon (=Edmontosaurus) vertebrae in column									Y			8x10	Y				Y			
+665	CM 12100 Trachodon (=Edmontosaurus) skin									Y			8x10	Y				Y			
+666	CM 12100 Trachodon (=Edmontosaurus) in matrix.									Y			5x7	Y				Y			
+667	CM 12100 Trachodon (=Edmontosaurus) pelvis									Y			5x7	Y				Y			
+668	CM 12100 Trachodon (=Edmontosaurus)									Y			5x7	Y				Y			
+669	CM 12100 Trachodon(?) (=Edmontosaurus)									Y			5x7	Y				Y			
+670	Triceratops painting with Trachodon (=Edmontosaurus) in distance; by Charles R Knight																				
+671	W H Utterback working in lab.	Pittsburgh	Allegheny	Pennsylvania	USA					Y			5x7	Y		Y		Y			
+672	Triceratops - Charles R Knight painting										Y		8x10	Y				Y	Negative is slightly wrinkled around edges; may be nitrate.		
+673	Triceratops skull; W H Utterback standing beside.									Y			8x10	Y				Y	Background is blanked out.		
+673a	Triceratops skull; W H Utterback standing beside.									Y			8x10	Y		Y		Y	May be out of focus.		
+673c	Triceratops skull; W H Utterback standing beside.									Y			8x10	Y		Y		Y	Background is blanked out; may be copy of negative 673.		
+674	Triceratops model (left side)									Y			8x10	Y				Y			
+675	Trachodon (=Edmontosaurus) from Carter County, Montana.									Y			8x10	Y				Y			
+676	CM 11069 Uintasaurus douglassi Holotype (=Camarasaurus lentus) cervical vertebrae (end view)									Y			5x7	Y				Y			
+677	CM 11069 Uintasaurus douglassi Holotype (=Camarasaurus lentus) cervical vertebrae (end view)									Y			5x7	Y				Y			
+678	Uintasaurus cervical vertebrae (side view)									Y			8x10	Y							
+679	Uintasaurus cervical vertebrae (2 negatives)									Y			8x10	Y							
+680	Tyrannosaurus skull									Y			8x10	Y							
+681	Tyrannosaurus drawing (2 negatives)																				
+682	Tyrannosaurus rex on exhibit											Y	4x5	Y							
+683	CM 3272 Amyda scutumantiquum carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 26.
+684	CM 3403 Hadrianus carsoni plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 25.
+685	CM 2343 Hadrianus utahensis HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 26.
+686	CM 3342 Hadrianus robustus HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 25.
+687	CM 2936 (?) Echmatemys depressa HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 23.
+688	CM 2371 Echmatemys callopyge carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 21.
+689	CM 2371 Echmatemys callopyge plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 21.
+690	CM 3252 Echmatemys obscura HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 24.
+691	CM 3252 Echmatemys obscura HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 24.
+692	CM 3244 Echmatemys douglassi HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 22.
+693	CM 3249 Echmatemys hollandi HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 23.
+694	CM 3249 Echmatemys hollandi HOLOTYPE																		Charles W. Gilmore: Memoirs of Carnegie Museum VII(2).		
+695	CM 3406 Baena inflata HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 19.
+696	CM 3406 Baena inflata HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 19.
+697	CM 3441 Baena gigantea HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 20.
+698	CM 3441 Baena gigantea HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 20.
+699	CM 3227 Baena platyplastra HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 18.
+700	CM 2356 Baena arenosa carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 18.
+701	CM 1420-1421 Protostega gigas skeleton									Y			8x10	Y				Y			
+702	Protostega gigas - dorsal view of entire animal									Y			8x10	Y				Y			
+703	Protostega gigas paddle									Y			8x10	Y							
+704	CM 1421 Protostega gigas Cope, exhibition, skull & left foreleg.									Y			8x10	Y							Gilmore: MCM 7(2), fig. 1, p. 272.
+705	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+706	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+707	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+708	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+709	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+710	CM 1420-21: Protostega gigas									Y			8x10	Y							Gilmore: MCM 7(2)
+711	CM 1420-21: Protostega gigas (2 negatives)									Y			8x10	Y							
+712	Protostega in its original crushed condition as sent in from field									Y			8x10	Y							
+713	CM 2331 Testudo uintensis HOLOTYPE plastron									Y			8x10	Y							Gilmore: MCM 7(2), pl. 27.
+714	CM 2331 Testudo uintensis HOLOTYPE carapace									Y			8x10	Y							Gilmore: MCM 7(2), pl. 27.
+715	CM 1535 Testudo edae Hay, shell (superior view)									Y			8x10	Y							Hay: ACM 4, pl. 7.
+716	CM 1535 Testudo edae Hay, shell (inferior view)									Y			8x10	Y							Hay: ACM 4, pl. 8.
+717	CM 311 Testudo inusitata Hay, shell (superior view) (2 negatives)									Y			8x10	Y							Hay: ACM 4, pl. 3.
+718	CM 311 Testudo inusitata Hay, shell (inferior view)									Y			8x10	Y							Hay: ACM 4, pl. 4.
+719	CM 1561 Testudo hollandi Hay, shell (inferior view) (2 negatives)									Y			8x10	Y							Hay: ACM 4, pl. 6.
+720	CM 1561 Testudo hollandi Hay, shell (superior view) (2 negatives)									Y			8x10	Y							Hay: ACM 4, pl. 5.
+721	CM 3380 Glyptops utahensis									Y			5x7	Y				Y	Charles W. Gilmore: Annals of Carnegie Museum X.		Gilmore: ACM 10
+722	Turtle									Y			5x7	Y				Y			
+723	CM 11995 Echmatemys sp., four complete shells in one block										Y		8x10	Y							
+724	CM 3244 Echmatemys douglassi HOLOTYPE									Y			8x10	Y							
+725	CM 3411 Glyptops plicatulus and CM 3412 Glyptops utahensis									Y			8x10	Y							
+726	Turtles									Y			8x10	Y							
+727	CM 3409 Eurysternum wagleri (4 negatives)																				
+728	Pterosaurs - illustrations for Wellnhofer MS																				
+729	?CM 9377 Neocathartes grallator in matrix.								Sydney Prentice	Y			5x7	Y				Y			
+730	Illustration of Archaeopteryx - (2 negatives)									Y			5x7	Y				Y			
+731	Illustrations of Archaeopteryx from New York Times, December 26, 1937.									Y			5x7	Y				Y			
+732	Archaeopteryx - published illustration of slab mount									Y				Y				Y			
+733	Archaeopteryx - published illustration.									Y				Y				Y			
+734	CM 11424 Campylognathoides liasicus										Y			Y				Y			
+735	CM 11425 Pteradactylus elegans slab mount										Y			Y				Y	Negative badly damaged and wrinkled.		
+736	CM 11425 Pteradactylus elegans slab mount										Y		yes	Y							
+737	CM 11431 Rhamphorhynchus muensteri, slab mount.									Y			5x7	Y				Y			
+738	CM 11424 Campylognathoides liasicus (in part)								Sydney Prentice		Y		8x10	Y				Y			
+739	CM 11426 Pterodactylus sp. (=Cycnorhamphus)								Sydney Prentice		Y		8x10	Y				Y			
+740a	Taoperdix									Y			8x10	Y							
+740b	Nyctodactylus																				
+741	CM 11427 Rhamphorhynchus munsteri, var. longimanus (3 negatives, 2 8x10, 1 5x7)										Y		8x10 & 5x7	Y				Y			
+742	CM 11433 Rhamphorhynchus longicaudus								Sydney Prentice		Y		8x10	Y				Y			
+743	CM 11429 Rhamphorhynchus munsteri (2 negs., 1 8x10 & 1 5x7)										Y		8x10 & 5x7	Y				Y			
+744	CM 11430 Rhamphorhynchus sp., limb bones								Sydney Prentice		Y		8x10	Y				Y			
+745	CM 11428 Rhamphorhynchus longiceps								Sydney Prentice												
+746	CM 11428 Rhamphorhynchus longiceps								Sydney Prentice		Y		8x10	Y				Y			
+747	CM 11431 Rhamphorhynchus munsteri										Y		8x10	Y							
+748	CM 11432 Rhamphorhynchus munsteri (2 negs., 1 8x10, 1 5x7)								Sydney Prentice		Y		8x10 & 5x7	Y				Y			
+749	CM 11422 Nyctodactylus, partial image								Sydney Prentice		Y		8x10	Y				Y			
+750	CM 11422 Nyctodactylus, full image								Sydney Prentice	Y			8x10	Y				Y			
+751	Published illustration of an artiodactyl metapodial.									Y			5x7	Y				Y			
+752	CM 11398 Archaeotherium mortoni skeleton - mounted									Y			8x10	Y				Y			
+753	Archaeotherium model									Y			8x10	Y				Y			
+754	CM 11019-11020 Arctodus simus									Y			8x10	Y							
+755	CM 11019-11020 Arctodus simus									Y			8x10	Y							
+756	Published illustration of a lower jaw of a badger.									Y			8x10	Y					Yellow negative		
+757	Published illustration of an Ox skull from Scotland.									Y			8x10	Y							
+758	Published illustration of bison metatarsals.									Y			5x7	Y				Y			
+759	Bison skull held by a man									Y			8x10	Y							
+760	Bison model made by Harold J. Clement (left side).										Y		5x7	Y				Y			
+761	Bison model made by Harold J. Clement (left side)								Sydney Prentice		Y		8x10	Y				Y	Yellow negative		
+762	Bison model made by Harold J. Clement (right side).										Y		5x7	Y				Y			
+763	Bison model made by Harold J. Clement (right side)								Sydney Prentice		Y		8x10	Y				Y	Yellow negative		
+764	Published illustration of wild boar skull.									Y			5x7	Y				Y			
+765	CM 92 Brontops dispar skeleton - mounted.									Y			5x7	Y				Y			
+766	Brontops dispar skeleton - mounted									Y			8x10	Y				Y			
+767	Brontops dispar skeleton - mounted									Y			8x10	Y							
+768	Illustrations of carnivore jaws.									Y			5x7	Y				Y			
+769	Published illustration of a wolf skull.									Y			5x7	Y				Y			
+770	CM 3994 Canis dirus																	Y			
+771	Canis dirus model (right side) by Harold J. Clement								Sydney Prentice		Y		8x10	Y				Y			
+772	Canis dirus skeleton - mounted									Y			8x10	Y				Y			
+773	Published illustration of a Castoroides europaeus (european beaver) skull from Fens, Cambridgeshire.									Y			8x10	Y							
+774	Daemonelix									Y			8x10	Y							
+775	Sabre-tooth cat and Protoceras - Charles R Knight painting.									Y			5x7	Y				Y			
+776	CM 492 Daphoenus felinus skeleton - mounted.										Y		5x7	Y							
+777	Daphoenus felinus model made by T. A. Mills.									Y			5x7	Y				Y			
+778	CM 492 Daphoenus felinus skeleton - mounted									Y			8x10	Y				Y			MCM 1, pl. 20; Founder's Day Report, 1902, p. 22
+779	CM 492 Daphoenus felinus skeleton - mounted									Y			8x10	Y				Y			
+780	CM 3394? Diplobunops matthewi lower jaws (superior view)								Kohler		Y		5x7	Y							
+781	CM 11801a Diplobunops ultimus skull Holotype (inferior view).										Y		5x7	Y				Y			
+782	CM 11801a Diplobunops ultimus skull Holotype (lateral view).										Y		5x7	Y				Y			
+783	CM 11801a Diplobunops ultimus skull Holotype (superior view)										Y		5x7	Y				Y			
+784	CM 11769 Diplobunops uintensis skull Holotype (inferior view).										Y		5x7	Y				Y			
+785	CM 11769 Diplobunops uintensis skull Holotype (superior view).										Y		5x7	Y				Y			
+786	CM 11769 Diplobunops uintensis skull Holotype (lateral view).										Y		5x7	Y				Y			
+787	Diplobunops skeleton - mounted (2 negatives)									Y			8x10	Y				Y			
+788	Diplobunops skeleton - mounted					1	12	193?	Sydney Prentice	Y			8x10	Y				Y			
+789	Diplobunops skeleton - mounted					1	13	1939	Sydney Prentice	Y			8x10	Y				Y			
+790	Diplacodon model (2 negatives) made by Harold J. Clement.										Y		5x7	Y				Y	Both negatives badly damaged, wrinkled. They have been removed.		
+791	Diplacodon skeleton - mounted																	Y			
+792	Dinohyus hollandi model (left side)																				
+793	Dinosaur vertebrae																	Y			
+794	Chart of edentition of proboscideans									Y			8x10	Y							
+795	Dolichorhinus									Y			8x10	Y							
+796	Dolichorhinus									Y			8x10	Y							
+797	Dolichorhinus vertebrae & ribs									Y			8x10	Y				Y			
+798	Illustration of reconstruction of Eohippus - sketch.									Y			5x7	Y				Y			
+799	Chart of evolution of the horse									Y			8x10	Y							
+800	Chart of the osteology of a horse									Y			8x10	Y				Y			
+801	Illustration of reconstruction of Equus caballus - sketch.									Y			5x7	Y				Y			
+802	Equus caballus model (right side)									Y			8x10	Y				Y			
+803	Equus occidentalis skeleton - mounted										Y		8x10	Y				Y			
+804	Equus occidentalis skeleton - mounted										Y		8x10	Y				Y			
+805	Equus occidentalis model (right side)									Y			8x10	Y				Y			
+806	CM 765 Eporeodon (=Eucrotaphus) helenae HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y							
+807	CM 765 Eporeodon (=Eucrotophus) helenae HOLOTYPE skull (lateral view).							1935	F W Kohler		Y		5x7	Y				Y			
+808	CM 765 Eporeodon (=Eucrotophus) helenae HOLOTYPE lower jaws (superior view)							1935	F W Kohler		Y		5x7	Y				Y			
+809	CM 765 Eporeodon (=Eucrotophus) helenae HOLOTYPE lower jaws (lateral view).							1935	F W Kohler		Y		5x7	Y				Y			
+810	CM 765 Eporeodon (=Eucrotophus) helenae HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y							
+811	CM 907 Eporeodon (=Eucrotophus) montanus HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+812	CM 907 Eporeodon (=Eucrotophus) montanus HOLOTYPE (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+813	CM 907 Eporeodon (=Eucrotophus) montanus HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+814	CM 1584 Eporeodon (=Eucrotaphus) dickinsonensis HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+815	CM 1584 Eporeodon (=Eucrotophus) dickinsonensis HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+816	CM 1584 Eporeodon (=Eucrotophus) dickinsonensis HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+817	Irish elk vertebrae									Y			8x10	Y				Y			
+818	Irish elk ribs and vertebrae									Y			8x10	Y				Y			
+819	Irish elk model (left side)									Y			8x10	Y				Y			
+820	Published print of Hyracodon nebrascensis restoration sketch from book.									Y			8x10	Y				Y			
+821	CM 567 Hoplophoneus primaevus skeleton - mounted										Y		5x7	Y					Negative badly damaged - removed.		
+822	Hoplophoneus primaevus skeleton - mounted									Y			8x10	Y				Y	Print damaged in printing.		
+823	Hypertragulus skeleton - mounted									Y			8x10	Y				Y			
+824	Hypertragulus - block of matrix									Y			8x10	Y				Y			
+825	Mylagaulid dentition - drawings																				
+826	Published print of Charles R. Knight painting of mastodons along the Missour River, Kansas.									Y			5x7	Y				Y			
+827	CM 67 Mammut americanum (mastodon) skeleton (left side)									Y			8x10	Y				Y			
+828	Mammut americanum model (right side) made by Harold J. Clement									Y			8x10	Y				Y			
+829	Mammut americanum model (left side)									Y			8x10	Y				Y	Made by H J Clement.		
+830	CM 12066 Mammuthus columbi skeleton - mounted (2 negatives)									Y			8x10	Y							
+831	Published print of drawing of mammoth teeth.									Y			5x7	Y							
+832	Proboscidean limb bones.									Y			5x7	Y				Y			
+833	Proboscidean limb bones.									Y			5x7	Y				Y			
+834	Elephant? tusk.									Y			5x7	Y				Y			
+835	Published print of drawing of female Megaceros skull.									Y			5x7	Y				Y			
+836	Drawing of Merychippus.									Y			5x7	Y				Y			
+837	CM 767 Merycoidodon macrorhinus (Douglass); palate view of skull.							1935	F W Kohler		Y		5x7	Y				Y			
+838	CM 767 Merycoidodon macrorhinus (Douglass) skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+839	CM 767 Merycoidodon macrorhinus (Douglass) skull (lateral view).							1935	F W Kohler		Y		5x7	Y				Y			
+840	CM 745 Merycoidodon macrorhinus (Douglass) palate (inferior view); DO no. 50).							1935	F W Kohler		Y		5x7	Y				Y			
+841	CM 908 Merycoides latidens (Douglass) HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+842	CM 908 Merycoides latidens (Douglass) HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+843	CM 908 Merycoides latidens (Douglass) HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+844	CM 1222 Merycoides cursor Douglass HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+845	CM 1222 Merycoides cursor Douglass HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+846	CM 1222 Merycoides cursor Douglass HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+847	CM 766 Merychyus (=Ticholeptus) smithi Douglass HOLOTYPE skull and jaws, not separated (lateral view).							1935	F W Kohler		Y		5x7	Y				Y			
+848	CM 1466 Merychyus minimus HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+849	CM 1466 Merychyus minimus HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+850	CM 1466 Merychyus minimus HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+851	Merychyus skeleton - mounted; composite of CM 1466, 3397, 1462, 1439, 565, 1331, 1525									Y			8x10	Y				Y			
+852	Miacis skull and jaws (lateral view)																	Y			
+853	Miacis skull (inferior view)																	Y			
+854	Mylohyus lower jaw (poor focus)																				
+855	CM 1323 Mesoreodon megalodon PARATYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+856	CM 1325 Mesoreodon megalodon HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+857	CM 1325 Mesoreodon megalodon HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+858	CM 818 Merycochoerus (=Brachycrus) elrodi lower jaw (superior view).							1935	F W Kohler		Y		5x7	Y				Y	Original envelope said Merycochoerus paludicola.		
+859	CM 961 Mesohippus sp. skeleton - mounted.											Y	5x7	Y				Y	Negative is badly damaged due to shrinkage of the emulsion base.		
+860	Drawing of Mesohippus.									Y			5x7	Y				Y			
+861	Moropus elatus skull (superior view)									Y			8x10	Y							
+862	Moropus elatus skull and jaws (lateral view); (2 negatives)									Y			8x10	Y				Y			
+863	Moropus elatus (Marsh) skeleton - mounted (right front view); composite of CM 1604, 1706, 1708, 1710									Y			8x10	Y							Holland & Peterson: MCM 3, pl. 75
+864	Moropus elatus (Marsh) skeleton - mounted (left view); composite of CM 1604, 1706, 1708, 1710									Y			8x10	Y							
+865	Moropus elatus (Marsh) skeleton - mounted (right view); composite of CM 1604, 1706, 1708, 1710									Y			8x10	Y							
+866	CM 1604 Moropus elatus fore foot and hind foot									Y			8x10	Y				Y			
+867	Moropus elatus pelvis									Y			8x10	Y							
+868	Moropus elatus sacrum									Y			8x10	Y							
+869	Moropus elatus - two feet																				
+870	Moropus elatus foot									Y			5x7	Y				Y			
+871	CM 2103 Moropus skull (superior view)									Y			8x10	Y				Y			
+872	CM 1604 Moropus ribs									Y			8x10	Y							
+873	Moropus sacrum																				
+874	Oxydactylus model									Y			8x10	Y				Y			
+875	Oxydactylus skull & neck - mounted									Y			8x10	Y				Y			
+876	Oxydactylus longipes skeleton - mounted (left side)									Y			8x10	Y				Y			Peterson: ACM 2
+877	CM 1288 Phenacocoelus munroensis HOLOTYPE (=Merychyus siouxensis) lower jaws (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+878	Phenacocoelus skeleton - wall mount.									Y			5x7	Y							
+879	Phenacocoelus skeleton - wall mount.									Y			5x7	Y				Y			
+880	CM 1118 Oreonetes anceps PLESIOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+881	CM 845 Poatrephes paludicola HOLOTYPE (=Ticholeptus) skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+881a	CM 845 Poatrephes paludicola HOLOTYPE (=Ticholeptus) skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+882	CM 2806 Platygonus leptorhinus skeleton - mounted (left front quarter view)									Y			8x10	Y							
+883	CM 2806 Platygonus leptorhinus skeleton - mounted (right side view)									Y			8x10	Y				Y			
+884	CM 2806 Platygonus leptorhinus skeleton - mounted skull & neck  (left front view)									Y			8x10	Y				Y			
+885	CM 2806 Platygonus leptorhinus skeleton - mounted (side view)									Y			8x10	Y							
+886	CM 1440 Parahippus skull (lateral view)									Y			8x10	Y							
+887	Promerycochoerus carrikeri and Promerycochoerus vantasselensis skulls: CM 1078; CM 1079; CM 1080 HOLOTYPE; CM 109; CM 1230 (8 negatives).										Y		5x7	Y					Eight negatives in 8 envelopes.		
+888	Sydney Prentice illustration of Promerycochoerus (three little pigs).									Y			5x7	Y				Y			
+889	CM 1303 Promerycochoerus hatcheri Douglass HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+890	CM 1303 Promerycochoerus hatcheri Douglass HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+891	CM 1303 Promerycochoerus hatcheri Douglass HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+892	CM 1194 Promerycochoerus hollandi Douglass HOLOTYPE lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+893	CM 1194 Promerycochoerus hollandi Douglass HOLOTYPE skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+894	CM 1194 Promerycochoerus hollandi Douglass HOLOTYPE skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+895	CM 769 Promerycochoerus minor HOLOTYPE skull (superior view)							1935	F W Kohler		Y		5x7	Y				Y			
+896	CM 769 Promerycochoerus minor HOLOTYPE skull (inferior view)							1935	F W Kohler		Y		5x7	Y				Y			
+897	CM 769 Promerycochoerus minor HOLOTYPE lower jaws (superior view)							1935	F W Kohler		Y		5x7	Y				Y			
+898	CM 990 Promerycochoerus grandis HOLOTYPE skull (inferior view)							1935	F W Kohler		Y		5x7	Y				Y			
+899	CM 990 Promerycochoerus grandis HOLOTYPE skull (superior view)							1935	F W Kohler		Y		5x7	Y				Y			
+900	CM 990 Promerycochoerus grandis HOLOTYPE lower jaws (superior view)							1935	F W Kohler		Y		5x7	Y				Y			
+901	Promerycochoerus carrikeri model									Y			5x7	Y				Y	Made by T A Mills. O A Peterson: Annals of Carnegie Museum IX.		Peterson: ACM 9.
+902	CM 109 Promerycochoerus carrikeri lower jaws (superior view)										Y		5x7	Y				Y			
+903	CM 1080 Promerycochoerus carrikeri skeletons in matrix									Y			8x10	Y				Y			
+904	Promerycochoerus carrikeri model									Y			8x10	Y				Y			
+905	Promerycochoerus carrikeri model									Y			8x10	Y				Y			
+906	Illustration of Plesippus.									Y			5x7	Y							
+907	CM 3067 Protoreodon medius in matrix										Y		5x7	Y							
+908	Illustration of mounted skeleton of CM 2962 Protoreodon medius HOLOTYPE.									Y			5x7	Y							Peterson: ACM 12.
+909	CM 3032 Protoreodon minor																				
+910	CM 800 Pronomotherium right ramus (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+911	CM 796 Pronomotherium laticeps Douglass skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+912	CM 796 Pronomotherium laticeps lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+913	CM 796 Pronomotherium laticeps skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+914	CM 796 Pronomotherium laticeps skull and jaw (lateral view)									Y			8x10	Y				Y			
+915	CM 796 Pronomotherium laticeps skull and jaw (lateral view)									Y			8x10	Y							
+916	Burke's illustration of rabbit jaws.									Y			5x7	Y				Y			
+917	Restoration model of Mylodon harlani by Harold J. Clement.										Y		5x7	Y				Y	Made by H J Clement.		
+918	Mylodon harlani skeleton - mounted (anterior view)									Y			8x10	Y							
+919	Mylodon harlani skeleton - mounted (left side)									Y			8x10	Y							
+920	Mylodon harlani skeleton - mounted (right side)									Y			8x10	Y							
+921	Published illustration of restoration of Smilodon.									Y			5x7	Y				Y			
+922	H J Clement working on Smilodon model																				
+923	Smilodon model																		Made by H J Clement.		
+924	Smilodon model (right side), made by Harold J. Clement									Y			8x10	Y				Y			
+925	Smilodon californicus skeleton - mounted (right front view)								F W Kohler	Y			8x10	Y				Y			
+926	Smilodon californicus skull (right side)									Y			8x10	Y				Y	3 lights photo flood exposure (f32) 13 sec.		
+927	Smilodon californicus skull - mounted (left side)									Y			8x10	Y				Y	3 photo floods in Lab, panchromatic plate, f22 sub.		
+928	Smilodon model (seated) for La Brea diorama, made by Harold J. Clement									Y			8x10	Y				Y	Yellow negative. There is also a badly damaged (wrinkled) 8x10 nitrate negative put with other damaged negatives.		
+929	Smilodon californicus skeleton - mounted																				
+930	CM 1204, 1217 Steneofiber fossor Peterson skeleton - mounted									Y			8x10	Y				Y			Peterson: MCM 2, pl. 20
+931	Steneofiber fossor skeleton - mounted									Y			8x10	Y				Y			
+932	Mounted skeleton of Stenomylus.									Y			5x7	Y				Y			
+933	Illustration of group of Stenomylus by Andrey Avinoff.									Y			5x7	Y				Y			
+934	Stenomylus drawing by A Avinoff																	Y			
+935	CM 2306 Stenomylus hitchcocki slab mount									Y			8x10	Y				Y			
+936	Stenomylus hitchcocki - group of mounted skeletons: CM 2779, 2780, 2781, 2782, 2786, 2787, 2788, 2810									Y			8x10	Y				Y			Peterson: ACM 8, pl. 22
+937	Stenomylus hitchcocki - drawing of mounted group									Y			8x10	Y							Peterson: ACM 8
+938	Stenomylus hitchcocki - group of mounted skeletons: CM 2779, 2780, 2781, 2782, 2786, 2788, 2810									Y			8x10	Y					Negative broken at one corner.		
+939	Stenomylus hitchcocki - group of mounted skeletons: CM 2779, 2780, 2781, 2782, 2786, 2788, 2810									Y			8x10	Y				Y			
+940	Teleodus skulls in block (2 skulls)					12		1929		Y			8x10	Y				Y			
+941	Teleodus									Y			8x10	Y							
+942	Teleodus skull (inferior view)									Y			8x10	Y				Y			
+943	Teleoceras model									Y			8x10	Y				Y			
+944	Teleoceras skeleton - mounted									Y			8x10	Y				Y	Print damaged.		
+945	CM 1191 Ticholeptus breviceps lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+946	CM 1191 Ticholeptus breviceps skull (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+947	CM 1191 Ticholeptus breviceps skull (inferior view).							1935	F W Kohler		Y		5x7	Y				Y			
+948	CM 995 Ticholeptus bannachensis lower jaws (superior view).							1935	F W Kohler		Y		5x7	Y				Y			
+949	Titanothere(?) hind limb and foot.									Y			5x7	Y				Y			
+950	Trigonias skeleton - mounted																				
+951	CM 95 Trigonias osborni Lucas skeleton - mounted									Y			8x10	Y				Y			
+952	CM 95 Trigonias osborni Lucas skeleton - mounted									Y			8x10	Y				Y			
+953	CM 95 Trigonias osborni Lucas skeleton (left side) - mounted										Y		8x10	Y				Y	2 negatives		
+954	CM 95 Trigonias osborni Lucas skeleton (right side) - mounted									Y			8x10	Y							
+955	Dinosaur track from Gettysburg; PA																				
+956	Dinosaur track from Gettysburg, Pennsylvania.									Y			5x7	Y				Y			
+957	Dinosaur track from Gettysburg, Pennsylvania.									Y			5x7	Y				Y			
+958	Fossil tracks.									Y			5x7	Y				Y			
+959	Dinosaur track.									Y			5x7	Y				Y			
+960	Tracks on sandstone																				
+961	Tracks from Gettysburg, Pennsylvania.									Y			5x7	Y				Y			
+962	Ripple marks (2 negatives).									Y			5x7	Y				Y			
+963	Slab of ripple marks collected by W H Utterback, Red Fork of the Powder River, Wyoming.	Red Fork of the Powder River		Wyoming	USA					Y			5x7	Y							
+964	Diplodocus carnegii replica in British Museum; Arthur Coggeshall standing									Y			8x10 (6½ x 8½)	Y		Y		Y	Same picture as 1089.		
+965	Published drawing comparing humeri of Ursus spelaeus (fossil) and Ursus maritimus (Recent)									Y			8x10	Y					Yellow negative		
+966	Published drawing comparing femora of human and cave bear									Y			8x10	Y							
+967	Human cervicals									Y			8x10	Y				Y	Yellow negative		
+968	Preparator at work in paleontological laboratory									Y			8x10	Y		Y		Y			
+969	Arthur Coggeshall at work in paleontological laboratory									Y			8x10	Y		Y		Y			
+970	Mounting Apatosaurus louisae - welding framework									Y			8x10	Y		Y			Welder blurred		
+971	Joe Yarmer, Chief Preparator, and Norm Wuerthele, Assistant Preparator in Preparation Laboratory	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA			1973				Y	35mm film strip	Y					8 pictures on film strip: 0A) Yarmer & Wuerthele; 1A) Yarmer & Wuerthele; 2A) Yarmer & Wuerthele; 3A) Yarmer; 4A) Yarmer; 5A) Yarmer; 6A) Yarmer & Wuerthele; 7A) Yarmer & Wuerthele.		
+972	Uinta Basin cross-section																				
+973	Geologic map of the Uinta Basin.									Y			5x7	Y				Y			
+974	Geologic map of the Uinta Basin.					2	27	1933	F W Kohler		Y		5x7	Y					From an old print.		
+975	Preliminary of outline map of the Uinta Basin.					2	27	1933	F W Kohler	Y			5x7	Y				Y			
+976	Uinta Basin map									Y			8x10	Y							
+977	Geological map of the Uinta Basin (2 negatives)									Y			8x10	Y							
+978	Map of Dolichorhinus Quarry fossil locality at Wagonhound Canyon, Utah									Y			8x10	Y							
+979	Map of southwestern Montana									Y			8x10	Y							
+980	Topographic map of the State of Washington									Y			8x10	Y							
+981	Map of Western Pennsylvania - 3 maps; all different (3 negatives)									Y			8x10	Y				Y			
+982	North Canada polar projection map																				
+983	North polar projection map.									Y			5x7	Y				Y			
+984	Map of the United States in 1890.									Y			5x7	Y				Y			
+985	Relief map of Pymatuning Swamp.									Y			5x7	Y				Y			
+986	Chart of geologic time divisions (3 negatives).									Y			5x7	Y				Y			
+987	Chart of geologic time divisions.										Y		5x7	Y					Negative badly damaged - removed.		
+988	Chart of geologic time divisions								Sydney Prentice		Y		8x10	Y							
+989	Tertiary mammal-bearing formation chart									Y			8x10	Y				Y			
+990	Chart of exhibit labels									Y			8x10	Y							
+991	Chart of exhibit labels									Y			8x10	Y							
+992	Chart of exhibit labels									Y			8x10	Y							
+993	Chart of exhibit labels							1929		Y			8x10	Y					Merch [?] sent to California		
+994	Chart of the modification of arm and hand.									Y			5x7	Y				Y			
+995	Chart illustrating modifications of arm and hand									Y			8x10	Y							
+996	Chart of structure, forms and development of dentition in animal kingdom (2 different negatives)									Y			8x10	Y							
+997	Brain chart, man on right									Y			8x10	Y							
+998	Human skeleton (malformed?)									Y			8x10	Y							
+999	Box of osteological negatives																				
+1000	Dinosaur Hall: taken during mounting activities	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA											Y		Y			
+1001	Dinosaur Hall: left to right: Apatosaurus, Allosaurus, Diplodocus; rear view)	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+1002	View of Dinosaur Hall with Diplodocus carnegii, rear view	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y							
+1003	Dinosaur Hall during moving of Diplodocus carnegii	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+1004	Dinosaur Hall during moving of Diplodocus carnegii	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA					Y			8x10	Y		Y		Y			
+1005	Dinosaur camp in Utah; Mr Douglass in his garden	Dinosaur National Monument		Utah	USA			1911								Y		Y			
+1006	Mrs Goetschius' house and family (Mrs Douglass)	Ruby Valley		Montana	USA			1902								Y		Y			
+1007	Joseph Miller family																	Y			
+1008	Paleontology laboratory; one of the first pictures ever taken of the original staff. Left to right: W. H. Reed, O. A. Peterson, J. L. Wortman, Arthur S. Coggeshall.	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Jan		1900		Y			8x10 (6½ x 8½)	Y		Y		Y	This has to be taken in January because Peterson was hired January 1 and Wortman quit/was fired on February 1.		Annual Report, 1900
+1009	Paleontology laboratory. Left to right: W. H. Utterback, O. A. Peterson, Louis Coggeshall, Charles W. Gilmore, Earl Douglass, Arthur S. Coggeshall, Asher W. VanKirk, Sydney Prentice, John B. Hatcher	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Jan		1903		Y			8x10 (6½ x 8½)	Y		Y		Y			
+1010	Paleontology laboratory. Left to right: W. H. Utterback, O. A. Peterson, Louis Coggeshall, Charles W. Gilmore, Earl Douglass, Arthur S. Coggeshall, Asher W. VanKirk, Sydney Prentice, John B. Hatcher	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Jan		1903		Y			8x10 (6½ x 8½)	Y		Y		Y	Upper right corner broken.		
+1011	Storage cases in basement storeroom; Mary Ann Gross in some photos (8 negatives)	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Spr		1971													
+1012	Camp on Douglass' farm, taken while Coggeshall was in the act of taking a moving picture of the setting up of a camp	Dinosaur National Monument		Utah	USA			1922								Y		Y			
+1013	Near Dinosaur Quarry, Utah; Roy Kay, Earl Douglass, O A Peterson, and Arthur Coggeshall	Dinosaur National Monument		Utah	USA			1922								Y		Y	See also #172.		
+1014	Map of Dinosaur National Monument Quarry (2 negatives)									Y			8x10	Y							
+1015	W H Utterback digging out Daemonelix (Agate Springs)	near Harrison	Sioux?	Nebraska	USA											Y		Y			
+1016	Bad boys from the Bighole (Williams & Dick)			Montana	USA				Earl Douglass?	Y			5x7			Y	Y	Y	Earl Douglass collected from south of Lower Bighole, north of Dillon, Montana, in 1903.		
+1017	Slab mount of Stenomylus skeleton.									Y			5x7	Y				Y			
+1018	Paleontology laboratory and office work	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	6		1979	Allen D McCrady									Y	19 photos & prints.		
+1019	Shuler tipping dump cart	Dinosaur National Monument		Utah	USA			1911	O A Peterson								Y				
+1020	Pulling block with mules	Dinosaur National Monument		Utah	USA											Y		Y	Copied from lantern slide.		
+1021	Wagon train	Dinosaur National Monument		Utah	USA											Y		Y	Copied from lantern slide.		
+1022	Douglass' garden in camp	Dinosaur National Monument		Utah	USA													Y	Copied from lantern slide.		
+1023	Dragging block downhill from Dinosaur Quarry, west side	Dinosaur National Monument		Utah	USA											Y		Y	Copied from lantern slide.		
+1024	Camp set up for taking motion picture	Dinosaur National Monument		Utah	USA														Copied from lantern slide.		
+1025	Taking motion picture; Arthur Coggeshall with tripod and camera	Dinosaur National Monument		Utah	USA														Copied from lantern slide.		
+1026	Men working quarry face	Dinosaur National Monument		Utah	USA											Y		Y	Copied from lantern slide.		
+1027	Protoceratops on exhibit	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	10		1980	Norman Wuerthele									Y			
+1028	Apatosaurus drawing (restoration) by Jim Senior					8		1981	Vincent Abromitis									Y			
+1029	Coelophysis block showing thecodont gastralia and Coelophysis cervical vertebral ribs							1982	Allen D McCrady									Y	Contact sheet.		
+1030	Paleontology laboratory: Norman Wuerthele preparing	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA			1982	Allen D McCrady												
+1031	Paleontology laboratory: Allen D McCrady preparing Coelophysis block	Dinosaur National Monument		Utah	USA			1982	Norman Wuerthele												
+1032	Techniques of opening Coelophysis block	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Spr		1982	Allen D McCrady												
+1033	Small Coelophysis blocks	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA			1982	Allen D McCrady												
+1034	Paleontology laboratory: Allen D McCrady working on Coelophysis block	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	Spr		1982	Norman Wuerthele												
+1035	Portrait of J B Hatcher							1901 ca	New York Studio							Y		Y			
+1036	Portrait of Earl Douglass (2 negatives)	Stokes Studio, Salt Lake City		Utah	USA				G Stokes Berryman							Y		Y	Copied from print.		
+1037	Portrait of W J Holland	London		England	U.K.				London Stereoscopic Co.							Y		Y	Copied from print.		
+1038	Portrait of Andrew Carnegie in the Tropics				Ceylon			1879								Y		Y	Copied from print.		
+1039	John Guilday out West							1950 ca	Alice Guilday							Y		Y			
+1040	Wyoming field crew: Leonard Krishtalka, Richard K Stucky, J Douglas Swarts, etc			Wyoming	USA	Sum		1984													
+1041-01	Hogbacks of the Beartooth Mountains; Kurt Constenius (left) and Mary Dawson (right) on road	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1041-02	Hogbacks of the Beartooth Mountains. Mary Dawson (left) and Kurt Constenius (right)	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1041-03	Mary Dawson and Kurt Constenius among the Appaloosa horses.	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1041-04	Mary Dawson among the Appaloosa horses	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1042-05	Clark's Fork River in distance; Mary Dawson in red, Leona Constenius to right	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1042-06	Hogbacks of the Beartooth Mountains	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1042-07	Hogbacks of the Beartooth Mountains; Clark's Fork River in distance	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1042-08	Hogbacks of the Beartooth Mountains; Clark's Fork River in distance	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1043-09	Nodules of dahlites in Mancos Shale	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1043-10	Leona Constenius (left, in plaid shirt) and Mary Dawson (right, in red sox) with exposed dinosaur bone	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1043-11	Leona Constenius (left, in plaid shirt) and Mary Dawson (right, in red sox) with exposed dinosaur bone; ranch owner at top of picture in riding boots	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1043-12	Norm Constenius (left) and Mary Dawson (in red sox) with exposed dinosaur bone	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1044-13	Norm Constenius (left) and Mary Dawson (in red sox) with exposed dinosaur bone	Northwest of Cody		Wyoming	USA	5	29-31	1987	David S Berman									Y	Memorial Day weekend. Dawson, Berman and Constenius Dinosaur Expedition to dinosaur-bearing ?Kootenai Formation. Participants were: Mary Dawson, David Berman, Kurt Constenius, and Kurt's mother and father, Leona and Norman Costenius.		
+1044-14	Ophiacodon sp. Collected by Berman					6		1987	David S Berman												
+1044-15	Ophiacodon sp. Collected by Berman					6		1987	David S Berman												
+1044-16	Ophiacodon sp. Collected by Berman					6		1987	David S Berman												
+1045-21	Germain Collection trip. Norman Wuerthele on balcony of hotel room, with Atlantic Ocean in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1045-22	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) drinking Jim Beam bourbon on balcony of hotel room; with Atlantic Ocean in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1045-23	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) drinking Jim Beam bourbon on balcony of hotel room; with Atlantic Ocean in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1045-24	Germain Collection trip. Norman Wuerthele on balcony of hotel room; with Atlantic Ocean in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1046-25	Germain Collection trip. Claude Germain (left); Norman Wuerthele and David Berman packing fossils of Germain Collection in Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1046-26	Germain Collection trip. Claude Germain; his daughter Catherine; David Berman and Norman Wuerthele packing fossils of Germain Collection in Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1046-27	Germain Collection trip. Norman Wuerthele (left) and David Berman (right) packing Germain Collection in Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1046-28	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) packing Germain Collection in Claude Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1047-29	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) packing Germain Collection in Claude Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1047-30	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) packing Germain Collection in Claude Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1047-31	Germain Collection trip. (Right to left) Claude Germain's daughter Catherine; Norman Wuerthele; Claude Germain and David Berman packing fossils in Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1048-18	Germain Collection trip. Coast of Brittany near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1048-34	Germain Collection trip. Claude Germain (left) and Norman Wuerthele (right) packing fossils in Germain's cellar	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1048-35	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) dragging box filled with fossils to Germain garage for stacking	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1048-36	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) dragging box filled with fossils to stack with others in Germain garage	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1049-19	Germain Collection trip. Seacoast near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1049-20	Germain Collection trip. Harbor of Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1049-21	Germain Collection trip. In Germain's garage: crates filled with Germain Collection of fossils; in background (left to right) Norman Wuerthele; Claude Germain; Germain's daughter Catherine	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1050-22	Germain Collection trip. In Germain's garage: crates filled with Germain Collection of fossils; in background (left to right) Norman Wuerthele; Claude Germain; Germain's daughter Catherine	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1050-23	Germain Collection trip. Arrangement of fossil paddle of ?plesiosaur; Germain Collection	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1050-24	Germain Collection trip. Arrangement of fossil paddle of ?plesiosaur; Germain Collection	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1050-25	Germain Collection trip. Arrangement of fossil paddle of ?plesiosaur; Germain Collection	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1051-26	Germain Collection trip. Norman Wuerthele (right) fastens lid on shipping crate filled with fossils while Claude Germain (left) looks on; Germain garage	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1051-27	Germain Collection trip. Norman Wuerthele writes shipping address on crate of fossils in Germain garage	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1051-28	Germain Collection trip. Norman Wuerthele resting with crates packed with Germain Collection in Germain's garage	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1051-29	Germain Collection trip. David Berman (left) and Norman Wuerthele (right) posing with crates packed with Germain Collection; in Germain's garage	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1052-00	Germain Collection trip. David Berman in front of hotel in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1052-01	Germain Collection trip. David Berman in front of hotel in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1053-02	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1053-03	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1053-04	Germain Collection trip. David Berman (left) and Claude Germain (right) on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1053-05	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1054-06	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) with Germain residence in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1054-07	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) with Germain residence in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1054-08	Germain Collection trip. Claude Germain with his house in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1054-09	Germain Collection trip. Claude Germain (left) and Norman Wuerthele (right) on Germain property; Germain residence in background	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1055-10	Germain Collection trip. (Left to right) David Berman; Claude Germain and Norman Wuerthele at fish pond on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1055-11	Germain Collection trip. (Left to right) David Berman; Norman Wuerthele and Claude Germain at fish pond on Germain property	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1055-12	Germain Collection trip. (Left to right) Claude Germain; Germain's daughter Catherine; and Norman Wuerthele resting from labor of packing fossils; on patio at Germain residence	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1055-13	Germain Collection trip. (Left to right) Claude Germain; Germain's daughter Catherine; and Norman Wuerthele resting from labor of packing fossils; on patio at Germain residence	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1056-14	Germain Collection trip. Norman Wuerthele on street in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1056-15	Germain Collection trip. View from hotel balcony in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1056-16	Germain Collection trip. Seacoast near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1056-17	Germain Collection trip. Some houses near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1057-30	Germain Collection trip. Norman Wuerthele with friend; on patio at Germain residence	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1057-31	Germain Collection trip. Norman Wuerthele (left) and Claude Germain (right) with Germain's French poodle; on patio at Germain residence	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1057-32	Germain Collection trip. Coast of Brittany near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1057-33	Germain Collection trip. Claude Germain (left) and Norman Wuerthele (right) on streets of Celtic village near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1058-34	Germain Collection trip. Claude Germain (left) and Norman Wuerthele (right) on streets of Celtic village near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1058-35	Germain Collection trip. David Berman and Susan Motz Berman on balcony of hotel room in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1058-36	Germain Collection trip. Susan Motz Berman on balcony of hotel room in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1058-37	Germain Collection trip. Susan Motz Berman looking over seacoast near Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1059-17	Ophiacodon sp.; collected by David S Berman					6		1987	David S Berman												
+1059-18	Ophiacodon sp.; collected by David S Berman					6		1987	David S Berman												
+1059-19	Ophiacodon sp.; collected by David S Berman					6		1987	David S Berman												
+1059-20	Germain Collection trip. Norman Wuerthele on balcony of hotel room in Port Manech	Port Manech; coast of Brittany		Brittany	France	6-7	23-3	1987	David S Berman												
+1060-00	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) Truck driver; David Berman	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1061-01	Unloading the Germain Collection at Carnegie Museum. (Left to right) David Berman; Norman Wuerthele; Albert Kollar	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1061-02	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) David Berman; Norman Wuerthele; Albert Kollar; wife of truck driver	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1061-03	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) truck driver; David Berman; Albert Kollar; Norman Wuerthele; wife of truck driver	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1061-04	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) David Berman; Norman Wuerthele; Albert Kollar; truck driver	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1062-05	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) David Berman; Albert Kollar; Norman Wuerthele; truck driver	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1062-06	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) David Berman; truck driver; Albert Kollar; Norman Wuerthele	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1062-07	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) Albert Kollar; truck driver	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1062-08	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) truck driver; Norman Wuerthele; Albert Kollar	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1063-09	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) John Carter; Norman Wuerthele; truck driver; Albert Kollar	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1063-10	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) Norman Wuerthele; truck driver (blur); Albert Kollar	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1063-11	Germain Collection. Unloading the Germain Collection at Carnegie Museum. (Left to right) truck driver; Norman Wuerthele; Albert Kollar	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1063-12	Germain Collection. Norman Wuerthele unpacking the Germain Collection in the Preparation Lab	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1064-13	Germain Collection. Norman Wuerthele unpacking the Germain Collection in the Preparation Lab	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	8	21	1987	David S Berman												
+1065-18	Richard K. Stucky in Paleontology Office	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1065-19	Richard K Stucky in Paleontology Office	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1065-20	Leonard Krishtalka	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1066-24	During construction of Benedum Hall of Geology. Mary Dawson on crutches; Kenneth Carpenter with his back to camera; rest are construction workers	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1066-24a	During construction of Benedum Hall of Geology	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1067	Kenneth Carpenter peering through the pelvis of the mastodon he is assembling	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1068-22	Kenneth Carpenter beginning reconstructing of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1068-23	Kenneth Carpenter beginning reconstructing of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Leonard Krishtalka												
+1069-04	Preparation for mounting of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Norman Wuerthele												
+1069-05	Preparation for mounting of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Norman Wuerthele												
+1069-06	Preparation for mounting of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Norman Wuerthele												
+1070-07	Preparation for mounting of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Norman Wuerthele												
+1070-08	Preparation for mounting of mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4		1988	Norman Wuerthele												
+1070-09	Creation of Egyptian Hall figure by Patrick Martin	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1070-10	Creation of Egyptian Hall figure by Patrick Martin	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1071-11	Creation of Egyptian Hall figure by Patrick Martin	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1071-12	Kenneth Carpenter working on mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1071-13	Kenneth Carpenter working on mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1071-14	Kenneth Carpenter working on mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1072-15	Kenneth Carpenter working on mastodon	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1072-16	Attempt at moving Coelophysis block out of Preparation Laboratory	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1072-17	Attempt at moving Coelophysis block out of Preparation Laboratory	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1072-18	Attempt at moving Coelophysis block out of Preparation Laboratory	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1073-19	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1073-20	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1073-21	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1073-22	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1074-23	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1074-24	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1074-25	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1074-26	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1075-27	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1075-28	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1075-29	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1075-30	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1076-31	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1076-32	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1076-33	Mounting of mastodon by Kenneth Carpenter	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1076-34	Egyptian Hall figure in progress	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1077-35	Egyptian Hall figure in progress	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1077-36	Egyptian Hall figure in progress	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1077-36a	Egyptian Hall figure in progress	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA	4-5		1988	Norman Wuerthele												
+1078-15	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Carnegie Institute President Dr Robert Wilburn in center in teal-colored shirt; John Wells, Director of the Denver Museum at extreme right; others are from Denver Museum		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka									Y			
+1078-16	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Carnegie Institute Trustee Jerry Voros in center in white shirt; CMNH Director Jim King in plaid shirt & cap; Robert Wilburn in teal-colored shirt; & John Wells at extreme right; others are from Denver.		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1078-17	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Jim King in plaid shirt; his wife; Frances King; in striped shirt; Robert Wilburn in teal-colored shirt; Jerry Voros between Wilburn and John Wells at extreme right; others are from Denver Museum		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1078-18	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; three at left from Denver Museum; Jim King in plaid shirt; Fran King in striped shirt; Bob Wilburn in teal shirt; Jerry Voros at extreme right		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1079-19	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Bob Wilburn second from left in teal shirt; Fran King second from right in striped shirt; Jerry Voros on extreme right		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1079-20	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Richard Stucky of Denver Museum in beard & navy blue kneeling showing fossil; Fran King approaching in background		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1079-21	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Bob Wilburn kneeling at left; Jerry Voros bent over; Richard Stucky right foreground		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1079-22	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Richard Stucky walking		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1080-23	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Bob Wilburn extreme left; Richard Stucky with white shoes		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1080-24	Trip to Sullivan Ranch Locality (CM 34) in Wyoming		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1080-25	Trip to Sullivan Ranch Locality (CM 34) in Wyoming; Fran & Jim King walking		Natrona	Wyoming	USA	9		1990	Leonard Krishtalka												
+1081	Mary Dawson, seated, in Arctic			N.W.T.	Canada				Clifford Morrow							Y	Y	Y	Copied from 35mm color slide.		
+1082	Portrait of William Jacob Holland	Pittsburgh	Allegheny	Pennsylvania	USA				W O Breckon Studios							Y		Y	Copy of original print purchased by Section for $10 from Schoyer's Books (rare book dealers); inscribed: "To the Hon J Ralph Park with the kind regards of his old friend W J Holland". Taken during time Pittsburgh was spelled without the 'h'.		
+1083	Mary R Dawson with petrified wood stump	Bay Fiord, Ellesmere Island		N.W.T.	Canada				Clifford Morrow (probably)									Y	Where is print?		
+1084	New York World Sunday magazine newspaper page from November 1898																		Copied from Carnegie's Dinosaurs book which was printed from a copy of a Coggeshall original		
+1085	Big & Little Bone Rooms & part of Second Floor offices	Carnegie Museum; Pittsburgh	Allegheny	Pennsylvania	USA			1990	Melinda McNaugher									Y	Made for 1990 grant proposal to NSF for compactors (proposal rejected)		
+1086	Carnegie Museum & AMNH field crews at Camp Carnegie. L-R Standing: W Matthew, Richard Lull, Henry F Osborn, W J Holland, unknown, J A Wortman, William Reed; Sitting: Walter Granger, George Mellor, Ira Shallenberger, Arthur Coggeshall.	Sheep Creek	Albany	Wyoming	USA	8	8	1899	George Bird Grinnell							Y		Y	See letter to Dunbar by George W & Dorothy Reed Patterson; March 16; 1955; in J L Kay file under `P'		
+1087	Setting up the backbone of cast of Diplodocus carnegii in the British Museum; W J Holland extreme left	Kensington		England	U.K.			1905								Y		Y			
+1088	Setting up cast of Diplodocus carnegii in the British Museum W J Holland in top hat; Arthur Coggeshall seated on left front corner of base	Kensington		England	U.K.			1905								Y		Y			
+1089	Cast of Diplodocus carnegii in the British Museum; Arthur Coggeshall on right	Kensington		England	U.K.			1905								Y			Same picture as 964.		
+1090	Setting up the third cast of Diplodocus carnegii at the Paris Museum. W J Holland (far left) is shown with Arthur Coggeshall (third from left; wearing apron) overseeing the installation at the National Museum, Jardin des Plantes.	Paris			France	6		1908								Y		Y			
+1091	Setting up the second cast of Diplodocus carnegii at the Humboldt Museum (Royal Museum of Natural History). W J Holland (far left; on floor) and Arthur Coggeshall (lower right; in apron) overseeing the installation	Berlin			Germany	5-6		1908								Y		Y			
+1092	Setting up the second cast of Diplodocus carnegii at the Humboldt Museum (Royal Museum of Natural History). W J Holland (far left) and Arthur Coggeshall (lower right) overseeing the installation	Berlin			Germany	5-6		1908								Y		Y			
+1093	Staff of the Section of Vertebrate Paleontology. Front Row, L-R: Earl Douglass, A S Coggeshall, J B Hatcher, O A Peterson, W H Utterback; Back Row, L-R: A W Van Kirk, L S Coggeshall, Norman Boss, Sydney Prentice, C W Gilmore.	Pittsburgh	Allegheny	Pennsylvania	USA	3	20	1903								Y		Y			
+1094																					
+1095	Earl Douglass portrait; taken around the time Douglass began working for the Museum															Y		Y			
+1096	Construction of the addition to the original Carnegie Library building (background) and of the Bellefield Boiler Plant (foreground)	Pittsburgh	Allegheny	Pennsylvania	USA			1907	Serafino I Agostini	Y			5x7	Y		Y		Y	In front of the power house beside the tripod derrick there is a steam driven cement mixer; just to the right of the power house is an incline that was used to haul stone and other materials to the top level; off the top right hand corner of the roof of	the power house the incline can be seen beside the tree and to the left of the Coca-Cola sign. Negative donated to Section by granddaughter of Serafino Agostini, Mrs. Edythe Corbett, 407 Elizabeth St., Munhall, PA 15120 (phone 462-8565).	
+1097	Apatosaurus skull on mounted specimen (modeled)	Pittsburgh	Allegheny	Pennsylvania	USA			1979	Vincent Abromitis									Y			
+1098	Camarasaurus skull on exhibit	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1099	Camarasaurus skull on exhibit	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis							Y					
+1100	Railroad tracks and home-made mine car at Carnegie Quarry showing a cut through rock; Ainge and Schuler	Dinosaur National Monument		Utah	USA			1912-1914	Earl Douglass							Y	Y	Y	Copy of CM photo 2420		
+1101	J A Kay and Joe Ainge with Billy and Joe, Carnegie Museum's team of mules, moving block to loading station	Dinosaur National Monument		Utah	USA			1912-1914	Earl Douglass							Y		Y	Copy of CM photo 2410		
+1102	Dr W J Holland sitting on base of Diplodocus cast bound for British Museum; taken in old Exposition Building, Pittsburgh's Point.	Pittsburgh	Allegheny	Pennsylvania	USA	6		1904								Y		Y			
+1103	Schuler tipping dump cart	Dinosaur National Monument		Utah	USA			1911	O A Peterson							Y		Y			
+1104	Erecting Diplodocus carnegii cast in Paris Museum. Dr Holland (far left) is shown with Arthur Coggeshall (second from left; wearing apron) overseeing the installation of the third cast of the dinosaur in June 1908	Galerie de Paleontologie; Museum d'Histoire Naturelle; Jardin des Plantes, Paris			France	6		1908								Y		Y			
+1105	Erecting Diplodocus carnegii cast in Paris Museum. Arthur Coggeshall (second from left); Dr Holland (third from left); and Professor Marcellin Boule, Director of the Paris Museum and Curator of Vertebrate Paleontology.	Galerie de Paleontologie; Museum d'Histoire Naturelle; Jardin des Plantes, Paris			France	6		1908								Y		Y			
+1106	Cast of Diplodocus carnegii in the British Museum; Arthur Coggeshall on right	Kensington		England	U.K.			1905								Y		Y			
+1107	Construction of the addition to the original Carnegie Library building: digging the foundation; Mawhinney Street in background	Pittsburgh	Allegheny	Pennsylvania	USA			1907	Serafino I Agostini							Y		Y	Original print donated to Section by granddaughter of Serafino Agostini; Mrs Edythe Corbett; 407 Elizabeth Street; Munhall; PA 15120; (phone) 462-8565		
+1108	Construction of the addition to the original Carnegie Library building: digging the foundation	Pittsburgh	Allegheny	Pennsylvania	USA			1907	Serafino I Agostini							Y		Y	Original print donated to Section by granddaughter of Serafino Agostini; Mrs Edythe Corbett; 407 Elizabeth Street; Munhall; PA 15120; (phone) 462-8565		
+1109	Dinosaur Hall showing Diplodocus and Apatosaurus with wrong skull on Apatosaurus	Pittsburgh	Allegheny	Pennsylvania	USA											Y		Y			
+1110	Sydney Prentice at work.				USA											Y			Original print provided by M. Graham Netting.		
+1111	Very early picture of Dinosaur Hall showing Diplodocus carnegii with guard.	Pittsburgh	Allegheny	Pennsylvania	USA													Y			
+1112	Early picture of Dinosaur Hall showing Diplodocus carnegii and a headless Apatosaurus louisae.	Pittsburgh	Allegheny	Pennsylvania	USA													Y			
+1113	Dinosaur Hall showing Diplodocus carnegii and Apatosaurus louisae with the wrong (Camarasaurus) head.	Pittsburgh	Allegheny	Pennsylvania	USA													Y			
+1114	Dinosaur Hall showing Apatosaurus louisae with the correct head.	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis									Y			
+1115	Dinosaur Hall showing Diplodocus carnegii	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1116	Camarasaurus lentus mounted juvenile	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1117	Diplodocus skull, mounted on pipe	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1118	Diplodocus skull, mounted on pipe	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1119	Diplodocus skull with atlas/axis	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1120	Norman Wuerthele and Patrick Martin mounting correct skull on Apatosaurus louisae.	Pittsburgh	Allegheny	Pennsylvania	USA			1979	Vincent Abromitis									Y			
+1121	Second news clipping from Andrew Carnegie about Wyoming dinosaur.				USA	12		1898				Y	4x5	Y				Y	Photographed from original clipping for 1985 'Mr. Carnegie's Museum' exhibit celebrating his 150th birthday. Contact print.		
+1122	Dryosaurus altus mounted specimen	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis												
+1123	Dryosaurus altus, head and neck of mounted specimen	Pittsburgh	Allegheny	Pennsylvania	USA				Vincent Abromitis									Y			
+1124	Modern work at Agate Fossils Beds National Monument.	Agate Fossil Beds National Monument	Sioux	Nebraska	USA													Y	Photograph used in exhibit mounted in the latter half of the 1970s. Contact print.		
+1125	Very early broad view of Dinosaur Hall with Diplodocus carnegii, Triceratops skull in case, etc.	Pittsburgh	Allegheny	Pennsylvania	USA													Y			
+1126	Allosaurus fragilis on exhibit.	Pittsburgh	Allegheny	Pennsylvania	USA							Y	4x5	Y					Looks like a photograph of a photograph.		
+1127	Apatosaurus louisae on exhibit, with wrong head.	Pittsburgh	Allegheny	Pennsylvania	USA							Y	4x5	Y					Looks like a photograph of a photograph.		
+1128	Craig C. Black, portrait.											Y	4x5	Y				Y	Internegative.		
+1129	Diplodocus in Mexico. L-R: Louis Coggeshall, Carlos C. Hoffman, William J. Holland, Isaac Ochoterena (Director of the museum in Mexico City). Taken at time of erection of Diplodocus carnegii in Mexico. Computer-scanned from original print.	Chapultepec, Mexico City			Mexico	05		1930					4x5	Y		Y		Y			
+1130	Charles Gilmore, portrait													Y					Photograph found on desk of Elizabeth Hill, June 12, 2013		
+1131	O. A. Peterson, portrait																		Photograph found on desk of Elizabeth Hill, June 12, 2013		
