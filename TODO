@@ -58,7 +58,7 @@ Pre-submission
 --------------
 DONE	Ensure all hyphens and dashes are correct
 DONE	Ensure all quotes (single and double) are symmetric
-XXX	Fix the not-quite-Baskerville font used in some places for some reason
+DONE	Fix the not-quite-Baskerville font used in some places for some reason
 XXX	Number the figures sequentially
 XXX	Write the abstract
 XXX	Check that all references are cited and all citations referenced
