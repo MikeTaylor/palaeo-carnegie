@@ -23,3 +23,22 @@ Vincent
 
 
 
+Date: Nov 9, 2022, 10:21 AM
+From: Vincent Reneleau <vincent.reneleau@gmail.com>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: Re: Dippy's humerus
+
+Hi Mike,
+
+Paris' Dippy lenght : 23,5 m +-5 cm.
+
+You can add an additional 80cm if the tail was off the ground, aligned with the sacrum.
+
+Pic of the Atlas/Axis attached (best I can do).
+
+Best
+
+Vincent
+
+
+
