@@ -1,0 +1,827 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp305880vle;
+        Wed, 9 Nov 2022 07:49:26 -0800 (PST)
+X-Google-Smtp-Source: AMsMyM4LvK0B/ivg6Ftdho3b3MRCxL1axoRoiC0U59Um2KJy2jw2zUXteRuY0dmI7gE68Lk+3ToQ
+X-Received: by 2002:a5d:4f92:0:b0:22e:68a1:ddab with SMTP id d18-20020a5d4f92000000b0022e68a1ddabmr877640wru.496.1668008965384;
+        Wed, 09 Nov 2022 07:49:25 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1668008965; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=S0Gaqg+efwvwDF3uv+iGNfkeNhEXLkuinF14s0+Kg3QjIZzS4XFVdtEC+W2uOHb1F+
+         DwpgGoldbqPnFiV7yMZCl1bdHZHHOBC8eC42qtjKmTVRWUSoPvIIJAgMVqUWzLOcrarJ
+         ublcvxijyi9uzwp1SWuYg4cXF/9mo8kR289Tb7Z0JdSuo1/sWTCgM4W3pNNM7WsNZGMt
+         yYqJBSPUzdg4yNZH7JGc4t3xqRfOJY5vd1rA96ehA9tPF0GcV3VPGH9zxFVJRYcSNKVz
+         bW8jHOseD5tsaEZlY9tLrTfcCEe4RhXFwa+4PBchuiql/JuCbj6qzRDPY4b4zqfB7KVQ
+         19WQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:dkim-signature;
+        bh=Num+ZqFqW7q+WSn+QHpqoIRlDrT5JDtxxaLoRmUwLEc=;
+        b=gfAYHfXi8gPN+JE86bIi3O9kl2gelOi7xYD+pyKaatBK50jvhzK2z6bdQ9jCVSSOtN
+         DamXkmU2HRAq5kmACzUagChhZ7DrDTblgFOXYf7JeHAROj5QWN+J5+QJAfOSoIGt8Dl6
+         zXdbcjRWmFUcDVWikvNLuJruJ6p02U5E8gGCORNvCTn6e/elP0piigrEwkTIGIkmANX5
+         5TqTcEXTrcwR53ennPwSvWQCk4zNuzgQiiHfp3lQkkEo3NNrAUA89LKhxqCDpwuZFEpA
+         tUyP/A0RVJsz7FWT/BEj3TCuC+V1wtZoIH89nXVPDP29GDp/LfaqYYFaKhNXGoxehO00
+         lw5w==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@ljmu.ac.uk header.s=selector1 header.b=Y4GxicbE;
+       arc=pass (i=1 spf=pass spfdomain=ljmu.ac.uk dkim=pass dkdomain=ljmu.ac.uk dmarc=pass fromdomain=ljmu.ac.uk);
+       spf=pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.17 as permitted sender) smtp.mailfrom=P.L.Falkingham@ljmu.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ljmu.ac.uk
+Return-Path: <P.L.Falkingham@ljmu.ac.uk>
+Received: from repost01.tmes.trendmicro.eu (repost01.tmes.trendmicro.eu. [18.185.115.17])
+        by mx.google.com with ESMTPS id ca2-20020a056000088200b00236747c180dsi11893048wrb.720.2022.11.09.07.49.25
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 09 Nov 2022 07:49:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.17 as permitted sender) client-ip=18.185.115.17;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ljmu.ac.uk header.s=selector1 header.b=Y4GxicbE;
+       arc=pass (i=1 spf=pass spfdomain=ljmu.ac.uk dkim=pass dkdomain=ljmu.ac.uk dmarc=pass fromdomain=ljmu.ac.uk);
+       spf=pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.17 as permitted sender) smtp.mailfrom=P.L.Falkingham@ljmu.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ljmu.ac.uk
+Received: from 104.47.1.56_.trendmicro.com (unknown [172.21.173.179])
+	by repost01.tmes.trendmicro.eu (Postfix) with SMTP id C97DF1000063D;
+	Wed,  9 Nov 2022 15:49:24 +0000 (UTC)
+X-TM-MAIL-RECEIVED-TIME: 1668008962.902000
+X-TM-MAIL-UUID: f16ec09e-e4ff-4122-9382-5f7cc4691ca3
+Received: from EUR01-VE1-obe.outbound.protection.outlook.com (unknown [104.47.1.56])
+	by repre01.tmes.trendmicro.eu (Trend Micro Email Security) with ESMTPS id DC5B310002864;
+	Wed,  9 Nov 2022 15:49:22 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=aiF3YrcLNjM1QCk69DlBd8YZNlxrRoIgkJ/B31N5/WD32/PuJVzw/TfIi4tFMP1ag9o30AdQBxoX/2DW3YCALpJ9sCtnEYngqUKPff0uGU+CeYDVSQFMy4V1YCyqn8OWhhf7W5keYoVblznSxdyqEgiYfl+/zGRjg4ngzsoOPSw5Dyf5MtdgyYCM3dJCyDVOwHEqPE0YGEIZqH1jg1icHdDnDh6idLI1+Pc8VrzeS3P1DwqLcjDSreecF/XfOOA/TZuRHAqd/vVJN4FRnfHsianvWgqEtyfEc0yIWgTzLc0vbrkH5TmIgBOnJGzz8R6krq8wzkNcpn3/TIiN5qKaLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Num+ZqFqW7q+WSn+QHpqoIRlDrT5JDtxxaLoRmUwLEc=;
+ b=Krd5BxLq8A8VVJ3Iuo4XIlVkcKALG8VpgTlhzlY1n8KK+rz86zy8DtUSad9oFY90SCARkuNmQ4+7vLqYkxTXnzXoT9zG6eSVjuYgxtsQ0ljuH40x/tU+4wg5/TvZmjZsec/2Kc28C0qK/5lIePXj4RLE81bxIlxkeWZn+2ZRERaPVcf1aC0JZHBNi5E2Ckq3QIYssuVHcioRMLSRhKr4FCzkWyeAZDaeNwAc8TA61xMVXLcGI/pPBZKQaGbyoArW2isEJDJoF9wK7n2H7ErJ1Of7LUH7FrfmoIEJUNTkMqpmm7MN0VtEaHSt+sJNgNsb5mj5xJCfM5ahJGCdiDIaOQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=ljmu.ac.uk; dmarc=pass action=none header.from=ljmu.ac.uk;
+ dkim=pass header.d=ljmu.ac.uk; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ljmu.ac.uk;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Num+ZqFqW7q+WSn+QHpqoIRlDrT5JDtxxaLoRmUwLEc=;
+ b=Y4GxicbEKnoQnS85a7I+6ISbGEDM6xLjWGcX2UymcU8VspEm2aP8Z+dtEYIi3YGBrg59cXc7ZgEOWP2t6/A97zB5uH1C/mGWyX2MVoyQTAQSRatac+hewWaftH0sDteAyOeRttZqjcGCEIZiQlC4D8B+bTDaNRdZbfe58XhDfPg=
+Received: from VI1PR02MB6462.eurprd02.prod.outlook.com (2603:10a6:800:17d::5)
+ by AM7PR02MB6275.eurprd02.prod.outlook.com (2603:10a6:20b:1ba::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5791.22; Wed, 9 Nov
+ 2022 15:49:18 +0000
+Received: from VI1PR02MB6462.eurprd02.prod.outlook.com
+ ([fe80::b12f:19f3:5db0:a7c0]) by VI1PR02MB6462.eurprd02.prod.outlook.com
+ ([fe80::b12f:19f3:5db0:a7c0%4]) with mapi id 15.20.5791.027; Wed, 9 Nov 2022
+ 15:49:18 +0000
+From: "Falkingham, Peter" <P.L.Falkingham@ljmu.ac.uk>
+To: Mike Taylor <sauropoda@gmail.com>, Matthew Lamanna
+	<LamannaM@CarnegieMNH.Org>
+Subject: RE: Length of the Carnegie Diplodocus
+Thread-Topic: Length of the Carnegie Diplodocus
+Thread-Index:
+ AQHYZriTjQz3D6qJt0ax07NWnDyqOK4lmPUwgAOqqt+AAFg7AIAC2KDigAtS8VuAAAg/gIAAAxsm
+Date: Wed, 9 Nov 2022 15:49:17 +0000
+Message-ID:
+ <VI1PR02MB6462700568400AB3F87003ACE03E9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+References:
+ <CACnMvBbk85dMKO=X8AsGg3vBMx7_c1EGq+wrBZXLHqWSM+S37Q@mail.gmail.com>
+ <149625c5562a4f46a71de369fd45358f@liverpool.ac.uk>
+ <CACnMvBbNRMWUOVmw8z=U-BWN2qQC5zJjV0aiDSbyYxhWDKMLjQ@mail.gmail.com>
+ <VI1PR02MB64623E1104026AD15228F96AE0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBa8D3LZ7_pHQf5sHgC=RTt8PTn4D4Bs=uGiypQ9uyDG3Q@mail.gmail.com>
+ <VI1PR02MB6462453628F5CA342A9CCB45E0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBZwDwESLzDpzrnXcHSW5TuWeW0bSDd_xzJ3xWF8EJ1WxA@mail.gmail.com>
+ <VI1PR02MB646291137ACFF26422823B1DE0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CH2PR02MB6475794A25369A7A9A397EB4D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBaz6DWxnEH661m5rukP4RZWAQ7igKbhrcD3HFfkVtOFOw@mail.gmail.com>
+ <CH2PR02MB647521B0172DC90F2FB93CB9D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBYrTh7MOjXoamTbd+YVnfBr97TsmCys_ciM=BOTB24L9g@mail.gmail.com>
+ <CH2PR02MB6475FEABC1A5353CE5E59FC3D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBbS6s9AB0MEuDuOBn477Fpxk8LfgTwSm8c5677ag9XYCQ@mail.gmail.com>
+ <CACnMvBYbivx5OH4u1OYGd9KagLd3XDF5xipMbgC=cX3JY1A03w@mail.gmail.com>
+ <CH2PR02MB6475A69C8B153CA27B0EF67BD8359@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <VI1PR02MB64624EB6175734FDF967EF9BE0379@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CH2PR02MB647526C20D830E8EAFE13A6DD8379@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <AM7PR02MB64513657FA5BA06F2610B13CE0399@AM7PR02MB6451.eurprd02.prod.outlook.com>
+ <VI1PR02MB6462130A072003FC68818AEEE03E9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBYgMZRay0P_SK7jsC7VeOZAv=sLzcE2NFhn--pwx=QSKw@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBYgMZRay0P_SK7jsC7VeOZAv=sLzcE2NFhn--pwx=QSKw@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-GB
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=ljmu.ac.uk;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: VI1PR02MB6462:EE_|AM7PR02MB6275:EE_
+x-ms-office365-filtering-correlation-id: 9690be8d-5c67-45f5-45ac-08dac269f5f4
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ fXG2sQt88PP2d0U5AYFaLa2fiYo73746f5Et4n1qBYXz4DGavJ7W9q5fLLsQPRSBWyHu6j613c9pmqWmmAg+7J5jBidNdVwlRCKDusZ2ILsa0S3iA/TieQ6b/sFvzXdcfy0BA7VcmiRfS1FjoqzdbO9nHDTvLQjXsy5D6d5SQ0LwOqTEzK3qjFKbcPvVJdci1z4IvS653SfP3pwLM0zHyTJkJa0JhUhrwIcev4RzNEic0Z/2UedqxI09l2/Ungdd1To07bURBd5cbibPVn51/GTQWxL/B4/zkOz/fdcCYM0h+DA0wQBeJKfPBpkwoTsEd++dNsRLLBg1B4G43ufy6HSc5tiKWrsrQPzXfuaxgREje9uwahkSsK83JcUw/+K3RYNz4JB2cVrvUzLzUWqLKm8NPCpVsvN6y3c3ntVQu4uuxNtxqHuy5FEolzWrYfH7P/qUmtsw8E34HiFgxhH8npN02Z/I6RilxXtKPWoi34N5QFlHLxgLt0DULsEJqQ9hdZ459sbi9P3+f+964y9QhpdkW9pH70bRBE98Z9rLz1Ylje1+fZoZpRnsjY2Bek/IQHi1A9HPhfaMsx8i9mH0YO6TKChGuMrzJZBbOu1bPJk+3kXBEQXFuOFNRt6CJ0ioviOoU9wDfjh1cR56RsQn4DMIGrjyZ1WtgIkzqz29x406KNifFBUPDSXq9AZeY57dqFud3ebso0pwn+GKje2rDkYe+J3zYtvCSPRI6eR4ye2VNJmMacthbkt0w6/t1jQ68pgfeysuiyChqUZbMMF+AHzIC+Hc9RVrGOzvXplaBJi8eXD+q/S+RznnVV1pdYOz1+rEENxTUmeFuOJtugUvHQ==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:VI1PR02MB6462.eurprd02.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(4636009)(376002)(346002)(136003)(366004)(396003)(39850400004)(451199015)(66556008)(166002)(99936003)(38100700002)(122000001)(91956017)(76116006)(8676002)(66946007)(66476007)(66446008)(8936002)(41300700001)(52536014)(316002)(786003)(64756008)(71200400001)(30864003)(110136005)(2906002)(55016003)(83380400001)(66574015)(9686003)(966005)(478600001)(55236004)(6506007)(26005)(7696005)(186003)(53546011)(38070700005)(86362001)(66899015)(5660300002)(33656002)(40140700001)(579004)(559001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?TFFMWWFCVi95Z3VKRVFSSzkyNUVyMEtqQzRHRGwyWFAvRy80bGtFUm5tY3Fh?=
+ =?utf-8?B?bmhQSlNML3BiSzc0cEZqZml2UHJDajZJSmhpZU1vQVQvRld5UU8xck9nZ3o1?=
+ =?utf-8?B?SENMdUZFRk8zSERrS3U2QmJTd09od2laS056ZVFZYTd2NmVVbW9GUDJDaWFL?=
+ =?utf-8?B?RUYrRHVjWmNPamFoSERJVk8xbVpuZUxuWitUNm1SWTJhSWovVmd0RjhOS0ZP?=
+ =?utf-8?B?N09NcDUvM0UyUzh3WFZ0WE9kdVNyWE9BV3FmWlRNVWVUaHdJSVJJRVlNUDlv?=
+ =?utf-8?B?QkR3Z3RpVHkxZ0xYMFcwWlVISEV0dFRYSVZmY01LVGhPVUhRZHRrcU5kMGM2?=
+ =?utf-8?B?Rk9oRk5OMGFENmNwMlYxV0cwWHJYNWVXK2sxaUkwR2NBUnBQVWpQbnNVQUI5?=
+ =?utf-8?B?QTllcjZjQUNIZkV5ZzN1QmNzYS9TcllTblVpaEZqQ0FJTGFHdXNBOVpjUDlX?=
+ =?utf-8?B?cFBRSE5uOVVZY0pFN3BvUzhtaEg1bmdDNVhNNGRBRVM0K1VmVDJZWXRNQis0?=
+ =?utf-8?B?WkNJbTYxMXl0UzBuNWlwWVRURFhSeEhFSWhPZEttYnVoc0lITTMvMi8zNU8r?=
+ =?utf-8?B?KzJrbHlKdVRDeG9lUSthYVF0Sy8vY2ZIekRnb2RIZEY2OTdPMi9wcmlIdldh?=
+ =?utf-8?B?eTVOM1lsa0Y2ZUd0M3pFSVRNMDVwbHBnaHNkV3JRdmo2dnJmS01qSUF0dUZR?=
+ =?utf-8?B?QTJIcWd2bVorVlp2TDFFOEllSkpMS2ZpdXRROVJJWUpYeDZ0dTY3cjNYbTZa?=
+ =?utf-8?B?ZnU0cFBld1hZVFE3djY0d3M4d01vWFMwbUp6L0dTdDVLQjJva21JaDcxUlZU?=
+ =?utf-8?B?S05UNG9meWdvVFRFZzErRGNWZURaZHU3UkRhVFpxZC9lWlJYQ3pxN2tqMnBU?=
+ =?utf-8?B?TWZDeStZUUJ4MWowUndZc0ZaT1pETjgrVVJVWDlicitWbFl3Q2pYMVRJRG8x?=
+ =?utf-8?B?am5vc2RQeGt2SUFhRndMZWRrSE9BMkV2V1NWRWV5NHhpcC9nK0RCQlFYeUxy?=
+ =?utf-8?B?SGp4dDJuV3ZNTFFzZkdNWlpSaGRqUE1KdXpETTd2MXFGSEZ2NlA2OTUrTDFN?=
+ =?utf-8?B?QStOb0NFRFoyd2FnbnNITVlYUTZvY2tVaHR4WmhCZjl1dWQ5Y3hReWRFS0xO?=
+ =?utf-8?B?cy9oNHJCSUNsemQxYlYwbm5EK0ZVYVliYXB4M1Rzb1hUdmViYXJ3WWNLV0xk?=
+ =?utf-8?B?TnpTZGV4SDl3cklwUU9hR0Z5SDRDZkp2cllrb2pFSW5TMFRwTFZrR20rM0Yv?=
+ =?utf-8?B?MEJsV1AxcFlsaCs1UGNpaTNCZ3g0NXlnYm16TUhUSlJWenllbTZSNDZzQXpk?=
+ =?utf-8?B?RFdGVjIrdktVRFpxUjdaUVNTd0pYV0F4dHRUcEV1Mk93ZytlUnR0bnRUcmVS?=
+ =?utf-8?B?Zml3YmFKSTVEaUdNR0tPK0R5MGVaVTJCZVRIYSsrRXBibyt1QklHa25mbmo3?=
+ =?utf-8?B?aTVTTTRoQkpLNEY4T0RMQ1o0SzN0aUV0TDhQMDBNTVZpbFhmNlU1M3FHTXVy?=
+ =?utf-8?B?NklJaXRXOXdRVlU3MU9lNi9DTldmdVhObkdpTU41cmtNWG53QlRFTzMzYmgz?=
+ =?utf-8?B?MFg0djRpZldWdFFEaUMzZXB2eFVvWm94N0htTlhpaWJVK2FXUXExT013cFhZ?=
+ =?utf-8?B?UlJWeWJ0UnhUOFNtajVCUHNtTWdPZVY3OEw5N3BMYjhXYWMzeWluZ0N6NUtO?=
+ =?utf-8?B?VWtlVUNPbWkycnovNFFmdDM2WDJDNUE0T0FpUXVRa1FSMENLbWlVNjBSMmFW?=
+ =?utf-8?B?TzlzQUh0YzE5L1lSUThFdHQwSWpQMStZM0lXK3VKZjY0VG9yNitVNTA1bkFt?=
+ =?utf-8?B?SlhPMkJscFUzeXlQd1ZaZ01SNlJtTzZJK0ZmblBJdkh5d2l0K0Vub0pZWWxa?=
+ =?utf-8?B?cXU3NDVnQlNIOXJWNjFhNlZtekloN2NyR0ZvVlFoMGYzREMxN28zYnk4MitD?=
+ =?utf-8?B?UDdkQkpmczhHbkRMUmVmMGRQZUhwZXFWT29yUmpERER1Rkpsbk1UMm5rcmds?=
+ =?utf-8?B?WWVDbWxhY0lxcUhsbDRhRWE1SUZDUVl4Yk81NWY4QmZrendkdGJMbHEzWUx1?=
+ =?utf-8?B?dlRSd3hlN1krNXRHaG9hcVBYTnpORTJSdlRTTFZlVEFhMkdVR1RqcHpsQ0NE?=
+ =?utf-8?B?Y1g4amFDdm0zejBtZGlIYzVKNERHU2FoVllxLzg1bW5PdkI1WHN6Z0lDakNu?=
+ =?utf-8?B?L2c9PQ==?=
+MIME-Version: 1.0
+X-OriginatorOrg: ljmu.ac.uk
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: VI1PR02MB6462.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9690be8d-5c67-45f5-45ac-08dac269f5f4
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Nov 2022 15:49:17.9815
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 58c3f461-c821-42f7-8b96-24599cfd8b36
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: bpWsQplOL1Lalqp5kyW2+kXvleCybUxVevXVTLkyPzJklT/9bt11ushuuhtLu+ZVOt3MOAaVQur/RcBvXB8s7A==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM7PR02MB6275
+X-TM-AS-ERS: 104.47.1.56-0.0.0.0
+X-TMASE-Version: StarCloud-1.3-9.0.1006-27254.000
+X-TMASE-Result: 10--34.144900-4.000000
+X-TMASE-MatchedRID: Lw3dlKAYZaSwaNT/kFWzma3wTK82yW5sO4rmf5nWGLY0voKulh/09Gho
+	O4KBl7OtB0pdNwY/xJq6lkhhsb0M/M0Dkwsmw27faU7ee17qjHMEx2nnXvzNI4WbJA37XHbAGNt
+	H9cKwddZiLPXCJAllP7BeUBdja64s4DhTNYaHUgOH7Ro+87XGeFx5UEiF/A71mwRbQLBKXlfePr
+	dhC8Q7L72jand2PRF82b1M2dBjnIKHe4Wem0aMVrT2H4BSd5GPhSCS9+QUCGSDZGlwTKhGSOPhs
+	17991vRk1VpWOW6aL+5Ylf3xk4v4qienOparU0KGqSG/c50XgNBHuVYxc8DW758o9GEO5wo2d8m
+	tRIRsUMHKE/piiw+B9E1ag4+s0xF0aSV+dBwq6alJdWkFL6KVnZljA0GozoiEbN3sJ0AH5Ub1c/
+	pS7pZIe8acrmh0VE/3yOnDa5vEGbHbt0Snl8ktJVRzPxemJL0z3T8tG4ufyz7nLsoZcV81LnxhI
+	t+8oeIWGfm6ffYK9BEPz1rBCaSsGaEWH3uxKuJKwi7MItzaY1lRzZAkKRGDX3gfGZAU8fLoo7jY
+	2qoxWnYlckTKiwjpdyNTLqJVBWtMk60klJ1B9iq59OEHrh5JRjpXtOJyxR9GFo8MdqTS3TuWsdt
+	WdelAT/t+va8hHXmvAKx+JIfqjG+46hx1i3TkAA+Y0oNaxbQLlyqFEh1OyRrRM6wvXgDaSWu7yR
+	jaIbb/nRsBX02G73uttnOPtHVmEKGad5G3myPtCzp2NOEHNZTZ+NmI28jKY5wVTdQNjc4INgIpA
+	A8LuOPxFucB/gEMKrP+04pA0BmSm+sO4kiPx+JDLgwb/1K2WmRqNBHmBvepTwPRvSoXL0ir3kOM
+	JmHTJvLE5hS3p8Wp6RP6ZqDDECDRoEYWs0DPasQd9qPXhnJ/4rWvpj9UcgD/dHyT/Xh7Q==
+X-TMASE-XGENCLOUD: d32d9222-8b23-4651-8d64-65984a3a1aca-0-0-200-0
+X-TM-Deliver-Signature: 6164082A5384B864227D8572BF8D1F0A
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Responses in red
+
+
+Peter, this is AMAZING — and so timely! (I hope we are literally a couple of days away from submitting the paper that this is for.) Thank you so much.
+
+Just to clarify a couple of things:
+* You wrote: "To do so, I placed markers on aligned photos, initially following the neural spine of each cervical to count them, then placing one at the end point of the tail (and one more between that and the cervical behind the tree)." Am I right in thinking that "cervical" a typo for "caudal" here?
+
+Correct – my mistake
+
+* You didn't need the published lengths of CM 307 from Tschopp et al. 2019, in the end, then?
+
+Correct – this is purely measured from the scan.
+
+* If I got this right, your model does include the distal caudals but DOES have enough information that you were able to find the tip the the tail, and assume the comes out from the last fully modelled caudal in a shallow curve that can be modelled with just two straight segments.
+
+The model stops at caudal 30-33ish, but because the photos were aligned in 3D space, you can take the photos where the tip of the tail is present and project back from them to find the 3D coordinates of that point.  I added another point between the tip and caudal 33, and measured the shallow curve in 2 parts.
+
+Is that all correct?
+
+And finally, to dot the i's and cross the t's:
+* Is it OK to cite the various bits of this as a pers. comm.?
+
+Of course.
+
+* Would it be OK to reproduce one of the images as a figure in the paper?
+
+Again, of course.  If you tell me what you’d like, I can do something a bit clearer and high res if that’s useful?
+
+Again, many thanks indeed!
+
+-- Mike.
+
+
+On Wed, Nov 9, 2022 at 2:54 PM Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>> wrote:
+Matt, Mike,
+
+  I’ve done some work aligning, trigonometrying, and stuff...
+
+  Answer to your question is the tail in model ends at about cervical 33.
+
+  I’ve measured the full length of the mount, and it comes in at 26.042m
+
+
+  To do so, I placed markers on aligned photos, initially following the neural spine of each cervical to count them, then placing one at the end point of the tail (and one more between that and the cervical behind the tree).  I then also added a marker at the 1st dorsal, a mid point of the neck, and the skull – see attached.  The third image gives you an idea of where I’ve measured, using 9 segments to account for the tail curvature.
+
+Summing the distances, I get the following:
+
+Total neck: 6.755m
+Dorsals: 3.782m
+Tail (all the way to the tip): 15.505
+
+Total length = 26.042m
+
+Obviously that’s not accurate to the decimal places I reporting to, but 26m should be pretty accurate.
+
+Hope that’s of use (it was a challenge, but worth doing I think).
+
+Best,
+  Peter.
+
+
+
+Dr Peter L. Falkingham
+Reader in Vertebrate Biology
+School of Biological and Environmental Sciences
+Liverpool John Moores University
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=6c8077a9-fe1e-475a-a64e-082ebfbc3564&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-2d592790482f9d52413e24c6278b65b94e170a4f
+Twitter: @peterfalkingham
+
+
+From: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Sent: Wednesday, November 2, 2022 9:53:59 AM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org>
+Subject: RE: Length of the Carnegie Diplodocus
+
+
+Almost impossible to tell from the model:
+
+[cid:image002.png@01D8F452.CEB53F70]
+
+
+
+I’ll try and recompute camera alignment and see if I can work it out from mapping photos to model.
+
+
+
+P
+
+
+
+
+
+
+
+Dr Peter L. Falkingham
+
+Reader in Vertebrate Biology
+
+School of Biological and Environmental Sciences
+
+Liverpool John Moores University
+
+
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=6c8077a9-fe1e-475a-a64e-082ebfbc3564&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-2d592790482f9d52413e24c6278b65b94e170a4f
+
+Twitter: @peterfalkingham
+
+
+
+From: Lamanna, Matthew<mailto:LamannaM@CarnegieMNH.Org>
+Sent: 31 October 2022 14:27
+To: Falkingham, Peter<mailto:P.L.Falkingham@ljmu.ac.uk>
+Subject: RE: Length of the Carnegie Diplodocus
+
+
+
+Thanks so much, Peter! OK, will do re: the nudge, if need be. (I can relate to things being hectic this week.)
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew%2dlamanna%2f&umid=6c8077a9-fe1e-475a-a64e-082ebfbc3564&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-b0583e5db1cf36e2ef368101b8c3a1c1a55f7092<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew%2dlamanna%2f&umid=aa51c13d-7230-423f-a241-fb10cb8084de&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-69f7840c136b4770c4784f110b390aaf40520a4e>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=http%3a%2f%2fantarcticdinos.org&umid=aa51c13d-7230-423f-a241-fb10cb8084de&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-9f092d2f554f519bcf4820cc4b923ce80d68852d
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Sent: Monday, October 31, 2022 5:10 AM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org>
+Subject: Re: Length of the Carnegie Diplodocus
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Hi Matt,
+
+
+
+  Of course.  Things are a bit hectic early on this week, so if I haven’t replied by Thursday, give me a nudge!
+
+
+
+P
+
+
+
+--
+
+Dr Peter L. Falkingham
+
+Reader in Vertebrate Biology
+
+School of Biological and Environmental Sciences
+
+Liverpool John Moores University
+
+
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=aa51c13d-7230-423f-a241-fb10cb8084de&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-25562beae028d65026b473b40c6cc4f5be80e0f6
+
+Twitter: @peterfalkingham
+
+
+
+
+
+
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Date: Saturday, 29 October 2022 at 18:08
+To: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Subject: FW: Length of the Carnegie Diplodocus
+
+Dear Peter,
+
+
+
+Mike Taylor and I are trying to figure out the length of the Diplodocus mount here at the Carnegie Museum using, in part, the 3D digital model you made from photos I sent many years ago. When you have a sec, can you please pull up your model and tell me where (meaning at which caudal vertebra) it ends? Based on the screencaps you sent, and other images of the mount (e.g., here<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=http%3a%2f%2fwww.gigapan.com%2fgalleries%2f7896%2fgigapans%2f37653&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-515e17bd08249eda90bff930d41bf9a04867aaf9>), I’m thinking approximately caudal 32 or 33, but if you can confirm, refine, or revise that number using the model I’d be grateful.
+
+
+
+Thanks very much for your time and in advance for your assistance.
+
+
+
+Best wishes,
+
+Matt
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew%2dlamanna%2f&umid=aa51c13d-7230-423f-a241-fb10cb8084de&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-69f7840c136b4770c4784f110b390aaf40520a4e<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew%2dlamanna%2f&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-9319ba474746d979fb500a5644c89325b53ad7b5>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=http%3a%2f%2fantarcticdinos.org&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-aa4a4111259524504d93974377ebf1c9618b77af
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Saturday, October 29, 2022 9:29 AM
+To: Lamanna, Matthew <LamannaM@carnegiemnh.org<mailto:LamannaM@carnegiemnh.org>>
+Subject: Re: Length of the Carnegie Diplodocus
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Hi, Matt. Where are we on getting an accurate length measurement for the Diplodocus mount?
+
+
+
+Thanks,
+
+
+
+-- Mike.
+
+
+
+
+
+On Sat, May 14, 2022 at 7:22 PM Lamanna, Matthew <LamannaM@carnegiemnh.org<mailto:LamannaM@carnegiemnh.org>> wrote:
+
+Hey Peter, Karl, and Mike,
+
+
+
+Thanks so much for this interesting discussion and especially to Peter for taking another crack at a photogrammetric model of the Diplodocus carnegii mount here at the Carnegie Museum using the photos that my volunteer Hannah Smith took many years ago. Super-cool to see that they produced a useable result this time, and Peter, thanks also for sending images of that. Karl, thanks to you as well for sharing convex hulls of the DMNH D. ?longus (which BTW was originally one of ours here at the Carnegie too, before a distant predecessor of mine traded it for fossil mammals).
+
+
+
+Couple quick questions/points:
+
+
+
+Peter, if I got you more/better photos of the mount (especially the posterior ~half of the tail), would you potentially be willing to try again? No pressure of course, but obviously it’s a piece of cake to take more pics myself and/or to have a different volunteer or even our Scientific Illustrator (who’s an excellent photographer) do so.
+
+
+
+Not 100% sure this is helpful, but Emanuel Tschopp, Susie Maidment, Mark Norell, and I published measurements of the indeterminate diplodocine specimen CM 307 (which comprises caudals 32 and 37–73 of the D. carnegii mount) in our recent monograph on the historic sauropod collection from the Red Fork of the Powder River in Wyoming (see table 3 here<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttps%253a%252f%252fdigitallibrary.amnh.org%252fhandle%252f2246%252f6968%26c%3dE%2c1%2ctulDhNWKZTUtSXNiOzB1hC9efbhJRnfgpqKD6lxydBUiCbUEKjUDnJNFPgzNdpYivNbsUDhTmqCAk0Gzq2PsWorr3cSaUbmeqbT6%5f2rVfaWy7g%2c%2c%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-0834fb2410f2b27298baabf3fc4f972256cf5a55>). These were taken by my awesome former student Case Miller (now a Ph.D. candidate at the University of Hong Kong) and I, so hopefully they’re pretty spot-on. If that’s useful, then (if any of you would like) I could also measure the ten tiny, reconstructed posteriormost caudals (numbers 74–83) that we added in 2007 to (in my estimation) complete the D. carnegii tail. (My rationale back then was that the complete tail of the apatosaurine [probably Apatosaurus louisae] specimen CM 3378 contains 82 vertebrae; given that diplodocines are generally more elongate, gracile animals than are apatosaurines, I guesstimated [with probably tenuous justification!] that D. carnegii would’ve had at least 83 caudals in life.) I bring all this up because, based on the screencaps Peter sent, it looks to me as though the caudal series of the model cuts off somewhere in the thirties. So, between the model, the previously published length measurements of CM 307 (see, again, Tschopp et al. 2019:table 3), and a few new length measurements of the reconstructed tail tip, could we theoretically produce something resembling a precise mount length? I think so but please feel free to set me straight if I’m missing anything.
+
+
+
+(Of course, if all else fails, maybe my least acrophobic volunteers and I could just try to measure the damn thing with a very long string 😉.)
+
+
+
+Cheers and thanks again to you all!
+
+Matt
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew%2dlamanna%2f&umid=aa51c13d-7230-423f-a241-fb10cb8084de&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-69f7840c136b4770c4784f110b390aaf40520a4e<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttps%253a%252f%252fcarnegiemnh.org%252fresearch%252fmatthew%2dlamanna%252f%26c%3dE%2c1%2c43k%5fkLmdqgb5ZZim1fayoHLERpu3DHDTnON6gZfHzAQuetqy%2dpPAZ56cbtkDqskhXXF8YTX5OKcm2SmJGdQhv7oYg0ep4rt7QzW15aSvm8E%2c%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-9fefdab23b7741d618b055706c4821ef501a7e49>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=http%3a%2f%2fantarcticdinos.org&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-aa4a4111259524504d93974377ebf1c9618b77af<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttp%253a%252f%252fantarcticdinos.org%252f%26c%3dE%2c1%2cjIg%5f1mcRzLCNNCfOj8ZEq6RMBpg4I66xSmNYrsVsu2NzJmmRpVePV4tkFId3%2dTtBzrnwFclIGt5ol2S3Kn0E781NP2Xz70p2hsRahCanjGWTqLsAydhJJbIa%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-5e370e053254124bbd0cceb32693dc8dee49b378>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Sent: Friday, May 13, 2022 11:15 AM
+To: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Cc: Lamanna, Matthew <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>; Bates, Karl <k.t.bates@liverpool.ac.uk<mailto:k.t.bates@liverpool.ac.uk>>
+Subject: RE: Length of the Carnegie Diplodocus
+
+
+
+Ah, no sorry.  There’s a pillar in the museum, and the reconstructed tail ends there, as photos aren’t clear around the pillar.  Sorry – should have noticed that.  Was so excited it worked at all!
+
+
+
+P
+
+
+
+
+
+Dr Peter L. Falkingham
+
+Reader in Vertebrate Biology
+
+School of Biological and Environmental Sciences
+
+Liverpool John Moores University
+
+
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-27eacf67ca2272028d0d6571f4703a4e60b1335d<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttps%253a%252f%252fpeterfalkingham.com%252f%26c%3dE%2c1%2cM25Ek1ty4bPn8vXxFX082TN5buKsWB4sRsEX07aeSvUB3spKOGSeYtYBlpqjcjy%5fl69ZX7WQZWUeVAzGS8rHzGTmLf0psT1NEs9VKkkTeIQ%2c%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-a7bcee91947b4017c644f05f10175313c210eae2>
+
+Twitter: @peterfalkingham
+
+
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 13 May 2022 16:13
+To: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>; Bates, Karl <k.t.bates@liverpool.ac.uk<mailto:k.t.bates@liverpool.ac.uk>>
+Subject: Re: Length of the Carnegie Diplodocus
+
+
+
+This looks great!
+
+
+
+But it looks like you omitted the last 10m or so of tail ... I guess you didn't get the photos for that?
+
+
+
+-- Mike.
+
+
+
+
+
+On Fri, May 13, 2022 at 4:04 PM Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>> wrote:
+
+Hi all,
+
+
+
+  The model came out better this time, with new software and methods.  My scaling should be within a few % of accurate, but because the thing is curved it’s hard to measure accurately:
+
+
+
+[cid:1845cf217794cff311]
+
+
+
+Measuring by segment, I get 19.38m (cube and grid are 1m)
+
+
+
+[cid:1845cf217795b16b22]
+
+
+
+
+
+Dr Peter L. Falkingham
+
+Reader in Vertebrate Biology
+
+School of Biological and Environmental Sciences
+
+Liverpool John Moores University
+
+
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=f802c735-b32e-4b8f-a54d-2b55f6fc5ba3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-28fe570c022743c346dc16f3d9a8fd62bf6c15bd
+
+Twitter: @peterfalkingham
+
+
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 13 May 2022 12:18
+To: Falkingham, Peter <P.L.Falkingham@ljmu.ac.ukWARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>; Bates, Karl <k.t.bates@liverpool.ac.uk<mailto:k.t.bates@liverpool.ac.uk>>
+Subject: Re: Length of the Carnegie Diplodocus
+
+
+
+LOL at the closing comment :-)
+
+
+
+OK, thank you for this. If it works out, good; if not, then I guess Matt has other ways to measure the length of the mount. Good luck in getting a workable model -- what a great thing that would be!
+
+
+
+-- Mike.
+
+
+
+
+
+On Fri, May 13, 2022 at 12:15 PM Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>> wrote:
+
+Hello Mike + Matt (CC Karl),
+
+
+
+  As Karl says, the Carnegie model didn’t originally work out, so I’ve no measurements from it.
+
+
+
+  However: I’m running the old photoset again through some more modern software and some new techniques I’ve picked up over the years, to see if it’s more successful.  If it is, and if I can scale it properly, I’ll let you know.  Not sure how accurate a length measurement would be though – accuracy depends on how accurately I can scale the photogrammetric reconstruction, and I think we’ve just a single 1m tape measure in the scene, so easy to be 1-2% out.
+
+
+
+  Matt: If it does work, I’ll send you the model.
+
+
+
+  If it all fails again, I’ll just remain quiet :)
+
+
+
+P
+
+
+
+
+
+Dr Peter L. Falkingham
+
+Reader in Vertebrate Biology
+
+School of Biological and Environmental Sciences
+
+Liverpool John Moores University
+
+
+
+Website: https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fpeterfalkingham.com&umid=426287cc-4354-43cf-8c08-999496e91ae8&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-21c7e1dd2692d5c3bd269faa0e53a272ecdaf542
+
+Twitter: @peterfalkingham
+
+
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 13 May 2022 11:59
+To: Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>; Bates, Karl <k.t.bates@liverpool.ac.uk<mailto:k.t.bates@liverpool.ac.uk>>
+Subject: Fwd: Length of the Carnegie Diplodocus
+
+
+
+Hi, Peter. A bit of a long shot, but did you by any chance get as far as calculating a total length for the Carnegie Diplodocus mount when you were trying to make photogrammetric model?
+
+
+
+Thanks,
+
+
+
+-- Mike.
+
+
+
+
+
+---------- Forwarded message ---------
+From: Bates, Karl <K.T.Bates@liverpool.ac.uk<mailto:K.T.Bates@liverpool.ac.uk>>
+Date: Thu, May 12, 2022 at 12:43 PM
+Subject: Re: Length of the Carnegie Diplodocus
+To: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>
+
+
+Hi Mike (and Matt)
+
+Nice to hear from you. Im good thanks. Hope things are well with you both.
+
+We didn't use a model of the Carnegie's Diplodocus in the 2016 sauropod study. We used a very old, low resolution scan of the Denver museum mount. This is from the ESM of the 2016 paper:
+
+Diplodocus: Our reconstruction of Diplodocus is based on DMNS 1494, which preserves most of the vertebral column, as well as most appendicular elements (excluding the humerus, manus and pes) from at least one side of the skeleton ([72-73]; PDM pers. obs. 2008). Missing elements in the mount are based on other Diplodocus skeletons.
+
+My recollection is that Peter Falkingham (who did the photogrammetry aspect of the study) couldn't produce a useable model from the Carnegie photographs. So we retained the Denver mount. Again, Im straining to think back 7-8 years now, but I think we wanted the Carnegie's Diplodocus as an extra check on our Denver Diplodocus CoM predictions, because our predicted CoM was considerably more cranial than Don Henderson's models. Anyway, I don't have a model of the Carnegie's Diplodocus. However, photogrammetry software has come a long way since ~2015. You could touch base with Peter and see if he can now make a better model.
+
+Ive attached the convex hulls of the Denver Diplodocus, from you which you should be able to measure gross size dimension like body length. I can't share the skeleton model unfortunately: "intellectually" its Phil Manning's and more generally Im not sure what the arrangement on sharing were with Denver way back when we scanned it.
+
+If I can help any further please do let me know.
+
+Cheers
+Karl
+
+
+
+Dr Karl Bates
+Department of Musculoskeletal & Ageing Science  |  Institute of Life Course & Medical Sciences  |  Faculty of Health & Life Sciences | University of Liverpool  |  The William Henry Duncan Building  |  6 West Derby Street  |  Liverpool L7 8TX  | UK
+Tel: +44 (0)151 794 9075
+Mobile: +44 (0)7792595055
+k.t.bates@liverpool.ac.uk<mailto:k.t.bates@liverpool.ac.uk>
+https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=www.liv.ac.uk%2fageing%2dand%2dchronic%2ddisease&umid=426287cc-4354-43cf-8c08-999496e91ae8&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-e057c3e2fbec28fcbb237b4740e196a0018ba197<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=http%3a%2f%2fwww.liv.ac.uk%2fageing%2dand%2dchronic%2ddisease&umid=bb61cb6d-497e-4f11-bc77-9f06bffbbd9c&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-4bc02ce3970aa382356f0014985e893e206f788c>
+
+________________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: 12 May 2022 00:10:05
+To: Bates, Karl
+Cc: Matthew Lamanna
+Subject: Length of the Carnegie Diplodocus
+
+Hi, Karl, hope all is well.
+
+I was asking Matt Lamanna about the total length of the Carnegie's
+mounted Diplodocus, and he told me:
+> I think Bates et al. (2016) (https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2froyalsocietypublishing.org%2fdoi%2ffull%2f10.1098%2frsos.150636&umid=426287cc-4354-43cf-8c08-999496e91ae8&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-25e6c334a11d36845d394586e672f337d561d326<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2froyalsocietypublishing.org%2fdoi%2ffull%2f10.1098%2frsos.150636&umid=bb61cb6d-497e-4f11-bc77-9f06bffbbd9c&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-b662c01eaef6d73d55059cf143b63dfd0a9bf014>) may have made a photogrammetric model using pics a volunteer of mine took in the early-mid 2010s
+
+Is Matt remembering rightly? If so, then do you have figure for total
+length? (Better still, are you able to share the model?)
+
+Many thanks.
+
+-- Mike.
+
+
+
+
+
+Important Notice: Liverpool John Moores University was established as a Higher Education Corporation under section 121 of the Education Reform Act 1988. Further information about Liverpool John Moores University can be found at https://www.ljmu.ac.uk/about-us<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttps%253a%252f%252fwww.ljmu.ac.uk%252fabout%2dus%26c%3dE%2c1%2cqfMXtf3LDHvv61RrdRjcWRMQc4iALGmnT6rb39X2UMZTmk2jpNIUkj2BbKPm4zQxy70QzQ6enKBPD693gkMRN9amAwymezHdgCb%2dhcrOrEVoCswPlng%2c%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-d76c4fadb64535680420f922c343095566a64221> The information in this email and any attachments is for the sole use of the intended recipient(s). If you are not an intended recipient, or a person responsible for delivering it to an intended recipient, you should delete it from your system immediately without disclosing its contents elsewhere and advise the sender by returning the email or by telephoning a number contained in the body of the email. No responsibility is accepted for loss or damage arising from viruses or changes made to this message after it was sent and the recipient must ensure that the email (and attachments) are virus free. The views contained in this email are those of the author and not necessarily those of Liverpool John Moores University. We will use the personal data information provided by you to respond to your email. For information about how we process personal data and monitor communications please see our Privacy Notice. https://www.ljmu.ac.uk/legal/privacy-and-cookies<https://ddec1-0-en-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2flinkprotect.cudasvc.com%2furl%3fa%3dhttps%253a%252f%252fwww.ljmu.ac.uk%252flegal%252fprivacy%2dand%2dcookies%26c%3dE%2c1%2czESgoh9zzIczL2gOmnkN5b3aBOxY8qEZuzPWgiPtShLr9ZS6dD8iPJPZT%5fa80pnkd%2d9LkxrjxNbMhzcgn%2dQ9l8O%2dSUbJT6RdmPAxjspAU7OyoiM%2dhBRKojmgoA%2c%2c%26typo%3d1&umid=d0928ff2-7091-45cf-97a5-de16cf1e41a3&auth=6b639a990a359ff1d6cc8761081d57748ce3c81e-1919c413fb71595455c4cdbd3905c1088080dc16>
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
