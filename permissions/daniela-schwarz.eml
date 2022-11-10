@@ -1,0 +1,204 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp167559vle;
+        Thu, 10 Nov 2022 03:18:09 -0800 (PST)
+X-Google-Smtp-Source: AMsMyM4HlcWHLPBFDE3k7mxpAlvCc4sCxGggN9neuAD74F0CCyFlDhBHrruyAi5PXcrXv0hS0/9r
+X-Received: by 2002:a17:906:5f8a:b0:7ad:f270:c128 with SMTP id a10-20020a1709065f8a00b007adf270c128mr2583474eju.84.1668079089471;
+        Thu, 10 Nov 2022 03:18:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1668079089; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jSZj8Nn6RQDWtRr7MwoaDs1ZSV6diEe7UQ3ObcLUWdVzzkazqkqj08odCosVpl4G8q
+         stP+lb8yysjyAnluK50ezmcAtjpSVg8DvYCzEglSyI9mwOTQsDYBZAxtmqyVEeXENkQZ
+         JtHJMVRjU+lxJd832LRrKzwjNrU555ijjHUq4s8gtzxmbBz7EV2c8+dkydeaF+TIZBYt
+         fESCIB9DTckIHaFG00cVJYtFqO+Nkh5KgHIkxDHS53QxuQYOR8AhYzkZYDttR3je+a5j
+         xlmyT9qUWHq+fuJCC6SSwvrCCNz6VAZK5DA2slSf5ZucwOrGyaoFqNGlVijYz+muqDXe
+         8Uag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:cc:to
+         :from;
+        bh=NqcT+grZNTwqQTz5eaLReXPf8sHBUXKzWJUlE57D6Ps=;
+        b=VLZULvVaJa2jhq4ik1Wv6x5Cl/8My50liFfao5FVFREs9d52scATkvpp5gRKeE64M4
+         +TM+/sGQGupOeeMiWNs1k8Ta4UFRFdts1zL5O1meaY5zhxZrp/qy8P34wORHgpFJrPKo
+         Cj/5pdHRnbbHW43Q/7LE+Zy2Or49O/W/dY5X3SHrrXACS2py84eJJRegIqUz0WQua0ey
+         +0QCK9K5fcz0tk3XT9TZnIiQ02/SjWBPpdz/l8Adrdv603yJ/R0oaDgiMJL74aagt4rU
+         /IDiIevebcO1LUZ+POEAoo95eK68cZJsy32XgMCnmP3/ed07mkOGyU54eRajgb79Wkm5
+         kZNQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of prvs=0313ccc59c=daniela.schwarz@mfn.berlin designates 212.201.100.71 as permitted sender) smtp.mailfrom="prvs=0313ccc59c=daniela.schwarz@mfn.berlin"
+Return-Path: <prvs=0313ccc59c=daniela.schwarz@mfn.berlin>
+Received: from mfn-mx-1.naturkundemuseum-berlin.de (mfn-mx-1.naturkundemuseum-berlin.de. [212.201.100.71])
+        by mx.google.com with ESMTPS id m13-20020a056402430d00b0045d45f0e69asi21477285edc.561.2022.11.10.03.18.09
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 10 Nov 2022 03:18:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of prvs=0313ccc59c=daniela.schwarz@mfn.berlin designates 212.201.100.71 as permitted sender) client-ip=212.201.100.71;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of prvs=0313ccc59c=daniela.schwarz@mfn.berlin designates 212.201.100.71 as permitted sender) smtp.mailfrom="prvs=0313ccc59c=daniela.schwarz@mfn.berlin"
+Received: from [192.168.201.157] (port=63021 helo=ex-1.naturkundemuseum-berlin.de)
+	by mfn-mx-1.naturkundemuseum-berlin.de with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <Daniela.Schwarz@mfn.berlin>)
+	id 1ot5ZO-0001Xx-1C;
+	Thu, 10 Nov 2022 12:18:06 +0100
+Received: from ex-1.naturkundemuseum-berlin.de (192.168.201.157) by
+ ex-1.naturkundemuseum-berlin.de (192.168.201.157) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.2308.27; Thu, 10 Nov 2022 12:18:06 +0100
+Received: from ex-1.naturkundemuseum-berlin.de ([::1]) by
+ ex-1.naturkundemuseum-berlin.de ([::1]) with mapi id 15.01.2308.027; Thu, 10
+ Nov 2022 12:18:06 +0100
+X-SASI-Hits: BODYTEXTH_SIZE_3000_MORE 0.000000,
+	BODYTEXTP_SIZE_3000_LESS 0.000000, BODY_SIZE_10000_PLUS 0.000000,
+	CLOUD_WEB_HOSTS 0.000000, ECARD_KNOWN_DOMAINS 0.000000, HTML_70_90 0.100000,
+	HTML_NO_HTTP 0.100000, IN_REP_TO 0.000000, LEGITIMATE_SIGNS 0.000000,
+	LINK_TO_IMAGE 0.000000, MSG_THREAD 0.000000, NO_FUR_HEADER 0.000000,
+	OBFUSCATION 0.000000, OBFU_SHORT_10CHARS 0.500000, OUTBOUND 0.000000,
+	OUTBOUND_SOPHOS 0.000000, REFERENCES_INVALID 0.000000,
+	SENDER_NO_AUTH 0.000000, SUPERLONG_LINE 0.050000, SUSP_DH_NEG 0.000000,
+	TEXT_DIRECTION 0.000000, TEXT_DIR_LTR_ONLY 0.000000,
+	URI_WITH_PATH_ONLY 0.000000, WEBMAIL_SOURCE 0.000000, WEBMAIL_XOIP 0.000000,
+	WEBMAIL_X_IP_HDR 0.000000, __ANY_URI 0.000000, __ATTACHMENT_PHRASE 0.000000,
+	__BODY_TEXT_X4 0.000000, __BOUNCE_CHALLENGE_SUBJ 0.000000,
+	__BULK_NEGATE 0.000000, __BUSINESS_SIGNATURE 0.000000, __CC_NAME 0.000000,
+	__CC_NAME_DIFF_FROM_ACC 0.000000, __CC_REAL_NAMES 0.000000,
+	__CP_MEDIA_BODY 0.000000, __CP_URI_IN_BODY 0.000000, __CT 0.000000,
+	__CTYPE_HAS_BOUNDARY 0.000000, __CTYPE_MULTIPART 0.000000,
+	__CTYPE_MULTIPART_ALT 0.000000, __DQ_NEG_DOMAIN 0.000000,
+	__DQ_NEG_HEUR 0.000000, __DQ_NEG_IP 0.000000, __FRAUD_BODY_WEBMAIL 0.000000,
+	__FRAUD_REFNUM 0.000000, __FRAUD_WEBMAIL 0.000000,
+	__FROM_DOMAIN_NOT_IN_BODY 0.000000, __FUR_RDNS_SOPHOS 0.000000,
+	__HAS_CC_HDR 0.000000, __HAS_FROM 0.000000, __HAS_HTML 0.000000,
+	__HAS_MSGID 0.000000, __HAS_REFERENCES 0.000000, __HAS_XOIP 0.000000,
+	__HIDDEN_HTML_CONTENT 0.000000, __HTML_ATTR_DIR 0.000000,
+	__HTML_BAD_END 0.000000, __HTML_DIR_LTR 0.000000,
+	__HTML_ENTITIES_X4 0.000000, __HTML_TAG_DIV 0.000000, __HTTPS_URI 0.000000,
+	__IN_REP_TO 0.000000, __MAIL_CHAIN 0.000000, __MIME_HTML 0.000000,
+	__MIME_TEXT_H 0.000000, __MIME_TEXT_H1 0.000000, __MIME_TEXT_H2 0.000000,
+	__MIME_TEXT_P 0.000000, __MIME_TEXT_P1 0.000000, __MIME_TEXT_P2 0.000000,
+	__MIME_VERSION 0.000000, __MSGID_32HEX 0.000000,
+	__MSGID_DOMAIN_NOT_IN_HDRS 0.000000, __MULTIPLE_URI_TEXT 0.000000,
+	__OUTBOUND_SOPHOS_FUR 0.000000, __OUTBOUND_SOPHOS_FUR_IP 0.000000,
+	__OUTBOUND_SOPHOS_FUR_RDNS 0.000000, __SANE_MSGID 0.000000,
+	__STYLE_RATWARE_NEG 0.000000, __STYLE_TAG 0.000000,
+	__SUBJ_ALPHA_END 0.000000, __SUBJ_REPLY 0.000000, __TAG_EXISTS_HTML 0.000000,
+	__TEXT_DIR_LTR 0.000000, __TO_GMAIL 0.000000, __TO_MALFORMED_2 0.000000,
+	__TO_NAME 0.000000, __TO_NAME_DIFF_FROM_ACC 0.000000,
+	__TO_REAL_NAMES 0.000000, __URI_CLOUD_GOOGLE 0.000000,
+	__URI_IN_BODY 0.000000, __URI_MAILTO 0.000000, __URI_NOT_IMG 0.000000,
+	__URI_NO_WWW 0.000000, __URI_NS 0.000000, __URI_WITH_PATH 0.000000
+X-SASI-Probability: 10%
+X-SASI-RCODE: 200
+X-SASI-Version: Antispam-Engine: 4.1.4, AntispamData: 2022.11.10.104820
+From: "Schwarz, Daniela" <Daniela.Schwarz@mfn.berlin>
+To: Mike Taylor <sauropoda@gmail.com>
+CC: Paul Barrett <p.barrett@nhm.ac.uk>
+Subject: AW: [EXT] Atlas ribs on Diplodocus
+Thread-Topic: [EXT] Atlas ribs on Diplodocus
+Thread-Index: AQHY9DNS5NEUktVl/EiBI1ZJdyD4pK43xKQKgAAq34CAABQ8Wg==
+Date: Thu, 10 Nov 2022 11:18:06 +0000
+Message-ID: <d07941100716448bb5c8578b3353d847@mfn.berlin>
+References: <CACnMvBaBmP5HdTZqZ=MWqOyu=bCBri4mUSR7w5eeTtRSv=LUeQ@mail.gmail.com>
+ <a489183bf4004a039203b0b5bbfe09f9@mfn.berlin>,<CACnMvBaEKDZFhboOeAa-5QoZQGaUP6am8+y9z4ALETZwxCu8jQ@mail.gmail.com>
+In-Reply-To: <CACnMvBaEKDZFhboOeAa-5QoZQGaUP6am8+y9z4ALETZwxCu8jQ@mail.gmail.com>
+Accept-Language: de-DE, en-US
+Content-Language: de-DE
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [192.168.102.2]
+MIME-Version: 1.0
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="iso-8859-1"
+
+Oh yes, you can cite me as pers. comm., sure!
+
+
+-----
+Dr. Daniela Schwarz
+
+Vertebrate palaeontology
+Scientifc head of collection of fossil reptiles, fossil birds, tetrapod ichnofossils
+Ombudsperson MfN
+
+Tel.: +49 (0)30 889140 8754
+Fax: +49 (0)30 889140 8565
+Daniela.Schwarz@mfn.berlin
+
+Museum für Naturkunde Leibniz-Institut
+für Evolutions- und Biodiversitätsforschung
+Invalidenstraße 43
+D-10115 Berlin
+
+
+
+________________________________
+Von: Mike Taylor <sauropoda@gmail.com>
+Gesendet: Donnerstag, 10. November 2022 12:05
+An: Schwarz, Daniela
+Cc: Paul Barrett
+Betreff: Re: [EXT] Atlas ribs on Diplodocus
+
+Many thanks, Daniela. Well, this makes it even more confusing! The atlas ribs are present in the London and Paris casts, but absent from the Berlin cast and the Carnegie mount.
+
+Please confirm that I can cite your pers. comm.?
+
+-- Mike.
+
+
+On Thu, Nov 10, 2022 at 7:33 AM Schwarz, Daniela <Daniela.Schwarz@mfn.berlin> wrote:
+
+Hi Mike,
+
+As you can see from the photographs (sorry, just taken from my mobile phone), our specimen lacks atlas ribs. There are only the small "stumps" of axis ribs as in the other mounts.
+
+
+All the best,
+
+Daniela
+
+
+-----
+Dr. Daniela Schwarz
+
+Vertebrate palaeontology
+Scientifc head of collection of fossil reptiles, fossil birds, tetrapod ichnofossils
+Ombudsperson MfN
+
+Tel.: +49 (0)30 889140 8754
+Fax: +49 (0)30 889140 8565
+Daniela.Schwarz@mfn.berlin
+
+Museum für Naturkunde Leibniz-Institut
+für Evolutions- und Biodiversitätsforschung
+Invalidenstraße 43
+D-10115 Berlin
+
+
+
+________________________________
+Von: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Gesendet: Mittwoch, 9. November 2022 13:03
+An: Schwarz, Daniela; Paul Barrett
+Betreff: [EXT] Atlas ribs on Diplodocus
+
+[https://ssl.gstatic.com/docs/doclist/images/icon_10_generic_list.png] Holland1906-osteology-of-Diplodocus-Marsh-with-...<https://drive.google.com/file/d/1Iy4Gub9HXksKOsJBUbl7VberEphOznLK/view?usp=drive_web>[X]
+Hi, Paul and Daniela.
+
+As I'm finalizing a manuscript on the Carnegie Diplodocus and its casts, I have run into a minor anomaly. As you can see in the attached photos, the Carnegie's own mount lacks cervical ribs on the atlas, while the Paris cast (supposedly unchanged since its initial mounting) has prominent atlas ribs resembling the one illustrated by Holland (1906:figure 20) (attached).
+
+Are you easily able to see whether the London and Berlin mounts have these atlas ribs?
+
+Would it be OK to cite your responses as pers. comm.s?
+
+Many thanks!
+
+-- Mike.
+
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
