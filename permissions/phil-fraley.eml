@@ -1,0 +1,180 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp841865vle;
+        Fri, 11 Nov 2022 06:52:54 -0800 (PST)
+X-Received: by 2002:ac8:7216:0:b0:3a5:c306:324 with SMTP id a22-20020ac87216000000b003a5c3060324mr1556250qtp.116.1668178373505;
+        Fri, 11 Nov 2022 06:52:53 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1668178373; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rn6npiq2fpOIWz0fqsQ9IvmKHuwyNogZzpPtB9CBZAlfzWqFcUVgcMkwGkzZvoMiSQ
+         QZZEvxZk2+S7sM37TjFnnXxIQp+78udLUqIC3uTmKRq6nzJf4RfgHrpyD0uKMnl/WGmc
+         ftnFtWQ0yCP78U+97K/5Nsau7Qkn34ucuB3zHrET8OSWyY/7fy5g2JcEER2m8blemvb8
+         UJDI5dHLrp9XQSTa0ycu1gj8onuin8wZOVJ06d2LgxGYJSaWYRiPlFx/2e6kJ9n44Zkr
+         5xzfZkwyYFwzioJlMNWsxUJ+rbvbdw+umYoaZyQ5Q4kj2UjwfV2yIaW1SLuH0eNdHLRE
+         RT5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:in-reply-to:to:references:date:subject:mime-version:from
+         :dkim-signature;
+        bh=WU805Bh1TbvjRIwZBuQd01ZgMs7EBCuLmn4qGNNWNFk=;
+        b=KNLkYbQNvfZI28I77PaAOEkm233i5DzQKoHuHQBH0XettFQ3PWj7u1uXe+DB3ld8Ka
+         y9Vfrj8w8InfgBa5dY1wnMoYmca/pguPCDmBbNyOCY3A7w2XeLCEfUQNyKgzGm/w/GIC
+         EKtC99EHsNv2LqqOmbMNwkdCjoiZzYBB4SLAwNICkWg1RQzn1wip34tAfebwv9HxXgFJ
+         jojkQciu9xh/KQkHL2tPEQsv9eGoJqvL67bsx+wun0aHOfnOHZ7KbSqIadtizr4cWoY+
+         KDGTeIXlKhZpRE4JefrDEVTsRES6R/zh7RFmY3EasPAf/nSPHd0bTp11B21CVA6fUAfR
+         GT8w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=jv1NCowf;
+       spf=pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=philliplfraley@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <philliplfraley@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id b15-20020ac85bcf000000b003a57956b424sor1324854qtb.44.2022.11.11.06.52.53
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Fri, 11 Nov 2022 06:52:53 -0800 (PST)
+Received-SPF: pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=jv1NCowf;
+       spf=pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=philliplfraley@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:in-reply-to:to:references:date:subject:mime-version:from
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=WU805Bh1TbvjRIwZBuQd01ZgMs7EBCuLmn4qGNNWNFk=;
+        b=jv1NCowfDWWP7coljrbJigZmyEnmZeI6n6F9q4KhCrRqz2RmtSOVbxPBqAp4vAQ4D2
+         p1mfhp+OiOMXwP1hGA8BmXvg2QNgPoVq5iunkFEfchRzdpLJ8iT5IFinlCsGkDP1FEb6
+         68NwIi+90GadsGuDHMAAQc1OMfvrINJMUSGM2r3MNryZQd2ti47b373Wy9BSOLN3/R84
+         lZqEq9chtrhzf71h2nEH/ZfjUgPjTbrAiIwHYK+CTUbMne7PvGW6IocZAA5QLREqds3m
+         GPKT+A5uHKFdPriWN6VVUXFOhdz0AICQrbUxMOh8U+ZwAFhZ0Y0ph2HCFODllnskU5FG
+         k+Bg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=message-id:in-reply-to:to:references:date:subject:mime-version:from
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=WU805Bh1TbvjRIwZBuQd01ZgMs7EBCuLmn4qGNNWNFk=;
+        b=A/wblQk02rz2uJHc/nM27rHTIoiisw62O4xLKEOTvp0PTxJ8NhCamHQsdDdLnZ5c9D
+         Ow3qOcFjxLDy7gfnY40qP1kcZJKhT4G+M3nCeL09htz8uVp/fWau52CX7oxoHJ/C2jCN
+         hupAkfU1bnoGSDrYzMwLAfr2s6uGFPLgSPYuqPlTiNImUvxC/C6DZRxitPC5aWaHfLNJ
+         zMOEosmnanqKhY/odXEANYGWKZ0g/FOtxnUlkljna9tsxMdUkHCqNQH/XNgfq5N7t6+9
+         6RES4y7FJGiCe1jEovd5WSZgjlhWwTKpDlAQ5jjfQxodaSGrBLHWQQJ7OUrrxBCj/kRU
+         opJA==
+X-Gm-Message-State: ANoB5pld++kPcjHA0+u5HE1C54oOrs3yRwgAuTPOzAZaz6lO6ArBN+v7
+	Vqxiwkk6UF1ChbleRq4kAWMW+2gojRs=
+X-Google-Smtp-Source: AA0mqf7gObaUqOWtz5MaAZmU6qHITxigNNBpoFTKO9zvYpBhiUuKoXWZNP6wordgFitpO3UylrUHWg==
+X-Received: by 2002:ac8:670b:0:b0:3a5:327f:fdb8 with SMTP id e11-20020ac8670b000000b003a5327ffdb8mr1531885qtp.502.1668178371912;
+        Fri, 11 Nov 2022 06:52:51 -0800 (PST)
+Return-Path: <philliplfraley@gmail.com>
+Received: from smtpclient.apple ([2601:547:ca80:73d0:a9fa:27cf:8672:bc72])
+        by smtp.gmail.com with ESMTPSA id de3-20020a05620a370300b006e99290e83fsm1518313qkb.107.2022.11.11.06.52.45
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 11 Nov 2022 06:52:49 -0800 (PST)
+From: Phillip Fraley <philliplfraley@gmail.com>
+X-Google-Original-From: Phillip Fraley <Philliplfraley@gmail.com>
+Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3696.120.41.1.1\))
+Subject: Re: Diplodocus
+Date: Fri, 11 Nov 2022 09:52:44 -0500
+References: <CACnMvBbbiLnWZ-E4nqmH2H9QQ6i6ZBGNX4xAnMtpvqxcU-r6wA@mail.gmail.com>
+To: Mike Taylor <sauropoda@gmail.com>
+In-Reply-To: <CACnMvBbbiLnWZ-E4nqmH2H9QQ6i6ZBGNX4xAnMtpvqxcU-r6wA@mail.gmail.com>
+Message-Id: <8FA83460-38FF-4D99-839E-63BB857026EC@gmail.com>
+X-Mailer: Apple Mail (2.3696.120.41.1.1)
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain;charset=utf-8
+
+Hi Mike,
+
+Yes, it is rather abrupt at how quickly the morphological changes occur as you move backwards along the tail. I am unsure as to why caudal 38 was labeled A and B but suspect it had something to do with how it was originally mounted in 1907.  As I recall several Caudal vertebrae in the mid 50’s were fused together during fossilization process and this made the mounting of the tail especially difficult when making the tail curve. 
+
+The Curatorial staff at the Carnegie and their advisers were responsible for identifying any elements of the skeleton which needed to be changed and where replacements could be obtained. I was unaware of Kirby Sieber’s appropriately sized fossil material so I cannot offer any insight as to why that material was not used. 
+
+Of course you have my full permission to use the photo of Dippy taken in our Studio (IMGP1158.JPG)  and I am sending another image of Dippy (a full frontal) which you can also use if you choose (IMGP1184.JPG)
+
+Please send me a copy of your paper upon completion as it is something I would enjoy reading. And the next time you visit Pittsburgh I would be happy to meet you at the Carnegie Museum and discuss the mount with you.
+
+Regards,
+Phil
+
+
+
+Sent from my iPad
+
+> On Nov 10, 2022, at 6:38 PM, Mike Taylor <sauropoda@gmail.com> wrote:
+> 
+> ﻿
+> Hi, Phil, great to hear from you.
+> 
+> First things first: thank you SO much for these images and the background information! It's fascinating how quickly the vertebrae lose their distinctive morphology as you go backwards from Ca37.
+> 
+> Second thing: what is the deal with there being two Ca38 vertebrae (38A and 38B)?
+> 
+> Third thing: thank you for the spreadsheet, which contains a couple of nuggets that were new to me. I know that in the forelimbs of the remount as actually executed, you made sculptures based on the BYU elements. Do you recall why that option was chosen ahead of using Kirby Sieber's appropriately-sized real fossil material?
+> 
+> Fourth (and final!) thing: it's great to have these additional photos. I would like if I may to reproduce the one you sent with the subject-line "Tail" in the forthcoming paper. If you're OK with that, please give explicit permission that I can show to the journal editor.
+> 
+> Thanks again!
+> 
+> -- Mike.
+> 
+> 
+> 
+> 
+> 
+> 
+> On Thu, Nov 10, 2022 at 2:48 PM Phillip Fraley <philliplfraley@gmail.com <mailto:philliplfraley@gmail.com>> wrote:
+> Hi Mike,
+> 
+> My wife and I reviewed our photographic records of the remounting of Diplodocus and will send you a total of sixteen images. For the sake of clarity, we will send them as individual emails. Of the caudal vertebrae in question 37-73  we have images of 37-46 taken right after disarticulation but before restoration and these images indicate this is fossil material. However, by caudal 46 you will notice it is a combination of mostly plaster with fossil fragment. I have no additional photographic documentation of caudals 47-73 but do have an excel spreadsheet of missing elements compiled by Carnegie Museum staff where Matt Lamanna notes “ total number of Caudals in CM 84 Etc. tail must be greater than or equal to 82". The spread sheet identifies Western Paleontological Laboratories as a source for acquiring the missing caudal vertebrae.  We are including this excel file in the individual emails.
+> 
+> We are also sending images of the specimen during the mounting process and completely articulated in our studio before the armature was painted and the individual elements were shipped back to the Carnegie for installation.   I hope this information is useful and let me know if you have any questions about the images.
+> 
+> Regards,
+> Phil 
+> 
+> 
+> Sent from my iPad
+> 
+>> On Nov 8, 2022, at 5:17 PM, Mike Taylor <sauropoda@gmail.com <mailto:sauropoda@gmail.com>> wrote:
+>> 
+>> ﻿
+>> Hi, Phil, thanks so much for getting in touch!
+>> 
+>> I am working with Matt Lamanna and a few more colleagues on a paper documenting the material that went into the Carnegie Diplodocus and its casts, and what changes have been made through time. It's pretty much done, but a few details remain to be resolved.
+>> 
+>> One of them concerns the caudal vertebrae of the diplodocine specimen CM 307. McIntosh's (1981) annotated catalogue of Carnegie dinosaurs says "the skeleton which was mounted and put on display in 1907 [...] was completed by additions from several other individuals as follows: [...] CM 307 (distal caudals)". And, giving more detail, Brian Curtice's (1996) Masters thesis says that Ca32 and Ca37–73 inclusive were from CM 307. He obtained this information either from Jack McIntosh or from materials found in the Carnegie library (pers. comm.)
+>> 
+>> However, there is some evidence that this may have only become true relatively recently. A note on the 2007 remounting located by Amy Henrici says “One caudal added from CM 94. Caudals 37–73 were casts in original mount and replaced with caudals from CM 307”. Henrici also found a “specimen removed” tag in the CM 307 drawer in collection indicating that the specimen was removed from the drawer for loan to Phil Fraley on 20 November 2006.
+>> 
+>> With all that said, my actual question: do you remember whether, when you were taking down the old mount before reposing it, the caudals in positions 37–73 were the real fossils, or casts?
+>> 
+>> Thank you!
+>> 
+>> While I'm here ... if you have any other interesting observations or anecdotes about the remount, I would be very happy to hear them.
+>> 
+>> -- Mike.
+>> 
+>> 
+>> 
+>> REFERENCES
+>> 
+>> Curtice Brian D. 1996. Codex of diplodocid caudal vertebrae from the Dry Mesa dinosaur quarry. Masters Thesis, Brigham Young University, Department of Geology.
+>> 
+>> McIntosh, John S. 1981. Annotated catalogue of the dinosaurs (Reptilia, Archosauria) in the collections of Carnegie Museum of Natural History. Bulletin of the Carnegie Museum 18: 1-67.
+>> 
+>> On Tue, Nov 8, 2022 at 9:59 PM Phillip Fraley <philliplfraley@gmail.com <mailto:philliplfraley@gmail.com>> wrote:
+>> Hi Mike,
+>> I would be happy to answer any questions you have regarding the Diplodocus mount at the Carnegie Museum. My email is philliplfraley@gmail.com <mailto:philliplfraley@gmail.com> look forward to your questions.
+>> Regards 
+>> Phil 
+>> 
+>> Sent from my iPad
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  multipart/related
+    text/html
+    image/jpeg
+---
+
+
