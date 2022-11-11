@@ -1,0 +1,269 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp754298vle;
+        Fri, 11 Nov 2022 04:01:34 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf7+1DhJDazlY/s3kEeSU2jpSx0DNkIEreDUUsZTrl1ssJNgUlin3CfnDNFo+jXKR0QOsR6w
+X-Received: by 2002:a5d:452d:0:b0:22e:371d:a472 with SMTP id j13-20020a5d452d000000b0022e371da472mr1048163wra.713.1668168094324;
+        Fri, 11 Nov 2022 04:01:34 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1668168094; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=OWaGQpfUzydS0UsAQKgbnWx1FDzrfB94xn0BiKWzrZo4KJMLo21EgN6xXBqzEqs+TV
+         i6oSIpT9D6A+O+DyTgmnAAMcV7ROfPHRO/5KbRAGbJRbodfeCFLDS0H9fQlGG8EKyzUf
+         a/BLjDLDHtHNVUiqK85S++Xn9rqoA7ee+k53DyJoYR4/LesKufi8QChxGmupTCKHdNlp
+         XlXaGs4Tix6RFs2lJjEQ1Bstivi3NfbH8MbChFtUngTUtnvWiAyy1Hnjgi4MnMfKDaA4
+         F6BijEz0bMAX8eb9yh5ImvlshVWN4bjd9lv0DQ9L+VNUPxijJVhpCNP8o29vBjyox7do
+         UXxQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:dkim-signature;
+        bh=PD4u5SYp695+w77k3HVAIC1AIK6awkJQ19567gFMmfA=;
+        b=bvwN21Vk7mlTctHRsmjLu/rwayChrFKb8uT1ZVoElNlnVYaFdiTA+kXSnFaRGdExtW
+         /S/0Na9E4P7X6EsgdnA3liM2PepmfA18H3mmky/5LQm/Xjf3R7J41akjz/+L7omI8bpF
+         u5B827+UNqALXMG+9eHFjvPTuC4a6CbEJsQnBcFnFKsA6g65YF2WD2zo0QA4YsJhpSOe
+         LTEQC8sCx66iioInlA0Yy0W2jQAtKVmZ9g4x6ZPsYlKmDt9dEg5OiY6Xn2ejjoI8tFD2
+         J/fYLSaJ0iOfS9OyYRheBLjToE8IiDXSiJhxezfRiMILyQnU4a9WvJ39e2XLISwDsg9z
+         5erg==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@ljmu.ac.uk header.s=selector1 header.b=fwOXgLgk;
+       arc=pass (i=1 spf=pass spfdomain=ljmu.ac.uk dkim=pass dkdomain=ljmu.ac.uk dmarc=pass fromdomain=ljmu.ac.uk);
+       spf=pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.29 as permitted sender) smtp.mailfrom=P.L.Falkingham@ljmu.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ljmu.ac.uk
+Return-Path: <P.L.Falkingham@ljmu.ac.uk>
+Received: from repost01.tmes.trendmicro.eu ([18.185.115.29])
+        by mx.google.com with ESMTPS id bh6-20020a05600005c600b002366db4a606si1034484wrb.965.2022.11.11.04.01.34
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 11 Nov 2022 04:01:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.29 as permitted sender) client-ip=18.185.115.29;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ljmu.ac.uk header.s=selector1 header.b=fwOXgLgk;
+       arc=pass (i=1 spf=pass spfdomain=ljmu.ac.uk dkim=pass dkdomain=ljmu.ac.uk dmarc=pass fromdomain=ljmu.ac.uk);
+       spf=pass (google.com: domain of p.l.falkingham@ljmu.ac.uk designates 18.185.115.29 as permitted sender) smtp.mailfrom=P.L.Falkingham@ljmu.ac.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ljmu.ac.uk
+Received: from 104.47.18.106_.trendmicro.com (unknown [172.21.183.236])
+	by repost01.tmes.trendmicro.eu (Postfix) with SMTP id D8B5A1000064A
+	for <sauropoda@gmail.com>; Fri, 11 Nov 2022 12:01:33 +0000 (UTC)
+X-TM-MAIL-RECEIVED-TIME: 1668168092.304000
+X-TM-MAIL-UUID: 842f12a8-3367-44ff-bb7e-d0036706aa0c
+Received: from EUR05-AM6-obe.outbound.protection.outlook.com (unknown [104.47.18.106])
+	by repre01.tmes.trendmicro.eu (Trend Micro Email Security) with ESMTPS id 4A6CA10005E25
+	for <sauropoda@gmail.com>; Fri, 11 Nov 2022 12:01:32 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ajSuNr8DuFiVf0zMjCXJYLlcP2QDX2UrN7/BexYmk8jHeFaBwVt2jIVNm3HISAvkllyEVNxXV5vBZVYg1vnj9/N9UvAnFCdAoiGBn7ZS+oaIe+lzFKP+vgAONKNVOF+dnWHJiethlkMnwncG8eMvCHojJCYDuvUAMgezLQ9HBnOMt1IMNMjMKv72WAs+rNOiMQzf3btKIeNK1i85JucmioxoVH8MdrZSaygDXCr4LGh1dltFGrscxQgiBwzFD41E/Q93eDupSHabp200IDUooDcCX3828KY13JZNriBOXWCyMHykR6LbmHM+/kSCAonfuS3r3PZscHGlotQJVwaJPA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=PD4u5SYp695+w77k3HVAIC1AIK6awkJQ19567gFMmfA=;
+ b=GGCAwfGA7vc+xbZI0sF28ytdSgl/VNj45v8OLADfKjl72e/0M782VF3rhZepZp/2UrahlWVZ8O9pvfVieDifXWIPsZX5vN/n7MNWDKtPTpMMQwzQsPr0O4pHWJ2s+hLudonXKdtof385CUW6Edh0CoGPzjxuzX8iFcNIm+G3N0F7HOFGWmGmYbBfVzEJ3RLq8UinEvG0CAI1uoYf6VV0azYNIkksqHsvAXn5ySfqdwY37QYFL8jS/F+N7NaTRPh1suZEcoF21H+OUAWr78khYlaQYM0YEiERL4NYNGkpZJBMDgFLKd1zn7L6HW8gTCEKo1wz/zfYLwcMCVo2JjE3ew==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=ljmu.ac.uk; dmarc=pass action=none header.from=ljmu.ac.uk;
+ dkim=pass header.d=ljmu.ac.uk; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ljmu.ac.uk;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=PD4u5SYp695+w77k3HVAIC1AIK6awkJQ19567gFMmfA=;
+ b=fwOXgLgkGA1ypYCaRGcBbCqfvdVdN8gbiBNORDY/C6KSpkV2cg2m0ivjAHX3e6R3RlEp7hw1qzMRedlY0CH0LxwbHhsKBjPhhcGDyrKJa4rV0kmNMXW5j2EZadNVG/6HyDbAJ5SmGJmetddwDVcm5Q+h4QnI5WhUP3kRIN/JuqQ=
+Received: from VI1PR02MB6462.eurprd02.prod.outlook.com (2603:10a6:800:17d::5)
+ by PA4PR02MB7166.eurprd02.prod.outlook.com (2603:10a6:102:108::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.13; Fri, 11 Nov
+ 2022 12:01:29 +0000
+Received: from VI1PR02MB6462.eurprd02.prod.outlook.com
+ ([fe80::b12f:19f3:5db0:a7c0]) by VI1PR02MB6462.eurprd02.prod.outlook.com
+ ([fe80::b12f:19f3:5db0:a7c0%4]) with mapi id 15.20.5791.027; Fri, 11 Nov 2022
+ 12:01:29 +0000
+From: "Falkingham, Peter" <P.L.Falkingham@ljmu.ac.uk>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: RE: Length of the Carnegie Diplodocus
+Thread-Topic: Length of the Carnegie Diplodocus
+Thread-Index:
+ AQHYZriTjQz3D6qJt0ax07NWnDyqOK4lmPUwgAOqqt+AAFg7AIAC2KDigAtS8VuAAAg/gIAAAxsmgAAOqoCAAhpIAIAAwSkn
+Date: Fri, 11 Nov 2022 12:01:29 +0000
+Message-ID:
+ <VI1PR02MB6462F8582735900F66EB0313E0009@VI1PR02MB6462.eurprd02.prod.outlook.com>
+References:
+ <CACnMvBbk85dMKO=X8AsGg3vBMx7_c1EGq+wrBZXLHqWSM+S37Q@mail.gmail.com>
+ <149625c5562a4f46a71de369fd45358f@liverpool.ac.uk>
+ <CACnMvBbNRMWUOVmw8z=U-BWN2qQC5zJjV0aiDSbyYxhWDKMLjQ@mail.gmail.com>
+ <VI1PR02MB64623E1104026AD15228F96AE0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBa8D3LZ7_pHQf5sHgC=RTt8PTn4D4Bs=uGiypQ9uyDG3Q@mail.gmail.com>
+ <VI1PR02MB6462453628F5CA342A9CCB45E0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBZwDwESLzDpzrnXcHSW5TuWeW0bSDd_xzJ3xWF8EJ1WxA@mail.gmail.com>
+ <VI1PR02MB646291137ACFF26422823B1DE0CA9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CH2PR02MB6475794A25369A7A9A397EB4D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBaz6DWxnEH661m5rukP4RZWAQ7igKbhrcD3HFfkVtOFOw@mail.gmail.com>
+ <CH2PR02MB647521B0172DC90F2FB93CB9D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBYrTh7MOjXoamTbd+YVnfBr97TsmCys_ciM=BOTB24L9g@mail.gmail.com>
+ <CH2PR02MB6475FEABC1A5353CE5E59FC3D8CD9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBbS6s9AB0MEuDuOBn477Fpxk8LfgTwSm8c5677ag9XYCQ@mail.gmail.com>
+ <CACnMvBYbivx5OH4u1OYGd9KagLd3XDF5xipMbgC=cX3JY1A03w@mail.gmail.com>
+ <CH2PR02MB6475A69C8B153CA27B0EF67BD8359@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <VI1PR02MB64624EB6175734FDF967EF9BE0379@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CH2PR02MB647526C20D830E8EAFE13A6DD8379@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <AM7PR02MB64513657FA5BA06F2610B13CE0399@AM7PR02MB6451.eurprd02.prod.outlook.com>
+ <VI1PR02MB6462130A072003FC68818AEEE03E9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBYgMZRay0P_SK7jsC7VeOZAv=sLzcE2NFhn--pwx=QSKw@mail.gmail.com>
+ <VI1PR02MB6462700568400AB3F87003ACE03E9@VI1PR02MB6462.eurprd02.prod.outlook.com>
+ <CACnMvBZ8Wr0jfw8OzSZ68k0na+H-BAo4DdeUf++Yh1zo9uN4kg@mail.gmail.com>
+ <CACnMvBYjec6LoK=+X5PO5PP0gabr+h6+vMzozSGWU1M+L42=Sw@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBYjec6LoK=+X5PO5PP0gabr+h6+vMzozSGWU1M+L42=Sw@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=ljmu.ac.uk;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: VI1PR02MB6462:EE_|PA4PR02MB7166:EE_
+x-ms-office365-filtering-correlation-id: 44a89908-d751-483f-d054-08dac3dc77b9
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ KGYChkxWFBPBrTmD4EfnXHUfpPMtoIqAIpAow5O8hqmvH8BPMDvZc77wKDXv9jjGdCW5lZK8fxptQiBWjJhTjL5UYEqZBwb9ijZBELQglXCpR6draT5n98MwQ6haKnO3Y/gdT/GkKzaeFx9E8uf8+4ZXzk6Dwj8/jHCV+pbhTQQPePTwXJT6d825Iz7mgKPrNHeYOc2RgHOZjJSjrSoeqn9+GYor5prV85wb6kEwoZ4K+TxQzxCEeEBumP1LBG+8XVLMupt3N5i/0XihggoLl8xNFE72kV0hgentKJ85snSSvja4mlnhiNyyK9XziCEovxo9FT6vpIHqYRU/aSldgEP/cGs3qoz0ZhcTIiqksTaLmyiqaNP0AwoWu1X2kQDl5lq3EdFlYMmLqK4Txfjs5j9zCJ/FYxTdyIXIo2DXOyEL2XhU1NiR2pRwVh3D6cG2O9zMVphaQzvHbWCpG5BqkjLIMfmoziEsbiTNrtvSnnTXRgzvn8knqj7Zzm12eULkKnayOz9JdW8jAT5TrHZ70JSIoXPkPBnH1sZOC78a3bIIbeUbNzEWggP993wvNz9AZWDVtq7r4+uhBkv5/eBHxl8b94uPqRMaOlDGb4Zs62QlPYEgdg1ta0XcSs6Oz/Ay4dAf31lDl/k90tqbPC+OrdtJPjEY/hreswn06eRp0LDns8EAckV9dhnf/cTNDCJ2xYS60hcnDDWPTXFAqumVFf9rb0BUJbrhxbmPpdgpXxnDajiktlA9m3fcu+r7vjK26pze3PsqmLkfsUH8nE8Kbv7ceG/KJ+9UAoXdhexqtcE=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:VI1PR02MB6462.eurprd02.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(4636009)(39860400002)(136003)(396003)(366004)(346002)(376002)(451199015)(66899015)(33656002)(122000001)(66574015)(52536014)(166002)(38070700005)(2906002)(186003)(83380400001)(86362001)(66446008)(76116006)(966005)(53546011)(66946007)(66476007)(71200400001)(55236004)(8676002)(316002)(38100700002)(6506007)(64756008)(26005)(7696005)(66556008)(786003)(6916009)(55016003)(41300700001)(9686003)(8936002)(91956017)(478600001)(5660300002);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?WNqp1iZqZ6oT+Q1kHgDbG9j0Qu573eAHIlc2SGNfaVwTzUby9V2cG9lp?=
+ =?Windows-1252?Q?1D8Ul81ODdJdo10rpQvUj8kFo/HVeg0VnFJ1+qvfYAh9HLvGRhmzTiNy?=
+ =?Windows-1252?Q?33sLDyJVbbEmjTrvHM+kk9CmTI20B/uLran+ruVvc80O/KtF/iigrno9?=
+ =?Windows-1252?Q?hNetZcr4x0aSyIZuLw2Mmp9F8+JB3oEf6PEsC1E9mfTdiNpnNs9wN9Zf?=
+ =?Windows-1252?Q?AfDk6Cj/Iflt+EVJzyX7axkK88XlxCrs/HceukhNWDQleK2WzVGzRcGL?=
+ =?Windows-1252?Q?rpkfqcP5cTDnDkGNsgIHXl+wyKZvAyjH2Dew7d83z3pjBCyp4LlnUFfD?=
+ =?Windows-1252?Q?zMLDjzB1dnPi9xnajgHGQxrKFR96VfPXSDxSrRh3YFj7/iJPiJCVb/vQ?=
+ =?Windows-1252?Q?Aty80eVNq7F8F+KeTH7BLtUb+kFv5uqPtlhH8vYA6VfK7XtXyV4qnNvx?=
+ =?Windows-1252?Q?Ab1Z559Lz4W+ulVdB5ydvPjbgOmS5zx/AqphSaGoGTsFAsnLCgLI8OSd?=
+ =?Windows-1252?Q?2eqpwXjbedKnGI0tmrtYduGsdrGMRcPtno44/6W0vajqDJ/O5H3woIPY?=
+ =?Windows-1252?Q?Jr8B5RsQC2apufA9ZONipJ4EDIGk0qLxNf+BkMhrGfJ4bGCE4cVwdS5L?=
+ =?Windows-1252?Q?nhA+u4HZPtPytIDmtDaEO2kSVLOe4pcUxP+13guQ4h/BLvw+fIH1shT2?=
+ =?Windows-1252?Q?pLRMlKnNDmgIWj4FC1/pXbuTE0HNde5tEHgOp+7vYMmDAM3raAGfAomh?=
+ =?Windows-1252?Q?vCGdUrgVC8L8pKgpDj9/W+qUHWI/bEiX66APswAC3UdgkJM6B4GOBfMJ?=
+ =?Windows-1252?Q?3/CCAO5xcUIz9mBXiDeklpLZBUFNUbls88phHELFb9tgPiAa9iuuM4EC?=
+ =?Windows-1252?Q?H++oozd5sIw7uokCvF2YsVVCP6GzhFaIyl7bZdoD6yPlQJ4DnzEg9Pq3?=
+ =?Windows-1252?Q?B1Ecu70g/r22NosbLsDq85aj7tN7Up9+r+u8CfjYFIMa5/WqkoNL1l0K?=
+ =?Windows-1252?Q?Ebu10pvaEmaDR32SkXNmfcz9mOfnaD/lIVTnl7sSsKaUjQBEnDwwXa5h?=
+ =?Windows-1252?Q?l9FQURfY7AgTgJIpyzdPSji9U5b3cOovc1zaymtQ240Xv7arynEWl3WG?=
+ =?Windows-1252?Q?PUWMddGxawtO891m2RaR3G3XdCGMtEPAKPVBV+YwZl8NbUSw7xxxs6Fg?=
+ =?Windows-1252?Q?44bbLjkb4V9qmx+H8jsHysQH8ky5bTYSOWGNVjB0+BnbKeVDZtCihbu5?=
+ =?Windows-1252?Q?g6HbZOaA4CVXmoY3/OnHUf7qOJi1FYA9bUiO4HuYVO9hUgTyQ9dHUVEr?=
+ =?Windows-1252?Q?MOmT+uIg/UPIFx5XjmusU1jGQSN7bospELALekU2WcDRUn7wrn1L8b3r?=
+ =?Windows-1252?Q?iuaLRZ69ot0ocuK06leWAk2hTzlCZ4l88UQt73oB91K6GRFXNJFALd+y?=
+ =?Windows-1252?Q?T0FtbmCVyscTEVKUGQz+1fxXpwSL6pFVR1Tk+R0MM2Q9GgEoG6mtYvId?=
+ =?Windows-1252?Q?TpZjMLhnfGql1e+L5yhCjxQl1R2qQ495kxUQ9qghZVV05A8Waf4XTLLK?=
+ =?Windows-1252?Q?729VdkP+G8IgNv9Ey+G56y8bII//p9C6JC1yGSjTNzg8sPgYVArz40Sx?=
+ =?Windows-1252?Q?CNWsTQJGyYr4iNNzxH6q33VSsPycuYiOF3yzmze5ScYBGFkBEDh1Wtig?=
+ =?Windows-1252?Q?4xJpPDmKz9H5yflAKIRzxJZUg699rcbFVvheUxDmy/T6ZKzwuMnZ5g?=
+ =?Windows-1252?Q?=3D=3D?=
+MIME-Version: 1.0
+X-OriginatorOrg: ljmu.ac.uk
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: VI1PR02MB6462.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 44a89908-d751-483f-d054-08dac3dc77b9
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Nov 2022 12:01:29.5077
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 58c3f461-c821-42f7-8b96-24599cfd8b36
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: /xdCUaihMtnSIcnW0cA1FWJdbdLOa44dOSXTFPxWYP97FjVT89e5HWVYkGsBJYHu+QvVjthxtdTO8RNjMn/v1w==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PA4PR02MB7166
+X-TM-AS-ERS: 104.47.18.106-0.0.0.0
+X-TMASE-Version: StarCloud-1.3-9.0.1006-27256.007
+X-TMASE-Result: 10--28.047400-4.000000
+X-TMASE-MatchedRID: hFbMlnd2lLM9sdBVNAjZFa/Elphzpf1LCRsJ4lFzPjM0YL9SJPufX9RG
+	f5c57+FFbYda9H3QEXVzKE0KdtOOixQSRuWWHwSb5F6dulVWvh8LpjAuNUe2+yF/eEY4YXVeyJy
+	q8H6JxQtmeCLE2iu14L5wpZVCbFHL/5aC5CamhBuDMGP0DrC3YmlO3nte6oxzBMdp5178zSOFmy
+	QN+1x2wBjbR/XCsHXWYMm7c75qIn4nix/rWbN4VLQYXgk3R5pdMrR3zbmt+0XzZKDA1/pIrjD9t
+	F1PfigitCzTXfdCoXTzw2WHeHiYL12nl69w97Gx7KOTZefMDnAJN6i943RQTUirR2cCKrhLquRH
+	0gOc9z/33olqXuk9XcrAvvHmClmhDLWXZP/9dm6JD329j4iIzBQ7ky03us3DgoxTlWqmGpXoBzM
+	s/Wgfa3EdfDoJe6gK+u+xXVO1LUDvw1YKywrCpGIebjj13eKWbFnnYKyTEP5v+RDlpJl4+RV17C
+	FfZYAB2lNbmwFUGDI2AjvSSs99nSgolYHtwn7AFwMLJHd18Xsob1Y5EXLioZcE9F6aLBE1QMz2F
+	Eg88Uxs00ZQxlNz87czp/K0AlVvZva/ER92lB0GDa4U6U++nARwfEAjuD9V/WsCpWgKwbZ2364+
+	ztIysdR31pCIqf5acsfnDtuXnaNBjv8UmknoE3YEoourW7wP71Wx2uUbPLf9sV9Tla1qi0rRZP/
+	NcCCSA/OgrF2/7CZ25EU7uPgfTTeG2Vt0Th9t/7PvFa8I/I/Mfp33SZvj4o5UafLmrvaGI9L0l0
+	rdbj+0CArhO1es/eAmO6TkjG+l7ANmnFeyUNmeIHQ/s2c37n11ZumDuRp7fS0Ip2eEHnyvXSmSd
+	lcYmuQ0VVXoRDTyJYy14nqCNsvfd+P6wwCt8xoxTJ4LSy1oSRUA+vRNdLw=
+X-TMASE-XGENCLOUD: ed8e0161-b0eb-4aac-b7c8-1aa1a39b02a9-0-0-200-0
+X-TM-Deliver-Signature: 5FA42789DAE1E407F7CDA68E564D8C79
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="Windows-1252"
+
+Software was Reality Capture.
+
+New image will have to wait – I was running it at work for something else and now the license is locked there, so I can’t open it at home.  Will get a nicer image to you early next week, but feel free to use anything I’ve sent so far.
+
+P
+
+
+
+Dr Peter L. Falkingham
+Reader in Vertebrate Biology
+School of Biological and Environmental Sciences
+Liverpool John Moores University
+
+Website: https://peterfalkingham.com<https://peterfalkingham.com/>
+Twitter: @peterfalkingham
+
+From: Mike Taylor<mailto:sauropoda@gmail.com>
+Sent: 11 November 2022 00:29
+To: Falkingham, Peter<mailto:P.L.Falkingham@ljmu.ac.uk>
+Cc: Matthew Lamanna<mailto:LamannaM@CarnegieMNH.Org>
+Subject: Re: Length of the Carnegie Diplodocus
+
+Oh, one more thing: do you remember who took the photos that the model was made from, and when? And what software you used to make the model?
+
+(OK, that was two more things.)
+
+-- Mike.
+
+
+On Wed, Nov 9, 2022 at 4:22 PM Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>> wrote:
+On Wed, Nov 9, 2022 at 3:49 PM Falkingham, Peter <P.L.Falkingham@ljmu.ac.uk<mailto:P.L.Falkingham@ljmu.ac.uk>> wrote:
+* You wrote: "To do so, I placed markers on aligned photos, initially following the neural spine of each cervical to count them, then placing one at the end point of the tail (and one more between that and the cervical behind the tree)." Am I right in thinking that "cervical" a typo for "caudal" here?
+
+Correct – my mistake
+
+ Good, I'll write this bit up, then.
+
+* You didn't need the published lengths of CM 307 from Tschopp et al. 2019, in the end, then?
+
+Correct – this is purely measured from the scan.
+
+Got it.
+
+* If I got this right, your model does include the distal caudals but DOES have enough information that you were able to find the tip the the tail, and assume the comes out from the last fully modelled caudal in a shallow curve that can be modelled with just two straight segments.
+
+The model stops at caudal 30-33ish, but because the photos were aligned in 3D space, you can take the photos where the tip of the tail is present and project back from them to find the 3D coordinates of that point.  I added another point between the tip and caudal 33, and measured the shallow curve in 2 parts.
+
+Perfect.
+And finally, to dot the i's and cross the t's:
+* Is it OK to cite the various bits of this as a pers. comm.?
+
+Of course.
+
+Thank you. (You say "of course", but some editors are really picky about having this spelled out.)
+
+* Would it be OK to reproduce one of the images as a figure in the paper?
+
+Again, of course.  If you tell me what you’d like, I can do something a bit clearer and high res if that’s useful?
+
+Marvellous! I was thinking of something like the main pane of "Screenshot 2022-11-09 143528.png". If it's easy to colour the skeletons as in image002.png, that would be a bonus, but please don't spend any time on this. Also: if it's easy to have the little blue points shown in nice, contrasty red, that would be an improvement: but again, only if it's easy.
+
+Thanks again!
+
+-- Mike.
+
+
+
+________________________________
+Important Notice: Liverpool John Moores University was established as a Higher Education Corporation under section 121 of the Education Reform Act 1988. Further information about Liverpool John Moores University can be found at https://www.ljmu.ac.uk/about-us The information in this email and any attachments is for the sole use of the intended recipient(s). If you are not an intended recipient, or a person responsible for delivering it to an intended recipient, you should delete it from your system immediately without disclosing its contents elsewhere and advise the sender by returning the email or by telephoning a number contained in the body of the email. No responsibility is accepted for loss or damage arising from viruses or changes made to this message after it was sent and the recipient must ensure that the email (and attachments) are virus free. The views contained in this email are those of the author and not necessarily those of Liverpool John Moores University. We will use the personal data information provided by you to respond to your email. For information about how we process personal data and monitor communications please see our Privacy Notice. https://www.ljmu.ac.uk/legal/privacy-and-cookies
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
