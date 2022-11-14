@@ -1,0 +1,530 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp2314810vle;
+        Mon, 14 Nov 2022 10:54:21 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf4HrWPPo2CDCefEwsG9kyZLXCCIzNw6eciCZBygeNnZxwz0HYzwHWQ3rWnI3jiqVfMdjt93
+X-Received: by 2002:a17:902:6947:b0:185:3d0b:ac93 with SMTP id k7-20020a170902694700b001853d0bac93mr657250plt.5.1668452057860;
+        Mon, 14 Nov 2022 10:54:17 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1668452057; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=YK+XGNsnLfKm56VpxvHKCVLvzRSzknYxv8dmWlP6mAY1DHPh8rcEUpckhaLq7j8OJI
+         gFs9x8K8mXTcuzzwyWRnCV2M6xMWA4jc/Dsr1kMY+6zUgGzlUkK77Ie5ts282uCu5ymi
+         G0sJZwz8kza90B7g9tNurOZtCgAtCxr8x4opaRFaCWj+2ONu5CPO2fipLgRCp7Il2huk
+         YWyKV9VzYCuAeldzksqD85UG4lZjXLFE54iq34/NFiCgkBLQqkxOFkiUZg63DlshnOQI
+         fLto/vpBk2yBxTqEnN10kW0NNkIn1AmtRVR56xPKcb6pj2Vo2RUQdYkxYh1MuBB5BwDi
+         tFCA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:to:from:dkim-signature;
+        bh=cDdZW7+pl/a2s0LQ43G49HqaDacD5ydq+jTnnjSrMUg=;
+        b=g6QtvsHM8Te512yOKysoL7RAdf3aOcv2xhEgvJm4WXRughjPVKuP0lraaIW9K1b2Fj
+         waWZNJUhLgbk8JgkK473/sTxqkAr6Isa/E2hMaWH/j8MtgHC/0NDH7xNNlOdFNm5OXPD
+         aHT8iiYv+ICUEOKUhkcDZuRiwy+hs/TMeM83HVa7QxKajd/YgKrYFyg/Ab7TuqIllmf3
+         veo5myA3aZcRFT0X1zFuZQxpkhqX2qXfNx0i3IPPoR4VBhtYYdtJfvPVP/DhvFBqJt2f
+         2QjPSF4D+ayb5GWpuc4XqHL+8zndSHblJRY8Rb8BHPiKQuR2USkvrbZMKGJ9ELKi8pth
+         8dIg==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@carnegiemnh.org header.s=selector1 header.b=K7NDYoMV;
+       arc=pass (i=1 spf=pass spfdomain=carnegiemnh.org dkim=pass dkdomain=carnegiemnh.org dmarc=pass fromdomain=carnegiemnh.org);
+       spf=pass (google.com: domain of lamannam@carnegiemnh.org designates 2a01:111:f400:7e89::71c as permitted sender) smtp.mailfrom=LamannaM@carnegiemnh.org
+Return-Path: <LamannaM@carnegiemnh.org>
+Received: from NAM10-MW2-obe.outbound.protection.outlook.com (mail-mw2nam10on2071c.outbound.protection.outlook.com. [2a01:111:f400:7e89::71c])
+        by mx.google.com with ESMTPS id s5-20020a655845000000b0046e9da89cebsi9658450pgr.532.2022.11.14.10.54.14
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 14 Nov 2022 10:54:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of lamannam@carnegiemnh.org designates 2a01:111:f400:7e89::71c as permitted sender) client-ip=2a01:111:f400:7e89::71c;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@carnegiemnh.org header.s=selector1 header.b=K7NDYoMV;
+       arc=pass (i=1 spf=pass spfdomain=carnegiemnh.org dkim=pass dkdomain=carnegiemnh.org dmarc=pass fromdomain=carnegiemnh.org);
+       spf=pass (google.com: domain of lamannam@carnegiemnh.org designates 2a01:111:f400:7e89::71c as permitted sender) smtp.mailfrom=LamannaM@carnegiemnh.org
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=KDxY1wvS5xMJpezcaw1iRT5Ubabsy1n4dGvCN4OzYi10+ZsPL5CCOanv8OyAqIFllaviuEc9Wn4LT/QhJpzAPwwy4OuCv3uINHNXo4nU4KdNHYNPyYKrMqdXM/RKNaHPJqmFpf0PRlioZrIOCbSqy0CPOsujER9icBEPGNMhiweVh500IJlcMxIJMpfLqJHUy6G7jQOxvc2sWPxAU/8Jb+y/+VfT2R+LvtFDTJxkgT4jv2mSc6X4fy6Qrot4AaGwPB9SdpZAbTgFExNw7stj4luQ5KYorYmtip2kBkWASw+MokvbA7NZRCMDGNzlqlEUQFKGSyh/lG5fOGjvPBz7OQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=cDdZW7+pl/a2s0LQ43G49HqaDacD5ydq+jTnnjSrMUg=;
+ b=llMZbP5jI+GWhec2PVmYsFlv9/K2BEKNZNZSV6Ejr4XWavFqIRto9p6DLng5C5/Z+IaEosNOSkk5SAbuLcr78HJCDeLYhAFuAXKfR4do2A8NJZYIYncu4nQg3TcLggmMczMuK2FSb2ZiTmobK8jVOPuTa/xKxG7WKgTMu0zG5tLUmJTQuh+m0xfOR2YafWjfhEamACH8lXMrHufPs4qdN3AprGM+eiAvqKeCuwp6yxRKlzFGBA7Td6XKrWrdgTjVZnkzQNmWlb/NuD72l5L/BxUv3eG5/loLVu5byalgAiLIInM+tGI5aUV/IogiHza9HYcdg+SWW2H7cGnxGZ2e+w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carnegiemnh.org; dmarc=pass action=none
+ header.from=carnegiemnh.org; dkim=pass header.d=carnegiemnh.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=carnegiemnh.org;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=cDdZW7+pl/a2s0LQ43G49HqaDacD5ydq+jTnnjSrMUg=;
+ b=K7NDYoMV2CFPkuAXnMmh6y2X1PQG+6PgxvXIbtI6b93/B2s3wM9DSXi/K5CsWCutPbDnYRHjycTs0fl/VSXFP68OZVtmUKt0jMkv36Nnx9Vp2JtgKfkBamyvp8DlV/M7mOJURpt5q3a+YXgxdHurYuNWco9sJaXHS60s5HIP/nw=
+Received: from CH2PR02MB6475.namprd02.prod.outlook.com (2603:10b6:610:35::11)
+ by MN2PR02MB7008.namprd02.prod.outlook.com (2603:10b6:208:201::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.17; Mon, 14 Nov
+ 2022 18:54:08 +0000
+Received: from CH2PR02MB6475.namprd02.prod.outlook.com
+ ([fe80::afa0:9c5f:2a66:15af]) by CH2PR02MB6475.namprd02.prod.outlook.com
+ ([fe80::afa0:9c5f:2a66:15af%7]) with mapi id 15.20.5813.016; Mon, 14 Nov 2022
+ 18:54:08 +0000
+From: "Lamanna, Matthew" <LamannaM@CarnegieMNH.Org>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: FW: Your scan of the dinosaur exhibition here at the Carnegie Museum
+Thread-Topic: Your scan of the dinosaur exhibition here at the Carnegie Museum
+Thread-Index:
+ AdjruQRb9F7va8+QROO5Y+H8lvZqywIn0aOpAACfcbAAADZyhQAzXHtQAMfROiAAAFCeoAACqT35AAEgInA=
+Date: Mon, 14 Nov 2022 18:54:08 +0000
+Message-ID:
+ <CH2PR02MB6475B290C5C67710FE025AE8D8059@CH2PR02MB6475.namprd02.prod.outlook.com>
+References:
+ <CH2PR02MB64759168A2C9D06916B4E137D8359@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <MN2PR20MB305446019CCC548228155053E43E9@MN2PR20MB3054.namprd20.prod.outlook.com>
+ <CH2PR02MB647539F5FD3F198DAC6D6BB4D83E9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <MN2PR20MB3054C6137EDD2B0FDBC55E4EE43E9@MN2PR20MB3054.namprd20.prod.outlook.com>
+ <CH2PR02MB647565FFBB7380CA979BADB4D8009@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <MN2PR20MB3054E25603B98D3ED01314E5E4059@MN2PR20MB3054.namprd20.prod.outlook.com>
+ <CH2PR02MB6475E1D963EEF539B36E1D45D8059@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <MN2PR20MB3054B2477CCBE6A4A9889241E4059@MN2PR20MB3054.namprd20.prod.outlook.com>
+In-Reply-To:
+ <MN2PR20MB3054B2477CCBE6A4A9889241E4059@MN2PR20MB3054.namprd20.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=CarnegieMNH.Org;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CH2PR02MB6475:EE_|MN2PR02MB7008:EE_
+x-ms-office365-filtering-correlation-id: da2dc524-1e21-4dd5-4480-08dac6719c72
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ ccUzJs7JPfWvWUZD3dRaVpr3DH+nz4qIm8vZbb2LA9Xz2A4MvYV/MbAanSs3Rbn9bkX9hAQYK0ZCGUtg1U9YDib2+35YsaA9908AnMWlcPjdYku2rxhCsqV51A29q80Cdlc4IwOYh8F9YXJH0Qr2SQD1Db4GIDEJExDrjH33ikJLC5bz769AR3zHJaUWwBkYwsdjvrGfAaEm4KUM96ES3Kck9yeT0ZGhdK3GyiHilkz7OLuTMBeGX7mmwaDULxGOHWMJi8vXsFI5yyYuqrv5rzD+hqnikSpRF6cW/H8bsJcAE3+xfwjt/mD4WSUeb5VACi9mDwBmzTMfERsoE8SKtuOOERZ0PnqSLVGb5UHJuHTT9fjCmpgFhghxsapyTxva7xEQZY+eE7TUBQ14+tfH5grVEbu+MXTQFhFSCC+AhDAzPuuIEtUWsRxQ0IhZQ7bLzyAT0ganMdWvd2G8CAhVCp3RTeFT9Va0FARvIKS9/unzKI57UU4JLksANOuYYUTrbRqrODzXMHKx7MhzoCOT4Ykjly3e8PeIzSDqt8Ozg/PfPV2pQgrMkHGk5La818ywCOs/TzkQx2boow/keqSJmQDmjzbJB9X4ybYGii208RhjsbXTfps9Vie30r7okZ50QlEiPDIBtOfmWqIiWjudZ4zf/rUqKtTodRAlP8Axi8u1wDl/Irmt1JBfHbdBei7VkIXfmjGwx7CfOnJOCv1iHLHaqGixAri11uxvgTGR3v9CeH693le2LWSKTBSNAAgCVY4ehYah/NLojynvcT6IjcMPCccQTnBa6lvekrWN0iQ=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR02MB6475.namprd02.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(376002)(136003)(39850400004)(346002)(366004)(396003)(451199015)(53546011)(64756008)(6506007)(122000001)(7696005)(76116006)(26005)(8676002)(9686003)(66946007)(66476007)(66446008)(66556008)(99936003)(71200400001)(86362001)(478600001)(316002)(786003)(6916009)(166002)(55016003)(41320700001)(38100700002)(2906002)(40140700001)(52536014)(966005)(33656002)(38070700005)(66899015)(8936002)(41300700001)(83380400001)(186003)(5660300002)(30864003)(579004);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?OHRmcFRkMDk1QlIwWUdIajk4ZllrVVlsUzNmM3luTGpjM25wdlZRaEJaRndP?=
+ =?utf-8?B?VUIrSWhtbWlFME0yclRiemR4T05ZbjljSFEwajBZNG0zRi9ZdnRJajExNzNI?=
+ =?utf-8?B?RHhKWHFEM2RhK0kzN1g5dXN2S3pqangwRGFSOHREc2ZPWlJIcFh2NTJyVVZv?=
+ =?utf-8?B?L0plWkZkNWpuRFNQYWVkZE9yajVxQ21mSGl1cWdpT0VOekpvUjF2SGlSMi9p?=
+ =?utf-8?B?WUNWb01Wc0JObjdYaUZGeUk4VUZ4WldjdlNvc2dYNFgyNnJpUlczNlVHVi9u?=
+ =?utf-8?B?ZDRNRm01eHlmdTduNG0yZW9mb1ArK3VkRmhUbUd4VnhHWWhqUkhJdEU0dzkz?=
+ =?utf-8?B?NzQ2ZmxVK1FKUkxZV2Q5M1k1SjVvY0hWcG9lL0l0TkxJYWNBRS9CbklXRHlC?=
+ =?utf-8?B?NDBxaUNBYThSajZubVNjdThhOVkwaG5qcjhlelZYalc1b0ZvUFJ1aThVNzJQ?=
+ =?utf-8?B?SUNEL3FwY1dSakJnMUFUek5FRThJbnNvb1FibmJFZENiUTg1WlgvWktCZkhF?=
+ =?utf-8?B?dmFBTXIwY1ZRUFJEYTMxenY2aWRrOHdUTDZHTUxyeUNiUDljNi9iNUVEZUwz?=
+ =?utf-8?B?WGYzbHVxRGNSbjNsTGFDc0F0NmpnR0kzUTFEUks2Qjg3SmpwUm1TVzdiZlo3?=
+ =?utf-8?B?Y2xtNFRzaER0aS9uSFVIRTQwaWZMZGdXNVlQS2NWUmdjTVloNWdrdkZGaGpJ?=
+ =?utf-8?B?QzZ0UXp5NTd2dFhYVDhsWVNuZ0diRDdkSGRzQjAwSnNlOERJOHZBczFIbjRG?=
+ =?utf-8?B?bFBmWXM3ek1UeklnQTBRMGRZVzhBcjhjQ0xobzloeHZtT2lCNnVvZnh5N2hF?=
+ =?utf-8?B?RkFyNENnMjIxdzc2TzBtTGg1cXRLMG5ZTm9zSjJuQ1duY1RxS3pBalZrbjJu?=
+ =?utf-8?B?QXcyR211NXlxQkNDYjJvL3NrUlkrWVNpL0ZHdlB3MzlWeUlzRE10ZTdvQVBT?=
+ =?utf-8?B?Rlp2bVk3ODRvY0dxY3haQlV6RVI2cGtVcHhWSXF3M1ZJS25WeTkrRHhMNHBt?=
+ =?utf-8?B?d0p5bWhxWFZHWEx6dmYyNjdZZjNzLzdGKzNmRGt1bmRMOVEzajZXMXNRK3RT?=
+ =?utf-8?B?SkdhNVpmRzRNN1lnUTRFVk5ucFNqbDlqVU1KUmRONkZXMlFoNmcyY0dHejVR?=
+ =?utf-8?B?TEI3NGRaRzJsd29jRFU1NnAyWXJGZkQ4c3M0U2x2a0ZJeUU2MEZUUG4vNzlU?=
+ =?utf-8?B?OXJXL0Zhei94cTdzczI5TndQOGpNbXpyQk1vUTZ5K2VqOXhsdDZpQXVxNVUy?=
+ =?utf-8?B?a21ZUXBsSEFOakJ2V2UrUllPTlpBT3FGVWF1bmN2dU54ak1BbmpaZ1kxcU9q?=
+ =?utf-8?B?U2ZuMDJDK3RTb2FPSmxQaTJHK3BFbkNaQ1dyRlBJa3dOS3VsdjNrU2tpdmhr?=
+ =?utf-8?B?ZzMrc2dPR2NlNzhDMWxXbTZuNjcwSG5SRGpScThuZ2dIZGNlM0NJMkNYVTVX?=
+ =?utf-8?B?Z1R0bXJxWklIMnVMT240cjNUVWxHQ0s5aUg2NGpMY3UwRU5MZEFjaUw4Vlkr?=
+ =?utf-8?B?dTkwaVlVVWVWQWhlcXJsU2hNUmJVQmwxWHo1VFBRVHA3TFZzdExHUzBWRXAx?=
+ =?utf-8?B?VDhPbDJ1b0RNZnFEOHJyUzZjMlpCWEk5Y2FneDZkUTZ5MVVJNm05VUE1aHBv?=
+ =?utf-8?B?WXI3anhYUVVzcHNoVjYvc2JBSHpTWHI4djBxSFJCbTJ4ZTQ0OGZyT3hhV1k4?=
+ =?utf-8?B?YnV0UlRpR0ZhaXdITWhKdXN6bzhJY1B6RHpSSTUvMHJoam9peWxMU2Zxb2tR?=
+ =?utf-8?B?WEhkaXdoaDQ2MFRhNVVaU0FGeDAxMHBrcWROZFdCYXNxaGovV2I3SHlNWFFB?=
+ =?utf-8?B?dE52M2FReUMzOURWYVBzTi9xVzVoT2dBQ0Fid0YwM0crZTU4anQ5M3ZQMU5n?=
+ =?utf-8?B?b2g1YVFobmxQcktrdm1oTHY3SEJLVkxjM3pVRmRvaWV3NEF5WjIzajBRWXdS?=
+ =?utf-8?B?MHRrYktrK3pwMHFVQjgwWnVuNjZzaFdRaERvblV3Z1hjN3pQVk9NNTNIV3FX?=
+ =?utf-8?B?aE5IZ1dBOGpITmQxUys0aGxKYnFyRmt5RE9sbDRvUDZ1dGlXVzFzUTZyajFI?=
+ =?utf-8?B?MFpES250RVVQVUpiWmpacm90dEJBN1NHSDdkM2RIMzBVQ05xcm90YVR5eXM2?=
+ =?utf-8?Q?aMGZTLHW5tSAIwgFyJmcr1+U2?=
+MIME-Version: 1.0
+X-OriginatorOrg: carnegiemnh.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CH2PR02MB6475.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: da2dc524-1e21-4dd5-4480-08dac6719c72
+X-MS-Exchange-CrossTenant-originalarrivaltime: 14 Nov 2022 18:54:08.4528
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 9b45694f-7f01-41cc-9f79-15bf5b9b2a16
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: cwfrWeWXif2Zi2x9hvVavHfkFctbwvSPsaSWivOcMtRSUP/qSEr4Ew2jZgRJSXZAF+7rg+EQ7HF517Q6URt4/aGGxHuxil6HusNtOsgZSyk=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR02MB7008
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Hey Mike,
+
+More good news (I think): I asked the firm who LiDAR-scanned our dinosaur gallery this past spring (Eye-Bot, specifically their founder Dakota Campbell) if they might be able to calculate the length of our Diplodocus carnegii mount using their data, and happily they were able to do so. Even better, their estimate matches very closely with Peter Falkingham’s.
+
+Peter got:
+
+26.042 meters (= 85.1418 feet)
+
+Dakota got (using his “free distance” method, which I suspect is the more accurate of the two he used):
+
+26.135 meters (= 85.723 feet)
+
+So, I think we can be confident that the actual length of the mount is a smidge over 26 meters.
+
+I’ve attached some images that show how Dakota got to his figures; also, our entire exchange on this matter is below. Any questions just let me know.
+
+Cheers!
+Matt
+--
+Matthew C. Lamanna, Ph.D.
+Mary R. Dawson Associate Curator
+Section of Vertebrate Paleontology
+Carnegie Museum of Natural History
+4400 Forbes Avenue
+Pittsburgh, PA 15213
+Office: (412) 578-2696
+Mobile: (412) 592-3361
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+Instagram: @mattlamanna
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+Twitter: @antarcticdinos
+Pronouns: he, him, his
+
+From: Dakota Campbell <dcampbell@eye-bot.com>
+Sent: Monday, November 14, 2022 1:19 PM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org>
+Subject: Re: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+Matthew,
+
+Thanks for clearing that up! I approached this measurement two ways:
+      1. Free distance between all vertebrae
+      2. Horizontal distance from snout to support posts to tail
+
+The Results are as follows:
+     1. 85' 8 11/16"
+     2. 83' 9 1/2"
+
+You'll notice that, because method one traverses the vertebrae, it is longer than the horizontal locked method 2.
+
+I have attached a photo that shows both methods of measurement, note the segments along the bottom of the photo. The red bracket shows that measurements were taken every other vertebra, then every 4th vertebra, and then every Nth vertebra where a straight line could be drawn.
+
+Your endorsement to Gretchen Baker would be greatly appreciated.
+
+Thanks,
+Dakota
+________________________________
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Monday, November 14, 2022 12:09 PM
+To: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Subject: RE: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+Thanks Dakota! But I’m sorry, I should’ve clarified. I meant the length of the Diplodocus mount along its midline (essentially, along the backbone). This would necessitate measuring along a curve rather than in a straight line. I’ve tried to indicate what I mean using my very limited Photoshop skills (see attached; the yellow dots are placed approximately along the curve I mean).
+
+
+
+As for scheduling a meeting, as I think you know I can’t make decisions on behalf of the entire Carnegie Museum of Natural History (I’m just its paleontologist 😉), but I completely agree that Eye-Bot’s technology is very powerful and that it has multiple potential applications to the museum’s efforts (in science, exhibitions, education, marketing/digital engagement, and more). I’ll likely meet with our Director Gretchen Baker this week (about another matter), but if you think this might help I’ll be much more than happy to remind her of Eye-Bot’s interest in collaborating with the museum and offer my endorsement of this proposition. Please just let me know.
+
+
+
+Cheers and thanks again!
+
+Matt
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Sent: Monday, November 14, 2022 11:51 AM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Subject: Re: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Good Morning,
+
+
+
+
+
+Yes, there is a way to precisely take any measurement you'd like with an accuracy of under a centimeter. See the attached image and you'll notice the length from snout to tail is
+
+66' 11 1/8".
+
+
+
+There are an unlimited number of insights that you can extract from our data! I would love to demo this software platform again to you and go over the measurement tools provided. We can capture anything in the Museum and cloud host it for you, so you can interact with and analyze any object.
+
+
+
+Let's meet soon and discuss how this Proof-Of-Concept could be applied to your 2023 plans for the Museum.
+
+
+
+Thanks,
+
+Dakota
+
+[cid:image001.png@01D8F820.24A78570]
+
+
+
+
+
+
+
+
+
+________________________________
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Thursday, November 10, 2022 7:58 PM
+To: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Subject: RE: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+Thanks so much, Dakota! Yes indeed, it looks like y’all at Eye-Bot did get all of Diplodocus too. Which leads me to a question: is there an easy way to precisely determine the total length of that skeleton (from snout tip to tail tip) using your scan data? If so, I’d be happy to pay something for this if you’d like; after all, I think y’all have done this work purely out of the goodness of your hearts thus far and I feel kinda crappy about that. Please let me know. Cheers! Matt
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Sent: Wednesday, November 9, 2022 11:55 AM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Subject: Re: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Let's give sharefile a try! You will be redirected to sharefile where you can download a short video we made for the Dinosaur Exhibit:
+
+
+
+https://eyebotaerialsolutions.sharefile.com/d-s9f8cb114a78e4f5e8e71e0b5ae0435e6
+
+
+
+Let Me know what you think! Everything in this video was made from our point cloud data, note only the front of the Stegosaurus was fully captured. We can always come back out and scan more if you'd like!
+
+
+
+
+
+________________________________
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Wednesday, November 9, 2022 11:47 AM
+To: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Subject: RE: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+Hey Dakota, thanks for your quick reply to my previous message and for checking in just now. Unfortunately, I can’t access the file you shared via Eye-Bot’s SharePoint site. Can you please try with Google Drive, Dropbox, or WeTransfer instead? Thanks! M
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Sent: Wednesday, November 9, 2022 11:29 AM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Subject: Re: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Good Morning,
+
+
+
+Just checking back in to ensure you got my last message. Were you able to access the short video that shows all of the data capture within the Dinosaur Exhibit?
+
+
+
+Best,
+
+Dakota
+
+________________________________
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Saturday, October 29, 2022 1:13 PM
+To: Dakota Campbell <dcampbell@eye-bot.com<mailto:dcampbell@eye-bot.com>>
+Subject: Your scan of the dinosaur exhibition here at the Carnegie Museum
+
+
+
+Hey Dakota!
+
+
+
+Hi again, I hope all’s well. Just a quick question/shot in the dark when you have a sec: when y’all at Eye-Bot scanned the dinosaur exhibition here at the Carnegie Museum earlier this year, I know you captured the platform containing our adult Apatosaurus, baby Apatosaurus, and Allosaurus mounted skeletons<https://viewer.arskan.com/objects/share/6228d562cd78795d5ce9ce06>. Did you also happen to capture our Diplodocus mount (the other very large dinosaur in the same gallery) as well? (Here’s a pic of the Diplodocus mount<http://www.gigapan.com/galleries/7896/gigapans/37653> if you don’t know which one I’m talking about.)
+
+
+
+Thanks very much, and best wishes,
+
+Matt
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
