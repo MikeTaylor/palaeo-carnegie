@@ -1,0 +1,541 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp1763037vle;
+        Sun, 13 Nov 2022 08:21:16 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf6TvlXvUzjCoD5YBFFh/PG70YYJSv75yon9yXsDxcRut21KbzU7ada2yRfi1a7dN3DjhldY
+X-Received: by 2002:a05:6e02:8b1:b0:302:56d8:b64e with SMTP id a17-20020a056e0208b100b0030256d8b64emr1308401ilt.12.1668356476476;
+        Sun, 13 Nov 2022 08:21:16 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1668356476; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=q+TsbdUKqwU5+w03rSMB84LWXCt+jtSMTxA2JPkhnap5zqSfJV1rqlJMExBtGIV/NX
+         2gcTYIA2o/y9Kngmd5c8Om2h8Uupbr+4Ib46icmHkuhokiPGGYY5a45OoIPFHhTVeZI0
+         szhEiQAm9qSH/1mDoaS3BuPiK4+qj6Ja2o5bNQeGjKiu84iCsKO4SGk/G0QDbCpqv2ec
+         c8eQiYKE57Tzl92OaGuZyC2+yzpJURJ60oe7HAgYvR2tLmlojjKLInmvI9A/HrCY0Kp9
+         7yoXoTSMMRv+vZOKbfLRjOkbDXV29fQQPpUWPePFcHoBL+hw3L10yg04EtRprHAQjuM/
+         SciA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:cc:to:from:dkim-signature;
+        bh=W9q6sOxRmhN/aHg6La0BWVlLkLZtrttHiCuozAMAq/w=;
+        b=wDbg/rm84br4Drned9PfRqD41agr+m+zhtWv6bjmtfs2qmqd/5UKO8HE0de+H5GC12
+         cdU3K06pqL56XCrq1jPCycueJD1RBcBtN2VxM8WviAZcpPnXs3uqJPugwxPS+5ksKHCH
+         h/3KTY3VthGYt/3S68QHmNetudjm1EWkokVnTybXdIghVmBChUvr9V1P07mId7wVarvz
+         vyt4GzbbqHms9LEcHUvB5lbr2i5cJUjfmX5tfZXhzI1C5NGQv3YF5Ov1yiKV0sew3YGk
+         xlrtXoN75erY2Ex0GTppCBCVhfDWpUvTSkl5rmhUH94AAXb//w/jC8fEF+fOpWQEDVBq
+         FWzw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@dixiestate.onmicrosoft.com header.s=selector2-dixiestate-onmicrosoft-com header.b=kUNsQTK+;
+       arc=pass (i=1 spf=pass spfdomain=utahtech.edu dkim=pass dkdomain=utahtech.edu dmarc=pass fromdomain=utahtech.edu);
+       spf=pass (google.com: domain of jerry.harris@utahtech.edu designates 40.107.93.103 as permitted sender) smtp.mailfrom=Jerry.Harris@utahtech.edu;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=utahtech.edu
+Return-Path: <Jerry.Harris@utahtech.edu>
+Received: from NAM10-DM6-obe.outbound.protection.outlook.com (mail-dm6nam10on2103.outbound.protection.outlook.com. [40.107.93.103])
+        by mx.google.com with ESMTPS id r19-20020a0566022b9300b006c337cc5339si7251408iov.85.2022.11.13.08.21.15
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 13 Nov 2022 08:21:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of jerry.harris@utahtech.edu designates 40.107.93.103 as permitted sender) client-ip=40.107.93.103;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dixiestate.onmicrosoft.com header.s=selector2-dixiestate-onmicrosoft-com header.b=kUNsQTK+;
+       arc=pass (i=1 spf=pass spfdomain=utahtech.edu dkim=pass dkdomain=utahtech.edu dmarc=pass fromdomain=utahtech.edu);
+       spf=pass (google.com: domain of jerry.harris@utahtech.edu designates 40.107.93.103 as permitted sender) smtp.mailfrom=Jerry.Harris@utahtech.edu;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=utahtech.edu
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=MRo9IvfPWuHJYnedHTzJSH4bx8eqvWUyoWCLb+ZAQhK5ILCqyU9BJbIHphZ8ROrEI4hn9bsWu+9vKrTae9zdzVROJu5K/to9qApWKQk9mzgUVlYwAGOpDjVVeS3Itwks2cHU/HUFh4I+NC24wbRHZDgzAWqCyMlReLWs3KQSrlBv+22Tb+Btg1sEESICdsale8s3Fe141jXhAEufcN3vC8He4AnN7Vhp5MLXP1fmBGxsyC4SdvQQxyw4Xs4yP6cnTd8iTq0wAwtLFE954W12rQAQrJvuVpOi4r6e3WO9kwT1sr4jnChbBtuhR6SYqQtb1eQBT+qIjqmjPR0UZgqzHg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=W9q6sOxRmhN/aHg6La0BWVlLkLZtrttHiCuozAMAq/w=;
+ b=ShjL8BGszuNQ096TRILVQ1rdwWxA0N1YcNrHPQ3fvqicd1W6kYtGw5mWLQ1sOOA8tUMgYfjOov7+I+qfGi/xR+FMRlyyXtw2EZyKtCUA9JmbOpIjFn2cN+6HgaVptQHLsQDlb2sYIRCw9JNXCnAMIrqwHiikWkvnNTpA0dizas7dj0FmWntbNQVGUhCKX6hnvMY1tAFHC6ECpDlvejQxokYthQ+Nb05j7pPfZjWeNCFINCARGu3uetIfnFq68LiHI0ZPGFWcXhnvuYkd7ngAiPNykT7eiacxVVQxUm11aqGOigrJaBPW2y3l0FJTMqu6U6oZlPEXZZxQr0p+TLth/A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=utahtech.edu; dmarc=pass action=none header.from=utahtech.edu;
+ dkim=pass header.d=utahtech.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=dixiestate.onmicrosoft.com; s=selector2-dixiestate-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=W9q6sOxRmhN/aHg6La0BWVlLkLZtrttHiCuozAMAq/w=;
+ b=kUNsQTK+Dw2DyDB1H1t3o+ZLjCN9CwcVqMW3fZ/4IGrgGqKfDVKpCtmaA4RsOz4GXSKF4aLk0wIKqJ5WtYb3GqfDFD4CmcOVib1AeiIxQT3+fKG9dAppsPZcyq/sZ9iG8n9NiU4pCrxMmQrpmIzRyps5yPb0Buc/0NoW/hpxDZY=
+Received: from BY5PR17MB3572.namprd17.prod.outlook.com (2603:10b6:a03:1ba::33)
+ by MW4PR17MB4761.namprd17.prod.outlook.com (2603:10b6:303:106::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.13; Sun, 13 Nov
+ 2022 16:21:12 +0000
+Received: from BY5PR17MB3572.namprd17.prod.outlook.com
+ ([fe80::a49f:2231:6719:3fcf]) by BY5PR17MB3572.namprd17.prod.outlook.com
+ ([fe80::a49f:2231:6719:3fcf%3]) with mapi id 15.20.5791.026; Sun, 13 Nov 2022
+ 16:21:12 +0000
+From: Jerry Harris <Jerry.Harris@utahtech.edu>
+To: Mike Taylor <sauropoda@gmail.com>, "Lamanna, Matthew"
+	<LamannaM@CarnegieMNH.Org>
+CC: Phillip Fraley <philliplfraley@gmail.com>
+Subject: Re: FW: Random question re: diplodocine tail CM 307
+Thread-Topic: FW: Random question re: diplodocine tail CM 307
+Thread-Index: Adj2xk463iXx9vRPQSe4Hk9grb5buK47ydYw0cRn3JP///a1kIAARFYAgAD6Bbk=
+Date: Sun, 13 Nov 2022 16:21:12 +0000
+Message-ID:
+ <BY5PR17MB35724F6A3045FE2B8EF9B839F9029@BY5PR17MB3572.namprd17.prod.outlook.com>
+References:
+ <CH2PR02MB6475ADE865BA714250EFA306D8039@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <BY5PR17MB357266A5B01D1859BA9CBD82F9039@BY5PR17MB3572.namprd17.prod.outlook.com>
+ <CH2PR02MB647547960F4B9308E6C77298D8039@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBaeg1ua_jSvgkxv1X2GeBKwL-vdtGZzixUH0awAf_UPDQ@mail.gmail.com>
+ <CH2PR02MB6475879C085B14A011E11024D8039@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <BY5PR17MB35728B4E8EE92EA95CCB1282F9039@BY5PR17MB3572.namprd17.prod.outlook.com>
+ <CH2PR02MB6475514940BCA9F1911C61FBD8039@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBbGkgSejerDFawRd5H+yeb-nqzjhaiSrqmBcSNSMuBaBA@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBbGkgSejerDFawRd5H+yeb-nqzjhaiSrqmBcSNSMuBaBA@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=utahtech.edu;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BY5PR17MB3572:EE_|MW4PR17MB4761:EE_
+x-ms-office365-filtering-correlation-id: 30f07a6f-8f23-4234-f6a8-08dac59314eb
+x-dixie-dmarc: PASS
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ LHqKNwqiwxt9wP/RHWKjx+ByUR2qLQZwuLbVpt0NjmAg5pW3O7n6t1EcZPxoeAVohts68YwWSRukUFT1fNUv2VqKh7QEHfKtI0fCUwONehXl8ks545pOtNxPWwnmSGRYpgxty1tA3gzq4K7aFPUDvGt31AncCkITl0TDAiGKFw1DHeqZR8te9e14l808e3DPz1n4fw1y9ML9NZkTCu54fzV1MYwJNKKkk2XNH5XjFitqN/zG4V+usJAcY7qw/LMhs86zVTTYWxeFv/vkpUocVEbPDUTYzwp+lkieh9qFwpR07ZX6tV5blWOVIrfPb4+cwfTL/Bm6iWrPfAYKPSEcT9+TNRhNE14GoZbh5DKwpdNIIdO0JUmTMTHBVeAPtJn29OLhVkpRSplUIvjYDGzjE46br/MwX6Z8lB2vNPvgqg0IAathS3YzwZIiraKWgqdjvzDAwgpKHklfpUPuYmGVJmfRAAKcCl8nwmITdMFb5Cye8y4GctvfQKcdk/QQlGHTDkX8Tm+YwvIKsUnclbf16Cv3yYXKwp5oxneervn6rZQYOQLhQZD6OieyBrq9uoxW0Jzdul7N2OHIT5lqOS718KuQdYGOi+BLSlO71L75uNC84kG5kXWpMC6PbdyVpyJiZP6SDntZPVUkuPz0MYYylpcxD2wcobP+op2AIBtwWxvz/IeNLvYP278bgJGtIXzuaX9pgD7CDx0QIcjqVw1j7PqolJ7a4sSQtPguSquJecvqzzcatrHk1LY6gUynR6FflJW4VlPu5J0Uo/eFfmTMuDE15BdP/VNP25tdFqBgCmI=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY5PR17MB3572.namprd17.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(4636009)(39840400004)(366004)(376002)(136003)(346002)(396003)(451199015)(83380400001)(86362001)(40140700001)(38070700005)(33656002)(166002)(8936002)(99936003)(30864003)(38100700002)(8676002)(122000001)(5660300002)(2906002)(4326008)(52536014)(6506007)(66476007)(66556008)(76116006)(41300700001)(9686003)(41320700001)(66446008)(66946007)(7696005)(26005)(53546011)(64756008)(186003)(110136005)(75432002)(316002)(55016003)(786003)(478600001)(966005)(71200400001)(66899015)(19627405001)(579004)(559001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?akdySUhMaVdBQ1dWMzF0U0RlU0ZYZzM3Vkhxckhna25PSG1FKzd0cWNCMGx0?=
+ =?utf-8?B?QVlRZC85NlFmU1JaTThYVlVNUFZSNFQ1NGcxYy9VblIzQmlBcitIRlE1cm1o?=
+ =?utf-8?B?bzRic0o4dVd0V2hvemtxZW5qelhnUzE0U0d3bm9ETkZXY2V5eC82UWpJdE5X?=
+ =?utf-8?B?ZWFLYUR5TzMydjZ3TW44MklBalA3S3N4SUFFV29tSUxxQ3F6dU9LanRHSEN3?=
+ =?utf-8?B?Skg5ZmxlM1pZbHVreHNaS01nWGxlWmMyaEsvTElqVXFqU0xqY0xrUFpQVVY3?=
+ =?utf-8?B?aFVjR3FBcCtGQzlMa25kQ3VnNHVnc0NyRmx4QWxWS1BKN2d0QlhHOUszREtG?=
+ =?utf-8?B?dW5mdU5HMDVnb1F6eDRqTEx1RFh2Z0o3UlZseTNnVlR1eUt4NmcwTm01WkRM?=
+ =?utf-8?B?QlRVdm9pOFlwaUhCQ2tWS3N2Z2Fxa2tQSWlkM3lOdk9FUkRKWVJQazFSQk9U?=
+ =?utf-8?B?WWtVMGlNYk5wMFdndW5NRTc3ZndMazMyRDZObXIxUkgyc1NxN2twOGswTmwx?=
+ =?utf-8?B?L0g3MzBOVGx4cmVPc1dkSjl4ZUloaG9acWI4S3ZtdFBESldwMUQyR0lIYk5D?=
+ =?utf-8?B?RTc5SXluVFl4REhyNE1mS1N0UTUydTlzdDkveWYzcWU0YjlVTGUzeW1kSGhn?=
+ =?utf-8?B?K1VONEFmdnlXTm5JRjFYL3ZIem9WUmtNZm03dTU3QVdxSnJGa1RiaG1LQkxt?=
+ =?utf-8?B?Y1dYbXozTENYeDZlM0dIblh6K0E2b3o4VjRGd3pneHdHMGxCazYvaHNnWXpW?=
+ =?utf-8?B?NVlnMVl0T2trNmFIVVhZVzlvRDdEeTE1RWVteFFTUzFCWi9lVGdoN1ZKbmZi?=
+ =?utf-8?B?dkNLR1k5MmZmZFNpcFFZUDJpcndRZk9YTUJQcVU3RzVIWjZGN3prYndJM01v?=
+ =?utf-8?B?NHZFQy9LQlFRWllWS2taeWxmSXJ4Mkx3WG9OTURIYnVuckdHRE5GdTBXNEwy?=
+ =?utf-8?B?NHNTcGJJZzVLVFNaYnp0bXVVOC82ZnAxR1RWSG9OWks2cExRYk4yejJqblNu?=
+ =?utf-8?B?K3NYQTJzVWdjVUkwNTJubHlmWCt4QUlsWDgxQ2JCMUFBSFZpSk03ODlDVEhF?=
+ =?utf-8?B?UUN4S3E4cTlmaFU1ejVUV2dyQ3VwK1lRSU1xU0UrMEgxdWprblRkUDJxREtR?=
+ =?utf-8?B?Z0FiM2dtcmVUa0xnQVdyNE10OWE0aFNQNDhxeEozWXpSeFhsU3EyM1BQbmI0?=
+ =?utf-8?B?ZHNDNGRJa0dmNjNTQkdETms1Y1FaRENrMTlINUJrQm4vQWN0Z05EWFAyUHN5?=
+ =?utf-8?B?aEIrcE9LTE9xUElnUUIxZzhlRG1PNDlkbFF1OWZsZ3NNTFlDeTdaNG9Kb1VM?=
+ =?utf-8?B?UlN1MjNtcHltWlQ4czF2eGhqTXhJUUlURFNOdzhWRm1rak5VOVgvVloxbE52?=
+ =?utf-8?B?V0k1NWx3Z2RQYWFGOCt5dmR6QW5MVzZzMWROekkrdE4weGtlZkpOQTdIRlVM?=
+ =?utf-8?B?RzJrRGsvVzFUYlFaOVBLMjFZVDE1Z2g1bnJjMWVTaStoTzcxVEtuZjlkeGht?=
+ =?utf-8?B?SGRlV3lsTk9QY3hOcXh4TTJIVFhEMVZGdk90ZU1XM3F4aUtCM2hCRmJqcURN?=
+ =?utf-8?B?UXk4eFBMajVNRjNZT3pFU1R5YTB5TnNGajRHVmtsTlZBVFVPK1czZmE4QUpk?=
+ =?utf-8?B?RlVXS05udituL1NCN0Vlb3BYdkQxdHFQalczOHAvenpKVU14T3BOK0wzOGZH?=
+ =?utf-8?B?b0lYRUFBRDc3OFVERThDb0llVWduMGRNbmpjSWZ6MFU3MDg1ZWpmd2Nobm55?=
+ =?utf-8?B?SWtWdUxZUnltWFk3UzhDb09jN3hXc0UvUk1PWThvNlhrdGM4c0FDVk5WVDFI?=
+ =?utf-8?B?SlVITldJWS9HMkQrb2d5OGZHZ2hCUU1USHpxVEZoaHNIZWV6NW5oMnF2ZmlX?=
+ =?utf-8?B?dk0yN1UrUHF5eCs3TEIyZ0Noa3BUQ1R1TzZzSStjZWg4bmRhOWFJY0NQamI1?=
+ =?utf-8?B?V3h5OWs0bzY0SnpOQ2dvYjNvZys5K0RiV0RvOE55aHBteDBibXZ2MUl3cHNM?=
+ =?utf-8?B?S1Y2V3VnNzRnbWV5VmU4WmFGdWsvWTFFOFJSYkpCdUJ0R1YyWFdaYmRsQlUw?=
+ =?utf-8?B?emMxWXI1SGJmNXpLTFNjY2V4bENxMjI5Wk9mcFhwaXhTTkdPaHlTbWR0eFRH?=
+ =?utf-8?Q?ZyS4iKvLxVTAnZy1GNtI9Pd/+?=
+MIME-Version: 1.0
+X-OriginatorOrg: utahtech.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BY5PR17MB3572.namprd17.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 30f07a6f-8f23-4234-f6a8-08dac59314eb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Nov 2022 16:21:12.7750
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: b7ae04ec-605a-4bd7-9fca-3ef0bc7e8ac6
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: xpLya09xb13vVmDglvwhLWtALVm/1eGGVPgBfiwVfXZHd1KG4tWGt2ky5n1eqoa/32w8mXbKLdmZ7uNMQniegQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR17MB4761
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Hey Gang! -
+
+       I'm very happy I could unexpectedly help with this little mystery! I'll definitely poke around my office tomorrow to see if I can dig up the original photo(s), and if so, I'll forward it/them around (and you'd be welcome to include it/them in a paper or whatever!). My visit to the Carnegie to take that photo would almost certainly have been 2002 or 2003 (most likely the latter) because, based on the dates of my photos from the USNM and Berlin museums, that seems to have been when I was traveling around looking at flagellicaudatan material for comparison to Suuwassea. (I'm really rather annoyed with myself for not having my Carnegie Museum photos backed up like I do my others!) Mike, you have my full permission to cite me as a pers. comm.!
+
+[cid:7fa9d32a-78df-4755-b6d6-8e3dc5577a7a]
+
+“Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.”  ― Maya Angelou
+________________________________
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Saturday, November 12, 2022 6:10 PM
+To: Lamanna, Matthew <LamannaM@carnegiemnh.org>
+Cc: Jerry Harris <Jerry.Harris@utahtech.edu>; Phillip Fraley <philliplfraley@gmail.com>
+Subject: Re: FW: Random question re: diplodocine tail CM 307
+
+You don't often get email from sauropoda@gmail.com. Learn why this is important<https://aka.ms/LearnAboutSenderIdentification>
+Hi, Jerry, great to be in touch with you again — it's been a while! It's great news that you found that tiny tiny photo — it's just enough, in combination with your 2006 illustration — to significantly change the story.
+
+I'm adding Phil Fraley to this thread, as he may have some relevant recollections here.
+
+I am appending the present version of the relevant section of the manuscript. I would appreciate it if you would all read it over and check that it fits the facts as you know them. And if it triggers any other memories, of course, I'd love to know them! Also, Jerry, would you please formally give permission for us to use the pers. comm. that I cite from you in this passage?
+
+Thank you all so much!
+
+-- Mike.
+
+
+
+
+
+It is generally accepted that caudal vertebrae 32 and 37–73 in the Carnegie mount have always been the original fossils from CM 307. For example, McIntosh (1981:20) credits this specimen as having supplied “distal caudals” and Curtice (1996:73) says “These [CM 307] caudals were used to complete the mount of CM 84, occupying position 32 and 37–73 inclusive”. However, there is a suggestion that the real fossils may have been incorporated only relatively recently: a database note on the 2007 remounting located by Amy Henrici says “One caudal added from CM 94. Caudals 37–73 were casts in original mount and replaced with caudals from CM 307”. Henrici also found a “specimen removed” tag in the CM 307 drawer in collection indicating that at least some elements of the specimen were removed from the drawer for loan to Phil Fraley on 20 November 2006. (None remain there today.)
+
+However, photographs of caudals 37–46 supplied by Phil Fraley, having been taken after they were removed from the old mount for the remounting process, clearly show that these elements were real bone and not casts. (Incidentally, Holland’s (1906:plate XXIX) illustrations of these caudals do not closely resemble the actual fossils.) Adding to the confusion, Harris (2006:figure 18c) included photographs of two whiplash caudals of CM 307, which were likely taken in collections. Another photo taken by Harris some time before 2006 (pers. comm, 2022) shows a drawer of 18 whiplash caudals, one of which is a perfect match for one of those in his (2006:figure 18c) illustration. It therefore seems that some time before 2006, at least 18 distal caudals of CM 307 were in the Carnegie collections rather than being incorporated into the mounted skeleton. Correspondence between Matthew Lamanna and John Scott Lucas confirms that in November 2006 Carnegie staff sent an unspecified number of caudal vertebrae from CM 94 and CM 307 to Fraley’s lab — most likely the single vertebra of CM 94 referred to in the database note and the 18 of CM 307 that had been photographed by Harris.
+
+It must be considered possible that only the more proximal caudals of CM 307 were incorporated into the mount in 1907, with casts used for the more distal elements, and the accounts of Holland (1906:254), Curtice (1996:73) and Tschopp et al. (2019:20) are all misleading. It must be remember that Holland’s account was written the year before the real fossil mount was constructed, and was focussed on the 1904–1905 creation of the London cast, so that his account of which caudals were used specifies which were the sources of cast elements for that mount. It is natural to assume, but not necessarily correct, that the real fossil mount used the bones that the casts were taken from. If Curtice (1996) and Tschopp et al. (2019) drew their information from Holland (1906) and made this understandable assumption, that might account for the misreporting. It is possible that only the anteriormost 20 of the CM 207 caudals were included in the 1907 mount, the remaining 18 being provided as casts, with the real material remaining in collections until 2006.
+
+But it is also possible that all 38 caudals of CM 307 were indeed incorporated into the original mount, but that the eighteen most distal were subsequently removed and replaced with casts. This may have been due to the risk of theft, as these small bones would have been easy targets for souvenir-hunters in the days when the tail was mounted at ground level. If this was the case, then it would have been natural to return the real caudal to the tail when it was reposed in its present elevated posture, far out of reach of museum visitors.
+
+None of this explains why the one additional CM 94 caudal was not incorporated in the original mount, nor why it was added in the 2007 remount or where in the column it was inserted. One further oddity is that Fraley’s photographs show that two separate caudals of CM 307 were labelled 38A and 38B. This would seem to indicate either that the caudals described as 37–73 actually totalled 37 rather than 36; or that a sequence of 36 caudals filling positions 37–73 were actually numbered 37, 38A, 38B and 39–72. Once more, we have not been able to locate records or correspondence that would enable us to settle this point.
+
+Also included in the 2007 remount were about ten additional distal “whiplash” caudals, made by Western Paleontological Laboratories, bringing the total number of caudal vertebrae to 83. The rationale was that the complete tail of the small apatosaurine specimen CM 3378 (probably Apatosaurus louisae) contains 82 vertebrae; given that diplodocines are generally more elongate, gracile animals than apatosaurines, it was estimated that Diplodocus carnegii would have had at least 83 caudals in life.
+
+
+
+
+On Sat, Nov 12, 2022 at 10:34 PM Lamanna, Matthew <LamannaM@carnegiemnh.org<mailto:LamannaM@carnegiemnh.org>> wrote:
+
+Jer, you’re the best. This leaves no doubt that a significant portion of CM 307 (at least 18 out of a total of 38 caudals) was indeed in the Carnegie Museum collections (rather than built into our Diplodocus carnegii mount) during the early 2000s. Of course if you happen to find the high-res version of this pic, or any others that may go with it, then Mike (cc’d) and I will gladly take them, but this more or less settles the question in my book.
+
+
+
+Predictably, that raises another question though: all the presumably authoritative sources (e.g., Holland 1906, McIntosh 1981, Curtice 1995, etc.) state that all of CM 307 was used in the D. carnegii mount, but that clearly wasn’t the case during the early 2000s. Presuming McIntosh’s account is correct (and Jack was a stickler for detail) then that means that at least these 18 caudals had to have been removed from the mount sometime between 1981 and September 5, 2006 (which is when Amy Henrici first tells me that there are ‘whiplash’ caudals of CM 307 in our collections room) (actually well before that, whenever Jerry photographed them, though I don’t know when you would’ve visited the Carnegie, Jer). (For the sake of argument, let’s assume that Curtice 1995 was just quoting from Holland 1906 and/or McIntosh 1981, though I don’t have a copy of Brian’s thesis so I can’t check.)
+
+
+
+The long and the short of it: presumably Holland 1906 and McIntosh 1981 were correct, so some of CM 307 had to have been removed from the mount post-1981, then ‘reinstated’ during our 2006/2007 remount. As to why, I have an idea, though it’s totally speculative: I’ve heard horror stories (just rumors, but there’s probably some truth to them too) of unscrupulous visitors pocketing little souvenirs from our dinosaur exhibition back in the day (indeed, a couple months ago, some teenage punk tried to make off with our life-sized model of the little Cretaceous mammal Eomaia before one of our staff caught him). ‘Whiplash’ caudals are small enough to be easily pocketed without much trouble; moreover, remember that the tail of our Diplodocus was on the floor until our old hall was closed for the remounting effort beginning in ca. 2005, rather than 12-ish feet up in the air as it is now. Maybe these 18+ CM 307 caudals were removed out of fear of theft? Or maybe one or more of them was actually stolen, prompting the removal of the rest?
+
+
+
+Anyhow, just some thoughts, but we can now be sure that (as usual) Amy was right and I was wrong: a significant number of real CM 307 caudals were indeed in the collection just prior to the mid-2000s D. carnegii remount. Thanks again, Jer!
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Jerry Harris <Jerry.Harris@utahtech.edu<mailto:Jerry.Harris@utahtech.edu>>
+Sent: Saturday, November 12, 2022 4:47 PM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org>
+Subject: Re: FW: Random question re: diplodocine tail CM 307
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Hey, guess what I found? I forgot I had this photo in the sauropodomorphs PowerPoint for my Intro to Dinosaurs course:
+
+
+
+[cid:1846e7d18b44cff311]
+
+
+
+This is clipped out of the PowerPoint, so it's not high-res, and I can't read the label at all zoomed in (too pixelated), but it's on my Diplodocus slide, and has the classic "Geology at Penn" scale bar, so it must be my photo! The second one from the bottom on the left matches one of the images in my 2006 paper; I'm not sure which one must be the other one from the paper, but it's probably one of these others taken from a different angle...? Or maybe there was more than one box in the drawer and it's from another box!
+
+
+
+To answer Mike's question: it was so long ago that I don't have any specific memories of the location where this photo was taken, but I assume it was in the collections...certainly an ethafoam-lined box with a label like that probably wouldn't have been anywhere else...?
+
+
+
+[cid:1846e7d18b46917eb2]
+
+“Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.”  ― Maya Angelou
+
+________________________________
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Saturday, November 12, 2022 2:19 PM
+To: Jerry Harris <Jerry.Harris@utahtech.edu<mailto:Jerry.Harris@utahtech.edu>>
+Subject: FW: FW: Random question re: diplodocine tail CM 307
+
+
+
+CAUTION: This email is from a sender outside Utah Tech. Verify the sender before opening links or attachments.
+
+Hey again Jer,
+
+
+
+I passed your initial response on to Mike Taylor; please see his reply below. Do you happen to remember whether the CM 307 whiplash caudals were in the Carnegie’s collection room (as opposed to built into our Diplodocus mount) when you photographed them prior to 2006 (presumably sometime during the early 2000s)?
+
+
+
+My memory is absolutely awful for this kind of thing, which is why I asked for pics (as proof, rather than relying on your recollection). But then again, maybe your memory is better than mine… 😉.
+
+
+
+Cheers!
+
+M
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/<https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew-lamanna%2f&c=E,1,jxXDwYLuVROamfZIW4lTh6aKcD651z_2Cc-2DhNs773OZ5h4naIsbCERTYIjL1-3OS8d8cvHvKnIAPvlRpf4A5t2QLIvF6P9qKXqhuIFxe1MpTbR9A,,&typo=1>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fantarcticdinos.org%2f&c=E,1,s9g_uvKIQsHautLLVBfA34FlBncC3FWaxsNTfEJ_gwhC83qD-gpDGKtU4YlGhKQw6DkYmUtXTIuf6G52Th7c34_kG-Ql5X5sNSDqpJTPKsMjVTk0&typo=1>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Saturday, November 12, 2022 4:11 PM
+To: Lamanna, Matthew <LamannaM@carnegiemnh.org<mailto:LamannaM@carnegiemnh.org>>
+Subject: Re: FW: Random question re: diplodocine tail CM 307
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Thanks, Matt, that is — once again, as so often on this project! — tantalizing.
+
+
+
+Perhaps it would be worth following up to say that the photos themselves would be nice, but what really matters is whether he remembers that the caudals in question were in collections. (Which, really, surely they must have been! Otherwise, why photograph just two?)
+
+
+
+-- Mike.
+
+
+
+
+
+On Sat, Nov 12, 2022 at 8:00 PM Lamanna, Matthew <LamannaM@carnegiemnh.org<mailto:LamannaM@carnegiemnh.org>> wrote:
+
+Hey Mike, Jerry already got back to me (see below). Cross your fingers that he comes up with something!
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/<https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew-lamanna%2f&c=E,1,xc2zJsqr9_AjUFAUohSoUt8Y-ckizKuwcFjnm8Ksi2JDd_mm8v-h2bb0S1TdcgHIJKpBuOsSLlwH_gm-Zee7YYEw7hb19RoMx7_xJivnyTKD36tVYA,,&typo=1>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fantarcticdinos.org%2f&c=E,1,vc6L51irmRQO87b1gMkK-CcW06gf2soLlTb6zw5pAkJtDd4ZYHTyRDpakMgrow3C1-4harBoEqF92guEEZEmhO-0uiDqy9ULz899Qowhc1Fh&typo=1>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Jerry Harris <Jerry.Harris@utahtech.edu<mailto:Jerry.Harris@utahtech.edu>>
+Sent: Saturday, November 12, 2022 2:56 PM
+To: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Subject: Re: Random question re: diplodocine tail CM 307
+
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Hey Matt! -
+
+
+
+      Ooooo, this is an interesting question, and an interesting project! Obviously I must have taken such photos way back when, but I don't seem to have them on my current hard drives, which is odd because I DO have photos on them from other museum collections I visited during that research... 😕 There's a remote possibility that I have them on a CD (remember CDs?), or possibly a ZIP drive disk (remember ZIP drives?) somewhere in my office, but I can't even remember the last time I saw such a thing (and it's possible that such a thing got tossed at some point in some downsizing/cleaning attempt...). I'll do some poking around, and hopefully I'll find one. If it's a CD, I have a CD reader at my office that I can use to look at it Monday; if it's a ZIP drive disk, it might be inaccessible nowadays! But I hope I do still have such a thing!
+
+
+
+      Sorry you have COVID symptoms...! I did hear that a number of people tested positive for it after SVP, which sucks...it's much worse than the usual post-meeting crud! I think I might have gotten COVID when Tracey and I were on our Scotland trip last May–June, although I tested negative there when preparing to come back into the US. But whatever I had then, I have a mild, periodic, lingering cough even today, which sounds like "long COVID" to me. I had had my COVID shots and booster when we went, which might have been enough to disguise it as a mild cold while we were there, but I dunno. At any rate, if you do have COVID, I hope it's a mild, short-lived case!
+
+
+
+       I hope you and Mandi are otherwise doing well! Tracey and I are doing pretty well...I'm super-busy these days: on top of my regular teaching & grading & committee duties at school, I'm playing Dracula in the university's production of "Count Dracula" at present, so I have had virtually no time off, or even at home (except to sleep) for the last month-and-a-half or so. But it's a fun experience, so I don't regret it...but part of me is looking forward to the show being over (Nov. 19) so I can get back to some semblance of normalcy!
+
+
+
+[cid:1846e7d18b5772f6c3]
+
+“Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.”  ― Maya Angelou
+
+________________________________
+
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org<mailto:LamannaM@CarnegieMNH.Org>>
+Sent: Saturday, November 12, 2022 11:56 AM
+To: Jerry Harris <Jerry.Harris@utahtech.edu<mailto:Jerry.Harris@utahtech.edu>>
+Subject: Random question re: diplodocine tail CM 307
+
+
+
+CAUTION: This email is from a sender outside Utah Tech. Verify the sender before opening links or attachments.
+
+Hey Jer,
+
+
+
+Hi again, hope you and Tracey are well. I’m dealing with COVID-like symptoms post-SVP, hooray! 😉
+
+
+
+Quick, random question: in the attached paper from 2006 (see fig. 18c), you published a photo of two ‘whiplash’ caudals pertaining to a diplodocine tail here in the Carnegie Museum collection, specimen CM 307. It looks to me as though, when you took your photo, these caudals may have been loose in our collection rather than incorporated into the mounted skeleton of Diplodocus carnegii as I thought they’d always been. Might you still have original photos from your pre-2006 visit to the Carnegie that show these caudals in their collection drawer? And ideally, any other CM 307 caudals in the same drawer (for instance, if you happened to take a shot of the whole drawer-full)? Or, at least, photos of these two caudals loose in the collection? Like on a colored photo backdrop or similar, with a scale bar? (I’m trying to prove that not all caudals of CM 307 were built into the D. carnegii skeleton when you photographed them.)
+
+
+
+I ask because Mike Taylor and I are trying to solve a little mystery associated with the tail of the D. carnegii mount. All the ‘usual suspect’ sources state that all caudals of CM 307 had been incorporated into the mount WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+WARNING: bad base64 char -1 (�)
+since the debut of the latter in 1907, but I found a mid-2000s email from the Carnegie’s Collection Manager Amy Henrici that implies that that wasn’t the case. Fig. 18c of your 2006 paper would seem to add weight to Amy’s contention.
+
+
+
+Thanks!
+
+M
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/<https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fcarnegiemnh.org%2fresearch%2fmatthew-lamanna%2f&c=E,1,s2NXXJIWLe3sY7TP2RyiqrGtQxWvpO5a0bqsnmM81n0xmRe6Hq71SbQERgWuitmiv_CyU_mkMGG8byyolCGpA4ddKmObwzqyEVjdFdS8UvE,&typo=1>
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fantarcticdinos.org%2f&c=E,1,YsSQb_tzDzT0fwpQWAY9P4L61ymEdtkrKvd4HbIWRPE1h6MvJ83Vgcus3JnUPWvGFPt2NN41GDZQYvJsooEGlnz5GLiOaS91nBoQZK5zXzSdLVU,&typo=1>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
