@@ -1,0 +1,159 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:6124:587:b0:379:62e:6e7c with SMTP id l7csp1244047vlo;
+        Fri, 30 Jun 2023 05:15:57 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlF9kQiK6vtogmLblx2uAivcTaydPUNMenYp56xn2BsUUgPiE0jS6W/7/o+Z+VVPXO0r2TML
+X-Received: by 2002:adf:fe8e:0:b0:313:f94f:3b15 with SMTP id l14-20020adffe8e000000b00313f94f3b15mr1949107wrr.2.1688127357314;
+        Fri, 30 Jun 2023 05:15:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1688127357; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Te4BZ8Fc8SIMvYGY49xiX6IjeZxAxktAjBCbnt0vq5qKZBtJjM1ivL+SnIRZoDKSox
+         e3gpmJT6yfigRNbC3bQVMMEeERtbsJ6Zvm6z7bOpSHpg0x5JrU3xcFJx/oaDSt0cjdtU
+         y/MxBpRy+8NTv3sfE4+WHcGWyqv0clwMZqU7k8vxs7vH0wtRUxvStrGXNRWnKddXULSu
+         9vxoqspXV4uk+l5e6EHCkVxaGAx/vz71u76Vvk+HvSWPJrYq6rjINIm6cF5fqu7fPSAH
+         gvJrueTJGs6X/kJJ4Dwd0jZ9zp5j7t+zjOe3P2Ac4CkcpfVPtGgrH4z7sa7EHRaCynkG
+         Zq6Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=ui-outboundreport:in-reply-to:from:content-language:references:to
+         :subject:user-agent:mime-version:date:message-id:dkim-signature;
+        bh=zmNMa+w8NFzac8UWKpziwJ9MXf/cSNHOSsbbYLvkoOk=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=dferxuNr+FSZwRV/F3bI8XNL5VzFSczlVcRLwy401cKLIAOBF3X6qq/U6iM2gRH6WB
+         dPm+HjPZ7+phMmNmLh4vR1Jw1SbTt3ndDm1HVOGA5r33Zgctkt70XpJJ9fr+754Bvfjw
+         6r4AidXdvQsih2xwj60NfZfXasyL5G2D0TlveQBUcknoJqjrJRUW4uiBJPW2LvkwjH7/
+         af7LjMHfa1965ZWXy6hlR5+dpKM+JL5LMQyrFUfXwm1NpIrQcvyJS8aLAbCIbfYWGjCc
+         RAjfAPt/7O6Rj3KWC3vpbJRmXcawZObSYJbhw1RUlmDzK1Rn1+6AXK6tMhw7cRNZ306B
+         bNDQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmx.at header.s=s31663417 header.b=AqxyF+a1;
+       spf=pass (google.com: domain of crownhouse@gmx.at designates 212.227.17.21 as permitted sender) smtp.mailfrom=crownhouse@gmx.at;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmx.at
+Return-Path: <crownhouse@gmx.at>
+Received: from mout.gmx.net (mout.gmx.net. [212.227.17.21])
+        by mx.google.com with ESMTPS id m16-20020a5d6250000000b0030ae4ec18e9si9468655wrv.55.2023.06.30.05.15.57
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 30 Jun 2023 05:15:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of crownhouse@gmx.at designates 212.227.17.21 as permitted sender) client-ip=212.227.17.21;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmx.at header.s=s31663417 header.b=AqxyF+a1;
+       spf=pass (google.com: domain of crownhouse@gmx.at designates 212.227.17.21 as permitted sender) smtp.mailfrom=crownhouse@gmx.at;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmx.at
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.at;
+ s=s31663417; t=1688127356; x=1688732156; i=crownhouse@gmx.at;
+ bh=UgNrgh/JOyFBZcI6S7G5mIq35S8GEwO9kBY1mlHUP18=;
+ h=X-UI-Sender-Class:Date:Subject:To:References:From:In-Reply-To;
+ b=AqxyF+a1VrgIJGQpPZ7JzGNBQoArBvkIVLKkvPbTU2U9LyDQoKKAy8VHEeqUhLFtbzSBHgY
+ /1fJzJ1zFGIPFIGhcnUXdm51efY+4B0IObQ1uuAQV2Y2BN9Iwrvn5vthTq/rFkgti0DeQK/IH
+ RtObEOaZHpbGYaag0tL7Uw7nKhHljMe8YsoJqDDk0DwvurGgMhco37f6qa8gRRtkh5brzPC0B
+ twt/SGqi1uVccXjCr5gfAgXYVJJCUsvAQjCKdoa3NBhsQC+8dDUZvlUnc3bqVGihzf2VOI6zt
+ zDVXo0bSA+nZuupi0gG87apcj1e3kmo+5rTtfjG6oYLYK/e0DV2A==
+X-UI-Sender-Class: 724b4f7f-cbec-4199-ad4e-598c01a50d3a
+Received: from [192.168.0.87] ([84.112.225.42]) by mail.gmx.net (mrgmx105
+ [212.227.17.168]) with ESMTPSA (Nemesis) id 1MPogF-1qS4vH3JL9-00MwOJ for
+ <sauropoda@gmail.com>; Fri, 30 Jun 2023 14:15:56 +0200
+Message-ID: <3c0772cb-97ae-97eb-85c3-a01b100f3d13@gmx.at>
+Date: Fri, 30 Jun 2023 14:15:56 +0200
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101
+ Thunderbird/102.12.0
+Subject: Re: New ViennaDip photos
+To: Mike Taylor <sauropoda@gmail.com>
+References: <e95d9ea6-0969-ce2a-38ee-898d7aed9498@gmx.at>
+ <CACnMvBZ17HGyLgC+90CkrrahYAuT9MYPTo7v=K6YGoo0j1NZBg@mail.gmail.com>
+ <b8d95970-a62b-c8cb-3b53-82551854f973@gmx.at>
+ <CACnMvBbnb2GBu6LRj2n64D9VXRi_uss+EtUAKmtU8w5ygq0T2A@mail.gmail.com>
+ <454533bf-ad6b-9f38-1e23-b1b31e3077f1@gmx.at>
+ <CACnMvBZWpZSvK2+V3cRxOucdEThb=oH5+=5WWGrK4w+Lj+ChLA@mail.gmail.com>
+ <CACnMvBbe3y8Bfcex7Q1gNTavW5yty50qAQNBMGFVjwmmeHLF4Q@mail.gmail.com>
+Content-Language: de-DE
+From: crownhouse@gmx.at
+In-Reply-To: <CACnMvBbe3y8Bfcex7Q1gNTavW5yty50qAQNBMGFVjwmmeHLF4Q@mail.gmail.com>
+X-Provags-ID: V03:K1:iKRSUmlO9CFnP+qTn40excKHpjx0k4fDgfkTVBTyAcEo9BGj74k
+ Gs0NKA+yS/j/zmTwNu7hMnqRxoH7EswV8KpU78gRM8cDhemiw+kcIGESTaAMfIy4ZsphA01
+ 5wl6X2sqnzhVJ9IRrEgtVtoltUhE8rL2J9vFjko+JYzQOBiG3horSht+tsTfycbY7oi1wYA
+ L74bV1PcCJbu5vWGVUt4w==
+X-Spam-Flag: NO
+UI-OutboundReport: notjunk:1;M01:P0:Dc8Abq/SD9I=;g1fKIy2knqC2F1Gl9ir3wQ19b+R
+ Cl2ONMw5qBXqmT29WKFexLjLm0kFl2X7WLh8LlvLd3ze+lFA2ufiayN/gxNeRNsUvqREFaiqv
+ kZtBg9gcR700cYGd8S9ZN627bnSgeJwzxw0RPmRZqOpcKVcn6Y6thtWWnA2uomDl2suyzVwx/
+ XBNkcout8WCgr/abycHNeNc3OlSSL5Ebc+zAwvo10/yHqT4iJRyNU9jBdgej1dvu4VRAIUzlC
+ 4Xf1vA1/xgK8w63yfHH2lebrFvhSz9+FkQEbefZ3s5mc1KWMdu02lhQ9tiXT6GtOFU1QesxxQ
+ Wz5yT540L0FESOTXTsVbu6kKBkOnf6KNe2MX/iYfeqZzK8RNIDBSjwvTCiz+8OkVWkS7C6fm1
+ S5v883BG/1ZdAa7oMfqAn/oU6J159hMwHLtpCdkp78dhoE3cUt0MsmBTjpmqgtuNAQAxIyXCR
+ 6WYf0hS67QLycP5TVwg15ld4FAOOssXty3H8utH3mec366/FsT4ecud6LZ2hlxax2YMqy4n35
+ j6eAvTlWYmsQ+AiDLcdv4ldFOPx2itUTRyfKZTieWSUcxJ47C4kcJi1MFIkkJF7Ab20B7xMKa
+ b/Vyy9zPXIwPi+8b5xW6CV14xMzAbw22u/c3YpQIJM2huo1F+Xlqh8hBm1xfnzrpa3gbWw/6e
+ fgJj8SRdLGdXx3Y683zUb6+Ob//CLzL3vW6WkLOvf4FJCdrzC1hyJB/vWJ4Uc0zzwK/9ll0yb
+ UTx3fkN1I6Y643oy7Jt0JoqxdD2MXuqmMcMtn8keENbr5k70XAYww0Xp7QHsNja5u+zrvACGH
+ 4S/R09AOr+Qd50Zs6AoramiySNFQaC1WyFW3DdR9QsYHPH0V8+Dw4507uEnSUz5vNVbZ5UrIp
+ X2pECQyhGjZxUmvLa75GDnEYA/o1RHX/zGH/N00nRlO67Q43tudmxgcmE4oKF1Gy/66niXcrU
+ 2xDnv1UJcwVvoMeJexaV/31nV7M=
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset=UTF-8; format=flowed
+
+You are very welcome again, it was real fun making them! (On the other
+hand these are sauropod vertebrae, so how could it not be fun?)
+
+In case you want to use one of the photos in the paper, please do so,
+I'm absolutely fine with that.
+
+And if there is anything else I can do, please tell. I have an annual
+card for the NHM that expires in August, so until then I have free access.
+
+all the best,
+
+amadeus
+
+
+
+On 30.06.23 00:33, Mike Taylor wrote:
+> I don't know if we'll want to use a photo in the paper, but if we do
+> would it be OK to use one of these, with attribution?
+>
+> Thanks again!
+>
+> -- Mike.
+>
+>
+> On Thu, 29 Jun 2023 at 23:33, Mike Taylor <sauropoda@gmail.com> wrote:
+>
+>     These are great! Thank you so much!
+>
+>     I'll be sure to point you at the paper when it's out.
+>
+>     -- Mike.
+>
+>
+>     On Thu, 29 Jun 2023 at 21:24, <crownhouse@gmx.at> wrote:
+>
+>         Hi Mike,
+>
+>         I borrowed a camera and made some new photos. They are also
+>         not perfect,
+>         the camera did struggle with the light conditions, but at
+>         least one can
+>         actually see whats going on.
+>
+>         This should be the dropbox link:
+>
+>         https://www.dropbox.com/scl/fo/ixihv5ow3l6p9o9pkwpdt/h?dl=0&rlkey=3gbhgczz2im4bv3762qp97u3g
+>         <https://www.dropbox.com/scl/fo/ixihv5ow3l6p9o9pkwpdt/h?dl=0&rlkey=3gbhgczz2im4bv3762qp97u3g>
+>
+>         If this does not work, I can send them to you as a zip or tar
+>         file.
+>
+>         Hope you find them useful, and best greetings from Vienna,
+>
+>         amadeus
+>
+>
+>
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
