@@ -59,3 +59,47 @@ Given the uncertainty surrounding this specimen (see https://svpow.com/2015/05/0
 
 I'm OK with that solution. Are we confident the Annals will be happy with that? The guidelines at https://carnegiemnh.org/wp-content/uploads/2017/08/CMNH-PUBLICATIONS-AUTHORS-GUIDE-6-Jan-2010.pdf don't seem to mention it.
 
+> FWIW, in 2009, the Museo Giovanni Capellini held a conference on vertebrate paleobiogeography to coincide with the centennial of the debut of their Diplodocus cast. The keynote speaker was yours truly.
+
+I would like to include a note to this effect in the manuscript: do you have a reference? A conference abstracts volume, for example?
+
+> The Carnegie Museums do have a substantial endowment, and I’m pretty sure at least a bit of that came from Carnegie himself. I can double-check this if it’s important.
+
+I got this from Brinkman (2010:109), who wrote:
+
+"Carnegie had already lost much of his enthusiasm for dinosaurs in his twilight years. His generous appropriations dried up significantly and he neglected to make any permanent provision for paleontology at the museum. After his death, money for dinosaur hunting was hard to come by. The Pittsburgh party was forced to abandon their fieldwork at the Carne- gie Quarry in Utah, which was far from exhausted."
+
+Was Brinkman wrong?
+
+> I love the idea of including the word “hippies” in a peer-reviewed paper, but is there some other, more professional-sounding replacement? I honestly can’t think of one.
+
+My approach in writing is always to favour the word that most clearly communicates the intended meaning, and I don't give a damn whether it sounds "scientific" or not. "Hippes" is correct here :-)
+
+> Consider my curiosity piqued! Also, total shot in the dark, but is there any chance whatsoever that some of Ernst Stromer’s fossils from Egypt could’ve been transferred to this convent too?! If you’re still in touch with your anonymous sources, could you maybe ask them?
+
+It's someone that Ilja is in sporadic communication with -- I don't have a name, and there have been difficulty in getting further information from him or her. I suggest you get in touch with Ilja about this.
+
+> If they don’t want the plaster original, we’ll take it back.
+
+It did occur to me to make the same offer!
+
+What would the Carnegie do with a plaster cast?
+
+> One of which, I believe, is now indoors at the Field House. I have photos of this mount from the mid-2000s if you want them.
+
+I discuss all this in great detail in Taylor et al. (2022) :-) That said, I would definitly like to see your photos if they predate 2004, as I have only even been able to locate two photos of the lightweight cast in its original location in the old building. (These both appear in the 2022 paper as figure 8).
+
+> Stupid comment, but I recently had a reviewer ask me to say “antedate” instead of “predate,” to distinguish from the act of predation! So I’m passing on that glorious observation to you.
+
+I've made this change because, sure, why not? But honestly ... could anyone anywhere ever possibly misinterpret this?
+
+> Sorry, another weird Americanism involving commas.
+
+I am enjoying how often you're apologizing for this :-)
+
+> But at least a few “other sauropods” could probably place the long axis of the skull more or less in line with that of the neck, correct? See, for example, fig. 8a of Vidal et al. (2020) (which depicts _Spinophorosaurus_).
+
+Judging by Figure 2 at https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006924 it does seem that the occipital condyle of Spinophorosaurus may be oriented more or less posteriorly, but I'm not great at reading braincases. The ventral view of the reconstructed scanned-and-printed skull at https://rpt.de/portfolio/spinophorosaurus-nigerensis/ seems to corroborate this.
+
+Anyway, I think the present wording is fine despite occasional exceptions.
+
