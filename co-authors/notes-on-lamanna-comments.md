@@ -103,3 +103,69 @@ Judging by Figure 2 at https://journals.plos.org/plosone/article?id=10.1371/jour
 
 Anyway, I think the present wording is fine despite occasional exceptions.
 
+>> Neither are [atlas ribs] present in the current Carnegie mount (detail in Figure 1, pers. obs.)
+>
+> Shit! I must’ve missed this when we were doing the remount back in the mid-2000s. (If indeed atlantal ribs should in fact be there, I’m not clear on this.)
+
+It looks like they should, yes: see https://svpow.com/2022/11/23/putative-atlantal-ribs-of-diplodocus/ and marvel at the subtle differences between mounts!
+
+And it's possible that the dinky axis ribs on the mount are wrong. Hatcher (1901:20) says "A short cervical rib without anterior process springs from the side of the [axis] centrum near its inferior margin and anterior extremity" and his figure 6 bears that out, but compare with the Holland 1906 illustrations reproduced in that blog-post. The axis ribs there are way bigger than what Hatcher described and illustrated.
+
+> I don’t think this is correct, as Hatcher’s (1901) plate I (the D. carnegii quarry map) shows a number of (I count seven) chevrons articulated or at least closely associated with the anterior caudal vertebrae of what’s clearly CM 84. Consequently, I suspect Holland’s statement earlier in this sentence is in fact correct.
+
+Ha! I think you're right. What makes this humiliating is that I carefully coloured in those seven CM 84 chevrons for Figure 4 of this paper that came out two years ago: https://peerj.com/articles/12810/
+
+I have amended the text accordingly.
+
+> Although only middle and posterior caudal vertebrae of CM 94 were used in the mount, its vertebral column as found was complete from C7 through to Ca39
+>
+> Is this definitely true, especially with respect to the tail?
+
+Stupidly, I didn't include a reference here, so I don't know what my source was. I can't find it in Hatcher 1901, Holland 1906 or McIntosh 1981, and I don't know where else it could be from. I agree this claim doesn't seem to fit the facts, and it's not crucial to our argument, so I have simply removed it.
+
+>> Nine or ten chevrons of CM 94 remain in the Carnegie Museum collection today.
+>
+> Do we know which number this is, i.e., nine or ten? Amy or I can count them if you’d like. (Apologies if I was supposed to do this long ago but spaced out and forgot.)
+
+No, I don't know how many, and I would be grateful if you could find out! (My guess is that the phrase "nine or ten" is quoted from an email from you, Amy or Linsly, but if so I can't find that email.)
+
+> I just re-read p. 3 of Hatcher (1901) pretty carefully, and I can’t find any mention of CM 94 having included five chevrons (at least on that page). Are you sure you cited the correct page number here?
+
+You are right that Hatcher 1901:3 doesn't say this. Infuriatingly, I have no idea where else it could be from.
+
+Meanwhile, I found (how did I ever overlook?) an account of chevrons in Hatcher 1901:36-37 and another in Holland 1906:255-256. So I have fairly radically rewritten that section.
+
+> [CM 11161] was certainly available for Serafino Agostini to have used when he “made some excellent moulds [sic] and casts of the skulls of Apatosaurus and Diplodocus” in 1934.
+
+Yes, the annual report spells it "moulds" for some reason.
+
+> I think this [speculation on skull replacement date] is probably correct, given that a photo of the Diplodocus and Apatosaurus mounts side-by-side taken sometime after November 1932 (judging from the fact that the Apatosaurus mount includes a Camarasaurus skull) but before the end of 1936 (based on its appearance as a plate in Gilmore’s 1936 Apatosaurus monograph) seems to show the ‘old’ CM 662/USNM 2673-based skull on the Diplodocus mount. I’ll try to remember to send the pic when I send my comments on the manuscript, but here it is just in case. (I have it at higher resolution if you want it.)
+>
+> Conversely, a later (though still old; probably 1950s or 1960s given the presence of Ottmar von Fuehrer’s T. rex mural, painted in 1950) clearly shows the CM 11161-based skull on our Dippy mount (you can see the sclerotic ring in the left orbit). Please remind me and I’ll see if I can find a definitive date for this photo.
+
+Could you please send these photos? Neither was attached with the manuscript.
+
+> Incidentally, Berman and McIntosh (1994) state that the incorrect Camarasaurus skull replica was mounted on our Apatosaurus skeleton CM 3018 in December 1932, not sometime in 1934 as implied in our text here.
+
+I don't see how that can be right, if the Annual Report for 1934 mentions that (presumably during that year) Agostini made the Camarasaurus-like skull that was used in the recapitation.
+
+> Berman, D.S, and J.S. McIntosh. 1994. The recapitation of Apatosaurus. Paleontological Society Special Publications 7:83–98.
+
+I don't seem to have that one. Could you please send a PDF?
+
+> A breaking news update to my previous comment: the CM 11161-based skull was in place by 1947, as indicated by this photo in an article from that year (on Serafino Agostini) in our museum’s member magazine, Carnegie. (Check out that sclerotic ring!)
+
+Ah, great spot! I'd read that article, but not spotted the significance of the photo. Thank you!
+
+... and, ridiculously, looking back over previous emails I see that on 28 July 2023 you wrote "Note that the second photo in this article demonstrates that the CM 11161 skull replica was in place on our Dippy mount by 1947. (You can see the sclerotic ring in the left orbit.)". Somehow we both forgot!
+
+> Was the neck definitely raised? Or was the support pole simply replaced by suspension cables? In comparing our Figure 13 to our Figure 11 (and also to the Carnegie magazine photo from 1947 referenced above, which happily was taken from a perspective similar to that shown in our Figure 13), I don’t see any obvious difference in neck posture…
+
+You are right. I have modified the text, and heading, accordingly.
+
+>> The Jurassic section, including Diplodocus and the Apatosaurus louisae holotype CM 3018, was opened for ticketed previews at 6 am [sic] on Saturday 17 November 2007.
+>
+> If there’s a grammatical error here, why don’t we just correct it, as opposed to including a “[sic]”? (I ask because we don’t seem to be directly quoting from one of these sources here.)
+
+Because otherwise people will think it's a typo for 6 pm!
+
