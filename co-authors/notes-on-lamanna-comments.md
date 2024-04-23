@@ -169,3 +169,16 @@ You are right. I have modified the text, and heading, accordingly.
 
 Because otherwise people will think it's a typo for 6 pm!
 
+> Bummer. I wonder why Ray apparently didn’t tell me this back in the day? Perhaps he thought that the humerus, radius, and ulna of BYU 681 were all Diplodocus (and potentially associated with each other), but that the femur belonged to Apatosaurus? In other words, that BYU 681 on the whole was a chimera, but the humerus, radius, and ulna that bear this number all belong to a single, fairly small-bodied Diplodocus individual? Who knows… ¯\_(ツ)_/¯
+
+Those three forelimb elements are indeed all assigned to _Diplodocus_ in Wilhite 2003, and the femur to Apato. I don't know the evidence of their association, though, and have emailed to request clarification.
+
+> It’s a bit unusual in my experience to include a question in a paragraph of scientific text such as this –
+but I also can’t think of a better way to express this thought (except as a different question, e.g., “How could he have arrived at this number?”) so I guess the question can stay.
+
+I like to write simply and directly, and have little patience with the circumlocutions that are customary in "scientific" writing. In this case, the question is a question, and I think best expressed as one.
+
+> I just found some photos of the 2005 disarticulation in case you want them; please just let me know. They were in a folder of pics that Mindy McNaugher gave me back in the day. (Also, I may have said this above, but I have lots of photos of the mount in progress at Phil Fraley’s studio too; again, they’re yours if you want them.)
+
+Yes please and yes please!
+
