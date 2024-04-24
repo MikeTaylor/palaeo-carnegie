@@ -186,3 +186,17 @@ Yes please and yes please!
 
 Maybe; but how would Jack have known that had happened to include in his 1981 write-up? I don't think his silence on the subject tells us anything.
 
+> And a blue whale skeleton, if memory serves, though I believe that’s suspended from the ceiling and so it doesn’t technically occupy the same space that ‘Dippy’ did.
+
+Exactly. There is absolutely no possible justification for the removal of the cast that has long been the icon of the London NHM. It's a desecration, with corporate event space the only possible rationale. See https://svpow.com/2015/02/10/the-planned-vandalism-of-the-natural-history-museum-a-modest-proposal/
+
+> See previous comment. I’m relieved that I’m not the only one who doesn’t remember everything related to their museum’s dinosaur mount renovation.
+
+It's understandable; at the same time, how I wish that those responsible for such projects kept more comprehensive notes!
+
+>> This makes the Paris mount an important and perhaps unique historical artifact in its own right, and it is to be hoped that the MNHN resists the temptation to modernize it.
+>
+> I can see why you feel this way, but I’d end this sentence at “right,” since I personally am cautious about suggesting what other museums should do with their exhibits/specimens.
+
+I understand your reticence here, given that you're in charge of a rival museum's dinosaurs. But unless you insist (which I would honour), I want to keep this. I think it's reasonable to be opinionated about such matters, and you can reasonably that the opinion expressed is that of the lead author.
+
