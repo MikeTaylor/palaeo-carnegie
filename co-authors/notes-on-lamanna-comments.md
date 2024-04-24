@@ -182,3 +182,7 @@ I like to write simply and directly, and have little patience with the circumloc
 
 Yes please and yes please!
 
+> Maybe [the installation of the wooden caudals] happened sometime between 1981 (the date of publication of Jack’s catalog of our dinosaur collection) and 2003 (when Jerry Harris took pics of the original CM 307 caudals in our collection area)?
+
+Maybe; but how would Jack have known that had happened to include in his 1981 write-up? I don't think his silence on the subject tells us anything.
+
