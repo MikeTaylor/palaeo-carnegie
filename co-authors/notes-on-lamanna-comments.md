@@ -281,3 +281,7 @@ Right again! And the centra are not nearly long enough.
 
 I think you're right. I have modified the text here and elsewhere accordingly.
 
+> Is it just me or do A, B, and C here show two carpal elements, whereas our current mount has only one? If so, I guess I must’ve decided to jettison a carpal at some point, though I can’t remember when or why.
+
+Oooh, sharp eyes. But I think it's even weirder than that: looking closely at your photo of the current mount's forefeet, there is only a single carpal for the right forefoot in the foreground, but it looks very much as though there are two in (what I assume must be) the left forefoot in the background. Can you please inspect the mount and confirm or deny?
+
