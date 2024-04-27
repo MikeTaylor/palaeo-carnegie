@@ -250,6 +250,19 @@ We recognize that dinosaur mount renovations are intense projects, often execute
 
 It does for me. Did you have a transitory failure? Please try it again.
 
+>> Holland, William. 1910d. Letter to Andrew Carnegie, 5 July 1910. http://digitalcollections.powerlibrary.org/cdm/compoundobject/collection/acamu-acarc/id/14064/rec/1
+>
+> This link didn’t work for me.
+
+_Sigh_. Those total idiots at Carnegie Mellon have evident changed all
+their URLs -- as though we didn't all know what best practice was
+quarter of a century ago: https://www.w3.org/Provider/Style/URI.html
+
+It genuinely astonishes me how constantly and consistently apparently
+reputable organizations do it. So avoidable, so painful.
+
+I have tried quite hard to re-locate https://digitalcollections.library.cmu.edu/ but without success. Even the unique ID, 14064, has apparently changes.  I trusted Carnegie Mellon not to completely screw this up, so I didn't download a copy of the letter for our archives. I think the only thing to do is leave the URL as it is, and if anyone asks tell them what CM did.
+
 > [Arthur S. Coggeshall] was also on the expedition that discovered the holotype (CM 84). Also, I might be able to find a clearer version of the photo in question if you want [for Figure 2].
 
 Yes, please! And also, if you can, of the Agostini photo.
@@ -263,4 +276,8 @@ Good catch! Thank you.
 > I’m a bit skeptical of this given the morphology of the caudal ribs/transverse processes (i.e., not aliform) and neural spines (i.e., lower than I’d expect for diplodocine anterior caudals).
 
 Right again! And the centra are not nearly long enough.
+
+> It honestly doesn’t look noticeably more elevated to me (not to mention that this would’ve been an expensive and complex undertaking given that the steel or iron rod that extends underneath the cervical series would’ve needed to have been altered to accomplish this). Obviously, I think the tripartite support pole was removed, and the suspension cables added, but I don’t think the neck was repositioned per se.
+
+I think you're right. I have modified the text here and elsewhere accordingly.
 
