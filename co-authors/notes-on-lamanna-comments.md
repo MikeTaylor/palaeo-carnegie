@@ -200,3 +200,67 @@ It's understandable; at the same time, how I wish that those responsible for suc
 
 I understand your reticence here, given that you're in charge of a rival museum's dinosaurs. But unless you insist (which I would honour), I want to keep this. I think it's reasonable to be opinionated about such matters, and you can reasonably that the opinion expressed is that of the lead author.
 
+> According to Wikipedia, “Skulls from this cast (i.e., 'second-generation') are on display in museums in Milan and Naples.”
+
+This is interesting, but the Wikipedia article gives no reference and we can't cite Wikipedia itself. So I think this has to be omitted.
+
+> Just calling out (as I believe I also did above) that we seem to alternate between using the ‘native-language’ names of the museums in question (e.g., Museum für Naturkunde) vs. their English translations/transliterations (e.g., here). I’d choose just one style and stick with it.
+
+I take your point, but I have never heard the MfN called anything else. I think the general rule here is not necessarily consistency, but following the most used name for each institution.
+
+>> Finally, it was buried in soft peat for three months and recycled as firelighters.
+>
+> WTF? Meaning that the cast was destroyed (i.e., recycled)? Like, it no longer exists? I had no idea. (Or did you put this in here to make sure I was reading carefully?)
+
+As you rightly guessed, I put that in mostly to check you were all paying attention by the midpoint of a fairly exhausting manuscript! I was heartened that all four co-authors spotted and commented on this, but disappointed that not one of you spotted it as a Hitch Hiker reference:
+
+"[Vogons] are one of the most unpleasant races in the galaxy. Not actually evil, but bad-tempered, bureaucratic, officious, and callous. They wouldn't even lift a finger to save their own grandmothers from the ravenous bug-bladdered beast of Traal without orders signed in triplicate, sent in, sent back, lost, found again, subjected to public inquiry, and finally buried in soft peat for three months and recycled as firelighters."
+
+>> Carnegie had an honorary position as the Rector of the University of St Andrews, 50 miles northeast of Edinburgh.
+>
+> Maybe you mean 50 km? According to Google Earth, St. Andrews is about 50 km/30 miles northeast of Edinburgh.
+
+As the crow flies, yes; but it's a 50-mile journey. What an irritatingly pedantic point to have to make in this paper!
+
+> Weird question, but does this size discrepancy between original bones and casts produced from them potentially ‘scale’ with the sizes of the elements in question? For example, would the difference in length between the original bones and their respective casts be greater in giant sauropod limb elements than in, say, limb bones of a housecat? I think it might, though I can’t say for sure (nor can I really explain why I suspect this).
+
+My intuition says that the fossil-to-case size ratio is probably unrelated to the size of the element, but that's only saying that my intuition is different from yours. I don't know of any study at all into the cast-shrinkage phenomenon, and now I'm thinking someone ought to do that study!
+
+> Meaning that the total length of the recently added real fossil caudal vertebrae was substantially longer than that of the casts they replaced? I think that’s possible, though 1.2 m seems a stretch. [snip]
+
+Useful thoughts here, thank you! I have sigificantly modified the manuscript to include much of this material.
+
+> I know Brian Curtice went to RCI to look at this during its remount and will have some interesting observations to write up as a result.
+
+Yes, I've seen a few of Brian's photos and witnessed some of his despair at the state of the material. Unfortunately, I am not at all optimistic that he will write up what he discovered, so all that rediscovered information will be lost once more.
+
+> Agree, but again, dinosaur mount renovations are intense, pressure cooker-type affairs [...]
+
+I am sympathetic to this and I think it's important enough to include something along these lines in the manuscrpt. What do you think of this version?
+
+<div style="margin-left: 3em; margin-right: 3em">
+Every mounted dinosaur skeleton is an important scientific and historical artifact: those of large and generally incomplete dinosaurs such as sauropods arise from complex scientific and political processes involving myriad controversies and decisions. We urge those who have the privilege of working on them to write up their choices for publication before memories evaporate and records are lost.
+
+We recognize that dinosaur mount renovations are intense projects, often executed under ambitious schedules, and typically overseen by scientists who have numerous other responsibilities competing for their attention. One of us (Lamanna) was the scientist in charge of the 2005–2007 renovation of the Carnegie Museum's dinosaur galleries, and says without reservation that this was the most demanding project he has ever been involved in. Had those involved in the _Diplodocus_ remount realized at the time that the decisions they made would be important for posterity, they would have kept running notes, material lists, and a correspondence archive. 
+</div>
+
+>> Anonymous. 1907. A Diplodocus for Frankfurt Museum. American Museum Journal 7:98–100. https://digitallibrary.amnh.org/handle/2246/6331
+>
+> This link didn’t work for me.
+
+It does for me. Did you have a transitory failure? Please try it again.
+
+> [Arthur S. Coggeshall] was also on the expedition that discovered the holotype (CM 84). Also, I might be able to find a clearer version of the photo in question if you want [for Figure 2].
+
+Yes, please! And also, if you can, of the Agostini photo.
+
+> Anterior? I think I see prezygapophyses facing toward(-ish) the camera if I zoom way in; also, the neural spines appear to be inclined away from the camera.
+
+Good catch! Thank you.
+
+>> ... possibly from the Diplodocus carnegii paratype CM 94
+>
+> I’m a bit skeptical of this given the morphology of the caudal ribs/transverse processes (i.e., not aliform) and neural spines (i.e., lower than I’d expect for diplodocine anterior caudals).
+
+Right again! And the centra are not nearly long enough.
+
