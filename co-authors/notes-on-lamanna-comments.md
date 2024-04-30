@@ -1,5 +1,7 @@
 # Notes on Matt Lamanna's comments on Carnegie _Diplodocus_ manuscript
 
+I have stayed with the term "forefoot" throughout as it pluralizes more clearly than "manus" and is no less explicit.
+
 > Mike, up to you, but I might go with something a little more specific, since there are lots of Diplodocus specimens here at the Carnegie Museum, not just the mounted D. carnegii holotype and the other fossils that supplement it. Maybe something like, “The history and composition of the Diplodocus skeleton mounted at Carnegie Museum of Natural History” instead?
 
 Having considered this, I take your point, but I've concluded that the present, punchier, title is better: yes, that are other Diplodocus specimens held at the Carnegie Museum, but it's not like anyone is going to be in any doubt about which is THE Carnegie Diplodocus — a term that's already in widespread use.
@@ -8,11 +10,9 @@ Having considered this, I take your point, but I've concluded that the present, 
 
 In general Carnegie paid for the mounting, leaving it for local institutions to provide the wooden plinths on which the mounted skeletons would stand.
 
-> Is it more appropriate to say “…had casts of this specimen made for museums in nine prominent cities…”? I ask because I don’t know whether Carnegie himself paid for the mounting of these casts or whether that cost (i.e., the mounting itself) was borne by the European and Latin American institutions in question.
+> Definitely a surprise visit? I don’t recall hearing this before.
 
-I retained the original wording because Russia cannot really be considered part of Europe.
-
-I have stayed with the term "forefoot" throughout as it pluralizes more clearly than "manus" and is no less explicit.
+Yes indeed: see Ilja's 2019 book, which on page 50 quotes Carnegie's offical biographer: "Carnegie was enjoying his daily siesta and the news, when he was awakened, rather startled him. He jumped up, however, and prepared to give an appropriate welcome. Glancing out the window, the King’s motor was visible proceeding up the driveway, and Carnegie, clad in his informal togs, met His Majesty at the doorway. The piper had barely time to get into his Highland garb, and the organist, who had been in the swimming pool, just managed to scramble into his clothes and strike up ‘God Save the King’ as the royal guest appeared."
 
 > Maybe add an “arguably” here? As much as I’d like to think that our beloved Dippy is the world’s most familiar or most famous dinosaur, there are others, such as SUE the T. rex, that might have a reasonable claim there…
 
@@ -284,4 +284,8 @@ I think you're right. I have modified the text here and elsewhere accordingly.
 > Is it just me or do A, B, and C here show two carpal elements, whereas our current mount has only one? If so, I guess I must’ve decided to jettison a carpal at some point, though I can’t remember when or why.
 
 Oooh, sharp eyes. But I think it's even weirder than that: looking closely at your photo of the current mount's forefeet, there is only a single carpal for the right forefoot in the foreground, but it looks very much as though there are two in (what I assume must be) the left forefoot in the background. Can you please inspect the mount and confirm or deny?
+
+> I might end this sentence at “relatively spartan ones.” After all, research has continued here from Carnegie’s death to the present day (though in Vertebrate Paleontology it shifted from dinosaurs to non-dinosaurian vertebrates [particularly fossil mammals] through at least Dave Berman’s hiring in the 1970s). Moreover, with the exception of SUE the T. rex, our dinosaur exhibitions far surpass the Field’s. Of course, the AMNH has (and will likely always have) a larger, more diverse dinosaur collection than we do (especially as regards Cretaceous taxa), but more than one colleague has said to me, “I like your dinosaur gallery better than theirs.” (Obviously these people could just be saying that to be nice, but I do think that one could make the case. After all, our gallery contains the holotypes of D. carnegii, A. louisae, and T. rex, and moreover I think our dinos are generally presented in a more up to date, engaging way.)
+
+Not really relevant to the manuscript but for what it's worth I do agree. The Carnegie's public galleries are by some distance my favouries of those I have seen.
 
