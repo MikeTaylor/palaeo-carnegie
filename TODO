@@ -62,8 +62,6 @@ DONE	Ensure all hyphens and dashes are correct
 DONE	Ensure all quotes (single and double) are symmetric
 DONE	Fix the not-quite-Baskerville font used in some places for some reason
 DONE	Number the tables sequentially
-DONE	Check that all references are cited and all citations referenced
-DONE	Write the abstract
 DONE	Update the in-prep references to something more substantial
 DONE	Proof-read
 DONE	Integrate proof-reading changes
@@ -77,7 +75,9 @@ DONE	Add nomenclature note on measurements in the form m (ft) and ft (m).
 DONE	Integrate changes from Matt
 DONE	Integrate changes from Linsly
 DONE	Integrate changes from Amy
-CHECK	Integrate changes from Ilja
+DONE	Integrate changes from Ilja
+XXX	Check that all references are cited and all citations referenced
+XXX	Rewrite the abstract
 XXX	Remove "st", "nd", "rd", "th" from dates
 XXX	Include Henrici2022-CM-94-chevrons-in-collection.jpeg
 XXX	Follow up on Copenhagen Diplodocus, email threads "Carnegie Diplodocus" and "VS: Carnegie Diplodocus casts"
