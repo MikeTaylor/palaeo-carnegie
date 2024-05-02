@@ -1,5 +1,3 @@
-Drafting
---------
 DONE	Integrate Daniela's comments on Berlin forefeet from email thread "Diplodocus cast forefeet"
 DONE	"It was also missing a long series of chevrons, casts of which had been urgently requested from the American Museum, which was slow to fill the order." (Brinkman 2010:240).
 DONE	Replace all CM 82 with CM 84.
@@ -48,16 +46,6 @@ DONE	Get information on Berlin cast's atlas ribs
 DONE	Get total length of current Carnegie mount
 DONE	Resolve question of CM 307 caudals in original mount
 DONE	Discover source of left fibula/pes in casts
-NO	Vernal dedication was on 8 June 1957, not 7 June
-NO	"This year [1988] the natural history museum in Las Vegas, Nevada is gambling on molding the Vernal Diplodocus for a copy of its own" (Krishtalka 1988:17).
-NO	Quote Carnegie's letter about the King from Dippy, p23.
-NO	Integrate Matt's Haplo comments from email thread "CM 662 --> CMNH 10670 --> HMNS 175"
-NO	Discuss dorsals/some cervicals being sculptures: see "Photos of molds" email thread. Thread "First mounted cast?" shows broken Munich vertebra revealing metal core that was sculpted around
-NO	Read "Discovering dinosaurs in the Old West: the field journals of Arthur Lakes" at https://archive.org/details/discoveringdinos0000lake/mode/2up
-NO	BTW, Hatcher (1904:47) gives the measurements of two femora: the right of 84, and the left of 94. The ratios between their measurements are 1.05 (length), 1.28 (proximal breadth) and 1.13 (distal breadth). So not only is CM 84 5% larger using the standard femur-length criterion, it's also significantly more robust.
-
-Pre-submission
---------------
 DONE	Ensure all hyphens and dashes are correct
 DONE	Ensure all quotes (single and double) are symmetric
 DONE	Fix the not-quite-Baskerville font used in some places for some reason
@@ -76,6 +64,13 @@ DONE	Integrate changes from Matt
 DONE	Integrate changes from Linsly
 DONE	Integrate changes from Amy
 DONE	Integrate changes from Ilja
+NO	Vernal dedication was on 8 June 1957, not 7 June
+NO	"This year [1988] the natural history museum in Las Vegas, Nevada is gambling on molding the Vernal Diplodocus for a copy of its own" (Krishtalka 1988:17).
+NO	Quote Carnegie's letter about the King from Dippy, p23.
+NO	Integrate Matt's Haplo comments from email thread "CM 662 --> CMNH 10670 --> HMNS 175"
+NO	Discuss dorsals/some cervicals being sculptures: see "Photos of molds" email thread. Thread "First mounted cast?" shows broken Munich vertebra revealing metal core that was sculpted around
+NO	Read "Discovering dinosaurs in the Old West: the field journals of Arthur Lakes" at https://archive.org/details/discoveringdinos0000lake/mode/2up
+NO	BTW, Hatcher (1904:47) gives the measurements of two femora: the right of 84, and the left of 94. The ratios between their measurements are 1.05 (length), 1.28 (proximal breadth) and 1.13 (distal breadth). So not only is CM 84 5% larger using the standard femur-length criterion, it's also significantly more robust.
 XXX	Check that all references are cited and all citations referenced
 XXX	Rewrite the abstract
 XXX	Remove "st", "nd", "rd", "th" from dates
@@ -122,4 +117,3 @@ XXX	Renumber illustrations
 XXX	Add public-domain dedication, as in Concrete Diplodocus
 XXX	Upload preprint to Zenodo
 XXX	Submit to the Annals of the Carnegie Museum
-
