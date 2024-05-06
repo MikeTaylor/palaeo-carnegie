@@ -1,0 +1,192 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:c9a:b0:6a:a5:be60 with SMTP id ek26csp262843dlb;
+        Sat, 9 Sep 2023 05:08:07 -0700 (PDT)
+X-Received: by 2002:a05:6512:2213:b0:4ff:70d2:4512 with SMTP id h19-20020a056512221300b004ff70d24512mr4601019lfu.23.1694261286931;
+        Sat, 09 Sep 2023 05:08:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1694261286; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Rpq35sdrYM25Fv1kk6IMCB6BzmsACFxHTWmkoAFOlOkdZwKSpIb8nRp0MLnV2VAAmE
+         Ylu7tUcR6ZupQz2tgZl9xEmEtyX915uUizxnc4jF5phXSnL6dDUha0N7a9payiJlGF8J
+         7X4ooc9MkH0d2l458s8yGLT+XzbXUMy9ddXpU8JtocDPxHsLRwhUMhaWopEkn3eMctyr
+         GF+GaSr9a1jfbWYqUnMKmppAj0KHedTKtSYbUge+mFh8jXSNVx3BUU0mAl2YpjjufsDH
+         C/bCK8JaKZOEZSysixFR8Xd6On4zJt6jyR3uW3xA33wGF5eaEWaN+kujuOXQocvN1R9k
+         MYpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=/SBy6WkpvXv5nb67hS+sQrczvMyJZGzcWRVRL/+fPzQ=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=TNHwUm9uqbXjiHilaOtDvAAoE0stkie5aGr9vsvW+lo9O0D/qmmgsz5P61AQYojMa8
+         TWO1UOt8V2xWFe6ieSZJToarXOdU0jP7gpRcFKB9FuXFwowVDZXUmN1+wNTQHK1hEEdC
+         EKEzqIZRyi0cUH0de6oupqI++1sIn6s+JOaQPEkRXXD1Q5R/SCHNRQIBqiW85fJuMUU0
+         3+wjyW5AfKfAU7vJsgvHRfCHRyiuPeB6E1+AEA8miXvMyJmRWmV5yhXJv9yN6/u1EtF3
+         pneGMhhcGsWdTaLwZxc4whukhNWU27gwfzkJtpIclfKkxvxakWBHc0hpvqK7Bzm4Dd1L
+         trlQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20221208 header.b=qyQ38OT2;
+       spf=pass (google.com: domain of nrlarkin00@googlemail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=nrlarkin00@googlemail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+Return-Path: <nrlarkin00@googlemail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id z24-20020a195058000000b004ff727e9e5esor1538845lfj.15.2023.09.09.05.08.06
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Sat, 09 Sep 2023 05:08:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nrlarkin00@googlemail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20221208 header.b=qyQ38OT2;
+       spf=pass (google.com: domain of nrlarkin00@googlemail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=nrlarkin00@googlemail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20221208; t=1694261286; x=1694866086; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=/SBy6WkpvXv5nb67hS+sQrczvMyJZGzcWRVRL/+fPzQ=;
+        b=qyQ38OT2AoqyJt11bbUPbUEic7QwmLadSH1IZVn6l9QqpY1gS35j7NXFw5cUiikY7O
+         S7zfG8iiSOc1U8wob8BEP8U4bYM+PRdtjSKY/SsRUy0QJGm96BN2VJwbG1gY7tkGu4RS
+         oOGR+hnlZu4kqyh4EISIw6dxwqEvlg5C2GxKwai2SEIJp5wN8qCxunrXqZ4lILW6707p
+         WcwKxYomUoDqxzKhtDb083Jgf23ymmVBgylQgShyqn+oUjDBkTb/VIuZUTpI01n0Ohby
+         9ll4KyIOy2wrTgpvMsGL7eisRCiybZe9FrcFEG59l8bk22mrhNn0zQut/cF12KSXttKF
+         ro1w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1694261286; x=1694866086;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=/SBy6WkpvXv5nb67hS+sQrczvMyJZGzcWRVRL/+fPzQ=;
+        b=g+fNyO9uRCW01bEPqeumEycx701LaKKgV4b3aclDKDqrF2RKqb4u3s8wIvJFmYNgjK
+         GBOxAttletqgkvtuRsvChTFkqsde+fC0SN/G6gVcrCPWCKyWOBZGQjULJ0Utn2DayA0C
+         yyJXUj4Fd2GS6hBfKd9QqzXY/BWE9/cT2Bsf87S7f4X++yogk6ZUXQzqrc/bA0aJJ7+u
+         4qgGd4+E0+e95mh80yLzRP/HxvFPlPwDAHPQwxk1ODwjrT8v9YMs1OSKIkQRuqTotOAi
+         BCMUhM0hI+v+/fXUcuwA7lkymhtydRJmMX/mJO/HEPbppHs/xkGc66PsZICAttHOSGyX
+         jemg==
+X-Gm-Message-State: AOJu0YwPsKFICr+U7ES+tM/Q3LPc2z8f/hVZ5FZwUXN+AiBauafko+r1
+	vvdwHRmyyHCam3Rh0qA/ujxO7uXSebqfY7NcBP/eUoJnbbp46w==
+X-Google-Smtp-Source: AGHT+IGk+clY94hBsFkaHgtIZlFG4ekZfl87Iff+3OH5b/Cmf/dZQxKMbCSK2/40LAD0k7z7rwrEvZacKbTtfkIx/dw=
+X-Received: by 2002:a05:6512:4007:b0:4ff:7e1e:b4b4 with SMTP id
+ br7-20020a056512400700b004ff7e1eb4b4mr4450069lfb.39.1694261285757; Sat, 09
+ Sep 2023 05:08:05 -0700 (PDT)
+MIME-Version: 1.0
+References: <CACnMvBavuYyc1e=LL83gYpWo=YtZxwe=iQw64EufSyJ482VyDQ@mail.gmail.com>
+ <CACnMvBb+4y4xWqxB4CBWVYJqrDiCFeagrLgwOWXvGbv-B4Fgrg@mail.gmail.com>
+In-Reply-To: <CACnMvBb+4y4xWqxB4CBWVYJqrDiCFeagrLgwOWXvGbv-B4Fgrg@mail.gmail.com>
+From: Nigel Larkin <nrlarkin00@googlemail.com>
+Date: Sat, 9 Sep 2023 13:07:54 +0100
+Message-ID: <CADxc9QgsT00-9Si9qVnEYo-mrzASPKLVoVrB_a==-T9nyraAmQ@mail.gmail.com>
+Subject: Re: Hello
+To: Mike Taylor <sauropoda@gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Mike,
+
+
+
+It was really good to see you this week. Here is some info about John
+Coppinger, the sculptor who used to work at the NHM in the special
+effects/engineering department and not only ended up making Jabba the Hutt
+etc but played some characters in the Star Wars prequels too (as well as
+working on the London Diplodocus):
+
+
+
+From Wookiepedia:
+
+John Coppinger played Graxol Kelvyyn
+<https://starwars.fandom.com/wiki/Graxol_Kelvyyn/Legends> in *Star Wars*:
+Episode I *The Phantom Menace*
+<https://starwars.fandom.com/wiki/Star_Wars:_Episode_I_The_Phantom_Menace>
+ and Wookiee <https://starwars.fandom.com/wiki/Wookiee/Legends> Senator
+<https://starwars.fandom.com/wiki/Senator/Legends> Yarua
+<https://starwars.fandom.com/wiki/Yarua/Legends> in the same movie. He was
+also the sculptor of Jabba the Hutt
+<https://starwars.fandom.com/wiki/Jabba_Desilijic_Tiure/Legends> in *Star
+Wars: Episode VI Return of the Jedi
+<https://starwars.fandom.com/wiki/Star_Wars:_Episode_VI_Return_of_the_Jedi>*
+
+
+
+Here is an interview with him:
+
+https://starwarsinterviews.com/star-wars-crew/original-trilogy-star-wars-crew/john-coppinger-sculptor-jabba-the-hutt/
+
+
+
+You can email John using the link at the bottom of his website:
+
+www.johncoppinger.com
+
+
+
+Yes, as William and I wrote in the 1996 paper you reference ‘a complete set
+of tail vertebrae was cast in lightweight glass-reinforced plastic to aid
+the mechanics of the tail mount. Parts of the main armature were also
+strengthened to take account of the shift in balance now that the tail no
+longer serves as an anchor’.
+
+This matches my recollection well. I am fairly sure the rear legs were
+removed temporarily to allow the metalwork to be altered to reflect the
+change in the stresses on the armature that would result in the tail being
+lifted – not to take the weight of the new tail (which was lightweight and
+also had a support towards the rear) but because the tail acted as
+stabilising anchor at the rear of the skeleton. I have a feeling that the
+femurs were replaced with lighter replicas but I could be wrong about that.
+
+Someone who should have a better memory of this would be Lorraine Cornish,
+a senior conservator at the time and still in charge of the Palaeontology
+Lab now (currently known as The Conservation centre). She has also been the
+person overseeing the removal of the Diplodocus skeleton from the main
+hall, then its conservation and its UK tour, plus its planned conversion
+into a bronze replica, to be permanently sited outside in the revamped
+museum gardens (I assume you know about this?....). Lorraine’s email
+address is: lpc@nhm.ac.uk
+
+You say ‘The dragging plaster casts of the original were replaced…. that
+better reflects current understanding of sauropod behaviour, as well as
+discouraging petty theft.’
+
+[REDACTED]
+
+You are welcome to Pers. Comm me on the other bits, if you feel you should,
+if any of it is useful.
+
+
+
+With best wishes, Nigel.
+
+
+
+On Sat, 9 Sept 2023 at 12:30, Mike Taylor <sauropoda@gmail.com> wrote:
+
+> Hi, Nigel! It was really good to meet and learn a bit about both what
+> you're doing now and how you were involved with Diplodocus work at the NHM
+> back in 1993.
+>
+> Here's the brief section I have on those change in the present version of
+> the manuscript:
+>
+> The tail was replaced and elevated in 1993 (Lindsay et al. 1996:269;
+> Barrett et al. 2010:43). The dragging plaster casts of the original were
+> replaced by lightweight casts in a more dynamic pose that better reflects
+> current understanding of sauropod behaviour, as well as discouraging petty
+> theft.
+> I will expand this to mention a few things:
+> * The scaffolding around the hips had to be changed to support the greater
+> load of the elevated tail.
+> * The hindlimbs as well as the caudal vertebrae were replaced by
+> lightweight casts.
+> * The casts were created by ... remind me, please, who this was? You were
+> going to put me in touch with him, that would be really helpful.
+>
+> Would it be OK to cite you as a pers. comm. on these details? Thanks!
+>
+> -- Mike.
+>
+>
+>
+>
+>
+> On Thu, 7 Sept 2023 at 17:14, Mike Taylor <sauropoda@gmail.com> wrote:
+>
+>>
+
+

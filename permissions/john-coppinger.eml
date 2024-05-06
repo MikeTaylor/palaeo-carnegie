@@ -1,0 +1,247 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:6ab:b0:6b:e2bb:b4b8 with SMTP id y43csp338718dly;
+        Fri, 15 Sep 2023 09:44:51 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFg89lIw3/2IPeiNe2M+b+B+pR0tmSIafGX/TA+6TWGvsumhZpZQCThp+bwsvouvlAX8nWW
+X-Received: by 2002:a05:6512:74d:b0:501:bdde:5a49 with SMTP id c13-20020a056512074d00b00501bdde5a49mr1964533lfs.15.1694796291341;
+        Fri, 15 Sep 2023 09:44:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1694796291; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CIPblHgqiZbUfyjrwOcL4SEuSPM63QkqHv7hJiD789isiiHHQnx8rxvWJ807DRdyC6
+         9Lm/EwJb2jyDrMkrUPuaZ76MfkiOCfytmhI7NLvvrTU/Z0X8LQWSsKp90l6Il5g3QExD
+         Lu1sPH2P/UrCkO0lBEME7LwAg+J/SbRkOUApDCgoFpJu0VPabp1q2A2TWyeOxOLX9/oX
+         0wY5jRI6QMtvgWs4MCZrxldoMoKkNUHtM8qVSIPaURdHY+25UF3L35SEbMtA0xUzxTGO
+         gWdIe6mcAOPTfu5WNCUdY9lVRDwH1IHRIPcjwG4SXVTAzEmfnS0fbonbh+FDvVhpUQ2o
+         pQ6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=in-reply-to:from:content-language:references:to:subject
+         :mime-version:date:message-id:dkim-signature;
+        bh=ZNqeGvPPBlXKJOnXJNtbojDGkL/cgvwr/QqhOm0dI0Q=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=CjgijMVgRb2iJ3JwXVfkvJHx2+h4N3pQNqGgGvOG6kiw1CLM59pR751mOe4kJag65F
+         2L1qc5fmPpY+9G07v+kcyFnpRandr+CeIjDGYMr/u7VncJORc1SnFWMFO3zIDIOCz5kn
+         gv5T+XviOpo92CAGivkJSvC/317PCFyjIKEc+J3W4vYnOts9ZzUwlCeNDz4aemi71tJc
+         IhgoDm7N9wlkPbP4Xolw2AH/G+nK62OSiBYshatImxjaE6MEcuCimC2+da3cABddzCfc
+         eD9bB5b1rbrKOfXYT7HF9iQpLY+/+7fjS7AAxwNuOAz6pqT1J8b6rsAnZnu3DC3nBr/w
+         SDgQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@startmail.com header.s=2020-07 header.b=YG+bRpbf;
+       spf=pass (google.com: domain of johncoppinger@startmail.com designates 145.131.90.139 as permitted sender) smtp.mailfrom=johncoppinger@startmail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=startmail.com
+Return-Path: <johncoppinger@startmail.com>
+Received: from mx-out1.startmail.com (mx-out1.startmail.com. [145.131.90.139])
+        by mx.google.com with ESMTPS id h9-20020a170906590900b009a224eb0935si3606302ejq.122.2023.09.15.09.44.50
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 15 Sep 2023 09:44:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of johncoppinger@startmail.com designates 145.131.90.139 as permitted sender) client-ip=145.131.90.139;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@startmail.com header.s=2020-07 header.b=YG+bRpbf;
+       spf=pass (google.com: domain of johncoppinger@startmail.com designates 145.131.90.139 as permitted sender) smtp.mailfrom=johncoppinger@startmail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=startmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=startmail.com;
+	s=2020-07; t=1694796290;
+	bh=ZNqeGvPPBlXKJOnXJNtbojDGkL/cgvwr/QqhOm0dI0Q=;
+	h=Content-Type:Message-ID:Date:Mime-Version:Subject:To:References:
+	 From:In-Reply-To:From:Subject:To:Date:Sender:Content-Type:
+	 Content-Transfer-Encoding:Content-Disposition:Mime-Version:
+	 Reply-To:In-Reply-To:References:Message-Id:Autocrypt;
+	b=YG+bRpbfnpmD6D/Br76hW1Rwj2ajYbJUBkdSh1dnY8VOPg2hZtGx80Y8SVZ0c7vbc
+	 PaVXSb3B/kP/T8HHFAQN81ZTyOIsvvi16DU8EoTE58xxY9d1CnfhMpW9nQWeODqyf7
+	 U4vezmbTGemy43gHH/z3ZsPH9ZROUov3IRm9shzukaxfpNQS0102t4hQJZNCCfqfBT
+	 9ul7aHMlU9cqI2ch5Ib7ZALKkq7xpaG2qHTUJbdo9ws0g7tAPiHLEMS6DYyBMW4Szm
+	 fk/KVEyC+peED3UkLRmfKlHps5BMu7JJ+tuACgS6BQWJOaemGlC9D2dL8nS0p5U29h
+	 swaiXs4X8DcTg==
+Message-ID: <c7b5ddda-a822-4883-ba23-75338bf74113@startmail.com>
+Date: Fri, 15 Sep 2023 17:44:47 +0100
+Mime-Version: 1.0
+Subject: Re: NHM Diplodocus remount in 1993
+To: Mike Taylor <sauropoda@gmail.com>
+References: <CACnMvBZpgP=cB4nTK4Je55jsxSesC_sNv6djYn7WrvwyOKHuEg@mail.gmail.com>
+ <f4cfcaa7-7298-41dc-b2ae-3296100d698b@startmail.com>
+ <CACnMvBZ7RXjV9ewrs5wr4PHC4mKYrEg2a2L3_wbtZLYrin2Zyg@mail.gmail.com>
+Content-Language: en-US
+From: John Coppinger <johncoppinger@startmail.com>
+In-Reply-To: <CACnMvBZ7RXjV9ewrs5wr4PHC4mKYrEg2a2L3_wbtZLYrin2Zyg@mail.gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset=UTF-8; format=flowed
+
+Hi Mike,
+
+Here's a timeline and some more details, mined from my 1993 diary:
+
+------------------------------------------------------------------------
+Diplodocus Vertebrae - Mould & Cast 21
+
+NHM Contacts:  Dr. Angela Milner & Nick Harding
+25th Jan. 1993 - Order for Diplodocus Tail vertebrae
+
+25th Feb. to 1st March 1993
+Patch and repair 19 vertebrae
+
+2nd to 31st March 1993
+Silicone rubber moulds + GRP jackets for 21 vertebrae
+Two or three piece moulds + flexible resin jackets
+
+1st April to 6th April 1993
+Casting chevrons - Flexible resin
+
+7th April to 27th April 1993
+Opening vertebrae moulds and casting in GRP
+'Aerocell' filler + Glass cloth
+
+28th April to 3rd May 1993
+Tail tip moulded
+Vertebrae cleaned & finished + fittings
+
+5th & 6th May 1993
+Vertebrae casts to NHM - Nick Harding
+Main vertebrae cut & installed
+
+7th May to 9th May 1993
+Shaping armature & Casting tail tip
+
+10th to 12th May 1993
+Moulds to NHM Paleo
+Tail tip & chevrons installed
+------------------------------------------------------------------------
+
+My main contact at the NHM was Dr. Angela Milner, of fond memory.
+Angela and I viewed the skeleton in the main hall and she pointed out 
+how the tail was essentially broken, with the articular processes too 
+far apart, and delicately suggested the animal would not have been able 
+to pass any motions!
+
+Once we received the plaster vertebrae and chevrons at my workshop in 
+Amersham I began to repair and seal them in preparation for moulding and 
+casting, assisted by mould-maker William Lane.
+
+We kept to relatively simple two or three piece moulds, to reduce 
+'flash' lines, and used polyester resin mixed with 'Aerocell' filler 
+(glass microspheres) for the complex lateral & spinous processes.
+This mix was both lightweight, sufficiently rigid and removed the need 
+to 'lay-up' those processes internally.  Each centrum was reinforced 
+with GRP and woven glass cloth for strength where each verbrae would 
+slide onto the supporting steel armature.
+Colouring the resin gel coat to match the original plaster's 
+'grey/black' colour was critical.
+
+With 21 moulds to make we set up a long 'assembly line' of tables and 
+worked on at least five vertebrae at any one time to speed up each 
+process.  Working fast along a line of moulds caused the only really 
+anxious moment:
+
+On several moulds the silicone rubber had set but was still curing when 
+the outer fibreglass jackets were laid on.
+So, hot days and hot resin - When we opened those moulds the silicone 
+didn't easily separate from the fibreglass and the original plaster was, 
+as I'd predicted, largely destroyed.
+I did briefly contemplate calling Pittsburgh and asking if they still 
+had their original moulds - - - !
+In practice some careful prying with scalpels saved the day.
+
+The only other real problem was the tail tip, the final series of 
+tubular vertebrae.  This was moulded and cast as a single piece of 
+fibreglass, reinforced with carbon fibre, that would plug into the 
+tubular steel armature.
+I'd estimated how far the double curve would sag but the first cast 
+bowed too far down under its own weight.  The only solution was to 
+re-cast it with a much higher initial curve.
+
+I think that's it for now, but if anything else returns to memory I'll 
+pass it on.
+And please ask any other questions you might have - - -
+
+All the Best, and Best Wishes for your project,
+John
+
+I consent to your using this information as "personal communications" in 
+your paper:
+John Coppinger - 15th September 2023
+
+------------------------------------------------------------------------
+
+On 14/09/2023 15:25, Mike Taylor wrote:
+> On Thu, 14 Sept 2023 at 13:59, John Coppinger 
+> <johncoppinger@startmail.com> wrote:
+>
+>     Dear Dr. Taylor (Michael),
+>
+>
+> Hi, John, thank you so much for this! BTW., I usually go by "Mike".
+>
+> Read on ...
+>
+>     Thank you for your email and I hope I can add some details to help
+>     with your account.  It's an ongoing interest for me and a project
+>     I was very happy to be involved in.
+>
+>     I will do some 'Diary Diving' to confirm details of materials etc
+>     and hopefully provide some better informed answers.
+>
+>
+> Much appreciated.
+>
+>     For now:
+>
+>     A. The original plaster vertebrae were extremely fragile and I
+>     took the job on the understanding that I couldn't guarantee
+>     preserving them.
+>     That was the case, so somewhere under new houses in Amersham
+>     (where our workshop stood) are their broken remains - Possibly to
+>     be found by future researchers!
+>
+>
+> That is a delightful detail!
+>
+>     B. All the moulds were given to the Natural History Museum but I
+>     can't say where they would have been kept or if they still exist. 
+>     They were relatively simple two or three part silicone rubber
+>     pieces  with fibreglass jackets (more on that later).
+>
+>
+> OK, I will try to pursue that line with museum staff.
+>
+>     C. We made the moulds and casts in Amersham, where I was living at
+>     the time, so I wasn't involved with the armature until we
+>     delivered the vertbrae and installed them on the steel tube
+>     substructure in the Main Hall, NHM.
+>     I'd co-ordinated with the Structural Engineer and almost certainly
+>     had drawings and dimensions for the tail, but wasn't involved in
+>     anything forward of the pelvis.
+>
+>
+> So you weren't asked to cast any other elements but the caudal 
+> vertebrae? (If that's correct, then the original femora must have been 
+> put back in place.)
+>
+>     Apparently we did come in at a quarter of the weight that had been
+>     estimated which was pleasing - - -
+>
+>
+> That's amazing!
+>
+>     I will see if I can decipher my ancient diary entries and get back
+>     to you.
+>     I hope by the weekend, latest, if that is okay for you re. time?
+>
+>
+> That would be marvellous -- many thanks.
+>
+> One more thing: can you please formally consent to my using this 
+> information as "personal communications" in the paper I'm working on? 
+> I ask because some journals are picky about wanting to see permissions 
+> for each pers. comm/
+>
+> Thanks again,
+>
+> -- Mike.
+>
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
