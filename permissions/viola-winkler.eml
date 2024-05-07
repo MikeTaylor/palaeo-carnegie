@@ -1,0 +1,158 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:90e:b0:79:8546:471c with SMTP id bs14csp1773200dlb;
+        Tue, 7 May 2024 03:03:20 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFWr/WE6Yz3vlY61JKWXhDQUEpyW/I3w4qS9hN4roQXChqW12crekEnunb2LOtvvoCMrox6
+X-Received: by 2002:a17:906:a43:b0:a59:c090:777d with SMTP id x3-20020a1709060a4300b00a59c090777dmr3793592ejf.21.1715076199734;
+        Tue, 07 May 2024 03:03:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1715076199; cv=none;
+        d=google.com; s=arc-20160816;
+        b=q0Zg98CsuICeNchvzNP/jYUxujABRdfKzTY5QaV0JdLrg0S9TO0sCNlYqa4rIidWts
+         qAcWK9LUCm64wwTnCJfkKkcVcIBXxB64KmbO+hfgEI0/rngxk/rj766NsK/i4SK++V8D
+         Eoj5M/ltAJWtZEmUV6srRmNxndwtEQqJj/Q1OMeBF2iCpTh2u2r5U2+SnIbgDxqBvYlC
+         4WllBch0qix55twS3kX8h8useNQhjYO9opIacHiVMpqfWlwxJsweiwe5b7XfdEv/w30a
+         0HkXeeOJIYVxaBYSECHc5kW6YCEQPvmJZtbeauXc5L2ST+dG30iZm2azAxUWuyeCxCR5
+         01Sw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=dkim-signature:mime-version:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:cc:to:from;
+        bh=5nGJ5MP68cyCEE2FCcAJdEnasFi5Ii1nhKSaiYhRUL0=;
+        fh=eSY3NtEjy9GI0JIAqXYKHU2V13Bm2ZG2C4mRgZp0HUo=;
+        b=z7VetcG8RJeONMwkOn+tfmFaoeL9DQgqaHwLfV6ysCWH6GY3vhhMHdHtyD+KtEhLxO
+         jk6JOWmdQCPDy2zn2aqg4j2EvX4YOwYsGYhYx4LCG/EdJE0NGtLSk06kVtTUeROs8Qi0
+         c9khRuN9+a1dsGZFPbNtuHEoBHhOkHC75s9Zs22AuqMFgPSWNOoBUaSb+yBB6oOYNcsn
+         H5FB/xdkUEvFIqeU/SR4+QRqZojQ20vSsI42hjeoBXtqOT7rECfsY3omFxHgj8Iw4C2p
+         1luP2wjdIM6KGnCmPH+6+f1vNKrsbt7B8QZpyiaj5lB816B7aN4Espzi2izM4AD+fl6e
+         v+sg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@nhm.at header.s=nhm-mailgate header.b=OjlnX3qr;
+       spf=pass (google.com: domain of viola.winkler@nhm.at designates 193.170.196.100 as permitted sender) smtp.mailfrom=Viola.Winkler@nhm.at;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.at
+Return-Path: <Viola.Winkler@nhm.at>
+Received: from nhm-mailgate.nhm-wien.ac.at (nhm-exch1.nhm-wien.ac.at. [193.170.196.100])
+        by mx.google.com with ESMTPS id jr22-20020a170906a99600b00a59d6ef790dsi1659289ejb.374.2024.05.07.03.03.19
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 07 May 2024 03:03:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of viola.winkler@nhm.at designates 193.170.196.100 as permitted sender) client-ip=193.170.196.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nhm.at header.s=nhm-mailgate header.b=OjlnX3qr;
+       spf=pass (google.com: domain of viola.winkler@nhm.at designates 193.170.196.100 as permitted sender) smtp.mailfrom=Viola.Winkler@nhm.at;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.at
+Received: from exchange.nhm-wien.ac.at ([10.20.0.17])
+	by nhm-mailgate.nhm-wien.ac.at  with ESMTP id 447A3Jmq001880-447A3Jms001880
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <sauropoda@gmail.com>; Tue, 7 May 2024 12:03:19 +0200
+Received: from Exchange19.NHM-WIEN.AC.AT (10.20.0.17) by
+ Exchange19.NHM-WIEN.AC.AT (10.20.0.17) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1258.28; Tue, 7 May 2024 12:03:18 +0200
+Received: from Exchange19.NHM-WIEN.AC.AT ([fe80::b9ac:4ad3:f224:d90e]) by
+ Exchange19.NHM-WIEN.AC.AT ([fe80::b9ac:4ad3:f224:d90e%14]) with mapi id
+ 15.02.1258.028; Tue, 7 May 2024 12:03:18 +0200
+From: Winkler Viola <Viola.Winkler@NHM.AT>
+To: Mike Taylor <sauropoda@gmail.com>
+CC: =?utf-8?B?R8O2aGxpY2ggVXJzdWxh?= <Ursula.Goehlich@NHM.AT>
+Subject: AW: Diplodocus NHM Vienna
+Thread-Topic: Diplodocus NHM Vienna
+Thread-Index: AdqcXbMaJHiA3VKGQdqb+LkmvXA/+QAAFvbg///thYD/+AGNEA==
+Date: Tue, 7 May 2024 10:03:18 +0000
+Message-ID: <7687adba73bb49a4be6dac6c1171f492@NHM.AT>
+References: <8a851e17506a4c52bac88726a8a641a2@NHM.AT>
+ <8878e607dccb4a638a19f39aa3b73dfa@NHM.AT>
+ <CACnMvBakUToAKr30cA8AdQ=Wqn3gO9rLn7QPoG-eaEtJeKxpMQ@mail.gmail.com>
+In-Reply-To: <CACnMvBakUToAKr30cA8AdQ=Wqn3gO9rLn7QPoG-eaEtJeKxpMQ@mail.gmail.com>
+Accept-Language: de-DE, en-US
+Content-Language: de-DE
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.40.10.143]
+MIME-Version: 1.0
+X-FE-Attachment-Name: image001.jpg, image002.jpg
+X-FEAS-Client-IP: 10.20.0.17
+X-FE-Policy-ID: 2:3:0:SYSTEM
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; d=nhm.at; s=nhm-mailgate; c=relaxed/relaxed;
+ h=from:to:cc:subject:date:message-id:references:content-type:mime-version;
+ bh=5nGJ5MP68cyCEE2FCcAJdEnasFi5Ii1nhKSaiYhRUL0=;
+ b=OjlnX3qrM6YD8qs3yl8A0tS2nIx0+waZ5VafDQFUoxggu8+TRzgwVhoWpa2eq/JmbbQ6SDcEjYQM
+	7/rEvfpllvNMBhuNYh0L8Vlx/0i48fyoQFrbODIjt0avtlRrytMQeS7u+DEpXI9rvRfP7Ccq4w6Q
+	iQnERh7BarYY3Evr3lgP4RhThN2EXpHJF5lki9ts+Yb+jPJ7KcEZpPmKtIBGKgFMgSQks5jthdh0
+	KQeCq2WTyh+LeYuy6NEBVSBpcbuLUg3/CM98ISR9qyOKLlbT3g5mJ9Tti2c41NusaGCt5WHKyUt/
+	JpRyRVqVpXH3SheNEd0r69u3W1mIUddKQs2RWw==
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Hi Mike,
+
+sorry for my late reply, I was out of the office most of last week.
+
+You can use the pictures for the paper (credit, as you mentioned: Viola Winkler, Naturhistorisches Museum Wien or Natural History Museum Vienna). If you need to present an user agreement to a journal, please let us know, so we can prepare one.
+
+In photographs from 1909 and 1935 the head is unfortunately not in view, but in a picture from 1984 (with the skeleton still mounted in a different position) the lateral projecting spikes are already visible. There is no record that the spikes were added at a later point so we assume they were always part of the cast that the museum received.
+
+We hope this helps!
+
+All the best,
+Viola
+
+________________________________
+
+Viola Winkler, MSc
+Telefon: +43 1 521 77 - 254
+Telefon MicroCT: +43 1 521 77 – 637
+
+
+Von: Mike Taylor <sauropoda@gmail.com>
+Gesendet: Donnerstag, 2. Mai 2024 09:52
+An: Winkler Viola <Viola.Winkler@NHM.AT>
+Cc: Göhlich Ursula <Ursula.Goehlich@NHM.AT>
+Betreff: Re: Diplodocus NHM Vienna
+
+Hi, Viola, thank you so much for these! Really helpful.
+
+Two followup questions, if I may:
+
+First, may we please use (a modified version of) one of these photos in our paper on the Carnegie Diplodocus? And if so, would it be correct to credit you as "Viola Winkler (Naturhistorisches Museum Wien)"?
+
+Second, is there any chance that there are historical records in your archives explaining when, how and why the atlas was given those laterally projecting spikes?
+
+Many thanks!
+
+-- Mike.
+
+
+On Thu, 2 May 2024 at 07:59, Winkler Viola <Viola.Winkler@nhm.at<mailto:Viola.Winkler@nhm.at>> wrote:
+Hi Mike,
+
+I am sending you pictures of the Diplodocus cast here at the NHM Vienna in response to your comment on our 3D model on Sketchfab.
+I hope they will answer your question regarding the atlas ribs.
+
+All the best,
+Viola
+
+
+[Das Bild wurde vom Absender entfernt. https://www.nhm.at/jart/prj3/nhm-resp/images/img-db/1613638268766.jpg]<https://www.nhm.at/>
+
+Viola Winkler, MSc
+Operatorin MicroCT und 3D-Labor | Zentrale Forschungslaboratorien
+Naturhistorisches Museum Wien
+Burgring 7
+1010 Wien
+
+Telefon: +43 1 521 77 - 254
+Telefon MicroCT: +43 1 521 77 – 637
+
+https://www.nhm.at<https://www.nhm.at/>
+
+Besuchen Sie unser 3D-Museum<http://sketchfab.com/NHMWien>!
+
+bITEM Projekt<https://bitem.at/>
+
+Unsere aktuelle Ausstellung finden Sie hier:
+[Das Bild wurde vom Absender entfernt. https://www.nhm.at/jart/prj3/nhm-resp/data/signatur/image.jpg]<https://www.nhm.at/ausstellung/sonderausstellungen>
+
+Die Information gem. § 14 UGB ist hier<https://www.nhm.at/impressum> abrufbar.
+Informationen gem. Art 13 DSGVO zur Verwendung Ihrer Daten finden Sie hier<https://www.nhm.at/datenschutz>.
+
+
