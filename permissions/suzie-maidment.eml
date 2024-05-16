@@ -1,0 +1,247 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:3a0a:b0:79:8546:471c with SMTP id sv10csp3915879dlb;
+        Thu, 16 May 2024 10:00:42 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IH+l7XB6qDwIpsQ87tumVnhO0XERieFDgOoEQfOm7Di65O/gDPA3YkSVDZeJjd4MT00a97B
+X-Received: by 2002:a05:6214:3a05:b0:6a0:de8b:4bfb with SMTP id 6a1803df08f44-6a1683769a3mr201617666d6.45.1715878842576;
+        Thu, 16 May 2024 10:00:42 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1715878841; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=UFOcDNUCyy0riOssCOPxRLR0KjKgVDqitnvR+pVi2NxqzkV2qMai2t3YCio/MdfOOd
+         EzPXyj05DHs4sXUnPBUjFAZHbgr9h/kkypgFz/Zofu5NAv/8oN+CavoTFu5MC+yylRag
+         iwA1q/8eCAB/Cqmb/YwDUq1zUDNMpZWdd8lzlEAyrfp308iA/Dqz7izo5H3gdHzrJRRi
+         dRZvNLAhiPuqN3YqgL3vxX3myTFiCRO3jT8+GuquUcv7mLGe8dBnCnRpo19XAJ4hhrZR
+         QCLyvGGjwbI+/h3TK4feB7YX3WUuh3QAyUh2qvT//dd8cdfBmNq0wpL5nz0lMbOTHiXp
+         na3w==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:deferred-delivery:date:thread-index
+         :thread-topic:subject:to:from:dkim-signature;
+        bh=BPSDmsnaVxmnu2F7KEgaYm6H90dg24WzM8TzCrr5D/0=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=0DoApMrLkdRgaDOgl++L2yktAlqYvr9kicuwfa94NvsPV24A5HL/GQCW1t08b3tyqx
+         UDyws4DXMoKRylvkFq+QYV8OgjuaEW1xLXTHP0s3yRM4qsuiL1u2itFz3s3U/66RRFcQ
+         zvQu4IW4WOov6zmpDnHaz+2vup+xdyeXw9aa09R2FeFBDi2b7dE7SfGL0c9zjSvrSQDj
+         oNOaN8HZ/1Mrr+mFuhYiO87zEFhxjTYQp92kAzFZdtOwuTgeccODnxdONh5Ojmaq7KYG
+         b4nbtjEiu71emWWB9tzn+l+IqZiI6jNl5WbhaGyq1PLnnV6VhrDLTohfuXoAXoikVExJ
+         0eXg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@nhm.ac.uk header.s=selector2 header.b=cfQoBbc6;
+       arc=pass (i=1 spf=pass spfdomain=nhm.ac.uk dkim=pass dkdomain=nhm.ac.uk dmarc=pass fromdomain=nhm.ac.uk);
+       spf=pass (google.com: domain of susannah.maidment@nhm.ac.uk designates 2a01:111:f403:261b::701 as permitted sender) smtp.mailfrom=susannah.maidment@nhm.ac.uk;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.ac.uk
+Return-Path: <susannah.maidment@nhm.ac.uk>
+Received: from GBR01-CWX-obe.outbound.protection.outlook.com (mail-cwxgbr01on20701.outbound.protection.outlook.com. [2a01:111:f403:261b::701])
+        by mx.google.com with ESMTPS id d75a77b69052e-43e053b9c63si134872141cf.570.2024.05.16.10.00.41
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 May 2024 10:00:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of susannah.maidment@nhm.ac.uk designates 2a01:111:f403:261b::701 as permitted sender) client-ip=2a01:111:f403:261b::701;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nhm.ac.uk header.s=selector2 header.b=cfQoBbc6;
+       arc=pass (i=1 spf=pass spfdomain=nhm.ac.uk dkim=pass dkdomain=nhm.ac.uk dmarc=pass fromdomain=nhm.ac.uk);
+       spf=pass (google.com: domain of susannah.maidment@nhm.ac.uk designates 2a01:111:f403:261b::701 as permitted sender) smtp.mailfrom=susannah.maidment@nhm.ac.uk;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.ac.uk
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=mwjyddgOoz2toK/ROlOTMOPu9oajbDA9thMOr0YDljUjikFr8vVGqRzNr6NqPhdNCaG4rUvxdSy8eFzWUcbegXIm1sAb+neSPqIAACHi4sxnuudlaId0glgptfAXoK9uSEoio7n1gtvvFIcMjDcwicBSRIUhkB/N6edTqvGh/h5Ub8P+suYbzUh9o4aB3eLOIQxCdYTzyXQHANNHDiP5BMwj3+3bi3CxJcSV1OBHxnCzFW2hoqT/ImMCZqBc5iHFSRYDjf24eSWxgHoSd+HJaNbzpWChLsAFf8rvRObh1uN04cpbmsstuLfJNzaEpB63NN04OCdjhMBR2vxHTWSvlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=BPSDmsnaVxmnu2F7KEgaYm6H90dg24WzM8TzCrr5D/0=;
+ b=GIcOp5gPzSiCNz7ZDoO8E0J8yvpbELWAEMqNC1722GD+RviVbwRUAyLFE+hrHnhBxitA/eGf1DkONmQT/6Ug7y8ssiy/hpZN7hXeBtlDtpxeA2SlNOfqu8LavIGCYIHG+Tm5ZtSoxHEzlvtElefSbSVb8H73TOmsrT0SH+lwcaPnIjxEvkavX1muQvyalIF0CYHa+/a09tRJU1u3WrUSE0nrRFGJkKq6Pl59w3AfKgPyKgavMk64FNVwmx3WcK0OLsSfW9Ksmc+pdMmTJavAr27sPWLRbWCgsyCPjOycI7BUIqKMw2ecmC718lLncGZdGNN6hSOTvmFlFBF4fNPjCA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=nhm.ac.uk; dmarc=pass action=none header.from=nhm.ac.uk;
+ dkim=pass header.d=nhm.ac.uk; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nhm.ac.uk;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=BPSDmsnaVxmnu2F7KEgaYm6H90dg24WzM8TzCrr5D/0=;
+ b=cfQoBbc6xh1/fXUC8n2bJ/wUVFOl9oSZTmdxYGe80n2jOciKvwZURMCg8cbwRNZrOta6Y78bGPdowanJVhd3b+mML/qRbZPPMzEYSMQTsSalo8K2VC+rGZ/bukeVU8poUYF4mUXRWfM8N0ulFSvanmhshpa1ztc7rA/S8tUShFc5iMomLBmO66HvAu/1KpXmrh+0znn7dGekI9M23IqQupBwFBnj3cz+Nf9eShghxAhRImk5+9jGdC8u9w3mBwCt4t87/wjBf430L1LneZPHC9MRWTebzN137GJOHZn+C9MGs1kzHpNYsSHWM1wnL1iZ9Jssue0u9vMsu/7rMG2EMg==
+Received: from LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:159::10)
+ by CWLP265MB2308.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:6e::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7587.28; Thu, 16 May
+ 2024 17:00:39 +0000
+Received: from LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::a564:b830:e4b3:9919]) by LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::a564:b830:e4b3:9919%6]) with mapi id 15.20.7587.028; Thu, 16 May 2024
+ 17:00:39 +0000
+From: Susannah Maidment <susannah.maidment@nhm.ac.uk>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: RE: Old "Dippy" forefeet
+Thread-Topic: Old "Dippy" forefeet
+Thread-Index: AQHaofJH2HCCk9Zq3EGh/BJG2eGWF7GaHBxAgAADroCAAABAIA==
+Date: Thu, 16 May 2024 17:00:09 +0000
+Deferred-Delivery: Thu, 16 May 2024 16:59:24 +0000
+Message-ID:
+ <LO0P265MB3212EBAFB023CDDD7D33F019ADED2@LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM>
+References:
+ <CACnMvBZuoVFMZAbYT=rRH0oz8+kJNt7Lxn2nkxog8RjQfhzRdA@mail.gmail.com>
+ <LO0P265MB3212EB8F62404102A3D19B4CADED2@LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM>
+ <CACnMvBY73x1cTyRneh+10oxDwKOPFp40JJM_NEcMTbRb1j9xiw@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBY73x1cTyRneh+10oxDwKOPFp40JJM_NEcMTbRb1j9xiw@mail.gmail.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=nhm.ac.uk;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: LO0P265MB3212:EE_|CWLP265MB2308:EE_
+x-ms-office365-filtering-correlation-id: a94b8991-579a-4fb4-3567-08dc75c9b67d
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230031|376005|1800799015|366007|38070700009;
+x-microsoft-antispam-message-info:
+ =?utf-8?B?WWJ5d2grQzJxRUtRY2hRV3RQdHVHNE8zY3VEOTlWNHc0WW92R2FMWERQVFBV?=
+ =?utf-8?B?eWpJcG02L1BZc3JraUh5bFVlUnBoMG9GMVFreXFoZWpzWUJLZi8zbGNBd3Qz?=
+ =?utf-8?B?TzlHRnEvbkI2VVNUYlNRcU13ZnBMN0pDZURZZWVmOW1zS0VCbmNzb3lnaWRj?=
+ =?utf-8?B?RXJpTVpyMGEya2RTcnFyek9UbC9leE11T3ZzNUIyOVQ1eUZ0WGZOenpJdlpi?=
+ =?utf-8?B?dHVNWS9NYXpKMDBXd25ENGk5OHVEeGZ0aERsZlNXbXlaWW91NHdJdGhQSm9m?=
+ =?utf-8?B?Y2pNRDJyMVB2SVVRdEdrbUNrMmVvcVpad2tiaFNVc0FKZUtyVnVYbHR4eUdW?=
+ =?utf-8?B?RHNuUjdpNjQ0TEIvZUFRYWFaUmo5R0tPbVplTXZlUnlUYW5xQll1d2JLR2Z6?=
+ =?utf-8?B?UUROdmQ4VEo1ci8xRld0MXVOajkyUEhOVFNPZWJ5ZU1MMDlQWG1tNW55Q0Iv?=
+ =?utf-8?B?VzlWSkxsSnNCaHEvTFo0QjlZRCt6MG0wVjgrRmtpUGMvZ3J3RW4xUWp3VFFw?=
+ =?utf-8?B?TVJ1K3BWZzZvblNjY0xGN3hacGRQMjEwK3RKYmM4b1docytqdHZQWjZocjl0?=
+ =?utf-8?B?aVN1d1FZQXplSWttb2tWZEVEbHpVZmlPcEpIUDN0ZDN2cE01RVlZYW5nU3dt?=
+ =?utf-8?B?Mkd5TThpVGFISWdnVXhEbS9teEhxSWNodyt0aUcxeTM3Ny9TM2dQWkY5VUJC?=
+ =?utf-8?B?emdPdzFIYTVKVFQrWEs1Nkd6Tlh5MnVYR3ZrSnA4VFg2Y3Q0dituSDBwUzRh?=
+ =?utf-8?B?ak9EbWFJdGVCeWdPUklJMFEzN1ZRZGl1TzhieE5QMHJBaktydWpXRE85Q2Jt?=
+ =?utf-8?B?RjRpcjd2Z043aC9FUVkzbHhWaXUrdElDMzFTZ2xKenRRN09Fd3c5QkpGaG5R?=
+ =?utf-8?B?dU1ON2V4UmEydEJHRm9HVWNKQUgwQWlYQyttazdzZExGNVo1M1dhTkVSeldM?=
+ =?utf-8?B?TWZFVUhoc1B6VnBKZXZEMDlhOXR2NVRoMUl2OFNlQzdDOWtyT2hoVitIeU43?=
+ =?utf-8?B?Q2JvR05RWWxwWVVkcENwV2hqbmdWd3F2TlJzeFdFTlpRMThnRmp6R3J4U1o2?=
+ =?utf-8?B?aDRQTjRhL0dsejJYaWhXMnJtR25WZEQ1RjdUKy9TWWp3RjZXNEZ1OEJ3Nkx5?=
+ =?utf-8?B?SU0vbFduZGVoQm1lQ2xuY004WHZWblRIRHRFMEU2T2xUL1lhWVl6YStaT1Np?=
+ =?utf-8?B?TXBVSzVNMUtvcFFNRExsd3VSK3pIN0xTMFR1UzdKNTl5UnVxQnIzUlpJUDBz?=
+ =?utf-8?B?ejc3OW4xQy9wMjY2S1VuTEtDKzlENkdoTEJZVHZqeXp1SmhpdUh3Y3VUWVJW?=
+ =?utf-8?B?MXhWUjNrWHNLcVAwL2pROXFZNnhGUno2enFScFh0RXRvR2x2YWNTckNyUDZq?=
+ =?utf-8?B?NnFSVGphV0Y2aWtEbEVxbFdOeC9CU3pocTJEZ2s0dzZmeVRKMnRMMTYwWnZm?=
+ =?utf-8?B?eUg1Qlo5MXppM1BXWUZsc2dRSmhoVmxrcEFBYVcwYWc2Vkk5L0Nja3VRd1ZI?=
+ =?utf-8?B?S0JKRjFUL3dybm0vN1lCcGNvZ21WT25XcFBJcUN1bHpSSmEzcHkxT1l4MFZQ?=
+ =?utf-8?B?VERyVGVSUys2cndGeUhUekVmazlza2Y2OUlBWjlTZmVUVmwwa0RBOWFZTXp5?=
+ =?utf-8?B?cTBqb2pnZXU2WWtRSjJxTGZJc0NPVUxJVlhydnhFSjA3Z241VEVvM3h3K2Ur?=
+ =?utf-8?B?cVhPaFR6bDZ6Q3IwcmQzckNEQjArOUM2UlJESnVYSC9qc3R6Ny9hcjVMUUdy?=
+ =?utf-8?B?V0t4aGpoNkJGR01Bb1A2dUw2VTBBTEZwM0I0N3Q5enVnY09XRW1CWTRVM09J?=
+ =?utf-8?B?V1dHbGk5dlk5RXF0czVLQT09?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230031)(376005)(1800799015)(366007)(38070700009);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?NlhDY3IvL3JlbCtmRloxL2xNYjFxanRMamM0T0VWTm5jWXlKaUNmajlycmpC?=
+ =?utf-8?B?eFRkSGtXTGp6K2NkM2RDWC9EdE96OEszYkVwTGlJMTAzaENXbDlyTHhraFlk?=
+ =?utf-8?B?OWcycThnVjN3ekNSRzRraHZiRXpzYlI5dVkzUEZoOWYzV3VvMk8yK0hNdjZF?=
+ =?utf-8?B?bi9PcXZ5Um5tcC9lMHNaaGRTd3lqVUcvdFp0Z3h1N0k3UHRFeGNzeW1VQm9v?=
+ =?utf-8?B?MEVvYXIzVW1iSmVOWm95UC9pY1R2ZWN4dmxTY05ZeFkrSyt4OFNta1J4QWRp?=
+ =?utf-8?B?dlM5RWFJNE9qTUc0NGxicENwY29ydm9ZYmdESmJFOEFzRGhNMVltVVRSaThn?=
+ =?utf-8?B?dlZLVk90N0RMb2pkUGp0SjcrclcxVlkvcThaYUlTU0h5Y0I0dlNMOFFwYzNy?=
+ =?utf-8?B?bEIvcnZmM3l2MEFWYXFyNXlqa1VjbHF1WTNqMmRpQUVCM21CNitRSzZrd0xr?=
+ =?utf-8?B?N0NkalZhUkpNcVY3aXA4NkNSTlBGRDBsRE1nbk83TUFaZU9MZGgxVE5wWFlp?=
+ =?utf-8?B?YUNvQ3dPeXArSzA2aFRHSGFiT2U5dklzakJNbWFsUFdGYXNXb1R4Rzc2QU11?=
+ =?utf-8?B?M0dKRTFjaVpETVpsVDFhSFNCUVhoS1EzTXJHQmZWcm1GUEFhS09xZTFhNDZu?=
+ =?utf-8?B?b2xyTi9tTm41S3k0TEpIVmFLc2xaV3lkQ3dFcnVYN3ovRGpZN01GT3pPMmZJ?=
+ =?utf-8?B?T1VnVy9EcWk3RHBndTFrQjJsOXhaVTdFam1pUTEwcGNKNzF6aU5OWlhmRlM0?=
+ =?utf-8?B?MjhSQmlkcU1LaUlrbGxKWnBlOVdPMzc4NFh2RE5ETVFlbUhGbHlUK2QrcjdS?=
+ =?utf-8?B?VHVtcjNJS0NacmtOYmdjYm1BcVh6aks5SmJJc09sNGNYMFRvWmxpTEhmdU8w?=
+ =?utf-8?B?WDJpUzN2bm01RkJiVS9HMk1oWWVUOVRzQTJtR2ZvS2NyQ3NGQTBrdkxjclFn?=
+ =?utf-8?B?VXViVktqTXUzL0NCY1oyZTBYc011cy9qSHJPMGpHWU5KMk9CWU10aGpvZmZE?=
+ =?utf-8?B?Q3pwaU5KeFRFYyt3WitPTlY5YTNZV0RsVnFwYlg4dFlYc3NSUlU4SG5La2E5?=
+ =?utf-8?B?UXVOT1dnQ094Ym5DZS9MTWliQUhZNVpncXBPQ3B2R0VQSjd6eFdaWjQwN0I0?=
+ =?utf-8?B?ditZQjd3bFM1aXFSRGswVGlNMUlpT0hFcEE5RENOWXltc1JUZDlXeWZTN1pV?=
+ =?utf-8?B?ZGVzNTZBYUk1MndtWGNsb3JOWDUvd2JWYjlLMDlERE9SVjFGTklMOGVjMUl5?=
+ =?utf-8?B?RXdCSTZLRnNTZzNTMTh5L21KenIrWHFjUnBOakxxelVOQTh5T3pSYk95Rk5F?=
+ =?utf-8?B?OFRJV3JkK0VQRmpkMWpFaGtnUGthSEVVYlhpeFdING84aHBXei9iRmdaeVBm?=
+ =?utf-8?B?NHQ0am8yN1hrS0xLbkpDNHNmc0pPWS9tN1RpY0wvUm5peGhKT0NaT3lLZmFO?=
+ =?utf-8?B?VXU5eXprYlBSaDF0Wjcvb2trUVE2YWRxR1pNS0h0N09rdnMyMW1BbDd1cDlS?=
+ =?utf-8?B?NWgyOVpKNVEzRUpPMW9GQXl3N1Y1bjJVSlVOa2JHQzcrdzg3a1lSOXZSbU5o?=
+ =?utf-8?B?Z2FUbUlBbGVCWW96WnNhSFYvU1VmRXc1akc2cW04Z0pkZjgyZ3NncGRidHRG?=
+ =?utf-8?B?czdmVzJ5OTNOQS9DOG0wcnMwQUV2eUdPMlI3VzVYSWZVd1F5TUpqZUNxSjVp?=
+ =?utf-8?B?dXEvODFUbnhuVFhDWmxpaWxoSDNTSWVtTTU3NGppa0k4Tm95bEZwYmxqOWxM?=
+ =?utf-8?B?L2dUZ21ad3pVU1hUMVpPb3ZQQ2cwRmcvTzZDNTBCTFZTNWhodnV4UC9OdjdF?=
+ =?utf-8?B?Z2M1cDJnWDBYWkdCeFd3VCs4NkJaNkFiZm1XeG9YY1k5eUZ5bE03cElQNkRF?=
+ =?utf-8?B?WkRqa2t2VVAvelpzUGliWXo3TzZPZ2Z5R0pNdjZvaS9XMWNsY3pkZlVhVkcy?=
+ =?utf-8?B?VGhCZzNnd2hhVzFjZlc3ZnVLUEtvTThhREF5OGJmVHEwZ0FCRGl5bXE5MUtr?=
+ =?utf-8?B?NkUzYWlySWRZYzF1U3hYbFI4SDBqd3JxR0krS0R5R09JYVN4MGdVUS9OaC9w?=
+ =?utf-8?B?N0FSOXNzUWdXWDRvL2I0ejdLRjFTaW5jejRYN0JPZXU4TkVYMTNMTEx1QlVI?=
+ =?utf-8?B?YWJVK0xuTlREdUdUbVJtcktqYW5pU0wwZllhTmJIRUlBblJJMFEyOEljUTlW?=
+ =?utf-8?B?L2tmT2FPS0RUd1dyTTRxMTRacTVXRDgyUEF1YTNGcVQweXV6ZzJJbXpoM2Vj?=
+ =?utf-8?B?R0VaenlyMnhmbk1tWmdvUWZnVVBnPT0=?=
+MIME-Version: 1.0
+X-OriginatorOrg: nhm.ac.uk
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: LO0P265MB3212.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: a94b8991-579a-4fb4-3567-08dc75c9b67d
+X-MS-Exchange-CrossTenant-originalarrivaltime: 16 May 2024 17:00:38.9678
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 73a29c01-4e78-437f-a0d4-c8553e1960c1
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: qroSknIqMNyliUfoUKZHW9pFRS8jPcTFNKyh1WBCUVt6StKPyHN1sfLgTkiXwg0JGA9P5L0dBj6m/7atxqefBjQpLS9HOjpJKTESMh34osc=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CWLP265MB2308
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Yep!
+
+Dr Susannah C. R. Maidment
+Principal Researcher
+Fossil Reptiles, Amphibians and Birds Section
+The Natural History Museum
+Cromwell Road
+London SW7 5BD
+United Kingdom
+
++44 (0)207 942 5718
++44 (0)7900 195 867
+Twitter: @tweetisaurus
+
+For enquiries and collections access, please email fossilrabcollections@nhm.ac.uk<mailto:fossilrabcollections@nhm.ac.uk>.
+
+
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Thursday, May 16, 2024 5:55 PM
+To: Susannah Maidment <susannah.maidment@nhm.ac.uk>
+Cc: Paul Barrett <p.barrett@nhm.ac.uk>
+Subject: Re: Old "Dippy" forefeet
+
+Thanks, Suzie, that's really helpful. Would it please be OK to cite this as a pers. comm.?
+
+-- Mike.
+
+
+On Thu, 16 May 2024 at 17:46, Susannah Maidment <susannah.maidment@nhm.ac.uk<mailto:susannah.maidment@nhm.ac.uk>> wrote:
+Hi Mike,
+
+There are some foot casts in some boxes in the sub-basement. I didn’t investigate in any detail but they look fine.
+
+Susie
+
+Dr Susannah C. R. Maidment
+Principal Researcher
+Fossil Reptiles, Amphibians and Birds Section
+The Natural History Museum
+Cromwell Road
+London SW7 5BD
+United Kingdom
+
++44 (0)207 942 5718
++44 (0)7900 195 867
+Twitter: @tweetisaurus
+
+For enquiries and collections access, please email fossilrabcollections@nhm.ac.uk<mailto:fossilrabcollections@nhm.ac.uk>.
+
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Thursday, May 9, 2024 10:21 AM
+To: Susannah Maidment <susannah.maidment@nhm.ac.uk<mailto:susannah.maidment@nhm.ac.uk>>
+Cc: Paul Barrett <p.barrett@nhm.ac.uk<mailto:p.barrett@nhm.ac.uk>>
+Subject: Old "Dippy" forefeet
+
+Hi, Susie, hope all is well.
+
+I'm finishing up a paper with Matt Lamanna and colleagues about the Carnegie Diplodocus and its various casts. One tiny thread that I'm trying to unpick relates to the work done on the London cast when it went on its travels in 2017. Apparently the forefeet were replaced by new casts, and the old forefeet may still be lying around in the collection somewhere. Do you happen to know if they're around, and if so what state they're in?
+
+Many thanks,
+
+-- Mike.
+
