@@ -1,0 +1,98 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:392:b0:7e:cfcb:f718 with SMTP id 18csp2502636dlc;
+        Tue, 4 Jun 2024 08:11:10 -0700 (PDT)
+X-Received: by 2002:a05:6830:2713:b0:6ed:7c7e:1bce with SMTP id 46e09a7af769-6f911f26f70mr19695938a34.3.1717513870415;
+        Tue, 04 Jun 2024 08:11:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1717513870; cv=none;
+        d=google.com; s=arc-20160816;
+        b=GokH4lCIPciqKAwqljC+7mE7fyMM2lGnUQhpscHpvaSGqT1xNVYGn4Ea0ATTpy6F0m
+         4h+kI0qNdQeMEL0wcuE6QmnpLTZtktIsJL4NqQQ/KGheQGhgxv5Wd4gQUDRRcBGpq36G
+         +iOKHKAT25Y9Uvjf3vqH6fyU5rJV2LWCrOefaHEPG0lEYHLHs2YSMtcqEyWLRp6Qxtej
+         3GkxDcUdIIevUEdD8iiTXaJkehJgWDA0TejC/dMPkRASpfLVdypfLh/7umQ3hOhZwC4g
+         qqv7q1Q6YFPDZ59UsqdLkhcDYNEoAWLUaDq5gsiWo9ISQ2acOtpQpBpZyK1tEG/8Db3x
+         Wxrw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:in-reply-to:references:message-id:date:subject:mime-version
+         :content-transfer-encoding:from:dkim-signature;
+        bh=lorHIu2S5AKXNGI87qk2Dbzh7XUlGHp5SuaL6wtQvkI=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=CcRr8yHHIioUTU9wHsORI2zj9PeAKiEimyEonFhwCd/e1r2JgQg2mOXYh008+8VaLK
+         py9EQC15gKwZHpUe5mDiGIXKDYvgonc4JaHFjFOKmYX8qQHQz7J1wpMA89vRxfP1lVGB
+         HBQeAUzOibR8Kk2hH7XTx9F3rharbe8PE4W/WEDk9ugmQs0+IF6FoFWCmWO3O3X+AmeL
+         MTDHyxvtIJg/t+Vh2KcZy65or3RiCSv9N9jIsUK8MOlQj1zIkgDaXPPmUYTs4qTjVWvG
+         vmMkwW+vArJaahv/K8dAre93qyn3zNIjwmpjytNjsaN775lE5v94TKoFjLLM+s6WTAgI
+         OnEw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=kZuthUG9;
+       spf=pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=philliplfraley@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <philliplfraley@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 46e09a7af769-6f9105c6583sor4395970a34.20.2024.06.04.08.11.10
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Tue, 04 Jun 2024 08:11:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=kZuthUG9;
+       spf=pass (google.com: domain of philliplfraley@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=philliplfraley@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1717513869; x=1718118669; dara=google.com;
+        h=to:in-reply-to:references:message-id:date:subject:mime-version
+         :content-transfer-encoding:from:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=lorHIu2S5AKXNGI87qk2Dbzh7XUlGHp5SuaL6wtQvkI=;
+        b=kZuthUG9nOdaukRZIrJDdAUOPALhAffUsdBWDCMyGLytriypZ49Mj/40szKj7dErUM
+         uyu94DHWXhmgNdBHQjSCgy6Mc6f04ZnWGylXLY+0oJaWJhOrBm1U3okJhH8530zrpF05
+         vZawAJxAqrs5o9WwCcoBE1opGXw47apI/glUO7EUXjufDdOwT4oPUbUHOJ9MaKN/ZG3a
+         lNmj2QxL1fwmmcRWOkw7V050N1TBYCqgwIM7nOxr4iglTRQOipazh2zX+ErNRRJccWVh
+         cejjper1LIatNA9MFIrfJifAt5w+5hAflGS6mY6Mo/Hd9LgJ54eObhNhd1ycn8MKxBcj
+         Bm1g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1717513869; x=1718118669;
+        h=to:in-reply-to:references:message-id:date:subject:mime-version
+         :content-transfer-encoding:from:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=lorHIu2S5AKXNGI87qk2Dbzh7XUlGHp5SuaL6wtQvkI=;
+        b=jwQ4nIAfByFBNB6Zq3VPpAtVlvNa+XKDyNhasLiKQZUTxMgwE+oNbhQKA4mSKeu9zk
+         42kNWkV0FvAW8w90y5m4j+n29GOk4cnWGBE9AsbDwm4kAUev/P5mee5J08r1ex4Lh/0t
+         E2elaC3GmW8tRG4rT+v2uL9rQ3kZ6vYUBUqmF1VuFEnBhkrNaAAojNvEJx2e1JYCTGD2
+         lmrveFCAVLvEN2T6j6vLOH71uLkD5fAHO0xaYmXnmne0wTOOmSFpdUTc8TEQ5oE8ZNCn
+         oP1/8YiUpfD9PLkoTrEK2365j5uIqIfSPpl9WWWiq11t+/ic8fMPQNdGiJxLZlJAFdkg
+         hzLg==
+X-Gm-Message-State: AOJu0YzzED+63XjkqZnvZKe4qLOsz1BJUsY01IvzuAhQhxDDs94tPRVD
+	3ye1vmFVAe13EwKmv6kGUFeaVEYPfG+2KbvZ+2BYrNoxVZaSzatgup7QBw==
+X-Google-Smtp-Source: AGHT+IFq1mXfFucQr9TR40VZEdHPvWE80lx0I8IausaK4+WcavddRwisFbD5BNKOEqbbw9/diOvGsQ==
+X-Received: by 2002:a05:6359:4113:b0:192:829b:3684 with SMTP id e5c5f4694b2df-19b48fa4060mr1829514255d.25.1717513868383;
+        Tue, 04 Jun 2024 08:11:08 -0700 (PDT)
+Return-Path: <philliplfraley@gmail.com>
+Received: from smtpclient.apple (pool-173-71-190-223.pitbpa.fios.verizon.net. [173.71.190.223])
+        by smtp.gmail.com with ESMTPSA id 6a1803df08f44-6ae4a750441sm40191276d6.71.2024.06.04.08.11.07
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 04 Jun 2024 08:11:08 -0700 (PDT)
+From: Phillip Fraley <philliplfraley@gmail.com>
+X-Google-Original-From: Phillip Fraley <Philliplfraley@gmail.com>
+Content-Type: multipart/alternative; boundary=Apple-Mail-2E69E94E-AFF0-4870-9483-003845CB6289
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (1.0)
+Subject: Re: Prototype model for mounted Carnegie Diplodocus
+Date: Tue, 4 Jun 2024 11:10:57 -0400
+Message-Id: <CE4435FC-5102-4018-99A2-B42A3702DEE3@gmail.com>
+References: <CACnMvBZ7j+=RhqdHo3h8KKxasog7qW=d7tqgMH5dbkauQx3pnw@mail.gmail.com>
+In-Reply-To: <CACnMvBZ7j+=RhqdHo3h8KKxasog7qW=d7tqgMH5dbkauQx3pnw@mail.gmail.com>
+To: Mike Taylor <sauropoda@gmail.com>
+X-Mailer: iPad Mail (21E236)
+
+
+--Apple-Mail-2E69E94E-AFF0-4870-9483-003845CB6289
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body dir="auto">You’re welcome, Mike and it is OK to cite as a personal communication if you choose.<br id="lineBreakAtBeginningOfSignature"><div dir="ltr">Sent from my iPad</div><div dir="ltr"><br><blockquote type="cite">On Jun 4, 2024, at 7:57 AM, Mike Taylor &lt;sauropoda@gmail.com&gt; wrote:<br><br></blockquote></div><blockquote type="cite"><div dir="ltr">﻿<div dir="ltr"><div class="gmail_default" style="font-size:small">Thanks, Phil, this is really good to know. So often the answers to question like this are "it got left behind when we moved buildings, I don't know what happened to it" or "I think it's probably in a landfill somewhere". I'm glad this ended up with someone who valued it.</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">If I find myself wanting to mention this in a paper, would it be OK to cite as a pers. comm.?<br></div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">-- Mike.</div><div class="gmail_default" style="font-size:small"><br></div></div><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">On Mon, 3 Jun 2024 at 22:56, Phillip Fraley &lt;<a href="mailto:philliplfraley@gmail.com">philliplfraley@gmail.com</a>&gt; wrote:<br></div><blockquote class="gmail_quote" style="margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div style="overflow-wrap: break-word;"><div dir="auto"><div dir="ltr">﻿<div dir="ltr">﻿Hi Mike,</div><div dir="ltr"><br><div>The <i>Diplodocus</i> model was sculpted by our model maker/sculptor Hang Jin Kim. For sculpting he used the real bones as reference but also used the scientific illustrations from Memoir 1 Diplodocus Marsh, It’s Osteology, Taxonomy and Probable Habits, with a restoration of the skeleton. J.B. Hatcher (Published July , 1901). The finished model was later sold at a museum fund raiser for I believe $14,000. Its location remains unknown to me.</div><div>Hope this helps.&nbsp; As I remember, the scale was 1/12. &nbsp;</div><div><br></div><div>Phil</div><div><div dir="ltr"><br></div><div dir="ltr"><br><blockquote type="cite">On Jun 3, 2024, at 8:44 AM, Mike Taylor &lt;<a href="mailto:sauropoda@gmail.com" target="_blank">sauropoda@gmail.com</a>&gt; wrote:<br><br></blockquote></div><blockquote type="cite"><div dir="ltr">﻿<div dir="ltr"><div class="gmail_default" style="font-size:small">Hello again, Phil. Wondering if you've had any thoughts about this.</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">-- Mike.</div><div class="gmail_default" style="font-size:small"><br></div></div><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">On Mon, 27 May 2024 at 11:16, Mike Taylor &lt;<a href="mailto:sauropoda@gmail.com" target="_blank">sauropoda@gmail.com</a>&gt; wrote:<br></div><blockquote class="gmail_quote" style="margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div dir="ltr"><div class="gmail_default" style="font-size:small">Hi, Phil. Matt Lammana put me in touch with you: he and I (and other colleagues) are working on an account of the Carnegie Diplodocus, focussing on the composition of the various iterations of its mounts. It was party on my account that Matt recently asked for your photo dump of the 2005-2007 remounting process.</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">Among the photos that turned up are a few of a scale model of the mount that you (I assume?) made -- DSCN3270.JPG and nearby photos. It's hard to estimate the scale from these photos, but I would roughly guess it was somewhere between 1 and 2 meters in length.</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">Do you know what happened to that prototype?</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">Thanks,</div><div class="gmail_default" style="font-size:small"><br></div><div class="gmail_default" style="font-size:small">-- Mike.</div><div class="gmail_default" style="font-size:small"><br></div></div>
+</blockquote></div>
+</div></blockquote></div></div></div></div></div></blockquote></div>
+</div></blockquote></body></html>
+--Apple-Mail-2E69E94E-AFF0-4870-9483-003845CB6289--
