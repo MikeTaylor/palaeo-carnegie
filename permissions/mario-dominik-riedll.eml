@@ -1,0 +1,197 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:258e:b0:7e:cfcb:f718 with SMTP id dt14csp2261655dlb;
+        Tue, 2 Jul 2024 07:28:21 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IH7JIKeROgEfJFhVvkbxq1s8En9DQEIxNroDkupsqvhHTvqRaVR5zHhLw1CudBV6WpgCsnw
+X-Received: by 2002:a2e:8e89:0:b0:2ec:568e:336e with SMTP id 38308e7fff4ca-2ee5e37e0cbmr59922421fa.1.1719930497000;
+        Tue, 02 Jul 2024 07:28:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1719930496; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HWs2BMQkiJGPceOUZOBWRouLG1yyGQFT2RbhqdgPN56Fy1dcoVXW73DhQrcj5LxNH6
+         LePDe+LgNh576O0x9mZuKD/HmIjaQ1CpK+3ZERaOMi27Zg/B7EgVOHAcyX3eLbf01/vB
+         e1nfyTrS0ffZDKVxPsKcSWJrjiZjy5SrUsEX9Hy4tN1m7f7LwKPIyrgay3ZesLRQhJsI
+         dOPns04jc50nvUjg0E8zpMFgSmx0B5WV8Ga+w3ttrtUlhn5fnIjrxl/DKIuPb9YNntxI
+         o+EIS2wCQk7MNj/jDPfJMsUlF54RvoJhspbtaU6+UX2cS2N2T3T1H0mRp0Ljz3zv6vRQ
+         kGIg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=dkim-signature:mime-version:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:to:from;
+        bh=jBX5TzN636ZMMeDKpepUa2oivxyQxbI8JIqE2Iipb+g=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=fL0EL6vz81q9nE6L8MW6/YiX7N0aqTwi7JGcSisex7mUTYdxA3132npvgasd3ZDQNI
+         9pHqdBqmUInz6wDnu/H8vaMbEVCFjYZR7kV/V328DAQR2rcNFtFRUrqp7Jvj/76nkT0C
+         Yb8HGTRq9yjvIR1qKiLRYh/DxdYF//iRQMSi4l/XQG7/FgzmIwx/kcc3f5iZbg9szCz4
+         aT0WnRD11sxWMejM4mVHbVMF1y3QLPZHNBsw9Z9xGkDxIFwfkcq1+Di2PLsBdpUVcxm7
+         telpSDggna/reQ6/McABtLxCykfXcVweBHYVwXEu3/zCtxASWX5IMMnZnjfHeykfnMK+
+         okzw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@nhm.at header.s=nhm-mailgate header.b=X+0iKCDr;
+       spf=pass (google.com: domain of mario-dominik.riedl@nhm.at designates 193.170.196.100 as permitted sender) smtp.mailfrom=Mario-Dominik.Riedl@nhm.at;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.at
+Return-Path: <Mario-Dominik.Riedl@nhm.at>
+Received: from nhm-mailgate.nhm-wien.ac.at (nhm-exch1.nhm-wien.ac.at. [193.170.196.100])
+        by mx.google.com with ESMTPS id 4fb4d7f45d1cf-58be8d3f8d3si424962a12.639.2024.07.02.07.28.16
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 02 Jul 2024 07:28:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mario-dominik.riedl@nhm.at designates 193.170.196.100 as permitted sender) client-ip=193.170.196.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@nhm.at header.s=nhm-mailgate header.b=X+0iKCDr;
+       spf=pass (google.com: domain of mario-dominik.riedl@nhm.at designates 193.170.196.100 as permitted sender) smtp.mailfrom=Mario-Dominik.Riedl@nhm.at;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=nhm.at
+Received: from exchange.nhm-wien.ac.at ([10.20.0.17])
+	by nhm-mailgate.nhm-wien.ac.at  with ESMTP id 462ESGgi016394-462ESGgk016394
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <sauropoda@gmail.com>; Tue, 2 Jul 2024 16:28:16 +0200
+Received: from Exchange19.NHM-WIEN.AC.AT (10.20.0.17) by
+ Exchange19.NHM-WIEN.AC.AT (10.20.0.17) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1258.28; Tue, 2 Jul 2024 16:28:16 +0200
+Received: from Exchange19.NHM-WIEN.AC.AT ([fe80::b9ac:4ad3:f224:d90e]) by
+ Exchange19.NHM-WIEN.AC.AT ([fe80::b9ac:4ad3:f224:d90e%14]) with mapi id
+ 15.02.1258.028; Tue, 2 Jul 2024 16:28:16 +0200
+From: Riedl Mario-Dominik <Mario-Dominik.Riedl@NHM.AT>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: AW: Replacement of atlas (1st cervical vertebra) in Diplodcus cast
+Thread-Topic: Replacement of atlas (1st cervical vertebra) in Diplodcus cast
+Thread-Index: AQHawLBG8tr8pS8iMkuT3ZIG9MtuorHL36nwgAA47wCACozIgIAM8Pvw
+Date: Tue, 2 Jul 2024 14:28:16 +0000
+Message-ID: <1f85993ff2554ccdab502a645b46ce4a@NHM.AT>
+References: <CACnMvBYMY0vL-5me-L0fagFEQVMoyi6mWdVaG=b2n4keDreBDg@mail.gmail.com>
+ <70e2c82ecab04b6fad0e8cd46eb2d5f4@NHM.AT>
+ <CACnMvBbvyNFaFvG_s10WM+xhTJh18JyuuTgAf=aYy9LTEpaaVA@mail.gmail.com>
+ <CACnMvBbwodYGFrtBN37VRz3HKqdKzT2CupqGgFb2gmfV5Nymeg@mail.gmail.com>
+In-Reply-To: <CACnMvBbwodYGFrtBN37VRz3HKqdKzT2CupqGgFb2gmfV5Nymeg@mail.gmail.com>
+Accept-Language: de-DE, en-US
+Content-Language: de-DE
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [10.40.11.70]
+MIME-Version: 1.0
+X-FEAS-Client-IP: 10.20.0.17
+X-FE-Policy-ID: 2:3:0:SYSTEM
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; d=nhm.at; s=nhm-mailgate; c=relaxed/relaxed;
+ h=from:to:subject:date:message-id:references:content-type:mime-version;
+ bh=jBX5TzN636ZMMeDKpepUa2oivxyQxbI8JIqE2Iipb+g=;
+ b=X+0iKCDrpIzS3AwZBdnZVClOWLkpfddr/lmfX5crcs0kgfVtapVVfX1zN1FI1SqJ+QUPzQo49/7p
+	hcSlo62gR8Zr3GepOYgY23GJD8gi3lPNDsjzC2TmqfcU+XVVjv2desA/vIMg0DkX08sqOug91Qyi
+	VKIwXZurJlkfwTH1/yhm3lNjF6IxD4FwzxzNFT/GFEM8QwPtVVvjk74DF492KRvR37/ZvEC3HK4f
+	FJ8IxOeT1I9Q4+/fc2Yr8p2v7bLgFyXfZu2a4RQuHkjUgTMu2ab8/YdAqvl3OLwS6x6GaCfdrRt4
+	2RWUmI0GVUWsHk3b1nxpyICq3wNy/q/T5KOnJg==
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Dear Mike,
+
+Iâ€™ve been on sick leave and just returned today. You can quote me in your paper.
+
+All best
+Mario
+
+[https://www.nhm.at/jart/prj3/nhm-resp/images/img-db/1613638268766.jpg]
+
+Mario-Dominik Riedl, MA
+Historical Image and Photograph Collection and Digitalization, Archive for the History of Sciences
+Natural History Museum Vienna
+Burgring 7
+1010 Wien
+
+Phone: +43 1 521 77 - 518
+https://www.nhm.at<https://www.nhm.at/>
+
+Our current exhibition:
+[https://www.nhm.at/jart/prj3/nhm-resp/data/signatur/image.jpg]<https://www.nhm.at/ausstellung/sonderausstellungen>
+
+Die Information gem. Â§ 14 UGB ist hier<https://www.nhm.at/impressum> abrufbar.
+Informationen gem. Art 13 DSGVO zur Verwendung Ihrer Daten finden Sie hier<https://www.nhm.at/datenschutz>.
+
+
+
+
+Von: Mike Taylor <sauropoda@gmail.com>
+Gesendet: Montag, 24. Juni 2024 12:49
+An: Riedl Mario-Dominik <Mario-Dominik.Riedl@NHM.AT>
+Cc: Krenn Martin <Martin.Krenn@NHM.AT>; Winkler Viola <Viola.Winkler@NHM.AT>
+Betreff: Re: Replacement of atlas (1st cervical vertebra) in Diplodcus cast
+
+Sorry to bother you again, Mario, but I will need your permission to quote you in the paper.
+
+-- Mike.
+
+
+On Mon, 17 Jun 2024 at 18:42, Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>> wrote:
+Hello, Mario, and thank you for getting back to me so quickly â€” albeit with disappointing news.
+
+May I please cite "there are no documents stating what parts of the cast were added or changed and when and why this was done" as a personal communication from you?
+
+(By the way, not only is the skeleton's present location much better than the corridor shown in the earlier photos, the present mount is much better mostly because it's possible to walk all the way around it now!)
+
+-- Mike.
+
+
+
+
+On Mon, 17 Jun 2024 at 15:17, Riedl Mario-Dominik <Mario-Dominik.Riedl@nhm.at<mailto:Mario-Dominik.Riedl@nhm.at>> wrote:
+Dear Dr. Taylor,
+
+Unfortunately there are no documents stating what parts of the cast were added or changed and when and why this was done.
+
+But according to the annual report for 1983, the year before the opening of the new dinosaur hall at the Museum in 1984 , restoration and cleaning work was done on the casts which included additions to the skeleton. The position of the dinosaur was changed from a more or less straight line (see att. Photographs 1909) to a curve (neck see photograph before 2011)
+During  the remodelling of the hall in 2011, the tail was also reoriented, as it had previously been mounted incorrectly (it was lifted amongst other things).
+
+All Best
+Mario Riedl
+
+
+[https://www.nhm.at/jart/prj3/nhm-resp/images/img-db/1613638268766.jpg]
+
+Mario-Dominik Riedl, MA
+Historical Image and Photograph Collection and Digitalization, Archive for the History of Sciences
+Natural History Museum Vienna
+Burgring 7
+1010 Wien
+
+Phone: +43 1 521 77 - 518
+https://www.nhm.at<https://www.nhm.at/>
+
+Our current exhibition:
+[https://www.nhm.at/jart/prj3/nhm-resp/data/signatur/image.jpg]<https://www.nhm.at/ausstellung/sonderausstellungen>
+
+Die Information gem. Â§ 14 UGB ist hier<https://www.nhm.at/impressum> abrufbar.
+Informationen gem. Art 13 DSGVO zur Verwendung Ihrer Daten finden Sie hier<https://www.nhm.at/datenschutz>.
+
+
+
+
+
+
+Von: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Gesendet: Montag, 17. Juni 2024 14:17
+An: Krenn Martin <Martin.Krenn@NHM.AT<mailto:Martin.Krenn@NHM.AT>>; Riedl Mario-Dominik <Mario-Dominik.Riedl@NHM.AT<mailto:Mario-Dominik.Riedl@NHM.AT>>
+Cc: Winkler Viola <Viola.Winkler@NHM.AT<mailto:Viola.Winkler@NHM.AT>>
+Betreff: Replacement of atlas (1st cervical vertebra) in Diplodcus cast
+
+Dear Martin Krenn and Mario-Dominik Riedl,
+
+I am writing on the recommendation of your colleague Viola Winkler, who has been kindly helping me with a history-of-science project on the various cast skeletons of the Carnegie Diplodocus. One of those ten casts dominates your fossil hall in Vienna.
+
+One distinctive feature of this skeleton is the axis, or first cervical vertebra: the part of the neck that the head attaches to. You would expect it to be the same as that of the other nine casts, but it's dramatically different, with "wings" that stick out sideways, swept back a little (see the attached image, shot from below with the head towards the top of the photo).
+
+I am keen to determine when and why this change was made. Viola has found a photo from 1984 showing that your Diplodocus had the winged vertebra back then, but we don't know when prior to that it was added.
+
+If you're able to find any information about this in the archives, I would be very grateful.
+
+Thank you,
+
+Dr. Michael P. Taylor
+Research Associate
+Department of Earth Sciences
+University of Bristol
+Bristol BS8 1RJ
+ENGLAND
+dino@miketaylor.org.uk<mailto:dino@miketaylor.org.uk>
+http://svpow.com/ (ISSN 3033-3695)
+http://orcid.org/0000-0002-1003-5675
+
+­®*LŠg‘zš+¶šèqë,yÓ0JZ®Û&º[b¥ªíý©mz¹Ú¶+Þµìmþ™ZŠ{^ÆÖèw)¦Û^Æßá¶i
