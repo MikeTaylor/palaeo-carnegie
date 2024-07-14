@@ -1,0 +1,250 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7022:258e:b0:7e:cfcb:f718 with SMTP id dt14csp3296449dlb;
+        Thu, 4 Jul 2024 02:07:53 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHmB0YQ2CRsa0HLUzMYmC/ud6ecFd5ZzAzKmSts8aSb6TqEAwlwyfbh4t5De7h1e8XwoMy6
+X-Received: by 2002:a05:620a:12f1:b0:79d:7014:91fd with SMTP id af79cd13be357-79eee29b505mr112645385a.62.1720084073043;
+        Thu, 04 Jul 2024 02:07:53 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1720084073; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=cyqbt/beaMR1lWG2DgFGfPsZYGzEVArBR6s39hX23PRV1g6hkd6FmpMZwHlSU3h8b7
+         nVFO8uwbtuzC9Cd0MQcoXaAyM06S1fHxM10xayD19dl0vjjwhg1RpYd1U5mft8z5OTDI
+         9AtLJ/JJpZOWO6zYlJjfY/6j3YsJ4Mg0IDjuGORhSKSBFECqTQR0mhdfIh+1BYSd1d+O
+         bRNLAzMLeRF901fOhkQrT2H/+JVVMpOHfc4j5oHzC3Ycx6BXZchylYXWlX7tJemQnIuG
+         qdBIYFMlZwWk16f9PI0pFoOcqRhFPvSj1dpXl/KU+QN43CiXB76bl9J3xHPJ4G5b9byc
+         MuWA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:cc:to
+         :from:dkim-signature:dkim-signature;
+        bh=mRuSUHoeFo3faLJea/fPZZ/w16L/3xar0OHwRtb4QRw=;
+        fh=9HsK3kYuJAZNyYJDDyvrwhkhGuIMAkYSmoU9RH3N5pE=;
+        b=o3YyW8ZRNQCxlVQhAKpPGXMB7xvi5SJ+5/rw3AAwRMDHwh2ab4pl5Z9kvpXe0UdHI2
+         WcfKBp9PHb7rPTP1aK54kQBfJeY3KVOYL9g2RP2sL1mKYVkhPbRSwOmjU8bVGym733h0
+         7OGGv0jvmmc8cZoGE8s+XiACcgNW/CV6tYbZ41s3u8vYz/Gbg+fnGHzCWb/1ASB2xxAS
+         H1G4NEelgykTWsy3rk52EKeu/rP9/uHDqYeCA9ABTPWx8IPUI3qy0wyx2vPzU64yVTge
+         dIP7mAAxLJ2EDBbib12jKacOBql6XbDkAj5RIw1r0Ouckp1U1UdGKoxR5klYwZqeNmMG
+         4/nQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@carnegiebirthplace.com header.s=selector-1717578526 header.b=XwpA9DYI;
+       dkim=pass header.i=@carnegiedunfermlinetrust.onmicrosoft.com header.s=selector2-carnegiedunfermlinetrust-onmicrosoft-com header.b=Fu3Vab9H;
+       arc=pass (i=1 spf=pass spfdomain=carnegiebirthplace.com dkim=pass dkdomain=carnegiebirthplace.com dmarc=pass fromdomain=carnegiebirthplace.com);
+       spf=pass (google.com: domain of jennifer.jones@carnegiebirthplace.com designates 185.183.29.32 as permitted sender) smtp.mailfrom=Jennifer.Jones@carnegiebirthplace.com
+Return-Path: <Jennifer.Jones@carnegiebirthplace.com>
+Received: from dispatch1-eu1.ppe-hosted.com (dispatch1-eu1.ppe-hosted.com. [185.183.29.32])
+        by mx.google.com with ESMTPS id af79cd13be357-79d8eabaf29si857094185a.249.2024.07.04.02.07.19
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 04 Jul 2024 02:07:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jennifer.jones@carnegiebirthplace.com designates 185.183.29.32 as permitted sender) client-ip=185.183.29.32;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@carnegiebirthplace.com header.s=selector-1717578526 header.b=XwpA9DYI;
+       dkim=pass header.i=@carnegiedunfermlinetrust.onmicrosoft.com header.s=selector2-carnegiedunfermlinetrust-onmicrosoft-com header.b=Fu3Vab9H;
+       arc=pass (i=1 spf=pass spfdomain=carnegiebirthplace.com dkim=pass dkdomain=carnegiebirthplace.com dmarc=pass fromdomain=carnegiebirthplace.com);
+       spf=pass (google.com: domain of jennifer.jones@carnegiebirthplace.com designates 185.183.29.32 as permitted sender) smtp.mailfrom=Jennifer.Jones@carnegiebirthplace.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carnegiebirthplace.com;
+ h=cc:cc:content-type:content-type:date:date:from:from:in-reply-to:in-reply-to:message-id:message-id:mime-version:mime-version:references:references:subject:subject:to:to;
+ s=selector-1717578526; bh=mRuSUHoeFo3faLJea/fPZZ/w16L/3xar0OHwRtb4QRw=;
+ b=XwpA9DYI8yGziSZNvmiYiqQzcNPyHKKu6E9k8jFs40sUwcEM0DTb13anS2KRetFM4d/ftSdUwZdlQoTuGg47r0KGBDgog/DFN3gQWm/FjXKdtq6RYTWiPnoB7o0DO0AV2DQgEfVNTvhDsuuGhJx9qDdeW4nfRhpf9LIGfYdJZogSXHP3JfpAkbycPRWBJCFsG9THBiP92/s3TVu7qv4k064npLqbGJzjuJadDvO9XPrt2/qX0m5CfPscdGxDJ6Uyo7AGshZIA4cgghD5AQcMdwPhixtgVt3f46aeWNvPMhE2Z4tMCwUDRgO/EUolCc/21WzypmRc2BfgSHpyKspRFA==
+X-Virus-Scanned: Proofpoint Essentials engine
+Received: from GBR01-LO4-obe.outbound.protection.outlook.com (mail-lo4gbr01lp2105.outbound.protection.outlook.com [104.47.85.105])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1-eu1.ppe-hosted.com (PPE Hosted ESMTP Server) with ESMTPS id 6FC81200058;
+	Thu,  4 Jul 2024 09:07:06 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=DTeQCqbVlmCjuWoFZ+prIVNY+up46TNbtMIhUqG4Ny654RukodIUMi6JDYzBxr3dMwbQHu7VEkmEd2fhLg0cSnWU6R5LukZ99ng65Jh0XzmEK5v/4yhvHCdaCxFC7CQzMXGVsj2COfdKL6Y0LqoimXvzC+5X+Jzxh9k+rDpR7huzTZ+nFY6J/pRHLxhbwtuhd60n/E59AtG03suA2GoVmrmHbK7+KTuSOtheyB1BW1VoFwOEJyYwpbcZ129KYDY9bCUqwxwNAx6jTQN57AwYxwUceNe1Z5b0eJDTo8Ww+jnVLosmfvQhiEwfpqCKDQfdZ7f6PwhpNv5btZlLSOXbJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=mRuSUHoeFo3faLJea/fPZZ/w16L/3xar0OHwRtb4QRw=;
+ b=dclC9Nj7GE7Pt+MCj5Uh5sI/5L7aaZ9cZOBa6DvOO5QhFfXlsGgWuBnBulqYofQZBGuuGFPQGQZZwhVcxlrtHAaFMxlMipsmL2rVMGCV6jn7Qz6oqubqrZXzU/06VEwSUwooR2VcmqurI1Wsv2R9aQE/mgGR3AuB2Z5KVNnkNTQudvv9nCjeqe8rXndNXgY/G7Y+l7pDCx3r05hDKtPa1/21+MgvRppszMjT/UMZiZ4dpx0k4B3QTBGlSzeb3SlP3vy+DD8Y/mOJ1yY1FkGFzRNjSmS0BYzgBpd2jV7naenK1NPHVpcAxHriCOYKPmyLRVt8F5zI51dasE11fFLQ6g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carnegiebirthplace.com; dmarc=pass action=none
+ header.from=carnegiebirthplace.com; dkim=pass
+ header.d=carnegiebirthplace.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carnegiedunfermlinetrust.onmicrosoft.com;
+ s=selector2-carnegiedunfermlinetrust-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=mRuSUHoeFo3faLJea/fPZZ/w16L/3xar0OHwRtb4QRw=;
+ b=Fu3Vab9HwcONaxs7G6lV51mvsNPrA57Tt982C0i19Qf8d4956O815YPuHCBjXheOVcWFQfg0wZ5Zd5i35rotTcgYCqzCKcQXKLvIWm9XUNzuSfoUBDAlVm7+30HbH2Mb53jkIgAouE9KEORgtG1esqFg1q21jWN8ARkxuILR/5Y=
+Received: from CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM (2603:10a6:400:54::8) by
+ LO2P123MB3646.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:12f::10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7741.29; Thu, 4 Jul 2024 09:06:57 +0000
+Received: from CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM
+ ([fe80::5e9f:91d9:535d:9114]) by CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM
+ ([fe80::5e9f:91d9:535d:9114%3]) with mapi id 15.20.7741.027; Thu, 4 Jul 2024
+ 09:06:57 +0000
+From: Jennifer Jones <Jennifer.Jones@carnegiebirthplace.com>
+To: Mike Taylor <sauropoda@gmail.com>
+CC: "Victoria.Connor@carnegieclub.co.uk" <Victoria.Connor@carnegieclub.co.uk>,
+	"lamannam@carnegiemnh.org" <lamannam@carnegiemnh.org>
+Subject: RE: Inquiry: Diplodocus artwork
+Thread-Topic: Inquiry: Diplodocus artwork
+Thread-Index:
+ AQHavnLWyOVUuysBCkyWbGmKXikVm7HNXX1ZgAAAFrmAAB5uhoAGH9sAgA/CaOCAAKxGAIACWa8g
+Date: Thu, 4 Jul 2024 09:06:57 +0000
+Message-ID:
+ <CWLP123MB31071B030A2667060FB04FB2FFDE2@CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM>
+References:
+ <CACnMvBZPn3NrGHvkqiP7BM05LfF34WUYeWgrfTAvcpiJ27yfMw@mail.gmail.com>
+ <CWLP123MB4625E21BCAAF2AE3380D2F40B5CE2@CWLP123MB4625.GBRP123.PROD.OUTLOOK.COM>
+ <CWLP123MB3107A1E650B813E6A7FD4202FFCE2@CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM>
+ <CWLP123MB310799B8926613268D6983D4FFCE2@CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM>
+ <CACnMvBZqGba8S_6+SOWrChZNx5L043vxW2W=pKu5PmB8JpibcQ@mail.gmail.com>
+ <CWLP123MB31079DFF58E5C49121B1427DFFDC2@CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM>
+ <CACnMvBaxPbe7aJFp9UEVKB8qiB94tMZ5_AjEGLpfrj0045F5Dg@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBaxPbe7aJFp9UEVKB8qiB94tMZ5_AjEGLpfrj0045F5Dg@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=carnegiebirthplace.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CWLP123MB3107:EE_|LO2P123MB3646:EE_
+x-ms-office365-filtering-correlation-id: ee7f76a5-a4cb-48f8-5dea-08dc9c08a7fb
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|376014|366016|1800799024|38070700018|3613699012;
+x-microsoft-antispam-message-info:
+ =?us-ascii?Q?ZK8r8mZ6DOr/sWixmOaOVyo1OoxX2QvwtqEqS3SmZMXEr/kSc1N4w/wkeJzT?=
+ =?us-ascii?Q?p9bXMEgCptu4869VKFUI+9bROB4IURN4iQLhoW5Brp6J+/QoZwUHQO0XvOpJ?=
+ =?us-ascii?Q?eXhNVVc6pd9foq/+4wTWb7ARV5OtEhuQiIP8q3hk8hLfpmS3vuno8oZwb7XG?=
+ =?us-ascii?Q?2u6ckYmtMSxXcZ9rLc7Tj6gO36xI/D7LWO0BguQb+NNJO4H5piHP3UZE/Yq2?=
+ =?us-ascii?Q?/+nnInesjUXR9Cp7yOkCG8etCmvegvRZLSBWnZDwAHRm0G457tFuBmV0BlZD?=
+ =?us-ascii?Q?xDVapzaGniPbbnhOJhtFJj6raF/9phdc0QESYjbOSdX2no8yGUQT48wDww1O?=
+ =?us-ascii?Q?l480rJl8USHiuqKNpwP2+9SYrqXpHbxZc577ucZxNdBmBA9Q8Cd/GaVNibA0?=
+ =?us-ascii?Q?P1bvKFIX1mEV9mvFKUu2HoVYcB22XR7lpD6SdkVjso8vNc2wZz88WWbFKu7D?=
+ =?us-ascii?Q?2mdomKLtpI0Ppui5WK6fAecRncjTyn4ixXVwCJE5z5e3Kr4hY3HfTQQAwRtx?=
+ =?us-ascii?Q?kbYXBoZ6Vnk83f33DxGX09bMny5DA4Qws14jT2cwcmrYfD1eR57aP3Egq25Y?=
+ =?us-ascii?Q?uN81+14nzjbuHVoWiSfWNtCgBv9LneipXXlfanIPqocb46E/bHVFf/Uid4vm?=
+ =?us-ascii?Q?5fz25PUMvVNVN3vAZv2Yo3GoMug1Zjj0CKYt7qHK5HbQx8sWfAujEYdcZw2C?=
+ =?us-ascii?Q?kmG0jr2FXKOoGztIlXXy5eVlT4u/NB7wYhGIDvN74E0e1bxNtDla4a4WwTQK?=
+ =?us-ascii?Q?opBqvrvDGcK93bIa5/XZr0X0ZpmfiU42nOZTWbb0ceQ02szRuukjAwg79AO8?=
+ =?us-ascii?Q?7KKsxCuL9qMoFWK0XqEuS04duRks8Oeq+3bGclpCY/EsgHFwTUPkkIPuSAwc?=
+ =?us-ascii?Q?6rYZF0P7BPU7Q3jeFFBZcjtu52RtQN+NPtYP/1UVSKZjYOxUrElQpLVglJqG?=
+ =?us-ascii?Q?3SaSlE2m1NfoLFVJoFWAacdrqR4y/xqkBuBOdlmC0Wah9asjdlicTyst2o08?=
+ =?us-ascii?Q?1dLACIm7BqtfjtKHLLhcZlAo5x7sfkZm0woVtURlv/x9Olw9s09h0yk3GBAO?=
+ =?us-ascii?Q?f0cPT51DD/TgWSqKZXSDgz+tMfhF6Cx+JKhv2MnEs+mgPtPNEgfxMu4aDf5H?=
+ =?us-ascii?Q?LsGj1jOf1c0Jk5SbwWHjT8hkALWxamHFUNeIMWetm9d+4dQJSWg++5Rm9UPx?=
+ =?us-ascii?Q?lz/Y/thCTN82LkgZWwY7Kw6yZMxAWd+L2DgFUfyOzRtwuNePCG411MCmp+xz?=
+ =?us-ascii?Q?3boyE+2febstHhy3Zyo9xRrtQTPRRZAJSIaZtCyRzAURXMZqTtpAiUOefbjm?=
+ =?us-ascii?Q?bAMgLK0RsCJClwKmCh9/OO60Iogg4TMKhJKzWzfdcvMiV/cij2FuYgeuP8JJ?=
+ =?us-ascii?Q?w8V/JZmfqDuLd5jfJ55CLRl2v+l7?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(376014)(366016)(1800799024)(38070700018)(3613699012);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?igjofGEUeKcnNJH2XUNrIqX+SNZzJmkZaUTOcPWeD6rpIHZ3ZaEq9MwSvMBm?=
+ =?us-ascii?Q?rBBNr7JFZQ67ie/MBD+NbjgJ7hCAHogwbHFkIXgGwWXMDyQydfmGVAUbQqcR?=
+ =?us-ascii?Q?K2VoqXqsCInhcop8YY3KprrInVa2/U1X4ksM8I5ZhuZufk3LYFlAmxubgnax?=
+ =?us-ascii?Q?+Y36epYrEcV3uxzh37bKiSVGY2vFRo9uCMzDy6UprtylPV2D1CILT87gKuqD?=
+ =?us-ascii?Q?GhPC/vVDuOirx54vuXinbr95839nCUGKBjcEzISDD/H3ilMSFVM0FnU96pMy?=
+ =?us-ascii?Q?Wif77NVh0BJAkTFPlHShOkkaX30IvCzbE7tVFImmoUpMpk087TXU+0zIFK+U?=
+ =?us-ascii?Q?XB83MwlCRyDCiPqnbzs90rT/nEVXfUJFrb0dhSs8+qXA/j5OfkVYdxV4L1ZN?=
+ =?us-ascii?Q?bzwFZnlAiwPZjQsA0iWNEG1HBfAw+dlmnhRcDItaSbG4I5aQfa6pFG2VVtOa?=
+ =?us-ascii?Q?jeNyfU/qZTtryPLxmxJhkSCFAiNBrNHi9Jo3yub9Y2cubWrh+2TkJt57ED8F?=
+ =?us-ascii?Q?iZYabGsYbKFnQ20cohGSPQ5xE2fhFoUxUlD0GNwoFYfovJT1+HkY/l8ZuJ4l?=
+ =?us-ascii?Q?B7/WtjL+QH0BjXC//XYs2ojoighYoJ8Mke3s8a+2nU9gc2LLqbTyNmUV2M91?=
+ =?us-ascii?Q?IPnICbFEV4kCLij7Xa5ycrx6bpMzE081pskpEKOCpGfav+Q5f/+trxnfmlMd?=
+ =?us-ascii?Q?2zup1ESUrfRNOOgi7LnlQUlHrSr0R9rAbWBIkbZVnc5KXaRcmGHcAh07Y/7/?=
+ =?us-ascii?Q?xSYwkkBBynthlSqnFtmJcEADugODzCVP8hpSMfnqZwbMuUVtcLgVGe83WYx4?=
+ =?us-ascii?Q?twm3kzee1Ut/mw7hp0IJKEwYG6OycsV/xWZ1e4ohqF8MunK2e6MO0qKH+pub?=
+ =?us-ascii?Q?joSaIryEPPBNSWIjBcDUBRMWzt/2MK5/hzu/8WoljjL+kUNOyW/pelj8UkDD?=
+ =?us-ascii?Q?NRzaU8lRzaTHu1dXssiKNFhKVmrlIkenSV7rahWGgOKaqimnwbgrz4KnDWRi?=
+ =?us-ascii?Q?zxNEx4ayQVMXOt1KcrwxD+Hft+L6AXg5jIuKIbiu8YNvR3D1LY8Uf22/B81P?=
+ =?us-ascii?Q?ZXLZK3E+oixMgBF1d++w1gjErZstf6Ot134LD9MPQimgGXxhtlIpvtHw0mO/?=
+ =?us-ascii?Q?UQP6nQQLiBDZv3663cLgbr4vgqflgfxFl5B3br1cOr0VF7ehf1DBMwpyqSz3?=
+ =?us-ascii?Q?LRna2UsXVRSmgZCtePlv8VU0pgiTyvSwEOvkFSoby5oSPJBmR6TWHHjvJJGf?=
+ =?us-ascii?Q?FGxXGako8hloc/3LYYxO9YMYm+OP+9c9O+mD7dQEpX+GDEoGHvFu9DgbRoy3?=
+ =?us-ascii?Q?vWR3kS0GdLk5i1lXj77YGsIHkUHoITu+o+FIU33LOhSqKDeLdzlvWRDEWdIm?=
+ =?us-ascii?Q?ChTy/1gCLEs0EEKA/O98WbsuklvSKiJMYa5XZDH7pZWr9h7+vX6YGNZ6HoJB?=
+ =?us-ascii?Q?aodpngeF72XaO4qNwWeIJyAKk3bi6KFsylxnh/y+mhWopeoANwmP9P78V2vf?=
+ =?us-ascii?Q?/b+LL6ER1iLrKh2/ft9cIbqZHnKdBIPfJUX6aDn69GuPrcdK3Rp0IMG60hNl?=
+ =?us-ascii?Q?4dTqqZLTT4E7G6WxJDltYxvU2JkmFtzvfjw2AR7mVr2mG319DYd5/BMIS0Cu?=
+ =?us-ascii?Q?IzLpkcvp74Iich/sCpNH2mA=3D?=
+MIME-Version: 1.0
+X-OriginatorOrg: carnegiebirthplace.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CWLP123MB3107.GBRP123.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: ee7f76a5-a4cb-48f8-5dea-08dc9c08a7fb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 04 Jul 2024 09:06:57.1195
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5fc1308c-3b61-40c4-8934-e50644401006
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AdlEUvHy0a6KkBN2Qux2JwdIY7HkAIjsJ7o/Z1ZQ26mh2y03+9OlI/G3yFFdBiRQOWCC+HIMeL+OBwZAKQ+k+6B1s85yZMJwecc8rimDyIaKWYd7OPJbDEUVfoEgAYQx
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LO2P123MB3646
+X-MDID: 1720084035-c8MohF0tf0nV
+X-MDID-O:
+ eu1;ams;1720084035;c8MohF0tf0nV;<Jennifer.Jones@carnegiebirthplace.com>;0fc35effa316a9883f8482d275b7539f
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="us-ascii"
+
+HI Mike,
+
+Yes please feel free to cite me on the watercolour point. I will have our photographer take a high res image of ACBM 1928/461 and pop it over to you. Is a couple of weeks OK to wait for it? He is a volunteer so only works one morning a week but his photos are worth waiting for!  Yes ACBM 1928/461 is its reference number so best to use that when referring to it in a publication.
+
+I have a attached a snap of the Dippy model below. It is on display currently but if you would like a high res image of that too for your publication I can arrange it easily. It is dated 1904 and created by William J. Holland and T.A. Mills.  IT is assumed the man by the hind leg is William J. Holland.
+
+[cid:image001.jpg@01DACDF9.7E9C1540]
+
+Best
+
+Jennifer
+
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Tuesday, July 2, 2024 10:07 PM
+To: Jennifer Jones <Jennifer.Jones@carnegiebirthplace.com>
+Cc: Victoria.Connor@carnegieclub.co.uk; lamannam@carnegiemnh.org
+Subject: Re: Inquiry: Diplodocus artwork
+
+On Tue, 2 Jul 2024 at 13:10, Jennifer Jones <Jennifer.Jones@carnegiebirthplace.com<mailto:Jennifer.Jones@carnegiebirthplace.com>> wrote:
+Good Morning Mike,
+
+Hello, Jennifer, and thank you so much for this!
+
+Sorry for the delay in getting back to you - I hope you are feeling much much better. I was absolutely floored for a couple of weeks there, and I must say the commencement of the school holidays here have not done much for me either!
+
+It's quite something how this inconvenient thing we call Real Life keeps intruding on research. I'm still a bit post-viral, not functioning at my best level. I slept for twelve hours a couple of nights ago!
+
+I have done a bit of research. Please find attached a list of objects I the collection that I think you might find interesting. As Vicotria told you, the 1928 numbers indicate they were part of the collection that came from Skibo and NY as part of the founding of the museum. The 1947 items came to us following the death of LWC, and tend to be items of a similar ilk - that is to say they celebrate the achievements of the Carnegies and their legacy - but seem to have a slightly more personal feel to them, I like to imagine they were the things Lousie held on to. Victoria, perhaps you can add to that!
+
+I love how people familiar with a collection pick up vibes like this. The world needs more curators!
+
+It appears that we have no watercolour of other artwork that meets the criteria of your enquiry [...]
+
+Thank you, this is useful information. May I please cite this in the paper as a personal communication from you?
+
+[...] however I can confirm that a "Print of Diplodocus Carenegii" appears on a list of items from Skibo that came to us in 1928.  If it was gifted in 1928 it must have held some sort of significance to the Carengies, but unfortunately provenance beyond them being gifted to us in 1928 is pretty much non-existent, it's a great frustration. We do have other items pertaining to the Kings visit to Skibo so it makes sense that they would have imbued this print with some significance too.
+
+That looks good! Based on the spreadsheet, it seems that this is object ACBM 1928/461 - is that the right way to refer to it in a formal publication?
+
+By the way, in the spreadsheet I also noticed ACBM 1928/67, a plaster model of Diplodocus carnegii. Does the museum still have that? It would be interesting to see, as quite possibly the first model ever made of this dinosaur.
+
+However, the image featured in the blog post (Dippy About Dinosaurs! - Andrew Carnegie Birthplace Museum<https://urldefense.proofpoint.com/v2/url?u=https-3A__www.carnegiebirthplace.com_blog_2020_5_11_dippy-2Dabout-2Ddinosaurs&d=DwMFaQ&c=euGZstcaTDllvimEN8b7jXrwqOf-v5A_CdpgnVfiiMM&r=n4qnfJeWSw5ypRM9EIw6n-CrIY5aXe8JMXsnRYAM3rSWREOmnF7-02Of8yWBKKtu&m=MItXjXZPhc8DpGv-Kl0waDUDRvQdz6przWaCF7KN7ZNzxCVmRAoYd49mWvv_zMio&s=IHP8uFeQfX7apDRNZlFz1pSTOGf3XVSnhNWONW1Gy5A&e=>) isn't actually accurate - I suspect that was pulled off the internet.
+
+Seems likely!
+
+ACBM 1928/461 looks like it has been cut down - it does not feature the headings and titles. It also has a fold down the middle and holes in the corners where it has been on a wall. It has been framed fairly recently - but before my time, perhaps when it went to Kelvingrove on loan in 2019 - so I have taken it out for a look to be sure. I really don't think the image in the blog is our object. I have attached a quick snap of it taken on my phone for you to see the obvious differences.
+
+Really helpful, thank you! It would be more helpful still if you were able to send the full-resolution version of this photo. Would it be OK to include it in the paper for its historical significance?
+
+Objects that came to us in 1928 and 1947 were photographed before we got them, and the print appears on a list of items titled "Framed address etc to be photographed" which tells us it was both framed and photographed. I cant locate an image of this print in the photographs however - Victoria, I don't suppose you have a copy of these photographs? I know copes were sent to various archives.
+
+That would be interesting to see if it's to hand, but actually your more informal photo of the print in its present state has more storytelling power!
+
+I hope this is somewhat helpful for you! Sorry it is a bit of a brain dump.
+
+It's marvellous! Thank you again,
+
+-- Mike.
+
+
+
