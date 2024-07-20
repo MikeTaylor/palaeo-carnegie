@@ -117,12 +117,32 @@ NO	Update in-prep references to preprints.
 BLOCKED	Integrate information from email thread "Quick limb-bone ID?" on pre-remount humeri
 DONE	Integrate information about artwork from Carnegie Club and Birthplace Museum
 DONE	Expand the reference to NRS GD281/140/9
+DONE	Check that all pers. obs.s have dates
+DONE	Check that all personal observations are in correct format (AUTHOR, pers. obs., YEAR).
+DONE	Check that all personal communications are in correct format (AUTHOR, pers. comm., YEAR).
+DONE	Check that all pers. comm.s are acknowledged
+XXX	Check that we have permission for all pers. comm.s
+XXX	Check that all references are cited and all citations referenced
 XXX	Bring in high-quality photo of the original Skibo print
 XXX	Compare Skibo print to Hatcher (1901:XIII) and check for differences
 XXX	Renumber illustrations
-XXX	Check that all pers. comm.s are acknowledged
-XXX	Check that all references are cited and all citations referenced
 XXX	Rewrite the abstract
 XXX	Add public-domain dedication, as in Concrete Diplodocus
 XXX	Upload preprint to Zenodo
 XXX	Submit to the Annals of the Carnegie Museum
+
+Personal communications
+-----------------------
+Ken Carpenter
+Victoria Connor of the Carnegie Club
+Peter Falkingham
+Jerry Harris
+Jennifer Jones (Andrew Carnegie Birthplace Museum)
+David Letasi
+Anthony Maltese
+Amanda McGee
+Vincent Reneleau
+Daniela Schwarz
+Kirby Siber
+Mathew Wedel
+Ray Wilhite (Auburn University)
