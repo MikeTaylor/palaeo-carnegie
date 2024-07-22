@@ -1,0 +1,218 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7023:c089:b0:83:d768:ae3f with SMTP id ip9csp2107178dlc;
+        Mon, 22 Jul 2024 14:06:40 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEYuMMUX03r8xyd1pPowEvZlk90RB2iyVLQU2A/rNB4NpqNf56zpadmt9KROmIgo4dXtWt2
+X-Received: by 2002:a05:690c:d87:b0:648:baba:542f with SMTP id 00721157ae682-66ad5de0462mr100068707b3.0.1721682400455;
+        Mon, 22 Jul 2024 14:06:40 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1721682400; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=rjKhneDMdLiqNoN3Jbs3826p2nTIZLuhtvZsmmB5jBTmoCIIs86juH/lAYSAJmH7Vd
+         78UuR2lWPxNRRxo40ZfQSOFB/72eZov5MSxohGejJ0C7cSrsJa5dHaXL/NkvVpL8EMyd
+         9JB636VZjh+5CF/Wz93QArqu1tzIlHE3oht8dE8uuv8xrTRDMmSQdAoQBkO8qaQzLiVw
+         HVqRCCZX+n84xxaIVt6Kg6+2CAzJaUbWCr5JJfbLjlBok0VTYmnTZg5ub4OcLDN1adOi
+         Touzo1lawqkkamgzob1H0DuHiPob0MGKYc9lJYjHBY9nArbbDIjRmECFTypQjJUtzUJi
+         cHUg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:cc:to:from:dkim-signature;
+        bh=0EU9aNt6+jYO7rXwKb3K+gKRXGNPi0wPM+nRnpgU5dQ=;
+        fh=1+B2hEpGeZ6ptT0w6RHQhxoh+CE6FZAmxcpXztIpoms=;
+        b=Es51ihKIaFWV1V4DMbUCf+rhIbzyy2ecoJKXKXSDGKZG+17+i4ZN4jNY3sJ0mFzMof
+         zAX3IiKhoaQjg8H3RII41pbLrrVtfF4+h/YzfyAzw5VH5oqj2dVpHSjyDlLCweY7PSBs
+         FoS7Bo5lmR0yh9Kl7gt/s3D3JNXT5FmZVI1A59+gvUDgTYEaln39F8X/YRPk0A5xp5xD
+         TB0+GSh2wFNUjpAgwpv/Ypo0Z42sc6VuVgdUNPBGxffW4+YlP18so3Nnk+KaHYoKryP5
+         3dyw4D75GfffGr9jHxbfQ0q/eXs/BAZWH7iiMwiMzkKC7cjYRbEYvllsJNwQ+gRYZaqA
+         shkQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@auburn.edu header.s=selector2 header.b=iApxUkoz;
+       arc=pass (i=1 spf=pass spfdomain=auburn.edu dkim=pass dkdomain=auburn.edu dmarc=pass fromdomain=auburn.edu);
+       spf=pass (google.com: domain of drw0004@auburn.edu designates 2a01:111:f403:2415::700 as permitted sender) smtp.mailfrom=drw0004@auburn.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=auburn.edu
+Return-Path: <drw0004@auburn.edu>
+Received: from NAM11-DM6-obe.outbound.protection.outlook.com (mail-dm6nam11on20700.outbound.protection.outlook.com. [2a01:111:f403:2415::700])
+        by mx.google.com with ESMTPS id d75a77b69052e-44f9cdd8f1dsi90809041cf.443.2024.07.22.14.06.40
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 22 Jul 2024 14:06:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of drw0004@auburn.edu designates 2a01:111:f403:2415::700 as permitted sender) client-ip=2a01:111:f403:2415::700;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auburn.edu header.s=selector2 header.b=iApxUkoz;
+       arc=pass (i=1 spf=pass spfdomain=auburn.edu dkim=pass dkdomain=auburn.edu dmarc=pass fromdomain=auburn.edu);
+       spf=pass (google.com: domain of drw0004@auburn.edu designates 2a01:111:f403:2415::700 as permitted sender) smtp.mailfrom=drw0004@auburn.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=auburn.edu
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=hc8dohT25NRYfMbpswQ6Oyk/hAtswu9QZweOkp92tD3QljaA4N5eTEUyTuM98zPZFeMKRRCqcUk1CyIFCEZ1sXO1uZHkkcuoqSp0UzpgJf88AjWEzpr+Cq6704hu2BQhaJ/Xs0tOWCCfKgey0fNpRfudmeV58Ar7UhlfiDju5qlPNQA3Wgd409/2tr0H1Is1qsFzlaqwAi0HeCXy6FiwUws0kJMtw4+mz2av2tTRztxRq5WoOmDvXuRnGuRwcso1utiM9vn/WygpqNUc6ME5dCMcRDgD3rgqhJblFVWyamNMfRPcdRGOKkr+zJNdI08FcpCNOiQ1f4eu6hEpRQ+7qA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=0EU9aNt6+jYO7rXwKb3K+gKRXGNPi0wPM+nRnpgU5dQ=;
+ b=RzEXw5yVb0KMJEJytNAS4h/1P6fuqRNZ6LnCODD1TWvjdx1u+JGqwZOLfZa4ga25A8uZt20D0E3WvYbtaDm3czAOfqB6Aj5T8minVWTcMTq68wostZynIR871cVMUtzcU/1BRPVcNs/dNQxqvIzpg8q8V9xHOvm3Ok0jkXo+to4m/9GyFaInVX2cUdT4WSe5tiO9ZVDGu3yjizkjzhYO1lKN7WSaYewkW+1utpEjXGTRodym3Q7UD7jUGHDFIlJgyFbtFbiw1yhec697pzxtEUB/1TflhXMwyHiTc8X6JqRitRy7JzYMEQhzZZq8kWB0PR6d+knX4nMaynpiUzidkw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=auburn.edu; dmarc=pass action=none header.from=auburn.edu;
+ dkim=pass header.d=auburn.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=auburn.edu;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=0EU9aNt6+jYO7rXwKb3K+gKRXGNPi0wPM+nRnpgU5dQ=;
+ b=iApxUkozrCv0Sgdp9i++fxwaSO9WLVGLrke6OyESbQ8EnvCkwIzAItdmHci73hM1C5hTwiLh4rh2Qe2sEj3hFDZk0HVpw6Ipx7hwaLJeDYR//bIXYDBor+JeJUn5rul/d7ck2NMn92fVUg2joJbxoQeGZVvz+14R6RXUhpGkec2DvqrIxlxxjio3J4/LnzTCdi8ZtoG1CUREUdxC9l2c8ati146yAVCFl5G/Tg5+mXbmLDi7jpOvFKlzj6rvLcZX9kXTutzlA0qT9EhLkVplkAG4uDe6kzHp4KGex0n7vi2VfOlxWRk+Jlp7kyU6BVhVMVgfIa18qBVs/g5Nd18XjQ==
+Received: from SJ1PR19MB6260.namprd19.prod.outlook.com (2603:10b6:a03:459::9)
+ by LV3PR19MB8318.namprd19.prod.outlook.com (2603:10b6:408:215::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7784.17; Mon, 22 Jul
+ 2024 21:06:37 +0000
+Received: from SJ1PR19MB6260.namprd19.prod.outlook.com
+ ([fe80::b994:93cd:d1a6:a490]) by SJ1PR19MB6260.namprd19.prod.outlook.com
+ ([fe80::b994:93cd:d1a6:a490%6]) with mapi id 15.20.7784.017; Mon, 22 Jul 2024
+ 21:06:37 +0000
+From: Ray Wilhite <drw0004@auburn.edu>
+To: Mike Taylor <sauropoda@gmail.com>
+CC: Ray Wilhite <ultrasauros@hotmail.com>
+Subject: Re: [EXT] Re: What's the deal with BYU 681?
+Thread-Topic: [EXT] Re: What's the deal with BYU 681?
+Thread-Index: AQHalcArKnJrk0d8vUSc+N2IRQwvmbF2WrQggAADSUGAABRqgICNSHmAgAAOEz4=
+Date: Mon, 22 Jul 2024 21:06:37 +0000
+Message-ID:
+ <SJ1PR19MB6260002504299B6278D47A55DAA82@SJ1PR19MB6260.namprd19.prod.outlook.com>
+References:
+ <CACnMvBZ-3NeTA8mhfmD61ZjraPWcYcbMpY=EDZ=5GGpmjPq3=Q@mail.gmail.com>
+ <CH2PR02MB6475994D983C48598E8E99B0D8112@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <SJ1PR19MB6260CFF29F609D9432F72EC2DA112@SJ1PR19MB6260.namprd19.prod.outlook.com>
+ <CACnMvBZsQoDN-QkiGsJmCjpnmNJs=w=xKm0+cx8j8pPQnvFu_g@mail.gmail.com>
+ <CACnMvBb1R9+vYQdXbLvW_zK_T0dc7U-0Kni8nPKRxs8-oyGpag@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBb1R9+vYQdXbLvW_zK_T0dc7U-0Kni8nPKRxs8-oyGpag@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=auburn.edu;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ1PR19MB6260:EE_|LV3PR19MB8318:EE_
+x-ms-office365-filtering-correlation-id: fdfff976-4622-40fb-0ab9-08dcaa922cea
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230040|1800799024|366016|376014|38070700018;
+x-microsoft-antispam-message-info:
+ =?Windows-1252?Q?lNXsEe+Ir1Ur60cRXi2DEmxZT/gwVPtuf6CmFHb0ITnijg/bmJG2ThZz?=
+ =?Windows-1252?Q?mv9xknH4yYNEe3zLmo+G1RVJJc6sVaKlfq+JcLSlsPm8doq6TCBydUvG?=
+ =?Windows-1252?Q?y3nvHGr3BRwjsIp+d3J64Vhcnoi40SNU6LHvJP0HK8iCSVAaJaHArFb8?=
+ =?Windows-1252?Q?aBaurcGURIu80UMcB9ieRITmxCKxoD82FXS53E26zxwqcvOaroGo+2or?=
+ =?Windows-1252?Q?y4ZAS0Tx06I1wi/1oZ7niV2nS4/hNx6mbUu4cToWWmCPd6LRi9zQEDf6?=
+ =?Windows-1252?Q?urkA5AqknJmXruBKZkBngr5ZaE16GeXGU72XCPL9UJkYPrGw1S6zOHZQ?=
+ =?Windows-1252?Q?PSV057eFUhI9EUp0IYx8ox9qJZBxTsCuMN4Ueh32YRU0sSfHj3r3Kkzd?=
+ =?Windows-1252?Q?tGOWlrY9aNXYuhmZ9T3wTOnoWpuY7ToBCEX5eHjA9C2Q8t+RWpfMJACK?=
+ =?Windows-1252?Q?Rk4FiELmgHalut4w0SGxB3vnjs/I7G+zyp04jCIa5I+dyJrsIe4l8lqF?=
+ =?Windows-1252?Q?xax52g0OMAvm9eoaZcXEH04ISAHSYEJ6nsWkX+q+s0YFyQppxhxcSXg5?=
+ =?Windows-1252?Q?omR3LqZQz5lsdTTbUtX5B6IAB7CSXwLA+2QiIgPHuzVrgeVCR/Y93td1?=
+ =?Windows-1252?Q?DAEDD/axlARRLqS8Izy+qw3AzDWSaN00JZsaxfmntWaRIopcY50pcwXO?=
+ =?Windows-1252?Q?lDNiTwIAHRNJIy2yo8Wi4x8GqjHnAeKt+pReT/Cw5tsMmD/kFji2o7Pi?=
+ =?Windows-1252?Q?g7mRzD4I2IJGV/XQPyLWF2C3TS4aE79XLLQPMeB443MDKDhmq4OKJ5DL?=
+ =?Windows-1252?Q?7s5r0zLuV05SszIt54W0Lu5mbOrBCHGuGg2XikgLDMrUxp6TcWiRADfU?=
+ =?Windows-1252?Q?h6CEIzuJ8vhCy22ZnEhCPyNSei77XNyRtk+QqTcG9SBOyZ+Zee9e3dQv?=
+ =?Windows-1252?Q?7ZPl5UX1bNzh6y2W8Ajpbw+rbvm0YK6nCYN0knUJnzgkZCjM8AjFg2hj?=
+ =?Windows-1252?Q?16vpHgys6FRg8+O9wMPQhSPypdhZocTP2QYi4Vv+FT/1VFxHYVLc+Un2?=
+ =?Windows-1252?Q?rrRvuCcg/VQcE71jU+iA7mpVLa59aqXHu8AdJnPhT94rR3YZz+k7aikj?=
+ =?Windows-1252?Q?vmRbtMbcm/FminVyY90JzOV/RLjBTGnsQ0r42nBkh6bXz1Qn29/NPR2V?=
+ =?Windows-1252?Q?G/jJiBqCjf3u7nSpUyVA3iC2ovHD4ti8DFfN/USGNUULYGDRDaqx68/7?=
+ =?Windows-1252?Q?34Cl4N6aHS/kzQ9gHk55Z2Uzr1AypCVmvqSvQhXYXbnZtp+VqWdTtOzr?=
+ =?Windows-1252?Q?wL4R/GwUITsk7J+PXUdDXW634EfnH1SY350uaIoWbn9DXGnMreyZdmMP?=
+ =?Windows-1252?Q?g50mItQhuynNwdpDHWzYKPYZh6EGuOvpeWGBrr1o9s4XmXCLMtKcZMir?=
+ =?Windows-1252?Q?XMegWbVnkuyrTai2YOO5S4QII5rpuuZiFAaMB4w7tdsjzuwJep6USNoo?=
+ =?Windows-1252?Q?WE2pDFgxw85Vj9g0IRdfb2gwnE5CPA=3D=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ1PR19MB6260.namprd19.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(376014)(38070700018);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?R4JKtRdDXQiLlbioRa2kmT2VqApNKoAiRk5rPwoT4qtWdTcXGPOsbL6F?=
+ =?Windows-1252?Q?oH6cQSiNF+4SFdlovX7NSjN1etKOFgMXyD9Mo/CXJrQtj/W2GJgwNrH1?=
+ =?Windows-1252?Q?/VcReGEP+YF1ECXxjB+DT/skfoFqFliPcZpzAB83h7MnfjrILZxXPzFi?=
+ =?Windows-1252?Q?orQy6pXf/eNjybIrI4vQb+YvOtq77eaQfVnuG/cStMpKoSZSOXOiUY4g?=
+ =?Windows-1252?Q?UFRldCtURpgagWHi70KVvLuHWlysHBscaRhDkbcfUlxDwV/5eVZ29nvu?=
+ =?Windows-1252?Q?x8bxJD0nNuD18CqcucAIWo07rZLPZ6QJKp1ahzAay+sqEr0QuKSUR4TD?=
+ =?Windows-1252?Q?V2M71RpP7waEpjUq2RX74u/bE5+QYjUK5JEwKzqSlUxjPhNmnngI/GHE?=
+ =?Windows-1252?Q?+9aQKx+t11LymWTpVRMmrQyKdgPkN53HfSGuMItvhIBmf46Kse9GHkeD?=
+ =?Windows-1252?Q?Raev1t5/f+ujxXrY16DkPkVq2Oq+KOGJplHNtUmV1vHSl540EDELrIAo?=
+ =?Windows-1252?Q?eOGAMz6Sry6SnDB1zH1sR8CgH4Yg+fa+xJKsIbOHftDh9X9gTgNEJ9yf?=
+ =?Windows-1252?Q?rmJ8hWEs0g33Ch1BszA1Vc5wxoyYy1V+/MppU7+mSrde/opyHBVtbkN7?=
+ =?Windows-1252?Q?6ulNv4fylducws1lMH6/lVNW6HCnasKMlLRG2oMMepj2XIvLTFVnyiyw?=
+ =?Windows-1252?Q?kM75ZruvH6Gz0aTMUXdAWhFXC/JZLp1LZFlk5lhZLec1a8sVnIFKPKXe?=
+ =?Windows-1252?Q?JdZj6/vm/P5SdugbPfv7jxluz8dWNzoF9k64uRnTF8Pxa0BemxHUnY4J?=
+ =?Windows-1252?Q?ANAXqWfC8Nz8idTKBHwT4BC18tyr0BgO5FjEOARuWLm4sAOPFSB46SJc?=
+ =?Windows-1252?Q?pIFLT8YJGjVY+9Hhcjb0kUdT3Dsz401ENRDwr+LNF7PBdD94NJLmBEil?=
+ =?Windows-1252?Q?953OBltNDExnbQM+oV29mcsVHeNHKUnAi0giYBsTMm04BHeoiDCu4ctG?=
+ =?Windows-1252?Q?A92Jj+WEPr3cfsuBVBYWYvEWmMiIqB47Y0I0qDxjuiTxUIhisrg+BHHg?=
+ =?Windows-1252?Q?pdWcQp8Qv6i8lXoPGgF9b+iNPbXBThwqIrE9Ci71byqnJsRoAbHz9A2L?=
+ =?Windows-1252?Q?+xR10/3kj+1hKRzgQ/BDg0TBPD8873XB9iRix49AQFGr3GFJs++ztaaO?=
+ =?Windows-1252?Q?/flkxgxFt8Xy2r/DjJiCxpqNt/3m3x5sYKnVl1xCkTQLzSL75ws4S+Tl?=
+ =?Windows-1252?Q?T1Na+wHUlupVWP8S3SJHN3ngx57c4INYE/tDnxhJS/uN7kB9yckEiEW5?=
+ =?Windows-1252?Q?ZIwddA8W5ypkt/qBHjMya/JJgRFiZjpeAF2VEckXSr3PUU9BKv46DVCT?=
+ =?Windows-1252?Q?GYkMSvvU+2zlGD0cSmrU++FPd/N1jzm2EbFN54n8y0H1C/uGcr5ydqFo?=
+ =?Windows-1252?Q?z4ECCQfe8HAhfGdtajo6OJfV3tT4e0ZUpJrIGndqjLaxbkbX2BrtSNIs?=
+ =?Windows-1252?Q?wQqWkbUenQWYI1p+iD1pMwXidYgXA1+zam0SeKimEXvZBrVLTHPlf5lV?=
+ =?Windows-1252?Q?hUAIi55dd5yiOp9ZO8NMWujFtMntc35eeW5iDenlcjqWSVLQkcuNxEJc?=
+ =?Windows-1252?Q?82zh0bc1SoHAu0CSYNO1jbwegOwGpp27pqUZLQH79JT0kUVNMz3DzrDN?=
+ =?Windows-1252?Q?C6TZJ+hHShCzqoP55pfpj0S7ihZLzpA6?=
+MIME-Version: 1.0
+X-OriginatorOrg: auburn.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ1PR19MB6260.namprd19.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: fdfff976-4622-40fb-0ab9-08dcaa922cea
+X-MS-Exchange-CrossTenant-originalarrivaltime: 22 Jul 2024 21:06:37.5130
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ccb6deed-bd29-4b38-8979-d72780f62d3b
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: OBbNlar4aHYOLDvnelJnKUAZvGtSBnBNVIQjq1+/KBVbGiFw1weaboUFTfcf0nmxvKM4pGkV99PF/eWq/xXXzQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV3PR19MB8318
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="Windows-1252"
+
+Mike,
+  I can do you one better.  BYU 4742 is a right humerus form a Diplodocus.  Further we have identified a right radius\ulna, left distal humerus\ulna, right scapula, sternal right femur\tib\fib\astragalus and right pelvis along with other axial elements that all confirm the doagnosis.  I would just say something like "Ray Wilhite confirms that 4742 is part of a partial skeleton of a Diplodocus and lacks medially bowed body and medially offset head characteristic of Camarasaurus."  Does that work?
+   Ray
+________________________________
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Monday, July 22, 2024 3:10 PM
+To: Ray Wilhite <drw0004@auburn.edu>
+Cc: Ray Wilhite <ultrasauros@hotmail.com>
+Subject: [EXT] Re: What's the deal with BYU 681?
+
+CAUTION: Email Originated Outside of Auburn.
+Hi, Ray. Late in the day, but can I please have permission to cite this in the about-to-be-submitted manuscript? Specifically:
+
+Bonnan (2007:1111) listed the humerus BYU 681/4742 as belonging to Camarasaurus. Ray Wilhite (pers. comm., 2024) confirms that the humerus “is definitely a diplodocid and lacks the bowed body and offset head of a true Cam”.
+
+Many thanks!
+
+-- Mike.
+
+
+On Tue, 23 Apr 2024 at 22:38, Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>> wrote:
+Thank you, everyone, for contributions on this!
+
+Most importantly, I now know that there is no such specimen as BYU 681! (Or, there probably is, but it's nothing to do with that we're discussing in this thread.)
+
+Ray, you say "The Diplodocus forelimb bones are obviously all from a single individual as there are no duplicated elements and they are quite a bit smaller and more gracile than the juvenile Apatosaurus material." Are you confident there's only one Diplodocus individual in that pit?
+
+Regarding the "spelling" of specimen numbers, I've seen these given as for example "BYU 681-4742" but never "BYU 681/4742", separated by a slash as Rod said in the forked thread. So which should I be using?
+
+And when I refer to Dry Mesa specimens such as the giant Supersaurus cervical, should I really be calling that BYU 725/9024?
+
+Ray, you never called 4742 a Cam humerus — that was Matt Bonnan. You say "It is definitely a diplodocid and lacks the bowed body and offset head of a true Cam" which helps. Matt B., if you have thoughts on this I'd be happy to hear them.
+
+-- Mike.
+
+
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
