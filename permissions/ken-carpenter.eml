@@ -1,0 +1,268 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7023:c089:b0:83:d768:ae3f with SMTP id ip9csp1448690dlc;
+        Sun, 21 Jul 2024 07:51:03 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEVWTTNyHRFh6UaozfiLzDtfeiv2wouk+6PhKDL0yXrJuceOVz5JA3aM4i+rttycbTt62vZ
+X-Received: by 2002:a05:6830:258c:b0:703:6c81:eb23 with SMTP id 46e09a7af769-709008682f7mr6003402a34.10.1721573462930;
+        Sun, 21 Jul 2024 07:51:02 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1721573462; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=KIt5ZMHm8VVajimLdBe5WORRy1fCF4RXpyq85aBsoqxm8o1/gA5/iC4do7mvnk+4pa
+         duahD+yFkvqx3MZ9qXAJADKVTgHNaO3hoqrlMenl8bQ2MvuSAkGdnIxm6gfxbUhdOGv6
+         vwzWEn0Y4mR4DhsaBmPBbMHQWQwYArOqMza/Rn57qS0eg06LEBMk3RVvhiSrQ/sF81zS
+         TVCaEWeXycTdEPJxNClNKKX+EuK7Qly20OQqd8yTc1tCnp8RCjSIMjmI2hxenfYDyTGb
+         Wp66KdGUcqq2zTGsblSYX41SHBNoEl2CIjCkRDrhyj8KXskaI97otTyB2aKMYjorWtYj
+         bD0g==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:to:from:dkim-signature;
+        bh=A4O197EpNMRMFns+SjJ79QLwZYr9YOggoRbr4E4M+/k=;
+        fh=cuZ7jSwD13YE+Qq+nea85qW3JSKlsjfKmkJdZM5m4cU=;
+        b=TIFCxtgzXM0f38+TRavGg/opfS9OMBjT6ezbSsxTLA0+qawd5hiKFLJYM40lUmHEQP
+         x33nKrvgK/DpobQWo+l1/sd67g9WCNk4bdSGWxiaKcEMybJktH0jOHCU6W/6bjMCnJFa
+         DtWFrHaWRj4ukKY7owl9U3tQHBy6dzYf83oKF+KOmiIXtLfZLMSodbVNR03J4ljesae1
+         esUrq9uSFWhKo2ukQFW6m661htqNkaLtCYE2X2/Zn3ue77DEdYknShyMPA0Bx6QGmtXa
+         014K2G4M8KuSgwt345bhGiy0BYfuu+Ae9gEDbLfLylA9PCG5qYgfcqXrRbvDGTNKsTkr
+         bQPw==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@colorado.edu header.s=selector2 header.b=XrqOLV4s;
+       arc=pass (i=1 spf=pass spfdomain=colorado.edu dkim=pass dkdomain=colorado.edu dmarc=pass fromdomain=colorado.edu);
+       spf=pass (google.com: domain of kenneth.carpenter-1@colorado.edu designates 2a01:111:f403:2009::727 as permitted sender) smtp.mailfrom=kenneth.carpenter-1@colorado.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=colorado.edu
+Return-Path: <kenneth.carpenter-1@colorado.edu>
+Received: from NAM10-BN7-obe.outbound.protection.outlook.com (mail-bn7nam10on20727.outbound.protection.outlook.com. [2a01:111:f403:2009::727])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-70cff4bd95fsi5614715b3a.83.2024.07.21.07.51.02
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Jul 2024 07:51:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kenneth.carpenter-1@colorado.edu designates 2a01:111:f403:2009::727 as permitted sender) client-ip=2a01:111:f403:2009::727;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@colorado.edu header.s=selector2 header.b=XrqOLV4s;
+       arc=pass (i=1 spf=pass spfdomain=colorado.edu dkim=pass dkdomain=colorado.edu dmarc=pass fromdomain=colorado.edu);
+       spf=pass (google.com: domain of kenneth.carpenter-1@colorado.edu designates 2a01:111:f403:2009::727 as permitted sender) smtp.mailfrom=kenneth.carpenter-1@colorado.edu;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=colorado.edu
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=hWDKCxInPq/mTaKq598bhVei5SkAuqhhBCp+O2mutyAzBibrigRykEkwfMVpzLRmBAzPBvo25NzsIYZW1UXUgTMcIG0bYSaAVeFQPDd8zdjcYDZaRLU+C0dRKPFMQTvrp5MsMuuhc8vYiku/xvKikfDeE5N9p7BeqFuvp4PXZ3IN0R+QDvgUMngSDpBaNNXdfryHu2otNzPYGh79apKg5hL8qyWccCeh8nAJAl7N2lZ8y5C3y3IEVMwr9e6Qk8blV0NTitGJi2L0ef5Dxe7ku4PRdXVED2VpvQh5W0kFKD+wZOLbOj59CxvbVHxL3BJivgt6cuFIJcxCBA09eFIdbw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=A4O197EpNMRMFns+SjJ79QLwZYr9YOggoRbr4E4M+/k=;
+ b=oAUyvCS7sd2HdLRlkoBl72EA1znS2b/w4MhIVDUGPFgVe1P2yw+jCFuTE4cJlLnnF7I5ezWQx8ojSbUP5WjKH8+R0uJwKGM0JrI8dLG/Gb6GN02M72QQezb5GdAs39bkk4V0Up6vPLZ29ZIPyFjbwHx3vmVPQvUMW/NMMgsA203x8I3zuU/eTT6/T6YiQjaxrWk3idukke11PBW86jv5sbhFEh0LAeUSrhZPAMhvzhXysBtNEJzDiiXF3/3Btvh37w8liTTiTBuZxpqMyZgIX2YAzR5UhCxsAlRJh4QR1iUeGdMWUyHLHlhbh3GZBKzML4Nwd2PtkPsMoO/dAZITrQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=colorado.edu; dmarc=pass action=none header.from=colorado.edu;
+ dkim=pass header.d=colorado.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=colorado.edu;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=A4O197EpNMRMFns+SjJ79QLwZYr9YOggoRbr4E4M+/k=;
+ b=XrqOLV4s8Nu74wLqQZ1pLPal6M0Cb2nUQont3ajEgqOrthY6WFq8iux5o3hOSla0khZ66qgVqNz8nlglzCDes6kAdvCxXmq52HiaMLdULhcfPHIFCsHaRapIm6mTK+b5wYzgQGeJ69+nWotGmSsIVV1tDBcmOeeqpIoPPulDRkY=
+Received: from MWHPR03MB3280.namprd03.prod.outlook.com (2603:10b6:301:44::12)
+ by DS0PR03MB7752.namprd03.prod.outlook.com (2603:10b6:8:1fc::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7762.29; Sun, 21 Jul
+ 2024 14:51:00 +0000
+Received: from MWHPR03MB3280.namprd03.prod.outlook.com
+ ([fe80::f7b3:3746:2932:74bb]) by MWHPR03MB3280.namprd03.prod.outlook.com
+ ([fe80::f7b3:3746:2932:74bb%5]) with mapi id 15.20.7784.017; Sun, 21 Jul 2024
+ 14:50:59 +0000
+From: Kenneth Carpenter <kenneth.carpenter-1@colorado.edu>
+To: Mike Taylor <sauropoda@gmail.com>
+Subject: Re: Denver Diplodocus
+Thread-Topic: Denver Diplodocus
+Thread-Index:
+ AQHY98YvjnB9+VSj80WzF5Wzm+4nBq4+lzvqgAACUACAAAXm7YAAAROAgAABpleDxOeYAIABgWNP
+Date: Sun, 21 Jul 2024 14:50:59 +0000
+Message-ID:
+ <MWHPR03MB3280F3474A82653B564F2CE49AAF2@MWHPR03MB3280.namprd03.prod.outlook.com>
+References:
+ <CACnMvBa_RbShU93+StcDBeyFi2=MRr3LfXUCO05imn5USY3oUw@mail.gmail.com>
+ <SN6PR03MB374129BDD15796D15461FCEC9A059@SN6PR03MB3741.namprd03.prod.outlook.com>
+ <CACnMvBZNLh8590bkcn2iRYiadrNxNKx0iOeJgFdME_4z4kWuBQ@mail.gmail.com>
+ <SN6PR03MB3741D7CAF6F413B4A78D3BE29A059@SN6PR03MB3741.namprd03.prod.outlook.com>
+ <CACnMvBZ512kyn3s7y=7fbZR0_os4Wn=ThY9hb8Kk=a6yd2=4-w@mail.gmail.com>
+ <SN6PR03MB37415CA774D1AA0A905DA68D9A059@SN6PR03MB3741.namprd03.prod.outlook.com>
+ <CACnMvBYC4EhmJvoZ50FRQvCYu4m8KigP2FZWUDeesB6cwTgVkA@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBYC4EhmJvoZ50FRQvCYu4m8KigP2FZWUDeesB6cwTgVkA@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=colorado.edu;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MWHPR03MB3280:EE_|DS0PR03MB7752:EE_
+x-ms-office365-filtering-correlation-id: a9094338-b35a-4559-457e-08dca99488e7
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230040|1800799024|366016|376014|38070700018;
+x-microsoft-antispam-message-info:
+ =?us-ascii?Q?u4JKOHn95rBxat6tLZfuNm1JzdRlSbM+wxZIc5FmJquwduBssFQIO/FMogdd?=
+ =?us-ascii?Q?2xlFfrsQkN6u1l9v19J9PzyABwLzvyGGkgCemmjcBH7Fh+c2u4B1sxJkliqF?=
+ =?us-ascii?Q?mrhbIzb8LHbd6lVm46tUZNSqJB3t2xyH7qARWgQSp5X09LmhqkTURmPrjtzz?=
+ =?us-ascii?Q?hjENPKlonWDR//3nK9hzWSKOAXwfYE3sMbOQJFiyhe1tQoNef7v/rFK50eDZ?=
+ =?us-ascii?Q?O7vIHzZWdotm7+jQfjReCCnN41Q7Gu/b82cGvqMSpvONIj5DzC/2yxjM9LGo?=
+ =?us-ascii?Q?UVQ+0/iaaC/sw7bVaI2fnLEIJiYb3XnsMzvLhe23VqnZ74Hlq2Zlo12DsZ2G?=
+ =?us-ascii?Q?IeJAR7/3P4G9H34M3jghlAhZi7IJsiXKPCo+xMCRkKrJlMs20BMa+CcBVBOn?=
+ =?us-ascii?Q?1/2IDy9aXA+IMv8Kw8fyvvytKWrDjmL9BBceXljV5uCG2Axm5/ar7vGrxnbV?=
+ =?us-ascii?Q?I5Hg8oRRk7Bo5IkR+ZALwzJu4KgaApnU/5OHDe5EK/HAJrAlygse2Ye68ymi?=
+ =?us-ascii?Q?EzCd0OsizlTkifRnhJaLl2k0MK9TF6v/C1j7WufMvQtKX3VDzNac4t19hdzy?=
+ =?us-ascii?Q?+xbv7wwWkuOLBLjvc+stdME9bjUmO38pc5vCyAcdbTGjDOYihQryVTPNxSsb?=
+ =?us-ascii?Q?6yO4RSP73f1so7v37xksZ6SmrSCzvf9HrJ07ycLpgHtwjc+ifpVX/alByVvw?=
+ =?us-ascii?Q?awP/5l2TcMVfphXu57CjqI6XRpGkbu+Rpayhr9kIQWFw2KjoWRGMQIYQf7WX?=
+ =?us-ascii?Q?ZzsDfXllUhK/VUicclr7Wgy/SJ2QPdza0b6JczfvOIn5t9d0PY4GZFgadHT3?=
+ =?us-ascii?Q?+YPSKnCv83i+b17nLgyNz5v+D/gYtbLE65rO9lfDwHFQXVi1IH7pAXU1y4um?=
+ =?us-ascii?Q?1kQjhUKoQxFXcY4NJqc4i7Mxb9iY8eIFFEFZKbO+SyO1mOwkX1lU5JTDPJ7p?=
+ =?us-ascii?Q?6f7RQEylRtkLBcLV7x2iDQxk/U+1QQGtyfsLkAfKIgwyrOBYmKJMG70AnnHv?=
+ =?us-ascii?Q?1UNMEijFBTBdTbYqUGhcaijYuMxmpeAGjyHpEdsr4bKgde39vAMuluvFfIcN?=
+ =?us-ascii?Q?1XMOIbUWfq9TwcBjP79p0K5SP+G0dtMK0PJKQ59/fp+gpVIRG5gs8r6TWRXY?=
+ =?us-ascii?Q?BRcB2EinKmdFQ6sMkMmBi2RwnXQrd3pcG017rAoYO0RfBDeSldHoV+IZyZmz?=
+ =?us-ascii?Q?ByGuAB+JyFeg82Vn3ex6PfQe3t4RsMIvTJ7uodalSAWKN3ELHR4JhOXN2s5L?=
+ =?us-ascii?Q?FCFPUhpN8yZfYDGO2auxpUBoGHl2sXgJlK3Nu/KY9Q251PBYgFFnOX1f39Ej?=
+ =?us-ascii?Q?LU7HYQ4W+YrohEJbhBAojBeYG+0LpLq8mP6hO4MJclx5OtVHqmDZBVYPMoEe?=
+ =?us-ascii?Q?PQjqz4A=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MWHPR03MB3280.namprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(376014)(38070700018);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?I7+esrm3Xb9wV/Pq4diggCFfDPFKD0v/CgxE/LSdq3LGtW7zZBd4FmYMmad+?=
+ =?us-ascii?Q?Lu1Pe1UF9U5kcDD40RFXuKRmAdS1DyfJb92vk6QTT6tsFIsyPP8C8zORW55W?=
+ =?us-ascii?Q?gUYo0Spr3QxZzh/kD1jF/Pa/zQLVxrzE+H9IYX70F8itn2+eskC29DO8oHdh?=
+ =?us-ascii?Q?OtK5R+ebEdN0bQY9v2rJMj9tFxgd7JOnOY+yHnLQCTvWKIiKb9Hz57OmdkPk?=
+ =?us-ascii?Q?R0VtW9Gt4M0wQzGo4mKA5MizG9+NVsJFVZOTFRtnbKy583x9r9ZedKV5gDj0?=
+ =?us-ascii?Q?h5NsDVJb4wCcNmv+OKwvLKvbuPMul4XcWHhA5Zgacj9rVZUNhq6V0hB0vmW2?=
+ =?us-ascii?Q?2+QBiUolwrP4wAeakGMCjgvwBi76qBFmblePkre6rHkadmCreCG+OJ3Wix79?=
+ =?us-ascii?Q?o6oPSk6g0v4nekqF6jxBheiAVrYIzvJ/43N7p3K/JqOgrvXXiarbu+TeYGPk?=
+ =?us-ascii?Q?c/Yk/pKmtGAzooG3zmgzaRjtWCVoc8yjr9izFTt6DdVJtB1h0LMChwydHR5J?=
+ =?us-ascii?Q?OpBQ8/fgfH2CRvRhWE/IrHARJ5UY3HLd5WBWC33KSf0dp0E8/Dh8viQGWmlZ?=
+ =?us-ascii?Q?faYS+Ezv/pNfu8DvZzOiTcLq+0BZ461p3/Gt/r/2k2eYD+yIKmlttK3dZvZl?=
+ =?us-ascii?Q?tmJlyr8ZlvfC9qi6Si+AesuKiqSDY8Tic0UWu57mlH5vacBdgN0Vrbwj1AGX?=
+ =?us-ascii?Q?CE0SHnZt3x87Jo6V+2q0Y548OsEOEbFmRH45CGdJSJvVg0vfeWfzYi0f8Ikq?=
+ =?us-ascii?Q?uXexU5lhaf/i5d5IAFpDMWMdkDJiEorty9my78Vvwp/R76V1RezsTGShmIK9?=
+ =?us-ascii?Q?tf20LqCHaDE9iSSYCwQy2pR6yh6n+qkOonBsEGkDu2ZbuEuEj9vjy2FIRRSr?=
+ =?us-ascii?Q?2sZ3u/9L820lHFaFXcbMvZyjKQzAPP1Ftwzo5MP3fXUtI3Aky/yfgz6IR+AV?=
+ =?us-ascii?Q?d69AbezvjE6unYBmVcYcDcGEYRtuKyrHipc+UI320Fdylz1EWMmnD2ivfBTW?=
+ =?us-ascii?Q?KPmCYKQQWooa7UsBRths5tjkUAoFDqvzWaRiczI7gE/4+Y+WQgb6Heym6dGg?=
+ =?us-ascii?Q?pdkHzCf8CcqaY9acQ1FnOyjBQu2vZNlhOmrwkTvBmtqQ7fNtBdInpRMNwN9X?=
+ =?us-ascii?Q?70SQ3F/cnb8HfzstTZoorW45bbJfc23fVIudXGjG2cQhnhtBNE61FAzrK5Un?=
+ =?us-ascii?Q?OniS7pm3Pgu65EtjCm+FulDDNyLAFy0zVZoOgBdy0UhOYjLvIVOqGAUIcKUm?=
+ =?us-ascii?Q?uELrroTMIp11H8xQ1hh7QLzJKVZBLJNt/fObgbWn05yz9E/kgMoBHeqBhmvy?=
+ =?us-ascii?Q?nx2isAMdIGAeEGE1WS1dXdv+bcXlAed8LZxo60O5nM+BPAgeksf//UyGVqxI?=
+ =?us-ascii?Q?iKnap/4vWXbY0AeoAL18kFrioJkldy9tZap02dIowdo6++CCfoW9auyJQYpW?=
+ =?us-ascii?Q?i8xuaFR9jlnPe4HBD3YsH3xQn4X6rOrx4Cy3Pv2AQRU5Ctq9zzyMsa7EMSO9?=
+ =?us-ascii?Q?z78eSdVgXFQ5rDqw8SUNXlpRzv+y/5AK40dBLJQm3Z00hXUzJ06wXx14wgID?=
+ =?us-ascii?Q?wF02BwPkQWb0FMeQWEc=3D?=
+MIME-Version: 1.0
+X-OriginatorOrg: colorado.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MWHPR03MB3280.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a9094338-b35a-4559-457e-08dca99488e7
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Jul 2024 14:50:59.6601
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 3ded8b1b-070d-4629-82e4-c0b019f46057
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: ZzK18pr7LF/kPftd+Q9EaYnr9rrqZjfJcTV20BzIkNMU8ahQPie5nuV8M7ONI+IOaQ85hTl40dC065k2KZvuTw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR03MB7752
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="us-ascii"
+
+Hi Mike,
+OK
+Ken
+
+Kenneth Carpenter, Ph.D.
+Adjoint Curator
+University of Colorado Museum
+Boulder, CO 80309
+(publications: https://www.researchgate.net/profile/Kenneth_Carpenter3)
+________________________________
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Saturday, July 20, 2024 9:51 AM
+To: Kenneth Carpenter <kenneth.carpenter-1@colorado.edu>
+Subject: Re: Denver Diplodocus
+
+[External email - use caution]
+
+Hi. Ken. I'm finishing up the manuscript that this was for, and realised I'd not got explicit permission to cite your pers. comm. Would that be OK, please?
+
+-- Mike.
+
+
+On Mon, 14 Nov 2022 at 16:53, Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>> wrote:
+Work was by Philip Reinheimer during the mid-1930s with a WPA crew. The specimen was received in exchange with the CM of fossil mammals. It was received uprepared.
+Ken
+
+Kenneth Carpenter, Ph.D.
+Adjoint Curator
+University of Colorado Museum
+Boulder, CO 80309
+(publications: https://www.researchgate.net/profile/Kenneth_Carpenter3)
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Monday, November 14, 2022 9:42 AM
+To: Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>>
+Subject: Re: Denver Diplodocus
+
+Thanks. Do you know when and by whom the previous mount was executed?
+
+-- Mike.
+
+
+On Mon, Nov 14, 2022 at 4:38 PM Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>> wrote:
+carnegie MNH
+yes, previous mount
+
+Kenneth Carpenter, Ph.D.
+Adjoint Curator
+University of Colorado Museum
+Boulder, CO 80309
+(publications: https://www.researchgate.net/profile/Kenneth_Carpenter3)
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Monday, November 14, 2022 9:17 AM
+To: Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>>
+Subject: Re: Denver Diplodocus
+
+Thanks, Ken. I assume CMNH here means Carnegie, not Cleveland? (You have to be careful where Diplodocus is concerned, since as you know the Cleveland Museum of Natural History held the "Diplodocus" hayi holoype for some time.)
+
+When you say "Bryan Small and I mounted the skeleton. The forelimbs were plaster casts previously used on the mount", what mount were they previously used on? Do you mean a prior incarnation of the Denver Diplodocus mount, or something different entirely?
+
+-- Mike.
+
+
+On Mon, Nov 14, 2022 at 4:10 PM Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>> wrote:
+Hi Mike, Bryan Small and I mounted the skeleton. The forelimbs were plaster casts previously used on the mount, which were obtained from the CMNH, so I assume were carnegii.
+Ken
+
+Kenneth Carpenter, Ph.D.
+Adjoint Curator
+University of Colorado Museum
+Boulder, CO 80309
+(publications: https://www.researchgate.net/profile/Kenneth_Carpenter3)
+________________________________
+From: Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>>
+Sent: Sunday, November 13, 2022 6:12 PM
+To: Kenneth Carpenter <kenneth.carpenter-1@colorado.edu<mailto:kenneth.carpenter-1@colorado.edu>>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>
+Subject: Denver Diplodocus
+
+Hello again, Ken. I believe you oversaw the mounting of the Denver Diplodocus, correct?
+
+Do you recall what the source of the forelimbs was?
+
+Thanks!
+
+-- Mike.
+
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
