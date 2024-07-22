@@ -1,0 +1,114 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:b043:0:b0:332:37d3:757a with SMTP id z64csp674806vle;
+        Thu, 17 Nov 2022 00:51:43 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf7z6A+Ha3MO6Kp0qN8PSypzCH5i9tK+zkwuFQX2knPKGlZJ/OP++01jlK+YYv2EHkkEQUL9
+X-Received: by 2002:a17:906:791:b0:7ad:14f8:7583 with SMTP id l17-20020a170906079100b007ad14f87583mr1391583ejc.185.1668675103573;
+        Thu, 17 Nov 2022 00:51:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1668675103; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hzHg4yEtnYy8hLWgbqagwtJ8LWQEyqAgMjJGCtbxflDsC/pA425H1w7WjbeLOKO+DN
+         DzTldsjPFzAi1mzeS7Rj7+t2w69vimjZINazc7Pc9HCjTWxIKe0mnYnl8wvwj+Q/cCWO
+         LeKMS5ojFuy+/1UoAAheNIjBy13S20SNppFsnwNr3QbuESEF+thrfyrBCjpYYjPZa86Y
+         3iSDKd3wYh8bjJ3gdIXgFmdWFseIOHMNgrS8vH07DBh/dVRruciV97XjID/JIs1BXjg0
+         dP4j4Gace67Wk6wpMuIMX0WFQKqUPjg8Y6H0ma3tw1PLk9Xi3gMrNrtrynOwyw1FSufh
+         Cy9A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:date:message-id:subject:mime-version:from;
+        bh=BvbG95Sp99vzowRp4PhrPG5DRqq3b4g21BYHf4BKS2w=;
+        b=ieTG2xeL97TB66rT4/bdHikjLMu9sjcf/eoZ9TjERmKcM1Wd1S1vj58T9wOxvNrZfw
+         xuNzEqk7iA6lYKr2eDqJ5Ou2n7JIOoJ2xPSl2ugP3lfePzme1JjdaW7L3M15iEu4J6fH
+         W65UtT3we1R6LknoBq8fhLdofjpwhdbbHZYxrltH5DQr/ljMMRJVG3EN6/YXF2+MV8NN
+         mfC+Sv5dJPoJTTJjuciS4DHFDdkThjlViOjtL0CFvDD0LTrQNWOzxQ9vD005wSGemC+t
+         iTjBd1r8Y/aoECmNzpq38YH93YoNw7VT/D9RroBrGZKZsiLdlSkY2oKCv/v1J4v6ADQg
+         ZQOA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of siber@sibercollections.ch designates 212.71.120.146 as permitted sender) smtp.mailfrom=siber@sibercollections.ch
+Return-Path: <siber@sibercollections.ch>
+Received: from scalera.ch (mailout4.scalera.ch. [212.71.120.146])
+        by mx.google.com with ESMTPS id h22-20020a056402281600b00461c3758704si514887ede.36.2022.11.17.00.51.43
+        for <sauropoda@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 17 Nov 2022 00:51:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of siber@sibercollections.ch designates 212.71.120.146 as permitted sender) client-ip=212.71.120.146;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of siber@sibercollections.ch designates 212.71.120.146 as permitted sender) smtp.mailfrom=siber@sibercollections.ch
+Received: from zcs-fe5.ewmail.everyware.ch (lb01-zcs-prod.ewmail.everyware.ch [192.168.185.5])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mail.scalera.ch (Postfix) with ESMTPS id BF7642E8908
+	for <sauropoda@gmail.com>; Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by zcs-fe5.ewmail.everyware.ch (Postfix) with ESMTP id B89E01086DBD
+	for <sauropoda@gmail.com>; Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+Received: from zcs-fe5.ewmail.everyware.ch ([127.0.0.1])
+	by localhost (zcs-fe5.ewmail.everyware.ch [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id nmaLn5oEcCBc for <sauropoda@gmail.com>;
+	Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by zcs-fe5.ewmail.everyware.ch (Postfix) with ESMTP id 91CEA1086DB9
+	for <sauropoda@gmail.com>; Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+X-Virus-Scanned: amavisd-new at zcs-fe5.ewmail.everyware.ch
+Received: from zcs-fe5.ewmail.everyware.ch ([127.0.0.1])
+	by localhost (zcs-fe5.ewmail.everyware.ch [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id Jm2J1fu7A1zI for <sauropoda@gmail.com>;
+	Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+Received: from [192.168.10.215] (unknown [217.22.130.167])
+	by zcs-fe5.ewmail.everyware.ch (Postfix) with ESMTPSA id 276281086DBD
+	for <sauropoda@gmail.com>; Thu, 17 Nov 2022 09:51:42 +0100 (CET)
+From: Siber Collections AG <siber@sibercollections.ch>
+Mime-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.4\))
+Subject: info
+Message-Id: <6C67A570-B289-4B67-8282-F26B4BEAFC5C@sibercollections.ch>
+Date: Thu, 17 Nov 2022 09:51:37 +0100
+To: sauropoda@gmail.com
+X-Mailer: Apple Mail (2.3608.120.23.2.4)
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain;charset=utf-8
+
+Dear Mike Taylor,
+
+I remember that I made this remark to Matt Lamanna years ago. I still stand to this quote but I hope that you realize that the content cannot be taken literally and is somewhat of a joke. Please go and use it as a quote. What is actually means is that in Sauropod taphonomy the front legs - particularly of Diplodocus - are among the first skeletal parts that will be lost after the individual’s death. Sauropods have a typical sequence of gradually loosing parts from the first ones (skull and hands and footbones) to the last ones (the sacrum with  still a few verts attached and perhaps one ilium and one femur). We have seen this over and over again.
+
+We wish you good progress with your work!
+
+Best regards,
+
+H.J. „Kirby“ Siber
+Dr.sc.h.c. 
+Director
+
+
+SAURIERMUSEUM AATHAL AG
+Dr. h.c. Hans-Jakob Siber
+Zürichstr. 69
+CH-8607 Aathal
+Switzerland
+
+….see our new website www.sauriermuseum.ch
+
+
+
+
+
+
+
+Trilobiten & Seeskorpione
+Neue Spezialausstellung ab 12. April 2019
+
+
+
+
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  multipart/related
+    text/html
+    image/jpeg
+    image/tiff
+    image/jpeg
+---
+
+
