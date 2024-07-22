@@ -121,8 +121,9 @@ DONE	Check that all pers. obs.s have dates
 DONE	Check that all personal observations are in correct format (AUTHOR, pers. obs., YEAR).
 DONE	Check that all personal communications are in correct format (AUTHOR, pers. comm., YEAR).
 DONE	Check that all pers. comm.s are acknowledged
-XXX	Check that we have permission for all pers. comm.s
+BLOCKED	Obtain explicit permission for all pers. comm.s
 XXX	Check that all references are cited and all citations referenced
+XXX	Include updated information (via Ilja) about Russian mount collapse
 XXX	Bring in high-quality photo of the original Skibo print
 XXX	Compare Skibo print to Hatcher (1901:XIII) and check for differences
 XXX	Renumber illustrations
