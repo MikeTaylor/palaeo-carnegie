@@ -1,0 +1,365 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:abe:1241:0:b0:31a:aff6:c71e with SMTP id 62csp374312vls;
+        Mon, 26 Sep 2022 23:41:47 -0700 (PDT)
+X-Received: by 2002:a05:6808:10d4:b0:350:9a40:5743 with SMTP id s20-20020a05680810d400b003509a405743mr1153031ois.125.1664260906891;
+        Mon, 26 Sep 2022 23:41:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1664260906; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SOiOCZj2ayL6Ur8/HzjL4LCj+qOWdXl9CHYVQ3a6UiLu5ZnCakd9FSXNQElfcWFRxs
+         m7iszGx10Wx9Ydhc/6Y/q/FCoay7F5Lo3KrMQ1Lnp5LcAA0yk4YmZ2DhPR0dpMiTnAbA
+         A0X3YhZFHi8k4XmLzD3ImSG6PPaP0+VLH9W7gu1h8pJgT68jsrYKP8u02ap44pBB5cDy
+         i2BEcdM7cA2Y2u1vNVX+2OfoGQVfsXF4p6juezNfMGZ9dPDPYnL98wEGwy+1sO1WUWOX
+         sKIQPdkMyyEAP1M3v8VINUvSRINXVX1pqgAK7YgbOkkO7RijrEbCqaVLEdQG02D0j/To
+         CPDA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=yMUWNRR5XTkJvXXIF6z27K7StK8DqTHE/ulo3R8Je/8=;
+        b=mPFWlOvbGX70p1vnRnzVJQKaToYQwqvJ01ugtKWLR+SFUuSdjwaSbBDkbQIdPkH7vn
+         nxNuraVX+OiWRJNoVx819tX4Sp8NZ/+Nd+l+dKSnRyjWgq7jNAXo4b4U2Nm3wQAKEwh2
+         0uIemxkVeu6Tu82WDddCyLIIfTt9soa91EynCshPFeSryy8WCX4Bjl1oQSZ65B7TqNr4
+         GAY7ETW+yh1n4FkvvgC/f7cV0ygIlMi+xvPMRD9EuCgiwRJo/z1Zwj05IQYEs6JobvEi
+         DlMoKW4gWmY2Q1titc03UjGqwKe4UVBwcQwFnupimBvBIQi84IZmRvq9zCBtGR9/vEse
+         NHsg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=k9BB7enp;
+       spf=pass (google.com: domain of mathew.wedel@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathew.wedel@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <mathew.wedel@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id gq16-20020a056870d91000b0010ed46fa9d1sor146241oab.168.2022.09.26.23.41.46
+        for <sauropoda@gmail.com>
+        (Google Transport Security);
+        Mon, 26 Sep 2022 23:41:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mathew.wedel@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=k9BB7enp;
+       spf=pass (google.com: domain of mathew.wedel@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=mathew.wedel@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date;
+        bh=yMUWNRR5XTkJvXXIF6z27K7StK8DqTHE/ulo3R8Je/8=;
+        b=k9BB7enpDeXsaqY/8zGxgJowQlMArafr7Ss78oBs9pgU6Yew/LMiP6t85eJCl0MMOw
+         BAGDpLMyeP+GkSQEzTqNswL59cIfAYC8AL4nB8rf6o0/jU3CLZGAwAQhCMpgtgd6q/oX
+         bem9+IGIHUZXCrQKdio6fwzfkMMJ7lg5YLY7oh9Nrixpy7BVl4EQqjElI2Ma8VtH5vtp
+         PQrn7jGEarr7AcBf4IhqC9RWkFwuDV+z6FCtfpSpA3PKwO+cuA+NNx6bL+7hP9c5IPK5
+         fifgl8LEPw5aKlh2XdPsNE45Rrw8ktnCIfCa77eQ6fraER1PDx6vHg7VMPGXGEmm+pFC
+         SBLw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date;
+        bh=yMUWNRR5XTkJvXXIF6z27K7StK8DqTHE/ulo3R8Je/8=;
+        b=MwlvNjJ0lGzK9Hjut+YNEx1rf6g2PvpRCw9+qs2ENoO6G6yypXwRSztkIrL78bF1QQ
+         unE6Qca0plYrrtPzOoHGNnHDLJwg5OSzK8g4n+/Qu319UBzzMQqgYipfJe74nC6ad7Yv
+         X/dymRuwzrsPrEhV/EeWy7r1+WL+JssBSPVM4SnHdk4Vox/U0pvK0P1XoNSULXt4/hZL
+         Q6ERdU6oe+VVvBwEEnO4r1/Z5kh9T3CIs9loPcQhywn4qWuiso+lhzMHtWQaxz75qIae
+         fxkv2G7Kbwh1gQP0et9zFAoiLYeJU/RCEae9yeDHr4wIONGVSNNE0kqzyj4dU4y0CFRg
+         iBTQ==
+X-Gm-Message-State: ACrzQf1IY6XzUebn4rIPmGwqoF8/RBHp9H6NFypF8iRRuUsXUzxpbhju
+	UobGzhcR5ryc80DJ71+bif0+EthmKSmU1lCDz6x+Lw+Q
+X-Google-Smtp-Source: AMsMyM7JE7gA9NWyRFXTKiIalD40z9BXk9rpqfoMpAmwihA9v62WYmKVkIKgqM8vGqgApl0ZhTvLbvOx24MC3Te1PRg=
+X-Received: by 2002:a05:6870:c149:b0:12d:8014:be54 with SMTP id
+ g9-20020a056870c14900b0012d8014be54mr1291139oad.29.1664260905633; Mon, 26 Sep
+ 2022 23:41:45 -0700 (PDT)
+MIME-Version: 1.0
+References: <CACnMvBZUUJURRWuF0TZ7veL2QOpu=zf_6YESzejMt39ouYWn=w@mail.gmail.com>
+ <CADG7HNQiUd0COVHN3WGbva5Pm8XnFcYqweqRYpOT=+vE0MDVYg@mail.gmail.com>
+ <CACnMvBZnR6xFOT9hvJVaa-6507NGQvUvMHcXOfsuuE9t7vzzGg@mail.gmail.com>
+ <CADG7HNSS5p+aN8tu58mwEKUyM06CeApinmXLUPaPqVvUfh=uNw@mail.gmail.com>
+ <CACnMvBYEAsBT+fhjpRF=RkwFbevJnr4FCPXqT7PGeFnU1LkXZQ@mail.gmail.com>
+ <CADG7HNSzappFQFXcDqgNsakh+xsDba6mVCqyM39_qsG1PfAgZg@mail.gmail.com>
+ <CACnMvBb7oGxULO-Xgsn7kXav54cYV2mBZq-4ua8hTOHxjyY6Wg@mail.gmail.com>
+ <CADG7HNSP+YDOb8mi6MEqF1kQJejOAXQbFXrQHArZ1FMRqJXyZg@mail.gmail.com>
+ <CACnMvBYzvGLmP8t_As_P2Ddkg57P5kTNT-D6eSzmQY514X6CXQ@mail.gmail.com>
+ <CADG7HNShNT7xAi-UxJZxj-kkrxDm1U_-2JDuo0Qf0sdPTMUQKQ@mail.gmail.com>
+ <CACnMvBY_+2iK4qn2U=itB8M4MeOGBXWjXKjdPU1OzFzFN1XN+A@mail.gmail.com>
+ <CADG7HNRN3Pcc5zvU5OaPUPN36tLvd1my7133bg3nruzxCRqyig@mail.gmail.com>
+ <CACnMvBYPFiS52DVo7gGROO4jBgvH3s44KXs-rOBiVVs=dqR5HA@mail.gmail.com> <CACnMvBZHHixsNhSzauuiSxKaUzNdGTUnE3Ws7pQaOvdA2k18JA@mail.gmail.com>
+In-Reply-To: <CACnMvBZHHixsNhSzauuiSxKaUzNdGTUnE3Ws7pQaOvdA2k18JA@mail.gmail.com>
+From: Mathew Wedel <mathew.wedel@gmail.com>
+Date: Mon, 26 Sep 2022 23:41:33 -0700
+Message-ID: <CADG7HNQRR0VuqcexwJL4nWs2Mt6Yn18Ho9vhxsBiU1MuahetuA@mail.gmail.com>
+Subject: Re: Package
+To: Mike Taylor <sauropoda@gmail.com>
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="UTF-8"
+
+Uh, those are some rather large bones to not know the origins of.
+
+Here's the thought that haunts me: in my never-published 4th dissertation
+chapter, I used the femur length of D. carnegie along with the cervical and
+dorsal lengths to do stats. I wonder how many other people have done the
+same, not realizing to what extent that skeleton is a chimaera. That will
+be a very good point to make in your paper on that mount, and you are
+welcome to use my diss. as evidence of people misusing measurements of that
+skeleton because they didn't know the complexities of its origin(s).
+
+Best,
+
+Matt
+
+On Thu, Sep 22, 2022 at 4:05 PM Mike Taylor <sauropoda@gmail.com> wrote:
+
+> Oh, and here's another nugget: no-one knows were the left ilium, femur and
+> tibia of the Carnegie mounted skeleton came from.
+>
+> -- Mike.
+>
+>
+> On Thu, Sep 22, 2022 at 11:05 PM Mike Taylor <sauropoda@gmail.com> wrote:
+>
+>> Yes, it will go in the Baromount paper for sure.
+>>
+>> Your question about S&P is an excellent one, but I think they are in the
+>> clear for this, since they measured CM 3018 as well as CM 84, and AFAIk
+>> there are no casts of that so they must have used the original.
+>>
+>> -- Mike
+>>
+>>
+>> On Thu, Sep 22, 2022 at 10:48 PM Mathew Wedel <mathew.wedel@gmail.com>
+>> wrote:
+>>
+>>> Okay, you need to just slightly tweak that last sentence in the
+>>> direction of semi-formality and find a way to work it into one or all of
+>>> your upcoming manuscripts. Because that is amazing(ly disturbing).
+>>>
+>>> Wait wait wait just freaking wait. Did Stevens and Parrish get their zyg
+>>> tracings for D. carnegii from the original, or from one of the casts?
+>>> Because, well, you know.
+>>>
+>>> On Thu, Sep 22, 2022 at 2:38 PM Mike Taylor <sauropoda@gmail.com> wrote:
+>>>
+>>>> You know how the London cast (and the other ten) are cast from molds
+>>>> made from the original Carnegie fossil material?
+>>>>
+>>>> It ain't. A bunch of the presacral vertebrae were too fragile to have
+>>>> molds made from them, so instead Serafino Agostina made sculptures of the
+>>>> vertebrae, then took molds from the sculptures.
+>>>>
+>>>> This means that the part of the neck of the AMNH Barosaurus is a cast
+>>>> taken from a mold taken from a (concrete) cast taken from a mold taken from
+>>>> a sculpture.
+>>>>
+>>>> -- Mike.
+>>>>
+>>>>
+>>>> On Thu, Sep 22, 2022 at 10:30 PM Mathew Wedel <mathew.wedel@gmail.com>
+>>>> wrote:
+>>>>
+>>>>> Always. Spill the tea!
+>>>>>
+>>>>>
+>>>>> On Thu, Sep 22, 2022 at 2:27 PM Mike Taylor <sauropoda@gmail.com>
+>>>>> wrote:
+>>>>>
+>>>>>> Excellent! I shall repay their enthusiasm.
+>>>>>>
+>>>>>> So. Wanna hear something else scandalous about the Carnegie
+>>>>>> Diplodocus?
+>>>>>>
+>>>>>> -- Mike.
+>>>>>>
+>>>>>>
+>>>>>> On Thu, Sep 22, 2022 at 10:11 PM Mathew Wedel <mathew.wedel@gmail.com>
+>>>>>> wrote:
+>>>>>>
+>>>>>>> No, not irritated. At least, I didn't get a hint of that from either
+>>>>>>> of them. Rather, that they wished they had more time and could be more
+>>>>>>> helpful. I believe their enthusiasm is genuine.
+>>>>>>>
+>>>>>>> On Thu, Sep 22, 2022 at 11:11 AM Mike Taylor <sauropoda@gmail.com>
+>>>>>>> wrote:
+>>>>>>>
+>>>>>>>> Thanks for this, despite the redundancy. It's good for me to know
+>>>>>>>> that Peter, as well as Matt, is happy with how these projects are
+>>>>>>>> progressing. It's harder to tell in email whether they're getting irritated
+>>>>>>>> at being constantly interrogated.
+>>>>>>>>
+>>>>>>>> -- Mike
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> On Thu, Sep 22, 2022 at 5:57 PM Mathew Wedel <
+>>>>>>>> mathew.wedel@gmail.com> wrote:
+>>>>>>>>
+>>>>>>>>> [Just realized that I'd completed this draft before we started our
+>>>>>>>>> chat. Mostly redundant now, but not entirely so, and I'm too lazy to edit
+>>>>>>>>> it. Good luck!]
+>>>>>>>>>
+>>>>>>>>> Total agreement on avoiding the MoAL Baro for now. As you can
+>>>>>>>>> tell, I'm trying to disengage from that as cleanly as possible, while
+>>>>>>>>> leaving the door open for some kind of credit.
+>>>>>>>>>
+>>>>>>>>> BTW, while I was traveling last week both Matt Lamanna and Peter
+>>>>>>>>> May volunteered that they're happy to be working with you on these history
+>>>>>>>>> papers and they admire your tenacity. Matt Lamanna also offered that he'd
+>>>>>>>>> like to be more involved, he's just drowning in work. Before he came to the
+>>>>>>>>> Carnegie, director of vertebrate paleontology and curator of the reptile
+>>>>>>>>> collection (including dinos) were different posts. Now he wears both hats.
+>>>>>>>>> We commiserated over playing the "which coauthor am I disappointing today"
+>>>>>>>>> game.
+>>>>>>>>>
+>>>>>>>>> Best,
+>>>>>>>>>
+>>>>>>>>> Matt
+>>>>>>>>>
+>>>>>>>>> On Thu, Sep 22, 2022 at 7:16 AM Mike Taylor <sauropoda@gmail.com>
+>>>>>>>>> wrote:
+>>>>>>>>>
+>>>>>>>>>> I will say no more.
+>>>>>>>>>>
+>>>>>>>>>> BTW., I have not yet replied to your MOAL Baro thread because
+>>>>>>>>>> it's all a bit overwhelming and I really really REALLY need to get these
+>>>>>>>>>> history papers submitted before I plough into more morphology. But (A)
+>>>>>>>>>> great that you did this; and (B) I admire your clever strategy to get a
+>>>>>>>>>> low-ranking authorship in exchange for no further work. I must remember
+>>>>>>>>>> that.
+>>>>>>>>>>
+>>>>>>>>>> -- Mike.
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Thu, Sep 22, 2022 at 3:10 PM Mathew Wedel <
+>>>>>>>>>> mathew.wedel@gmail.com> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Intriguing!
+>>>>>>>>>>>
+>>>>>>>>>>> On Thu, Sep 22, 2022 at 6:46 AM Mike Taylor <sauropoda@gmail.com>
+>>>>>>>>>>> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> My pleasure! It's over a decade late, so thanks *in advance*
+>>>>>>>>>>>> may be misplaced.
+>>>>>>>>>>>>
+>>>>>>>>>>>> -- Mike.
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Thu, Sep 22, 2022 at 2:44 PM Mathew Wedel <
+>>>>>>>>>>>> mathew.wedel@gmail.com> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Will do. And thanks in advance!
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Thu, Sep 22, 2022 at 3:23 AM Mike Taylor <
+>>>>>>>>>>>>> sauropoda@gmail.com> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Hey, dude,
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> I sent you a package. Should be with you in three to four
+>>>>>>>>>>>>>> weeks. Please let me know when it arrives, so can cross it off my To Fret
+>>>>>>>>>>>>>> About list.
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> -- Mike.
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> --
+>>>>>>>>>>>>> Sent from my pocket supercomputer
+>>>>>>>>>>>>>
+>>>>>>>>>>>> --
+>>>>>>>>>>> Sent from my pocket supercomputer
+>>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>> --
+>>>>>>>>> Mathew J. Wedel
+>>>>>>>>> College of Osteopathic Medicine of the Pacific and
+>>>>>>>>> College of Podiatric Medicine
+>>>>>>>>> Western University of Health Sciences
+>>>>>>>>> 309 E. Second Street
+>>>>>>>>> Pomona, CA 91766-1854
+>>>>>>>>> http://sauroposeidon.wordpress.com/
+>>>>>>>>> http://svpow.wordpress.com
+>>>>>>>>>
+>>>>>>>>> "To put yourself forward as someone good enough to do interesting
+>>>>>>>>> things is, by definition, to expose yourself to all kinds of negative
+>>>>>>>>> judgments, and as far as I can tell, the fact that other people get to
+>>>>>>>>> decide what they think of your behavior leaves only two strategies for not
+>>>>>>>>> suffering from those judgments: not doing anything, or not caring about the
+>>>>>>>>> reaction."
+>>>>>>>>> --Clay Shirky
+>>>>>>>>>
+>>>>>>>>
+>>>>>>>
+>>>>>>> --
+>>>>>>> Mathew J. Wedel
+>>>>>>> College of Osteopathic Medicine of the Pacific and
+>>>>>>> College of Podiatric Medicine
+>>>>>>> Western University of Health Sciences
+>>>>>>> 309 E. Second Street
+>>>>>>> Pomona, CA 91766-1854
+>>>>>>> http://sauroposeidon.wordpress.com/
+>>>>>>> http://svpow.wordpress.com
+>>>>>>>
+>>>>>>> "To put yourself forward as someone good enough to do interesting
+>>>>>>> things is, by definition, to expose yourself to all kinds of negative
+>>>>>>> judgments, and as far as I can tell, the fact that other people get to
+>>>>>>> decide what they think of your behavior leaves only two strategies for not
+>>>>>>> suffering from those judgments: not doing anything, or not caring about the
+>>>>>>> reaction."
+>>>>>>> --Clay Shirky
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>> --
+>>>>> Mathew J. Wedel
+>>>>> College of Osteopathic Medicine of the Pacific and
+>>>>> College of Podiatric Medicine
+>>>>> Western University of Health Sciences
+>>>>> 309 E. Second Street
+>>>>> Pomona, CA 91766-1854
+>>>>> http://sauroposeidon.wordpress.com/
+>>>>> http://svpow.wordpress.com
+>>>>>
+>>>>> "To put yourself forward as someone good enough to do interesting
+>>>>> things is, by definition, to expose yourself to all kinds of negative
+>>>>> judgments, and as far as I can tell, the fact that other people get to
+>>>>> decide what they think of your behavior leaves only two strategies for not
+>>>>> suffering from those judgments: not doing anything, or not caring about the
+>>>>> reaction."
+>>>>> --Clay Shirky
+>>>>>
+>>>>
+>>>
+>>> --
+>>> Mathew J. Wedel
+>>> College of Osteopathic Medicine of the Pacific and
+>>> College of Podiatric Medicine
+>>> Western University of Health Sciences
+>>> 309 E. Second Street
+>>> Pomona, CA 91766-1854
+>>> http://sauroposeidon.wordpress.com/
+>>> http://svpow.wordpress.com
+>>>
+>>> "To put yourself forward as someone good enough to do interesting things
+>>> is, by definition, to expose yourself to all kinds of negative judgments,
+>>> and as far as I can tell, the fact that other people get to decide what
+>>> they think of your behavior leaves only two strategies for not suffering
+>>> from those judgments: not doing anything, or not caring about the reaction."
+>>> --Clay Shirky
+>>>
+>>
+
+-- 
+Mathew J. Wedel
+College of Osteopathic Medicine of the Pacific and
+College of Podiatric Medicine
+Western University of Health Sciences
+309 E. Second Street
+Pomona, CA 91766-1854
+http://sauroposeidon.wordpress.com/
+http://svpow.wordpress.com
+
+"To put yourself forward as someone good enough to do interesting things
+is, by definition, to expose yourself to all kinds of negative judgments,
+and as far as I can tell, the fact that other people get to decide what
+they think of your behavior leaves only two strategies for not suffering
+from those judgments: not doing anything, or not caring about the reaction."
+--Clay Shirky
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/alternative
+  text/plain (text body -- kept)
+  text/html
+---
+
+
