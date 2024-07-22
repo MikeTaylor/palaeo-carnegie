@@ -1,0 +1,303 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:600c:c1:0:0:0:0 with SMTP id u1csp6637767wmm;
+        Thu, 2 Jun 2022 13:59:44 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxj+6oflVWsnN/OrzVje1xfF44tjIi+bbu51+Gp+nVrYFk9qIbVmNbc5j7r0cHawe7+B96g
+X-Received: by 2002:a17:907:97c9:b0:6fe:bcb1:661d with SMTP id js9-20020a17090797c900b006febcb1661dmr5762945ejc.269.1654203584220;
+        Thu, 02 Jun 2022 13:59:44 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1654203584; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=p5fIfpDxRCYUQOcjjOJWTJanrOmJh4YOJhuO4eER4iLpILwA2Z9btl4sbcnbB+d8iX
+         KlrdLdYHzN2iUsqsbmGV6hW6hEE6/w4WYrXL20jvmditZ+U6f/BB54Nhp+KzTuTsMjea
+         38rg5Zlzvi8Q8PVDqS6HHIupbcSm8Mw9jZ1OffVvCHgRu8zVZj+MM7RKThDx7HVc8QFI
+         HxrZGEdBTLtdk00fD58HRjQ8OeVhJFbG4wlLtBzMslMpw2/JRmD9Z+tgy9I9pp9T0b/5
+         0UGhZmlmxzssIIQBBMS3it4d3/CAfnL2tXGP00Wc09ILBDd51zANLo8w3K8zeTpM13OD
+         bAJg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:to:from:dkim-signature;
+        bh=moiFJA+V5jp5iz4Tr4avWZPebhHHborCkN5kpi2w9xw=;
+        b=h5k3zJajl/J14SdvyGpz+ETBneRoFOB5vVJdj7XaE66CbYtGtMo3E+gik2Cp5jSm6u
+         VbpxXvUWyQf/FFAicg5ItU3XWRNuGnGATlnZsEniHD0ahSsENHcFBR8/ZSQb5poNjHPF
+         /bJn6fOz8nwwbLQ8t7Lc3XEoWjeNgzCyv9XNOeINeaHArEXAA5LA6fVJryWrfb2xpQUY
+         GECBLi9edoUTEJjowAxp/PeZd72A+AWfBFFht5G73EyNxmDzNLI+d/Xg9JBvHz7lmrEI
+         0bxEWa6GLwyAg6ou+ccJLRYq1ev4XhuBjdN3bUiKDGctgNVd1R5pL7BCfJkrmDFnKFoz
+         gjnA==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@CMNH.onmicrosoft.com header.s=selector2-CMNH-onmicrosoft-com header.b=ar33gNMu;
+       arc=pass (i=1 spf=pass spfdomain=cmnh.org dkim=pass dkdomain=cmnh.org dmarc=pass fromdomain=cmnh.org);
+       spf=pass (google.com: domain of amcgee@cmnh.org designates 2a01:111:f400:7eaa::62b as permitted sender) smtp.mailfrom=amcgee@cmnh.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=cmnh.org
+Return-Path: <amcgee@cmnh.org>
+Received: from NAM11-DM6-obe.outbound.protection.outlook.com (mail-dm6nam11on2062b.outbound.protection.outlook.com. [2a01:111:f400:7eaa::62b])
+        by mx.google.com with ESMTPS id u2-20020a170906124200b006fef8e8385fsi5119237eja.467.2022.06.02.13.59.43
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 02 Jun 2022 13:59:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of amcgee@cmnh.org designates 2a01:111:f400:7eaa::62b as permitted sender) client-ip=2a01:111:f400:7eaa::62b;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@CMNH.onmicrosoft.com header.s=selector2-CMNH-onmicrosoft-com header.b=ar33gNMu;
+       arc=pass (i=1 spf=pass spfdomain=cmnh.org dkim=pass dkdomain=cmnh.org dmarc=pass fromdomain=cmnh.org);
+       spf=pass (google.com: domain of amcgee@cmnh.org designates 2a01:111:f400:7eaa::62b as permitted sender) smtp.mailfrom=amcgee@cmnh.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=cmnh.org
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bP/ln5adxuhkDgNGprxiZYNKl31k1ZwwWQBF7W0bhbmiW5xfPJrc844Kj0XBFEvxpZ3Nn0R6z7iYph4klnj+qKp2+UJzgy17g+hUj4vMELyYBniFxkUcOSRJ4EeGFf+K/zHaQHRHifwCkeVnZt38ezeaZAEENlWlSE+kzN3z1veO1fMRDUPSUbJ9Deref7HykznlDFGtH06Y4rfJvKDeve+t82Qi3Lwa3GcSHc1mrkfz7VForTUEQqQAvhL3WFZRoyTj7H6cGUsyWMaYGJt6/lMqUaQly8b8FV9KIpd6yQGf85YYjuVo/jPq2eZ+exdN3AcThJzJ38KV7u8ScJdvJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=moiFJA+V5jp5iz4Tr4avWZPebhHHborCkN5kpi2w9xw=;
+ b=RQcdxrffzNGjOzGRO70pk33ZtkgaQ4SJd4oMDKafCaXvYJBjm5wwbpyOQ5CwTpJ2VTyro4K/l3C8hD4MhwkG/7U/dq247NuyMJflcvVpGP4ZpcOw/uN2k/ehwC+wvFjS/DmNpvz7W8YpBqj4CP6TSsy2jSquAjjjPhKJsClFhQA8q/O+5WrWNayMLXKdyFEDmQRKM/UiAQKh1vVFWV2Riwz8NEBriy5XYwSU7uu/5orLBrO3Oe0309Y6x/mKUvg0IsbwwkcwjPBbMwZ+R9ZvG7yGy8l1yzqCOM1PPfQMq6H7JqV5Z47P4vVR2POz+66MO7bxZ9Rh+liPHSdnviWemw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cmnh.org; dmarc=pass action=none header.from=cmnh.org;
+ dkim=pass header.d=cmnh.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=CMNH.onmicrosoft.com;
+ s=selector2-CMNH-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=moiFJA+V5jp5iz4Tr4avWZPebhHHborCkN5kpi2w9xw=;
+ b=ar33gNMuoIrsTRhh/Os8wKS8/FmYStuhZNwG7iAFQ0t1CczatuZWiUFzfPDGa/3tsgNUV2v1ibNpsCI/Yolf/5dT3Qz9rSy4/gT+YZrlAubnUo1yVzNmplR0lTUnSkUYFW+qFgKgw5n6CmFJ8MjHucMs4FhYmi4ISeOnc/XBQJs=
+Received: from CH0PR11MB5428.namprd11.prod.outlook.com (2603:10b6:610:d3::19)
+ by DM6PR11MB4122.namprd11.prod.outlook.com (2603:10b6:5:195::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5293.16; Thu, 2 Jun
+ 2022 20:59:39 +0000
+Received: from CH0PR11MB5428.namprd11.prod.outlook.com
+ ([fe80::590d:5559:a5cc:e7f6]) by CH0PR11MB5428.namprd11.prod.outlook.com
+ ([fe80::590d:5559:a5cc:e7f6%9]) with mapi id 15.20.5314.013; Thu, 2 Jun 2022
+ 20:59:39 +0000
+From: Amanda McGee <amcgee@cmnh.org>
+To: "Lamanna, Matthew" <LamannaM@CarnegieMNH.Org>, Mike Taylor
+	<sauropoda@gmail.com>
+Subject: Re: [EXTERNAL] CM 662 --> CMNH 10670 --> HMNS 175
+Thread-Topic: [EXTERNAL] CM 662 --> CMNH 10670 --> HMNS 175
+Thread-Index:
+ AQHYdG0ddMp6X0DHNEid82s3yDINBK05H6YYgAAPDYCAAEI4sIAACH1sgAAYfYCAACYosIACzMZM
+Date: Thu, 2 Jun 2022 20:59:39 +0000
+Message-ID:
+ <CH0PR11MB54284EEBB25690C36E2CD462AEDE9@CH0PR11MB5428.namprd11.prod.outlook.com>
+References:
+ <CACnMvBZS__0CnN=OZW2sqx=fYTT-tt9dttNUGCWmoUmuQ=pG6g@mail.gmail.com>
+ <CH0PR11MB542879E2CBDE4C7EC4C52863AEDC9@CH0PR11MB5428.namprd11.prod.outlook.com>
+ <CACnMvBZLi+f8S0wLNCsuTQbXZQMiuWANY_gVMDNVf3HLB-owtA@mail.gmail.com>
+ <CH2PR02MB6475CDCC1DF1BE2AF9A83475D8DC9@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CH0PR11MB5428E1B0308DE90D7F6A685CAEDC9@CH0PR11MB5428.namprd11.prod.outlook.com>
+ <CACnMvBYYFhb5rSs2uv=be2xnsw-34fEZw_=s2NcoPz80GfB70Q@mail.gmail.com>
+ <CH2PR02MB6475108C1BF9E9A9AC74AD2ED8DF9@CH2PR02MB6475.namprd02.prod.outlook.com>
+In-Reply-To:
+ <CH2PR02MB6475108C1BF9E9A9AC74AD2ED8DF9@CH2PR02MB6475.namprd02.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=cmnh.org;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 70c70c2b-ed31-420f-a751-08da44dacf31
+x-ms-traffictypediagnostic: DM6PR11MB4122:EE_
+x-microsoft-antispam-prvs:
+ <DM6PR11MB412233079D4DEBA796ADC2AEAEDE9@DM6PR11MB4122.namprd11.prod.outlook.com>
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ E1VZKxQ5SbCHOgXL7nCYGkidzvSixmb02FLJ8icX/QEweqBjSyxvSJWl7kkUl7LhHZ8fEbpBCP5jkUIT+Mg9ZH7fvn+ALc5yk12fSa3XwAJWvNlKmp7WdXWiDFkM+QR66mOXhNVM0HuBO8dbEnDqsLPrpmFBmLSKkDs1B4K9Av5leEJ6IFLjw8btfiNYf9TZ46wbOUujCdVkidp7anMRNywx5KQCI+qbIqtdaxqQCTD1XiqH61VI/hm1DrJ7v7kDkSm7BKhw/zzgrPpyBr7PkPSol8YJKdtxOFOQ3hVY3zE9f8pZbWtumCeX2agGgc5MJk/2a4TSXC8bNqcQRgd5TEGH7862w++vfV5tAfXM/K4hdcjAQukHLuZAuOMalyUB1S9LbzaUC3zXAkiZOSqKamy00w1dmlH4+j0bjOS7oNPcIR5exacRy1TAc/xtwU/LX/irgq+aNoMr3mpoKzpux3J9jvPCKUZbr4jYFcZQ8D9z4EaDmzkuQjiZcnbwh50Syvpw/d9d1zNWV8HDCcEYLt3wdwkVIgSviKUdDQSiJyilRZy6U+JegyqGTkA+0pOJJpldM3E1jM8RTEmnyjVApdRbPG5wCVyyOL5jkf3S7LlgVKQATCbOTWHorLl7QRvYwjny6l0cB1J1fbhRba3ki1x9+IPbKtEQJYW2ILGps3wHIsUbxCeg2O52RluBYBk2/rMoiw25mPTbCC8+fB/xLKubEMDtHzEf/2XtdWE1Hop4vqWzMB7biT9ak5Ow5EVokdaB8fi1vLSHCU/nWO+zZ96Bcglbrktlay8+0g1OrJU=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH0PR11MB5428.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230001)(4636009)(396003)(136003)(366004)(376002)(39840400004)(346002)(110136005)(19627235002)(86362001)(966005)(76116006)(41300700001)(52536014)(26005)(186003)(9686003)(8936002)(66946007)(166002)(40140700001)(2906002)(33656002)(99936003)(38100700002)(83380400001)(7696005)(53546011)(5660300002)(8676002)(122000001)(508600001)(66476007)(66556008)(64756008)(316002)(66446008)(19627405001)(6506007)(55016003)(38070700005)(71200400001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?shtxH/aVlc97iQzMywT4jfS5/o8xGUujON7OkZf95+BNx/3my5hFy5M9?=
+ =?Windows-1252?Q?RoV8I+j3TK+m3VuUNwfUtc7u94TP7ydNh43W0b3TTfaMqY40VPKuq6Kg?=
+ =?Windows-1252?Q?iUhGVucZhjK7tqYI6oIfmt4XtEeyUgSq7Xql/fS/PFLP/2KbqdPyC2aA?=
+ =?Windows-1252?Q?XlLPmck+V+P1m8b68qUQfrnjRMfwBoQNsr8uMq55oGlzNKfiRir+Khst?=
+ =?Windows-1252?Q?f6T+6/CyDlBlQ9GToOHBZuGb6K586jjNuUu6zXBP4ut/mSGcV0L6WNS6?=
+ =?Windows-1252?Q?WFjqY1PDZpoHIFZ5cvMp5h3qp7Mv/1KeYc6J52FUKaxBZO3rDyO+6RhB?=
+ =?Windows-1252?Q?/P/KEDAA0Hi0TPM9K5jPOIB78y96Nx/QQc6M7ahIjPeYEKwsqLUaChHG?=
+ =?Windows-1252?Q?3q2mxTEYte8yIguLw0RW0H/tnyIzS1IJLClYqq7PYnNPll08CkIqREoj?=
+ =?Windows-1252?Q?9C9WsQHa9nNzZo5SOS3xIxGlD5hw5jf54CdmRvNkeCV0SVjd9fR4XJv7?=
+ =?Windows-1252?Q?cI8+xv8fd5djl6T0hzXvsr2k3s8Fy7siegco44S1u5swyH8BODrAJ9XQ?=
+ =?Windows-1252?Q?9DoStSJY0NoEAJHdcmCtI5sUyKutIXCU2gfey/B15zRG4uCYIOvLhGA8?=
+ =?Windows-1252?Q?MyGemJv6Vf1sadkgxD9EEpuwQEHc1gUIo688VauxRKB1OSF7h1GA2p21?=
+ =?Windows-1252?Q?RBgoFD6L2W5UHOa1Kx9nPNqrZ3f5MoHUUPjfNGnWhcYMwLZBvyTmG9j9?=
+ =?Windows-1252?Q?fi433FbASfO2PxIFBFZkG5oVCpp/KLDJDGGSKsggPwx9VzYyRo7FSbr8?=
+ =?Windows-1252?Q?t+fdHo3K8FVX62i7XnQJIngN1AYYUKieViLXCXDN0AVUA+SFdGGeIucb?=
+ =?Windows-1252?Q?jY5O7uvKhkvCCG0Dqc7qSMiGTcVASV7rTY/TL9hN+MIladC/+u+Tn4m/?=
+ =?Windows-1252?Q?rDzckictOeBM2Y+bySN/WD2WMqY/fFiDgOhzEXR0Yj5P4WB52f3xhOp8?=
+ =?Windows-1252?Q?cLVGURjbT5uqjeQq0uZbsDsjCqTJBvzEgQztiQiSOTIIEMkjvpEFSJQ4?=
+ =?Windows-1252?Q?SJ1xz2HnLSJL3z+O9V2EL0czR58j6GBZFqSWhjv/n4QvgQHL7eNR8Ex4?=
+ =?Windows-1252?Q?kUbMSnjDvPixyEPORdr52JfijpWbTcOr0RlhbQ/5df+IcanKgq5LYRdb?=
+ =?Windows-1252?Q?Owm50RHR/TdOjM9/XzbopxR8SGmcqnyJtqNLDFw3kxTk8+zu3urQ0XY6?=
+ =?Windows-1252?Q?HbkJWPY07Vitjx3VdlRhtv/fYjOmDgyx2TVyxZtooMl2/mCsBxbfjvd7?=
+ =?Windows-1252?Q?svvBwZtJcd0p8wvOsdG+fhMGiBCJZHG5eKoSBnjL2puu+gwC6NqGiYrN?=
+ =?Windows-1252?Q?aO7emj2K+STsotd8t8wUxaUooMt3u/hy6FewtfMzLWD1BvLICwGTLdye?=
+ =?Windows-1252?Q?anG2MxRw31cGEcfFCKwLNDJmghGmrCggsCmIvG/UzmfSP8hTOmTIhx0W?=
+ =?Windows-1252?Q?aqzaqjrXMA6Jcr1PTcd9qt/RG3Op54X6ioyi3Md7ndsbsR6fLj5rCrlj?=
+ =?Windows-1252?Q?hvUUCCSJnT70wHIPGmi82EdcwBxpLG1OJJE1R1OEv3GF5lpw82Ml7Lsm?=
+ =?Windows-1252?Q?LVAvIcn4OrWAUzfy8e0Fn9pSfLRbbGV4voZnjTO/tliWLFPn7NSVEGwG?=
+ =?Windows-1252?Q?DWtjyRMe3x5LDfBet8zRIa9fg64/krnlLVlBxTEA9IJZDOYKkrdNjwll?=
+ =?Windows-1252?Q?yYMCbNBxEsrjBrUfn+V2PY7nn3lktb+uT4rwrMDm7XwB3A/kwcWo0KAL?=
+ =?Windows-1252?Q?kWhr73M2UHvn+J6X2jPLRkqKg5IMDWZ80Ne3ggOlk5CbHHXQ?=
+MIME-Version: 1.0
+X-OriginatorOrg: cmnh.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CH0PR11MB5428.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 70c70c2b-ed31-420f-a751-08da44dacf31
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Jun 2022 20:59:39.5418
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: b6c84980-ce1f-4494-9585-7192b68c904e
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 9xZD//sBv/krEKLnPbp70qU+LKdRxIu6ZuJ3bFM964cAEGk10FGshCJCMK/klE2F
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR11MB4122
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="Windows-1252"
+
+Hello,
+
+Mike - what you wrote sounds good to me. Not sure it's relevant, since your paper will focus on the Diplodocus specimen and not Happy, but Happy was initially mounted in a "death pose" (aka splayed out) in 1961, and then remounted in 1966 in its standing pose. With all that time, effort, and money going into Happy, it seems pretty likely that's why we decided not to keep the Diplodocus.
+
+Matt - I was able to find info about specimens we received in trades in our accession records, over a few different years. Unfortunately deaccession documentation is less thorough, so I couldn't track down any info about what we traded. If you are ever able to track it down on your end, I would be really curious to know.
+
+In Nov. 1954 we received:
+
+  *   Promerycochoerus carrikei - a composite mount of CM 1047 and CM 1081 (CMNH 10400).
+  *   Stenomylus tyleri - a mostly complete skeleton (CMNH 10401), CM # unknown.
+
+In 1955 we received:
+
+  *   a cast of skull and lower jaw of Camarasaurus (CM 12020), CMNH 10425.
+
+In 1956 we received:
+
+  *   Diploducus hayi holotype - CM 662 (CMNH 10670)
+  *   Diplodocus- 6 proximal caudals, complete femur, most of other femur (CM 94), CMNH 10671. This specimen was also sold to Houston.
+  *   Menoceras cooki - composite skeleton (CMNH 10672). Skull and jaws (CM 2470), pelves (CM 11367 - more of this specimen was retained by CM), and rest of skeleton is CM 11181.
+
+Cheers,
+Amanda
+
+—
+
+
+[cid:01170810-fbec-4741-881e-d61adb69a204]
+
+Amanda McGee, MSc, MMSt Head of Collections &
+
+Collections Manager of Vertebrate Paleontology
+
+Pronouns: she/her/hers
+
+1 Wade Oval Drive, Cleveland, Ohio 44106
+T 216.231.4600 x 3275
+
+
+
+CMNH.ORG
+
+@goCMNH
+
+
+
+
+________________________________
+From: Lamanna, Matthew <LamannaM@CarnegieMNH.Org>
+Sent: Tuesday, May 31, 2022 8:50 PM
+To: Mike Taylor <sauropoda@gmail.com>; Amanda McGee <amcgee@cmnh.org>
+Subject: RE: [EXTERNAL] CM 662 --> CMNH 10670 --> HMNS 175
+
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+
+Yes, thanks Amanda! I’m curious to know what you come up with. And BTW, if (and only if) this would be an easy request, I’d also be interested in any information you may have on the other specimens that CMNH received from the Carnegie in 1956.
+
+
+
+Re: why the ‘Diplodocus’ hayi holotype CM 662/CMNH 10670 was sold to Houston in 1963, I wonder if the completeness of your Haplocanthosaurus delfsi holotype ultimately made hayi ‘expendable’; i.e., maybe the latter was acquired at a stage when it was still unclear whether what would (much later) become the delfsi holotype was complete enough to mount. When delfsi proved complete enough to mount (maybe after its preparation was finished, perhaps in the late 1950s/early 1960s), hayi was sold to Houston because it was no longer needed. In other words, CMNH now had its own sauropod and didn’t need two. But again, just wild speculation.
+
+
+
+--
+
+Matthew C. Lamanna, Ph.D.
+
+Mary R. Dawson Associate Curator
+
+Section of Vertebrate Paleontology
+
+Carnegie Museum of Natural History
+
+4400 Forbes Avenue
+
+Pittsburgh, PA 15213
+
+Office: (412) 578-2696
+
+Mobile: (412) 592-3361
+
+Email: lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>
+
+
+
+Museum webpage: https://carnegiemnh.org/research/matthew-lamanna/
+
+ResearchGate: https://www.researchgate.net/profile/Matthew_Lamanna
+
+Instagram: @mattlamanna
+
+Antarctic research: http://antarcticdinos.org<http://antarcticdinos.org/>
+
+Twitter: @antarcticdinos
+
+Pronouns: he, him, his
+
+
+
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Tuesday, May 31, 2022 6:26 PM
+To: Amanda McGee <amcgee@cmnh.org>
+Cc: Lamanna, Matthew <LamannaM@carnegiemnh.org>
+Subject: Re: [EXTERNAL] CM 662 --> CMNH 10670 --> HMNS 175
+
+
+
+On Tue, May 31, 2022 at 10:06 PM Amanda McGee <amcgee@cmnh.org<mailto:amcgee@cmnh.org>> wrote:
+
+Hi all,
+
+
+
+Matt - I was also curious about what we traded for the specimen. It looks like there were actually a few specimens we received from the Carnegie that year, but I couldn't find any info about what we gave. If it was ornithology specimens that might explain why I have no info in the VP records. I'll look into the deaccession paperwork from that year and see if I can uncover anything. If I find anything I'll let you know.
+
+
+
+Appreciated!
+
+Mike - I'd prefer not to be cited for my speculation, since it's not really backed by any documentation and is just a stab in the dark. That being said, feel free to mention how the acquisition and sale of the Diplodocus aligns with the Happy discovery and excavation.
+
+
+
+Thank you. So I am just using your speculation as though it were my own :-)
+
+
+
+Just to cross the T's and dot the I's, here is what we currently have in the manuscript. Let me know if there's any part of this that you're not happy about:
+
+The diplodocine specimen initially designated CM 662 was moved to the Cleveland Museum of Natural History in November 1956, because museum director Graham Netting had directed head of vertebrate paleontology J. LeRoy Kay to trade large dinosaur specimens due to lack of storage space. It was there given the specimen number CMNH 10670. In 1963, however, the specimen was sold for $15,000 to the Houston Museum of Natural History, where it was catalogued as HMNS 175. (The CMNH’s Haplocanthosaurus was excavated between 1954 and 1957 (McIntosh and Williams 1998:4–5) and it is possible that the Diplodocus CMNH 10670 was moved on because it became apparent that there was not enough space to mount two large sauropods.] The Houston museum mounted the skeleton in 1975, then restored and remounted it between 2013 and 2015. For simplicity we refer to this specimen throughout by its original designation CM 662, as it was under this specimen number that most of its role in this story was played out.
+
+-- Mike.
+
+
+
+
+
+The information contained in this message and/or attachments is intended only for the person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from any system and destroy any copies. Any views expressed in this message are those of the individual sender.
+
+
+--- StripMime Report -- processed MIME parts ---
+multipart/related
+  multipart/alternative
+    text/plain (text body -- kept)
+    text/html
+  image/png
+---
+
+
