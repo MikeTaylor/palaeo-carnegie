@@ -1,0 +1,284 @@
+Delivered-To: sauropoda@gmail.com
+Received: by 2002:a05:7023:c089:b0:83:d768:ae3f with SMTP id ip9csp3088129dlc;
+        Wed, 24 Jul 2024 08:33:34 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFUNpHpKS3QVj7sUPlbUY4OsdP5FyH5Oe4W2NleXckBxnhhuDzpPX3f+2o/px//LreuSQvG
+X-Received: by 2002:a05:6830:678a:b0:703:79c6:a9bb with SMTP id 46e09a7af769-7092e68b3eemr119938a34.7.1721835214190;
+        Wed, 24 Jul 2024 08:33:34 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1721835214; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=MK8xURkXwdjxjqsXQ+cXPCCIwdy0xz4Hoc3d9fS2SKIsNFhaIZQJfrFBECNp/znw41
+         OWTyp4mspkNIC+SIxXr30hQpX2U/VM9VNmoJ8iWnhury+LNIEgas82ySxnQPeSsYbql5
+         4Ld2iZwNIAaZdjetKAIwogiHjXbGc1orwbDkikSQPlcSrMqAFrjMoH0bZvoTe6MGEckv
+         MFEa2A1fkeQAhl3tz2PIKxORn0yHnX+leEAYNuqA1pEOo1e/CY4FVgpBXDiKjO1lW7UR
+         WefDRm4Jw7jwttE2WLR2DLVefgVlN4yOtxoqsTPDGPFhgWMzgyhYoyqAnLrrR1w/t8ca
+         OhQA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:cc:to
+         :from:dkim-signature;
+        bh=8a1eT9LVCSH4K50FD8A26jfGtBs3VVgi0xtqd8d07Uc=;
+        fh=mFtIh45Toddy83ABovhsGnOdf/FDxNwL0kUcJhiu5zA=;
+        b=qJIfHWCGQPp37Dh8+EL6p2wgTUx4vlJ/vX3AO5vzRulbVDFXS1O89sG4/1egrPmLGg
+         6wsWhHH5holdrvtkDSzUNKJqtEInqzC0TTCHE+d8SYGKDrYgLjYp8f5avSp/V0j5lnU9
+         sSx2qqbirU5Hd33Re7MDoTOp5vMzGtgQLWBZFU/LunRP8cXH+bDJaH1DugwBIl82Ialn
+         lKFCm+EH5XDYwlztBG6MIu2QIA+gawMutuGDQcPCIzHizizI5/JAXCqaVIZDDbljiif3
+         8qjnNyWMML1fi9V4DZTmMdyiBVRibvQ4Y7GiSDubD2ciWCSez/S0b3Sw1XT5oe66gYxS
+         B53g==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@carnegieclub.onmicrosoft.com header.s=selector2-carnegieclub-onmicrosoft-com header.b="p/2X2tV1";
+       arc=pass (i=1 spf=pass spfdomain=carnegieclub.co.uk dkim=pass dkdomain=carnegieclub.co.uk dmarc=pass fromdomain=carnegieclub.co.uk);
+       spf=pass (google.com: domain of victoria.connor@carnegieclub.co.uk designates 2a01:111:f400:7e1a::71a as permitted sender) smtp.mailfrom=Victoria.Connor@carnegieclub.co.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=carnegieclub.co.uk
+Return-Path: <Victoria.Connor@carnegieclub.co.uk>
+Received: from EUR05-DB8-obe.outbound.protection.outlook.com (mail-db8eur05on2071a.outbound.protection.outlook.com. [2a01:111:f400:7e1a::71a])
+        by mx.google.com with ESMTPS id af79cd13be357-7a198fb0b67si1322587985a.188.2024.07.24.08.33.33
+        for <sauropoda@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 24 Jul 2024 08:33:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of victoria.connor@carnegieclub.co.uk designates 2a01:111:f400:7e1a::71a as permitted sender) client-ip=2a01:111:f400:7e1a::71a;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@carnegieclub.onmicrosoft.com header.s=selector2-carnegieclub-onmicrosoft-com header.b="p/2X2tV1";
+       arc=pass (i=1 spf=pass spfdomain=carnegieclub.co.uk dkim=pass dkdomain=carnegieclub.co.uk dmarc=pass fromdomain=carnegieclub.co.uk);
+       spf=pass (google.com: domain of victoria.connor@carnegieclub.co.uk designates 2a01:111:f400:7e1a::71a as permitted sender) smtp.mailfrom=Victoria.Connor@carnegieclub.co.uk;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=carnegieclub.co.uk
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=hDD5yt97OzhhWCTX9ad7gNke+zV3Rbq/zFJVXK+Bs1LdWSQse4auytmPHnxdm5ko5GEj0vEBN7Z+qRYliJ/ysIm7fzVrXg2UPea6CaPKx+6G2ymygiLuQZQ5ZGM5EKSSjHfqypgisY4vgzV37ACXvT3ZuwcdjCswfXl/A1pIkhXzhNemzqusrmivAWzJkmJBmTvOMeSWq5ccFNVhPs+ofxwuKvEBWV9lYFmehfDJuTL93z2KSxDAtpcDP9wqYzv8H8lQjNcVYGquasDMdumThupo4qDl9Zlgr84KcKzS5dk6qHGFaJF46dl/DOcx7b149Ci+kKaKUykYtbNV0Pkvhg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=8a1eT9LVCSH4K50FD8A26jfGtBs3VVgi0xtqd8d07Uc=;
+ b=mVvjlK3xTfGipg5YZxQRn0pMVOnLh6GKzgIz3oN0CpnOZnJ1pFWRhm9Xx9Trs5aB2bZANRDDADVUxQAR++CQ33zF8Pilryc8TGPHHJrk6BKFPLH/Olx0qHTVPGUVJB0jkYClImaWyotiHtjhRDS0UhOaGRDCIvc3F4RlUsCIFkzrY/peMC069ErA52U1s+vy9ONppnoMhYmmyS0EQnRNDqeT4i8cmfaNmwWgrLa7B5BmphXJmUjhuvE23T4BtDTLVBefb4iz1p+vVPL7Q9m7iWw5m/VoSKUh2TLTtsoLALvSJaDHfdIf1iemre/m8fWukPzG3gWPP0cGNQPLtKnvtA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carnegieclub.co.uk; dmarc=pass action=none
+ header.from=carnegieclub.co.uk; dkim=pass header.d=carnegieclub.co.uk;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carnegieclub.onmicrosoft.com; s=selector2-carnegieclub-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=8a1eT9LVCSH4K50FD8A26jfGtBs3VVgi0xtqd8d07Uc=;
+ b=p/2X2tV1wU5YfdoVIgiSX44SpvOFMAP4IWxUYbaAUenZjo3mu9H+8zIyzDMlo7lS/b+Z+MWZx9QjnvNUzaMMKD9CDRVK1UgtkangaxfZiWtydjAVRKsHnrEIryfH/BoXyiDwjnLL7dNbhcyAGVR2TnjhxiW6ljW3Rjz9L8zsnuk=
+Received: from DU0PR07MB9292.eurprd07.prod.outlook.com (2603:10a6:10:44c::13)
+ by PA4PR07MB9655.eurprd07.prod.outlook.com (2603:10a6:102:268::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7784.14; Wed, 24 Jul
+ 2024 15:33:31 +0000
+Received: from DU0PR07MB9292.eurprd07.prod.outlook.com
+ ([fe80::b598:ea01:1c7a:d2e4]) by DU0PR07MB9292.eurprd07.prod.outlook.com
+ ([fe80::b598:ea01:1c7a:d2e4%6]) with mapi id 15.20.7784.013; Wed, 24 Jul 2024
+ 15:33:31 +0000
+From: Victoria Connor <Victoria.Connor@carnegieclub.co.uk>
+To: Mike Taylor <sauropoda@gmail.com>
+CC: Matthew Lamanna <lamannam@carnegiemnh.org>
+Subject: RE: FW: Diplodocus artwork inquiry
+Thread-Topic: FW: Diplodocus artwork inquiry
+Thread-Index:
+ AQHapeZAjc/sOAI9uU2uUGD6B9L1V7GWmLswgAASdHCAMOwFXIA4l4qAgAXf5oCAAGBggA==
+Date: Wed, 24 Jul 2024 15:33:31 +0000
+Message-ID:
+ <DU0PR07MB9292E452BBD210D49E40CE52C2AA2@DU0PR07MB9292.eurprd07.prod.outlook.com>
+References:
+ <CACnMvBb61F0D6xPAsvCaMZ8bd5N=WfXbK5NbM9e4d-RnS5B73A@mail.gmail.com>
+ <HE1PR07MB4361B223912B06B292B645E2ABE32@HE1PR07MB4361.eurprd07.prod.outlook.com>
+ <DU0PR07MB9292766163A5618516AF208AC2E32@DU0PR07MB9292.eurprd07.prod.outlook.com>
+ <CH2PR02MB6475E53C8EE1D7AAA8AF65F3D8F12@CH2PR02MB6475.namprd02.prod.outlook.com>
+ <CACnMvBZwdg_8BAC+YMDVe9kRmGsy93-Q-1yaDcEMS2Dx7-TmDg@mail.gmail.com>
+ <CACnMvBb+La+8n9GC3eAdUcGcM5rrGu1mFpuHE53CgYEB0ZT4UQ@mail.gmail.com>
+ <CACnMvBaH19PAGyrKany3nbSnxF2_TSnP3YXYM4UAN=Ke3az0kg@mail.gmail.com>
+In-Reply-To:
+ <CACnMvBaH19PAGyrKany3nbSnxF2_TSnP3YXYM4UAN=Ke3az0kg@mail.gmail.com>
+Accept-Language: en-US, en-GB
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=carnegieclub.co.uk;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: DU0PR07MB9292:EE_|PA4PR07MB9655:EE_
+x-ms-office365-filtering-correlation-id: 9b4032f8-2394-4874-0be7-08dcabf5f8e4
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|1800799024|366016|376014|38070700018|3613699012;
+x-microsoft-antispam-message-info:
+ =?utf-8?B?VDVybjN6Ri8xK0JlMURUVDE4N0oyRW92cmg0TjRkdDJUZUZZTkRRdG5Wc2xY?=
+ =?utf-8?B?bWF4eXY4SzNEMS85MWNrK2RydE9ONEtsc0Y4Q2pvaFUvYjVZUGxMRG9iODBP?=
+ =?utf-8?B?aFovOEJOWDBtbmtDQ3ZRWUpnc1c4RWl1c1ljclJGWEtQZm5LQ3ZWemFMNlo0?=
+ =?utf-8?B?YnBBQU4xWFRZNllQQzRFMzUyS1B3aEFacVN2NjJLZGRGR09IcU8vQVBSWVRh?=
+ =?utf-8?B?S3poRFpMendKOThnd1VwTUdteWpxSzdLdXBNWFdjTFB0dEh3NnBpdEZCeDBS?=
+ =?utf-8?B?OW5tOE44Qy91alR1ay93S2tJZVNqL0pmU256NUNZak9QdXNRTmJuclFqWmln?=
+ =?utf-8?B?dy9KZllQSit0eThVb1UvNEVxeFY0c09OcUk0SnVPZlFXVkEvNUhDZjZrdVNI?=
+ =?utf-8?B?S3BYY0MxUmZrb1ZDNW1TZUlQakluMWFIbUNOUy9JWC9xanIxVEVERnltS0xm?=
+ =?utf-8?B?c2pMNnowNy9NSC8yMUo2cTFOQ0RXcFptaWk1TE9YdkpmM25mSXcrMXgwbWMz?=
+ =?utf-8?B?WkM2RE84YytYYzhXaHFlQjQ2OHdNbW5KNUErQ3VjUnV6RS83VEJRdzZObjlm?=
+ =?utf-8?B?aXVIbExBOWN2VGxSeFVkWjZ0bVl0R1VLdEo4YkdvMlE3NThxVWU2eHhrUlVl?=
+ =?utf-8?B?S21TWlByUENIWTdrcC9EU3c4VmpyaTlLNHJ1NTVTUnhNSHh6YVNmYTZvaFMw?=
+ =?utf-8?B?cVpKck9GN1JpMERsU2JySEtyZjhBbHNPMXlmRjN0VFA1bzNUU2ZIQ0c2cnV2?=
+ =?utf-8?B?Mis3TThXZjNHTTdBYlV1RnJ0M0ZEc2I0VS9wdDAzYTFZMk1WZmZ3dlBiZmZo?=
+ =?utf-8?B?MW9Dc2NPQjlaazNiS1BnclBaS1VLQTZha2ZwWUNaeDFNVWpjNDNic2xHTWIv?=
+ =?utf-8?B?OWxtUW9SWnZqMWpkZ1JZVURnMDNIeDBFT2lVTldDQThYTllXaXIwWDlPc3cw?=
+ =?utf-8?B?b1Nra2YrKzE5UnFrTEtVTEo2MWkydGhaWDZsMmU4cVArNENXNVg3VjZZY2M4?=
+ =?utf-8?B?aTRiaXdaWEZFV1NBR0ZhdXNxY2tXWHFhYzBoT2N3ZmQwWS9KeG91V3cxN3M0?=
+ =?utf-8?B?M0ZhT2d1cmE1TkpzbWtWbjFIcTl0MzN2TXAzTlA5SFpLaEVjdEFlQ29PSTly?=
+ =?utf-8?B?bHFqelZJSm01dnlvSXo2M1dyK2RwQnI2cUpITHF6ZDAxSmpKc2l6ZXN5aFNx?=
+ =?utf-8?B?SXRtWFN4NFpTRnRCNGROZ3ByakVoTXBSQ3EvSi9pS0FSYjdTamwzdG5rZ2lG?=
+ =?utf-8?B?S1QwdmdLU2xCKy93ayt5cUNQbFF4LzFJdzJjZ2RENUU4WDM2SFdaWEpmei9y?=
+ =?utf-8?B?MW1Bc1RLUGNhd3JhWVNhdEt6V0VWV1Y2T3dQcTFsK2lOcjRVcmtaV3l0MlVn?=
+ =?utf-8?B?RTBac0hHaVF3TmFGOFovNndDdUdYeGhyVXdEdk0wUzlXekk1U2F3b3k2YlFv?=
+ =?utf-8?B?U0s3ZHRSdlFydzZIL2ZNbzlzY0U3RDQ0RFVRTFQxemdObU95TzFyUHhOODBB?=
+ =?utf-8?B?dnBUbnl5bVNBM21NNlZ5N2xySCtObEo5b0orSHo0Y3Y5Vk0yYmVHVDJjWnhS?=
+ =?utf-8?B?SDI5R2NwMVRyWXYwMUhibGxnS0dRWS83alB0VTNEQTNoZlEzYzE4MEVTZk5r?=
+ =?utf-8?B?QkVQSTNsWUxWSjZCY3lQMGN0allQQ3dsemFuTVYyRk16UUl4aXMyYlVPeE1M?=
+ =?utf-8?B?M2xRMThucVVuYnhnVm5PM3J2R2pOWWNuZkVwSW5ISUdOOUJrOFYyY3ZzOG9z?=
+ =?utf-8?B?UXN0TVdibSthRVBMTjhSRmczaE5HbXB5S2x2RE1OaE5RamlFbXcySytTd3FR?=
+ =?utf-8?B?ZFVHaDZ2aTNpbGlLMTA5V2xQQ3JPZUQ5YUNDak1iWUc4d1RpNHJGMlpNRnJC?=
+ =?utf-8?Q?WOS/ClR6wOK3V?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:DU0PR07MB9292.eurprd07.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(1800799024)(366016)(376014)(38070700018)(3613699012);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?eHBLZHNIMlF3bzU4K2FjQW4reGFzT0NQRWlYaVBTS2ZkZjZMYnl5b3ZFKzAz?=
+ =?utf-8?B?RUhqOGhKajdzVGlBL09mS3h4bTFjQVNOTmh3OC9nQW03bGtiOHpXbVdteVhy?=
+ =?utf-8?B?VGorRnp4RitSLzg5Q2xJTEk3NjVDWmdCOWNLTytkZzB6UjZUdVhoWEhmQUZL?=
+ =?utf-8?B?QW5IemFuSndpQkJQcTA3OE13ZHpVYXhmaEVRektSaEdjUGJMRWZ5VU1XdENu?=
+ =?utf-8?B?NDVmL1RGenlFV2ZyRUdWQlozbUQ0QnpSQmN6Q21xUVh0ZUpxRVJMbWpyeWRG?=
+ =?utf-8?B?TGd5dGJSN2tFTVFxNUhvd0FMK3YvRjIzQ2s2M1FpTWsrcmhYbkloTUo4bDAx?=
+ =?utf-8?B?L21DUEhIMk8wSXI0Nk9WN3BKRE9lVDQyQmNFdHdaWE1ha2JpZE9EVHphZnNp?=
+ =?utf-8?B?OUp0N1lMNnRDNTRweEwxWlVreUFuTWxQd3k3QlFqOGk3R3AvcHIyclZxL216?=
+ =?utf-8?B?MnJ0bEhVcGxlcjBFNGI0MS9RdDRTNytnblI2bjM5NlJVNy9ON203NHNOajJo?=
+ =?utf-8?B?WmJmOWx4SWd2Y1FIZHZwaFNEZUpEREh2UlF0VG9qQzJDZ2dKa2NJbnNaS0tz?=
+ =?utf-8?B?cmE2M3FuSFFkZFZqeTQ0U1Q5SDVPZXdtTXJ3WUkvUE5rWmJjY2tyWVJwZ210?=
+ =?utf-8?B?L25PTDV4cmxCYlJ2VUlWcGg0N0tOYVF3dktHK2xvbXRkSzlUQlBmTlVuQTJR?=
+ =?utf-8?B?Tkt1KzV4NnlCZC9zL0JPSGRmWS8vN3MzS2g4SVNHTVM0SEk1RWF3dVRrdEFo?=
+ =?utf-8?B?VEVJS2NMbHRLd2ZxdUVDR0pGbGExT3hCSVJMMEhRYS9zTnZMakN4WGErdjE3?=
+ =?utf-8?B?SVlKV05OMmR4S1p2Z1pZd1BUWE5TaU5QNjNtN05uY3hSN2ZjRDhTaE53dUI0?=
+ =?utf-8?B?MWFQTm9xUjVhc3M1WHNJalF2ZHVtd1RiRTA5SXpYalF3VE5PT1NmMVNtbmU0?=
+ =?utf-8?B?L3d0dmFjZkkwMmxQQVJrQVBKZC8veC9POTBPNHJkTmZDRU1YeTdTMnF2Ykg1?=
+ =?utf-8?B?NHlsdlZjS1AvTUFkNkNmWEJ1RzlsSlNKUGQzTkhFOW5RcnBJM1NEMC9Ib0tN?=
+ =?utf-8?B?eFhCcWN4b1hTRXRPVmtid3h3ZGVFcnlFMy92dEJiTHVVU3dpY3BhMllJbUtt?=
+ =?utf-8?B?czhqbHQ2TFV6SW1tVlpRZ3czbWZ4YkRjVXFFejZsRmk2Tk90OEhKTUdDcWxx?=
+ =?utf-8?B?REpUd3U4SUQ2NkF2UkNkdmpSRndvZTM0R0pzQzN3OUI2SWZPd2lNQnBwY0NM?=
+ =?utf-8?B?RWVKMkRjU0dXLzF2ekRNNW52aE5FT0pVa2h2QTBNaE9TU0krVmsxNkJwZE5M?=
+ =?utf-8?B?bG5NamVHMXozaEl1Y0EvOUx5dlJGT0VrbE9uRHMrckZUVHBxRER6YlpJbzM5?=
+ =?utf-8?B?VVFWWnYvbzdLUk02dDJBUFNxVjJhRVhWdnBZWDNYbjlrT2RselIrOU50NVVa?=
+ =?utf-8?B?dldYbnRVR2ZURGVPU25uYzNiOURwVnNFbFBUaFNmamMzcVhEalpYWGhIZ29K?=
+ =?utf-8?B?eUYwZi9rNUVDR1JreHY2QVVqQy9NdE5GbGlJMkFLeWNLUHhvRXJONzAvaDNz?=
+ =?utf-8?B?S09HQVNabnFFaUJ4ZlB2d3BJTW9FQjZGL1RDNzZnaVFGRE5jbUFLdVBKVmxu?=
+ =?utf-8?B?RzBxNk9BTEs0SDBBL09IN00yUlN4TXYweUdCWXE3UlRDeW1OUFlDN1dzVFMz?=
+ =?utf-8?B?RUlac29Ta3ZTUVRWcXRJZTl3TlN2RklhSFQ0N2ZHWFRjY3JVUkpyR2xtZ2p4?=
+ =?utf-8?B?R2QwdlBybHpWQzRKK29vTHJIR1ZFZnY2dWxJN1FCRDRmN2JDMHdEKzZlcllT?=
+ =?utf-8?B?ZHlzOXQ5MVR1UGh6SGoxUnM5NzlrNWhReW5leG5TS2lRQW5kSEtRVnAxa00v?=
+ =?utf-8?B?elJHS2ZkS21ZRHJtL09hbHpuT1BKQ1V2VmpaVTFOcTU4bG91QjBRUS9STXlL?=
+ =?utf-8?B?eXF5aWdSQjB0cy9aV2R3d3ZyZXBYbE5aM2tkanA3L21NOWd5bi83dThWYUNu?=
+ =?utf-8?B?Q1U3ZDhQd2dMWkpMVEpzY2RRUUo3VFZhT0djem1IR0pOeEhCalo2c0ZNMncv?=
+ =?utf-8?B?Y1haK3FRSFFpbTVnUE0ramtFYS91aERHNm9PRy9XNEJIaGp6RjR2R2RPUjdB?=
+ =?utf-8?B?TE5hZFZaMm42NitNSlkvdHBaZmdqYVUwQ3BFMmJyaGpHcnJIOEE0YW1ud1pR?=
+ =?utf-8?B?NHc9PQ==?=
+MIME-Version: 1.0
+X-OriginatorOrg: carnegieclub.co.uk
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DU0PR07MB9292.eurprd07.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9b4032f8-2394-4874-0be7-08dcabf5f8e4
+X-MS-Exchange-CrossTenant-originalarrivaltime: 24 Jul 2024 15:33:31.0397
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 121e2d8a-908d-4262-bd25-552af311d304
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: Lk0kNfrgovhy9oNEII9PYyBB+EdsIFcDxxi5+nGGtu64sTJssIuItwvpysZFU0vAB8OXGZ7PjTWU2lXT23b+SwWuScOTrdumnLXjqN4BZwY=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PA4PR07MB9655
+X-StripMime: Non-text section removed by stripmime
+Content-Type: text/plain; charset="utf-8"
+
+Hi Mike,
+
+Apologies for the delay â€“ I was double checking my notes as Iâ€™m unsure whether it is alright to cite the record â€“ photography/copying of the documents was not permitted, only transcription â€“ and my notes begin:
+
+NRS GD281/140/9
+Papers Relating to Skibo Castle: Valuation of Pictures, Furniture and Books in Castle
+No publication without permission â€“ consult NRS staff
+
+I wasnâ€™t able in the time I had in the National Records of Scotland able to transcribe every documents in the file, and I also canâ€™t be sure that I did not miss it when transcribing [though Iâ€™m pretty sure I didnâ€™t!].
+
+It might be safer to say -
+
+Victoria Connor of The Carnegie Club (pers. comm., 2024), which now owns Skibo Castle, informed us that no relevant watercolour or lead-pencil artwork remains in the castle today, and suggested that the whatever artwork was involved, the Andrew Carnegie Birthplace Museum might have acquired it.
+
+Apologies if this complicates matters for you.
+
+Kind regards,
+
+Victoria
+
+
+From: Mike Taylor <sauropoda@gmail.com>
+Sent: Wednesday, July 24, 2024 10:38 AM
+To: Victoria Connor <Victoria.Connor@carnegieclub.co.uk>
+Cc: Matthew Lamanna <lamannam@carnegiemnh.org>
+Subject: Re: FW: Diplodocus artwork inquiry
+
+I hate to hassle you but this is literally the last box I need to check.
+
+-- Mike.
+
+
+On Sat, 20 Jul 2024 at 15:55, Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>> wrote:
+Hello again, Victoria. Just checking: would it be OK, please, to cite some of what you told us in this email in the paper that we will shortly submit? Specifically, we want to say:
+
+Victoria Connor of the Carnegie Club (pers. comm., 2024), which now owns Skibo Castle, informed us that no relevant watercolour or lead-pencil artwork appeared in the valuation made of the castle and its contents before its sale in 1982 (National Records of Scotland 1974â€“1997), and suggested that the whatever artwork was involved, the Andrew Carnegie Birthplace Museum might have acquired it.
+
+Thank you!
+
+-- Mike.
+
+
+On Fri, 14 Jun 2024 at 15:42, Mike Taylor <sauropoda@gmail.com<mailto:sauropoda@gmail.com>> wrote:
+From: Victoria Connor <Victoria.Connor@carnegieclub.co.uk<mailto:Victoria.Connor@carnegieclub.co.uk>>
+Sent: Tuesday, May 14, 2024 9:51 AM
+To: Lamanna, Matthew <lamannam@carnegiemnh.org<mailto:lamannam@carnegiemnh.org>>
+Subject: FW: Diplodocus artwork inquiry
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.
+Dear Dr Taylor,
+
+Hello, Victoria! I'm so sorry it's taken such a long time for me to get back to you! For some reason your reply only went to Matt (who was CC'd in my original query, and also in this message). After a while he figured out what had goneWARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+WARNING: bad base64 char -1 (ÿ)
+ wrong, and forwarded your message to me, but by then I was in the middle of sequence of intense conferences and hardly had time to stop and think.
+
+Anyway â€” thank you so much for getting back to me. Read on for responses:
+
+Thank you for your enquiry, and what a fascinating project. We are well aware (and proud!) of the small part that Skibo played in the story of Dippy. Sadly, the picture in question is no longer part of the Skibo collection and so I canâ€™t speak to its appearance.
+
+I thought it wouldn't be that easy! It's fascinating (though sometimes frustrating) how almost every lead I follow in this project leads me down a rabbit-hole.
+
+The Carnegie family sold the estate in 1982, and in 1981 commissioned a valuation of the castleâ€™s contents as these were being sold along with the building. This valuation is now held in the National Records of Scotland. Looking back through my transcribed notes from a previous visit there, the picture does not appear on the valuation list [NRS GD281/140/9 - Papers Relating to Skibo Castle: Valuation of Pictures, Furniture and Books in Castle]
+
+Even this negative is helpful information, thank you.
+
+so presumably had either left the castle prior to that date or was omitted from the valuation as it was being kept by a member of the family or donated to one of the Carnegie Trusts or museums [I recollect that papers in the NRS collection did make reference to items being gifted in this manner, but sadly time did not allow me to transcribe them and the terms of deposit prohibit photography].
+
+Have you enquired with the Andrew Carnegie Birthplace Museum in Dunfermline â€“ they might be able to offer some more insight into the pictureâ€™s whereabouts.
+
+Oh, that's a really helpful link â€” I didn't know there was such a museum. I will definitely be in touch with them, and let them know that you sent me.
+
+Looking at their website, they have the attached image in their collection and the identifier indicates that it was acquired in 1928 â€“ this is the year the museum opened and its collection was furnished entirely with items from the Carnegie family homes as well as Carnegie Trusts and Foundations. I would suggest reaching out (if you have not already) to see if Louise Whitfield Carnegie (or, later, her daughter Margaret) gifted the Skibo diplodocus picture to the museum. https://www.carnegiebirthplace.com/blog/2020/5/11/dippy-about-dinosaurs<https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.carnegiebirthplace.com%2fblog%2f2020%2f5%2f11%2fdippy-about-dinosaurs&c=E,1,cin8CWG7xULI226gYTk2fcR-Woo_lkr15vs_X1CpxAYceSe_IXj6kYuAmzzq4YzuFOdRDnNWK8-E79JaHVtmxBBH93qJpHoFnyCNM1ck&typo=1>
+
+This is so useful. I would never have recognized the significance of that accession number without you, and would have written off that image as merely a reproduction of Hatcher's paper.
+
+I shall see if I can dig any other info up from my records, and will be in touch if I find anything.
+
+Much appreciated. I'll let you know how this progresses, and if I'm able to find out more. And (assuming it's OK), I will mention you in the acknowledgements of the paper.
+
+-- Mike.
