@@ -1,23 +1,23 @@
 Key points from Instructions for Authors:
 https://carnegiemnh.org/wp-content/uploads/2017/08/CMNH-PUBLICATIONS-AUTHORS-GUIDE-6-Jan-2010.pdf
 
-	The overall publication size is 8½ x 11 inches [US Letter].
+DONE	The overall publication size is 8½ x 11 inches [US Letter].
 
-	The standard text and image area of each page is 171 by 220 mm (486 by 624 points or 6¾ x 8 2/3 inches).
+DONE	The standard text and image area of each page is 171 by 220 mm (486 by 624 points or 6¾ x 8 2/3 inches).
 
-	Figure widths are 234 points (single column) or 486 points (full page) [...]
+XXX	Figure widths are 234 points (single column) or 486 points (full page) [...]
 
-	[...] with height less than 624 points to allow for captions (e.g., a four-line captions requires 45 points, so that maximum figure height would be 579 points).
+XXX	[...] with height less than 624 points to allow for captions (e.g., a four-line captions requires 45 points, so that maximum figure height would be 579 points).
 
-	Authors should submit the names, addresses, phone and fax numbers, and e-mail addresses of at least three qualified potential (non-CMNH) reviewers for each manuscript.
+BLOCKED	Authors should submit the names, addresses, phone and fax numbers, and e-mail addresses of at least three qualified potential (non-CMNH) reviewers for each manuscript.
 
-	Manuscripts (including illustrations) must be submitted as electronic files to the Senior Editor [wiblej@carnegiemnh.org]
+XXX	Manuscripts (including illustrations) must be submitted as electronic files to the Senior Editor [wiblej@carnegiemnh.org]
 
-	All senior authors must sign a copyright transfer form prior to publication that assigns all literary rights to CMNH. Forms will be sent with proofs.
+NO	All senior authors must sign a copyright transfer form prior to publication that assigns all literary rights to CMNH. Forms will be sent with proofs.
 
-	Reprints and Other Chargeable Costs [...] Authors must purchase their own separates, but will be provided with a PDF file of their publication for free. Authors and curators may order these reprints at the proof stage.
+XXX	Reprints and Other Chargeable Costs [...] Authors must purchase their own separates, but will be provided with a PDF file of their publication for free. Authors and curators may order these reprints at the proof stage.
 
-	Articles should include the following items in this order:
+NO	Articles should include the following items in this order:
 		title page
 		abstract
 		text (with desired headings, see below)
@@ -32,33 +32,33 @@ https://carnegiemnh.org/wp-content/uploads/2017/08/CMNH-PUBLICATIONS-AUTHORS-GUI
 		figure captions
 		illustrations
 
-	All manuscripts must be set in 12 point font, double-spaced, and in standard 8½ x 11 format.
+DONE	All manuscripts must be set in 12 point font, double-spaced, and in standard 8½ x 11 format.
 
-	Manuscript should be set with a minimal amount of formatting needed to distinguish parts of the content (i.e., paragraph indents, centered headings, use of bold and italic type). Refrain from using elaborate formatting features such as bullets or numbering systems, underlined text, or style sheets.
+NO	Manuscript should be set with a minimal amount of formatting needed to distinguish parts of the content (i.e., paragraph indents, centered headings, use of bold and italic type). Refrain from using elaborate formatting features such as bullets or numbering systems, underlined text, or style sheets.
 
-	All pages should be numbered including tables, literature cited, and figure captions.
+DONE	All pages should be numbered including tables, literature cited, and figure captions.
 
-	Refer to the most recent issues of the Annals for examples of illustration and caption sizes and placement, standard text, tables, and citations styles.
+BLOCKED	Refer to the most recent issues of the Annals for examples of illustration and caption sizes and placement, standard text, tables, and citations styles.
 
-	Inclusion of commas only in numbers containing five or more digits.
+DONE	Inclusion of commas only in numbers containing five or more digits.
 
-	Preceding decimal points with a numeral (a zero if number less than one).
+DONE	Preceding decimal points with a numeral (a zero if number less than one).
 
-	Writing out numerals from zero to ten, and ordinals from first to tenth.
+OK	Writing out numerals from zero to ten, and ordinals from first to tenth.
 
-	Dropping periods from standard abbreviations for time (yr, mo, wk, d, hr, sec) and dimension (km, m, cm, mm, cc, kg, g, mg);
+DONE	Dropping periods from standard abbreviations for time (yr, mo, wk, d, hr, sec) and dimension (km, m, cm, mm, cc, kg, g, mg);
 
-	Not italicizing selected, commonplace, abbreviations for Latin expressions (i.e., [include comma], e.g., [include comma], ca., cf., vs., etc., per se, et al.);
+DONE	Not italicizing selected, commonplace, abbreviations for Latin expressions (i.e., [include comma], e.g., [include comma], ca., cf., vs., etc., per se, et al.);
 
-	The title page should contain the title (all caps), names(s) of author(s), and a running head of no more than 55 characters that will be printed at the top of each right hand page.
+DONE	The title page should contain the title (all caps), names(s) of author(s), and a running head of no more than 55 characters that will be printed at the top of each right hand page.
 
-	Title should state the subject matter as briefly as possible including the animal or plant group involved.
+DONE	Title should state the subject matter as briefly as possible including the animal or plant group involved.
 
-	CMNH employees’ affiliation should include title at CMNH, followed by complete mailing address; CMNH research associates should include that title and CMNH section. Non-CMNH employees’ affiliation should include complete mailing address. All authors should include e-mail addresses.
+BLOCKED	CMNH employees’ affiliation should include title at CMNH, followed by complete mailing address; CMNH research associates should include that title and CMNH section. Non-CMNH employees’ affiliation should include complete mailing address. All authors should include e-mail addresses.
 
-	Provide up to eight keywords following the Abstract that are not redundant with words in the title, listed alphabetically.
+DONE	Provide up to eight keywords following the Abstract that are not redundant with words in the title, listed alphabetically.
 
-	Where possible, the primary subdivisions consistent with those used in most scientific journals should be used. For analytical works of non-taxonomic nature, these are:
+NO	Where possible, the primary subdivisions consistent with those used in most scientific journals should be used. For analytical works of non-taxonomic nature, these are:
 		Introduction
 		Materials and Methods
 		Results or Descriptions
@@ -66,13 +66,13 @@ https://carnegiemnh.org/wp-content/uploads/2017/08/CMNH-PUBLICATIONS-AUTHORS-GUI
 		Acknowledgments
 		Literature Cited
 
-	Lists of institutional acronyms are properly listed at the end of the Materials and Methods.
+NO	Lists of institutional acronyms are properly listed at the end of the Materials and Methods. [But see below]
 
-	Level 1 headings: Format in all capital letters, centered (use for Abstract, Introduction, and main text headings).
+DONE	Level 1 headings: Format in all capital letters, centered (use for Abstract, Introduction, and main text headings).
 
-	Level 2 headings: Centered, initial capital letters and the rest lower-case.
+DONE	Level 2 headings: Centered, initial capital letters and the rest lower-case.
 
-	Level 3 headings: Flush left, initial capitals and lower-case, follow with period and two hyphens, and run into text.
+NO	Level 3 headings: Flush left, initial capitals and lower-case, follow with period and two hyphens, and run into text. [LibreOffice cannot make paragraph text follow that of the heading on the same line.]
 
 	Please note the following important, but frequently overlooked conventions [in references].
 		1. Spell out names of periodicals.
