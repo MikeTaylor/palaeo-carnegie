@@ -35,6 +35,16 @@ DONE	Figure Captions [...] individual sections can be described following their 
 
 DONE	Lists of institutional names or acronyms (limited to those used in text or tables) may be presented as appendices as an alternative to presenting them at the end of the Introduction or Methods sections. [So, implicitly, placing them at the end of the Introduction is fine.]
 
+DONE	Please note the following important, but frequently overlooked conventions [in references].
+DONE		1. Spell out names of periodicals.
+DONE		2. Include parenthetically the number of the issue in a citation, especially when the periodical in question is not paginated continuously throughout a single volume.
+DONE		3. Include the last name and initials of all authors of each reference, i.e., do not use "et al." in the Literature Cited.
+DONE		4. The names of all authors ultimately are published using capitals and small capitals. Submit them using capitals and lower-case letters, but remove spaces between initials. For example, "Rawlins, J.E." not "Rawlins, J. E."
+DONE		5. Include a comma between the penultimate author’s name and the word "and" in a list of authors.
+DONE		6. Include a comma between the periodical name and the volume number.
+DONE		7. Do not include a space between the colon following the volume number and the pages.
+DONE		8. Spell out names of states and countries for publishers of books.
+
 NO	All senior authors must sign a copyright transfer form prior to publication that assigns all literary rights to CMNH. Forms will be sent with proofs.
 
 NO	Articles should include the following items in this order:
@@ -80,8 +90,22 @@ BLOCKED	Manuscripts (including illustrations) must be submitted as electronic fi
 
 BLOCKED	Reprints and Other Chargeable Costs [...] Authors must purchase their own separates, but will be provided with a PDF file of their publication for free. Authors and curators may order these reprints at the proof stage.
 
+XXX	Formats for references of various kinds:
 
+	Journal article:
+	Soltis, D.E., and P.S. Soltis. 1992. The distribution of selfing rates in homosporous ferns. American Journal of Botany, 79:97-100.
 
+	Book:
+	Wilson, D.E., and D.M. Reeder (eds.). 1993. Mammal Species of the World: A Taxonomic and Geographic Reference, Second Edition. Smithsonian Institution Press, Washington, D.C.
+
+	Chapter in edited volumes:
+	Asher, R.J. 2005. Insectivoran-grade placentals. Pp. 50-70, in The Rise of Placental Mammals (K.D. Rose and J.D. Archibald, eds.). The Johns Hopkins University Press, Baltimore.
+
+	Dissertation:
+	Rasmussen, D.L. 1977. Geology and mammalian paleontology of the Oligocene-Miocene Cabbage Patch Formation, central-western Montana. Unpublished Ph.D. Dissertation, University of Kansas, Lawrence, Kansas.
+
+	Web site:
+	Fetzner, J.W., Jr. 2008. Biodiversity Services Facility, Collection and Identification Services [cited 16 July 2008]. Available from http://iz.carnegiemnh.org/CMIC/Default.org
 
 XXX	Figure widths are 234 points (single column) or 486 points (full page) [...]
 
@@ -100,36 +124,6 @@ XXX	Submit images at their final size. In the case of figures intended to occupy
 XXX	For digital files, please start all filenames with the name of the first author and preferably also the date (e.g., Jones30Sept05).
 
 XXX	Include a list of all files with file name, type, and size.
-
-
-
-
-XXX	Please note the following important, but frequently overlooked conventions [in references].
-		1. Spell out names of periodicals.
-		2. Include parenthetically the number of the issue in a citation, especially when the periodical in question is not paginated continuously throughout a single volume.
-		3. Include the last name and initials of all authors of each reference, i.e., do not use "et al." in the Literature Cited.
-		4. The names of all authors ultimately are published using capitals and small capitals. Submit them using capitals and lower-case letters, but remove spaces between initials. For example, "Rawlins, J.E." not "Rawlins, J. E."
-		5. Include a comma between the penultimate author’s name and the word "and" in a list of authors.
-		6. Include a comma between the periodical name and the volume number.
-		7. Do not include a space between the colon following the volume number and the pages.
-		8. Spell out names of states and countries for publishers of books.
-
-XXX	Formats for references of various kinds:
-
-	Journal article:
-	Soltis, D.E., and P.S. Soltis. 1992. The distribution of selfing rates in homosporous ferns. American Journal of Botany, 79:97-100.
-
-	Book:
-	Wilson, D.E., and D.M. Reeder (eds.). 1993. Mammal Species of the World: A Taxonomic and Geographic Reference, Second Edition. Smithsonian Institution Press, Washington, D.C.
-
-	Chapter in edited volumes:
-	Asher, R.J. 2005. Insectivoran-grade placentals. Pp. 50-70, in The Rise of Placental Mammals (K.D. Rose and J.D. Archibald, eds.). The Johns Hopkins University Press, Baltimore.
-
-	Dissertation:
-	Rasmussen, D.L. 1977. Geology and mammalian paleontology of the Oligocene-Miocene Cabbage Patch Formation, central-western Montana. Unpublished Ph.D. Dissertation, University of Kansas, Lawrence, Kansas.
-
-	Web site:
-	Fetzner, J.W., Jr. 2008. Biodiversity Services Facility, Collection and Identification Services [cited 16 July 2008]. Available from http://iz.carnegiemnh.org/CMIC/Default.org
 
 
 
