@@ -121,9 +121,9 @@ DONE	Figures must be saved as high-resolution TIFF files (not JPEG’s).
 
 DONE	Submit images at their final size. In the case of figures intended to occupy a full page, authors should leave room for the figure legend without continuing the text onto the next page.
 
-XXX	For digital files, please start all filenames with the name of the first author and preferably also the date (e.g., Jones30Sept05).
+DONE	For digital files, please start all filenames with the name of the first author and preferably also the date (e.g., Jones30Sept05).
 
-XXX	Include a list of all files with file name, type, and size.
+DONE	Include a list of all files with file name, type, and size.
 
 
 
