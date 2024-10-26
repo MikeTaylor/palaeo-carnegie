@@ -107,15 +107,15 @@ DONE	Formats for references of various kinds:
 	Web site:
 	Fetzner, J.W., Jr. 2008. Biodiversity Services Facility, Collection and Identification Services [cited 16 July 2008]. Available from http://iz.carnegiemnh.org/CMIC/Default.org
 
-XXX	Figure widths are 234 points (single column) or 486 points (full page) [...]
+DONE	Figure widths are 234 points (single column) or 486 points (full page) [...]
 
-XXX	[...] with height less than 624 points to allow for captions (e.g., a four-line captions requires 45 points, so that maximum figure height would be 579 points).
+DONE	[...] with height less than 624 points to allow for captions (e.g., a four-line captions requires 45 points, so that maximum figure height would be 579 points).
 
-XXX	[Image caption] label font and size should be uniform for all figures in a given manuscript.
+DONE	[Image caption] label font and size should be uniform for all figures in a given manuscript.
 
-XXX	[Image caption] font should be seraph-free and when published be 3-5 mm in height (1/8 to 3/16 inch). The preferred height for letters designating separate figures is 5 mm, with 3-4 mm height for text, abbreviations, or names appearing on figures.
+DONE	[Image caption] font should be seraph-free and when published be 3-5 mm in height (1/8 to 3/16 inch). The preferred height for letters designating separate figures is 5 mm, with 3-4 mm height for text, abbreviations, or names appearing on figures.
 
-XXX	Line art should be scanned at 1200 ppi (pixels per inch). Halftone and color images require an input resolution of 600 dpi.
+NO	Line art should be scanned at 1200 ppi (pixels per inch). Halftone and color images require an input resolution of 600 dpi.
 
 XXX	Figures must be saved as high-resolution TIFF files (not JPEG’s).
 
