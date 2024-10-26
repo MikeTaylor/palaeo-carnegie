@@ -15,6 +15,8 @@ Anything lower than that is too tall for its width
 Part-label font should be "5 mm" in height.
 Double-column image width (486 points) is 171.45 mm
 So font size should be 5/171.45 = .02916302128900554097 the width of the image
+Single-column image width (234 points) is 82.55 mm
+So font size should be 5/82.55 = .06056935190793458509 the width of the image
 
 
 													600	300	Print
