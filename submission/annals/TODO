@@ -117,7 +117,7 @@ DONE	[Image caption] font should be seraph-free and when published be 3-5 mm in 
 
 NO	Line art should be scanned at 1200 ppi (pixels per inch). Halftone and color images require an input resolution of 600 dpi.
 
-XXX	Figures must be saved as high-resolution TIFF files (not JPEG’s).
+DONE	Figures must be saved as high-resolution TIFF files (not JPEG’s).
 
 DONE	Submit images at their final size. In the case of figures intended to occupy a full page, authors should leave room for the figure legend without continuing the text onto the next page.
 
