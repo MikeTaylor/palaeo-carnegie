@@ -15,15 +15,15 @@ Anything lower than that is too tall for its width
 													600	300
 Figure								Cols	Width	Height	Aspect	Labels	DPI	DPI
 -------------------------------------------------------------------------------------------------------------------
-Figure-1-mounted-Diplodocus-in-2019.jpeg			2	4032	3024	1.3333	no	no	YES
-Figure-2-portraits.jpeg						2	3600	3542	1.0163	YES	no	YES
-Figure-3-buy-this-for-Pittsburgh.jpeg				2	2937	3813	0.7702	no	no	YES
-Figure-4-quarry.jpeg						2	2212	1912	1.1569	no	no	YES
-Figure-5-field-crew.jpeg					2	2112	1972	1.0709	no	no	YES
-Figure-6-prep-lab-1903.jpeg					2	2817	2285	1.2328	no	no	YES
-Figure-7-Hatcher1901-plate-XIII-Diplodocus-skeleton.png		2	5416	1325	4.0875	no	no	YES
-Figure-8-photo-of-plate.jpeg					1	640	480	1.3333	no	no	no
-Figure-9-the-king-was-attracted.jpeg				1	1189	897	1.3255	no	no	YES
+Figure-01-mounted-Diplodocus-in-2019.jpeg			2	4032	3024	1.3333	no	no	YES
+Figure-02-portraits.jpeg					2	3600	3542	1.0163	YES	no	YES
+Figure-03-buy-this-for-Pittsburgh.jpeg				2	2937	3813	0.7702	no	no	YES
+Figure-04-quarry.jpeg						2	2212	1912	1.1569	no	no	YES
+Figure-05-field-crew.jpeg					2	2112	1972	1.0709	no	no	YES
+Figure-06-prep-lab-1903.jpeg					2	2817	2285	1.2328	no	no	YES
+Figure-07-Hatcher1901-plate-XIII-Diplodocus-skeleton.png	2	5416	1325	4.0875	no	no	YES
+Figure-08-photo-of-plate.jpeg					1	640	480	1.3333	no	no	no
+Figure-09-the-king-was-attracted.jpeg				1	1189	897	1.3255	no	no	YES
 Figure-10-trial-mount-in-pittsburgh-exposition-hall.jpeg	2	6138	4936	1.2435	no	YES	YES
 Figure-11-no-furcula-in-mounted-skeleton--IMG_9655.jpeg		2	2949	2212	1.3331	no	no	YES
 Figure-12-atlas-comparison.jpeg					1	1589	1614	0.9845	YES	no	YES
