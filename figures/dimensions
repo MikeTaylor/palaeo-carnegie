@@ -1,0 +1,41 @@
+Annals of the Carnegie Museum guidelines at
+https://carnegiemnh.org/wp-content/uploads/2017/08/CMNH-PUBLICATIONS-AUTHORS-GUIDE-6-Jan-2010.pdf
+say:
+
+Figure widths are 234 points (single column) or 486 points (full page) with height less than 624 points to allow for captions (e.g., a four-line captions requires 45 points, so that maximum figure height would be 579 points).
+
+Ignoring the caption-space requirement,
+that is a W/H aspect ration of 486/624 = 0.779
+Anything lower than that is too tall for its width
+
+Figure								Cols	Width	Height	Aspect	Labels?
+-------------------------------------------------------------------------------------------------------
+Figure-1-mounted-Diplodocus-in-2019.jpeg			2	4032	3024	1.3333
+Figure-2-portraits.jpeg						2	3600	3542	1.0163
+Figure-3-buy-this-for-Pittsburgh.jpeg				2	2937	3813	0.7702
+Figure-4-quarry.jpeg						2	2212	1912	1.1569
+Figure-5-field-crew.jpeg					2	2112	1972	1.0709
+Figure-6-prep-lab-1903.jpeg					2	2817	2285	1.2328
+Figure-7-Hatcher1901-plate-XIII-Diplodocus-skeleton.png		2	5416	1325	4.0875
+Figure-8-photo-of-plate.jpeg					1	640	480	1.3333
+Figure-9-the-king-was-attracted.jpeg				1	1189	897	1.3255
+Figure-10-trial-mount-in-pittsburgh-exposition-hall.jpeg	2	6138	4936	1.2435
+Figure-11-no-furcula-in-mounted-skeleton--IMG_9655.jpeg		2	2949	2212	1.3331
+Figure-12-atlas-comparison.jpeg					1	1589	1614	0.9845
+Figure-13-composition-of-the-Carnegie-Diplodocus.jpeg		2	13840	3048	4.5406
+Figure-14-skeleton-with-Camarasaurus-humerus.jpeg		2	3889	2498	1.5568
+Figure-15-skull-cast-cm-11161-right-anterolateral.jpeg		2	1200	800	1.5000
+Figure-16-skeleton-1980-1999.jpeg				2	2200	1558	1.4120
+Figure-17-manus-through-the-ages.jpeg				2	4722	4722	1.0000
+Figure-18-diplodocus-at-fraley-lab.jpeg				2	3008	2000	1.5040
+Figure-19-CM307-caudals.jpeg					2	3851	1932	1.9932
+Figure-20-tail-composite-v2.jpeg				2	4002	4220	0.9483
+Figure-20-tail-composite.jpeg					2	8000	2110	3.7914
+Figure-21-diplodocid-mid-caudals.jpeg				1	2782	1762	1.5788
+Figure-22-photogrammetric-models.jpeg				2	1327	1745	0.7605
+
+Only Figure 22 and Maybe Figure 3 are close to the limit, and neither passes it.
+
+XXX Trim Figure 13 to remove most of the tail.
+XXX Update Figure 13 caption to reflect caudotomy
+XXX Recompose Figure 20v2 to overlap top and bottom halves, and reduce bottom-half height
