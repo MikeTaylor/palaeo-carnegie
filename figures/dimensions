@@ -12,9 +12,9 @@ Ignoring the caption-space requirement,
 that is a W/H aspect ration of 486/624 = 0.779
 Anything lower than that is too tall for its width
 
-													600	300
-Figure								Cols	Width	Height	Aspect	Labels	DPI	DPI
--------------------------------------------------------------------------------------------------------------------
+													600	300	Print
+Figure								Cols	Width	Height	Aspect	Labels	DPI	DPI	Resol.
+------------------------------------------------------------------------------------------------------------------------------
 Figure-01-mounted-Diplodocus-in-2019.jpeg			2	4032	3024	1.3333	no	no	YES
 Figure-02-portraits.jpeg					2	3600	3542	1.0163	YES	no	YES
 Figure-03-buy-this-for-Pittsburgh.jpeg				2	2937	3813	0.7702	no	no	YES
@@ -34,8 +34,7 @@ Figure-16-skeleton-1980-1999.jpeg				2	2200	1558	1.4120	no	no	YES
 Figure-17-manus-through-the-ages.jpeg				2	4722	4722	1.0000	YES	YES	YES
 Figure-18-diplodocus-at-fraley-lab.jpeg				2	3008	2000	1.5040	no	no	YES
 Figure-19-CM307-caudals.jpeg					2	3851	1932	1.9932	no	no	YES
-Figure-20-tail-composite-v2.jpeg				2	4002	4220	0.9483	YES	no	YES
-Figure-20-tail-composite.jpeg					2	8000	2110	3.7914	YES	YES	YES
+Figure-20-tail-composite.jpeg-v3.jpeg				2	4116	3806	1.0815	YES	YES	YES
 Figure-21-diplodocid-mid-caudals.jpeg				1	2782	1762	1.5788	YES	YES	YES
 Figure-22-photogrammetric-models.jpeg				2	2025	2288	0.8851	YES	no	YES	done
 
