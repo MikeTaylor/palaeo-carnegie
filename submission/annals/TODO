@@ -119,7 +119,7 @@ NO	Line art should be scanned at 1200 ppi (pixels per inch). Halftone and color 
 
 XXX	Figures must be saved as high-resolution TIFF files (not JPEG’s).
 
-XXX	Submit images at their final size. In the case of figures intended to occupy a full page, authors should leave room for the figure legend without continuing the text onto the next page.
+DONE	Submit images at their final size. In the case of figures intended to occupy a full page, authors should leave room for the figure legend without continuing the text onto the next page.
 
 XXX	For digital files, please start all filenames with the name of the first author and preferably also the date (e.g., Jones30Sept05).
 
