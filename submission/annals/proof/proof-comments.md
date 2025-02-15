@@ -1,12 +1,50 @@
 # Comments on "Taylor draft 2.pdf": The History and Composition of the Carnegie _Diplodocus_
 
-XXX headings. Make ToC
 
-XXX underlinings
+## Overview
 
-XXX URLs
+Thank you for creating this initial proof. As always, it's a delightful moment to first see a long-running project in something like its final form.
 
-XXX Figures far from where they are referenced, e.g. Figure 10 (page 14) is references on page 10.
+The list of changes to me made below is a mix of minor errors introduced in typesetting, a few that that were in the intial submission but have only now become apparent to us, and a small number of (tiny) additions that clarify some matters. But more important that these specifics are four systemic issues, which we will address up front.
+
+
+## Systemic issues
+
+Most importantly, this manuscript uses and needs three leves of headings to communicate its organization. In the proof PDF, these levels are collapsed, so that we lose the sense of structure. For example, the level-1 heading "Historical background" on page 5 is set like the level-2 headings "Nomenclature" an "Institutional abbreviations" that precede it. This is most obvious on page 15, where the first-level heading "Material in the mounted skeleton" is followed immediately by the second-level heading "The original mount at the Carnegie Museum" typeset in exactly the same way, so we seem to have am empty section. Similarly on page 20, the level-2 heading "Changes made to the mount at the Carnegie Museum" and level-3 heading "Replacement of skull with replica of CM 11161" are ajacent and identically set.
+
+So we ask that each level of heading is set distinctly from the others, and that the structure is followed as shown:
+
+* Introduction
+  * Nomenclature
+  * Institutional abbreviations
+* Historical background
+* Material in the mounted skeleton
+  * The original mount at the Carnegie Museum
+  * Changes made to the mount at the Carnegie Museum
+    * Replacement of skull with replica of CM 11161
+    * Suspension of neck
+    * 1999 replacement of forefeet with CM 662 replicas
+    * 2007–2008 refurbishment of the dinosaur exhibition
+    * Forefeet WDC-FS001A
+    * Forelimb elements from BYU material
+    * Caudal vertebrae
+  * The casts made from the Carnegie molds
+* Discussion
+  * The length of the Carnegie Diplodocus
+  * Documenting skeletal mounts
+* Acknowledgments
+* References
+* Tables
+* Figure Captions
+
+Secondly, the manuscript contains four long quotes, the extent of which we indicated in the submission by indentation. In the present proof, these are typeset as normal paragraphs, so it's impossible to tell where they end. Some typographic convention is needed to mark these out.
+
+Third, it seems that every URL has been expunged from the manuscript. For the one in the body text, this leaves behind nonsense (as well as contravening one of the reviewer recommendations). But in the references, it's catastrophic, as for many of the referenced items the URL is the only way to find the material.
+
+Finally, and least important, the illustrations often appear quite a long way away from  where they are referenced. For example, Figure 10 is referenced on page 10, but does not appear until page 14. We understand that page layout is an art and that many factors are involved, so that illustrations cannot always appear on or next to the page where they are first referenced, but we wonder whether some tightening is possible in this respect?
+
+
+## Specific changes
 
 **Page 1, header**<br />
 "VOL 91, NUMBER1" has no space after "NUMBER".
@@ -168,10 +206,11 @@ p25c1p3
 New paragraph for "We thank Ken Carpenter".
 
 **Pages 35ff**<br />
-In all the references, the URLs have been removed. I think this must have been a poorly calibrated automatic process, as it has left us with silly references like "Dystylosaurus reminds you to beware of taking measurements from casts. Sauropod Vertebra Picture of the Week, 4 November 2019. — , archived at ", where both the original URL and the archived URL are absent, but the "archived at phrase" has remained. these URLs are crucial parts of the references, and must be reinstated.
+In all the references, the URLs have been removed. We think this must have been a poorly calibrated automatic process, as it has left us with silly references like "Dystylosaurus reminds you to beware of taking measurements from casts. Sauropod Vertebra Picture of the Week, 4 November 2019. — , archived at ", where both the original URL and the archived URL are absent, but the "archived at phrase" has remained. these URLs are crucial parts of the references, and must be reinstated.
 
 **Pages 35ff**<br />
 In many cases, multiple references have been concatented together into one. For example, the penultimate paragraph of the whole paper conjoins the references for Wedel 2009, Wedel 2019, and Wilhite 2003.
 
-Because of the systemic problems affecting the references, I have not yet made a serious effort at proofing them. When we get the next round of proofs, I will read them properly.
+Because of the systemic problems affecting the references, we have not yet made a serious effort at proofing them. When we get the next round of proofs, we will read them properly.
+
 
