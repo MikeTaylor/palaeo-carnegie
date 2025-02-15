@@ -6,10 +6,10 @@ p1c1p1
 p2c2p1
 "as because it was initially installed in St. Petersburg but currently stands in Moscow". Delete "as".
 
-**Page 3, caption to Figure 2.**
+p3f2
 "Olof A. Peterson". Add "(in later years)".
 
-**Page 4, caption to Figure 3.**
+p4f3
 "Cant you buy this for Pittsburgh": "buy" should be underlined, as in the original.
 
 p5c2p2
@@ -47,4 +47,63 @@ Four separate references (Coggeshall 1851a, b and c and Curtice 1996) have all b
 
 p35c2p1
 Similarly, the references for Holland 1903 and 1904a are merged together.
+
+## My own comments (to be integrated)
+
+XXX headings
+
+XXX underlinings
+
+XXX URLs
+
+**Page 1, header**<br />
+"VOL 91, NUMBER1" has no space after "NUMBER".
+
+**Page 1, Key Words**<br />
+A completely new set of keywords has been provided (Ecology, life history, predation, reproduction), none of which is relevant to the content of the paper. Perhaps a template set of keywords were accidentally included? Please reinstate the key words from the submitted manuscript (cast, Carnegie Museum, dinosaur, history, sauropod, skeletal mount).
+
+p2f1
+"at Carnegie Museum": insert "the".
+
+p2c1p2
+After "contributes most of the original fossil material to the mount", replace the comma with a semicolon.
+
+p2c2p1
+"resides as because": delete "as".
+
+p2c2p1
+New paragraph for "The diplodocine specimen initially designated".
+
+p4f3
+"Can't you buy this for Pittsbugh", transcribed from Carnegie's hardwritten note: reinstate the underlining of the word "buy".
+
+p4f3
+"isnt rich -- -- hurry AC", transcribed from Carnegie's hardwritten note: put back the removed double-underlined text "get an offer" between the two dashes.
+
+p5c1p5
+"Humboldt Museum für Naturkunde": remove "Humboldt".
+
+p5c2p2
+"Can't you buy this for Pittsbugh", transcribed from Carnegie's hardwritten note: reinstate the underlining of the word "buy" (as in the figure caption).
+
+p5c2p2
+"isnt rich -- -- hurry AC", transcribed from Carnegie's hardwritten note: put back the removed double-underlined text "get an offer" between the two dashes.
+
+p5c2p2
+"$10,000 (about $380,000 today according to )". Reinstate the address of the web used to calculate this, https://www.in2013dollars.com/ -- as requested by one of the reviewers.
+
+p6c2p2
+"In Coggeshall’s (1951a:240 version": insert close parenthesis after "240"
+
+p6c2p4
+"Hatcher’s (1901:56–57 diagnosis of the new species)": insert close parenthesis after "57".
+
+p7f6
+"mostly cropped from image field collector William H. Utterback": insert comma after "image".
+
+p7f6
+"sitting at far table, facing left": change "sitting" to "seated"
+
+p7f6
+"sitting at far table, facing left": change "sitting" to "seated"
 
