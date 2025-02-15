@@ -5,12 +5,12 @@
 
 Thank you for creating this initial proof. As always, it's a delightful moment to first see a long-running project in something like its final form.
 
-The list of changes to me made below is a mix of minor errors introduced in typesetting, a few that that were in the intial submission but have only now become apparent to us, and a small number of (tiny) additions that clarify some matters. But more important that these specifics are four systemic issues, which we will address up front.
+The list below of changes to be made is a mix of minor errors introduced in typesetting, some that that were in the intial submission but have only now become apparent to us, and a small number of (tiny) additions that clarify some matters. But more important that these specifics are four systemic issues, which we will address up front.
 
 
 ## Systemic issues
 
-Most importantly, this manuscript uses and needs three leves of headings to communicate its organization. In the proof PDF, these levels are collapsed, so that we lose the sense of structure. For example, the level-1 heading "Historical background" on page 5 is set like the level-2 headings "Nomenclature" an "Institutional abbreviations" that precede it. This is most obvious on page 15, where the first-level heading "Material in the mounted skeleton" is followed immediately by the second-level heading "The original mount at the Carnegie Museum" typeset in exactly the same way, so we seem to have am empty section. Similarly on page 20, the level-2 heading "Changes made to the mount at the Carnegie Museum" and level-3 heading "Replacement of skull with replica of CM 11161" are ajacent and identically set.
+**First** and most importantly, this manuscript uses and needs three leves of headings to communicate its organization. In the proof PDF, these levels are collapsed, so that we lose the sense of structure. For example, the level-1 heading "Historical background" on page 5 is set like the level-2 headings "Nomenclature" and "Institutional abbreviations" that precede it, giving the impression that this section is part of a very long introduction. A very obvious manifestation occurs on page 15, where the first-level heading "Material in the mounted skeleton" is followed immediately by the second-level heading "The original mount at the Carnegie Museum" typeset in exactly the same way, so we seem to have an empty section. Similarly on page 20, the level-2 heading "Changes made to the mount at the Carnegie Museum" and level-3 heading "Replacement of skull with replica of CM 11161" are ajacent and identically set.
 
 So we ask that each level of heading is set distinctly from the others, and that the structure is followed as shown:
 
@@ -37,11 +37,11 @@ So we ask that each level of heading is set distinctly from the others, and that
 * Tables
 * Figure Captions
 
-Secondly, the manuscript contains four long quotes, the extent of which we indicated in the submission by indentation. In the present proof, these are typeset as normal paragraphs, so it's impossible to tell where they end. Some typographic convention is needed to mark these out.
+**Secondly**, the manuscript contains four long quotes, the extent of which we indicated in the submission by indentation. In the present proof, these are typeset as normal paragraphs, so it's impossible to tell where they end. Some typographic convention is needed to mark these out. (We mentioned these individually below.)
 
-Third, it seems that every URL has been expunged from the manuscript. For the one in the body text, this leaves behind nonsense (as well as contravening one of the reviewer recommendations). But in the references, it's catastrophic, as for many of the referenced items the URL is the only way to find the material.
+**Third**, it seems that every URL has been expunged from the manuscript. For the single URL in the body text, this leaves behind nonsense (as well as contravening one of the reviewer recommendations). But in the references, it's catastrophic, as for many of the referenced items the URL is the only way to find the material.
 
-Finally, and least important, the illustrations often appear quite a long way away from  where they are referenced. For example, Figure 10 is referenced on page 10, but does not appear until page 14. We understand that page layout is an art and that many factors are involved, so that illustrations cannot always appear on or next to the page where they are first referenced, but we wonder whether some tightening is possible in this respect?
+**Fourth**, and least important, the illustrations often appear quite a long way away from  where they are referenced. For example, Figure 10 is referenced on page 10, but does not appear until page 14. We understand that page layout is an art and that many factors are involved, so that illustrations cannot always appear on or next to the page where they are first referenced, but we wonder whether some tightening is possible in this respect?
 
 
 ## Specific changes
