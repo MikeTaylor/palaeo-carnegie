@@ -5,12 +5,12 @@
 
 Thank you for creating this initial proof. As always, it's a delightful moment to first see a long-running project in something like its final form.
 
-The list below of changes to be made is a mix of minor errors introduced in typesetting, some that that were in the intial submission but have only now become apparent to us, and a small number of (tiny) additions that clarify some matters. But more important that these specifics are four systemic issues, which we will address up front.
+The list below of changes to be made is a mix of minor errors introduced in typesetting, some that were in the intial submission but have only now become apparent to us, and a small number of (tiny) additions that clarify some matters. But more important than these specifics are four systemic issues, which we will address up front.
 
 
 ## Systemic issues
 
-**First** and most importantly, this manuscript uses and needs three leves of headings to communicate its organization. In the proof PDF, these levels are collapsed, so that we lose the sense of structure. For example, the level-1 heading "Historical background" on page 5 is set like the level-2 headings "Nomenclature" and "Institutional abbreviations" that precede it, giving the impression that this section is part of a very long introduction. A very obvious manifestation occurs on page 15, where the first-level heading "Material in the mounted skeleton" is followed immediately by the second-level heading "The original mount at the Carnegie Museum" typeset in exactly the same way, so we seem to have an empty section. Similarly on page 20, the level-2 heading "Changes made to the mount at the Carnegie Museum" and level-3 heading "Replacement of skull with replica of CM 11161" are ajacent and identically set.
+**First** and most importantly, this manuscript uses and needs three levels of headings to communicate its organization. In the proof PDF, these levels are collapsed, so that we lose the sense of structure. For example, the level-1 heading "Historical background" on page 5 is set like the level-2 headings "Nomenclature" and "Institutional abbreviations" that precede it, giving the impression that this section is part of a very long introduction. A very obvious manifestation occurs on page 15, where the first-level heading "Material in the mounted skeleton" is followed immediately by the second-level heading "The original mount at the Carnegie Museum" typeset in exactly the same way, so we seem to have an empty section. Similarly on page 20, the level-2 heading "Changes made to the mount at the Carnegie Museum" and level-3 heading "Replacement of skull with replica of CM 11161" are adjacent and identically set.
 
 So we ask that each level of heading is set distinctly from the others, and that the structure is followed as shown:
 
@@ -33,13 +33,11 @@ So we ask that each level of heading is set distinctly from the others, and that
   * The length of the Carnegie Diplodocus
   * Documenting skeletal mounts
 * Acknowledgments
-* References
-* Tables
-* Figure Captions
+* Literature Cited
 
 **Secondly**, the manuscript contains four long quotes, the extent of which we indicated in the submission by indentation. In the present proof, these are typeset as normal paragraphs, so it's impossible to tell where they end. Some typographic convention is needed to mark these out. (We mentioned these individually below.)
 
-**Third**, it seems that every URL has been expunged from the manuscript. For the single URL in the body text, this leaves behind nonsense (as well as contravening one of the reviewer recommendations). But in the references, it's catastrophic, as for many of the referenced items the URL is the only way to find the material.
+**Third**, it seems that every URL has been expunged from the manuscript. For the single URL in the body text, this leaves behind unintelligible language (as well as contravening one of the reviewer recommendations). But in the references, it's much more severe, as for many of the referenced items the URL is the only way to find the material.
 
 **Fourth**, and least important, the illustrations often appear quite a long way away from  where they are referenced. For example, Figure 10 is referenced on page 10, but does not appear until page 14. We understand that page layout is an art and that many factors are involved, so that illustrations cannot always appear on or next to the page where they are first referenced, but we wonder whether some tightening is possible in this respect?
 
@@ -86,7 +84,7 @@ p5c2p2
 "isnt rich -- -- hurry AC", transcribed from Carnegie's hardwritten note: put back the removed double-underlined text "get an offer" between the two dashes.
 
 p5c2p2
-"$10,000 (about $380,000 today according to )". Reinstate the address of the web used to calculate this, https://www.in2013dollars.com/ -- as requested by one of the reviewers.
+"$10,000 (about $380,000 today according to )". Reinstate the address of the website used to calculate this, https://www.in2013dollars.com/ -- as requested by one of the reviewers.
 
 p6c2p2
 "In Coggeshall’s (1951a:240 version": insert close parenthesis after "240"
@@ -101,7 +99,7 @@ p7f6
 "sitting at far table, facing left": change "sitting" to "seated"
 
 p7f6
-"sitting at far table, facing left": change "sitting" to "seated"
+"sitting on bench": change "sitting" to "seated"
 
 p9c1p1
 New paragraph for "At any rate".
@@ -142,19 +140,19 @@ And the end of the caption, "than shown in parts B and C". Change to "than in pa
 p20c1p1
 "the left femur and tibia are indeed sculptures". Replace "sculptures" with "not real bone".
 
-**Page 21, table row 1 (Skull), column 3 (Chages to mount).**<br />
+**Page 21, table row 1 (Skull), column 3 (Changes to mount).**<br />
 Replace "Maybe 1962" with "between 1912 and 1947"
 
-**Page 21, table rows 7, 8 and 9 (caudals), column 3 (Chages to mount).**<br />
+**Page 21, table rows 7, 8 and 9 (caudals), column 3 (Changes to mount).**<br />
 Append the date "2007" in each cell.
 
-**Page 21, table row 21 (Left humerus, radius, ulna), column 3 (Chages to mount).**<br />
+**Page 21, table row 21 (Left humerus, radius, ulna), column 3 (Changes to mount).**<br />
 change "BYU 681 (S)" to "BYU 681/4742, BYU 681/4726, BYU 681/4708 (S), 2007"
 
-**Page 21, table row 22 (Right humerus, radius, ulna), column 3 (Chages to mount).**<br />
+**Page 21, table row 22 (Right humerus, radius, ulna), column 3 (Changes to mount).**<br />
 change "BYU 681 (S)" to "BYU 681/4742, BYU 681/4726, BYU 681/4708 (S), 2007"
 
-**Page 21, table row 23 (Forefeet), column 3 (Chages to mount).**<br />
+**Page 21, table row 23 (Forefeet), column 3 (Changes to mount).**<br />
 Replace with "CM 662 (S), 1999; replaced again by WDC-FS001A (S), 2007".
 
 p23c2p2
@@ -182,10 +180,10 @@ p32c1p7
 From "The beast turns out to be" to "putting on this long tail" (end of the paragraph, at the top of column 2) is an extended quote from Holland 1904b, and must be typographically distinguished. In the manuscript as submitted, we used indentation, but if the journal has a different typographical convention, that's fine.
 
 p33c1p3
-"in the early to mid 2010s (Fig. 22)": replace "22" with "22a".
+"in the early to mid 2010s (Fig. 22)": replace "22" with "22A".
 
 p33c1p4
-New paragraph for "Additional posterior caudals". (This list would be clearer formatted as a bullet list, as in the submitted manuscript, but if the journal formal insist that bullets not be used, that at least separate paragraphs are necessary.)
+New paragraph for "Additional posterior caudals". (This list would be more clearly formatted as a bullet list, as in the submitted manuscript, but if the journal formal insists that bullets not be used, that at least separate paragraphs are necessary.)
 
 **Page 34, table row 2 (Holland 1904a), column 3 (Length (m)).**<br />
 Change "21.3" to "23.8".
@@ -206,11 +204,11 @@ p25c1p3
 New paragraph for "We thank Ken Carpenter".
 
 **Pages 35ff**<br />
-In all the references, the URLs have been removed. We think this must have been a poorly calibrated automatic process, as it has left us with silly references like "Dystylosaurus reminds you to beware of taking measurements from casts. Sauropod Vertebra Picture of the Week, 4 November 2019. — , archived at ", where both the original URL and the archived URL are absent, but the "archived at phrase" has remained. these URLs are crucial parts of the references, and must be reinstated.
+In all the references, the URLs have been removed. We think this must have been a poorly calibrated automatic process, as it has left us with silly references like "Dystylosaurus reminds you to beware of taking measurements from casts. Sauropod Vertebra Picture of the Week, 4 November 2019. — , archived at ", where both the original URL and the archived URL are absent, but the "archived at phrase" has remained. These URLs are crucial parts of the references, and must be reinstated.
 
 **Pages 35ff**<br />
 In many cases, multiple references have been concatented together into one. For example, the penultimate paragraph of the whole paper conjoins the references for Wedel 2009, Wedel 2019, and Wilhite 2003.
 
-Because of the systemic problems affecting the references, we have not yet made a serious effort at proofing them. When we get the next round of proofs, we will read them properly.
+Because of the systemic problems affecting the references, we have not yet made a thorough effort at proofing them. When we get the next round of proofs, we will review them properly.
 
 
